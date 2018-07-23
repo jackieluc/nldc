@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Hero from '../components/Hero';
 import logo from '../images/nldc2019-logo.png';
 import '../styles/pages/Home.css';
 
@@ -13,6 +14,7 @@ class Home extends Component {
         <p className="App-intro">
           To get started, edit <code>src/pages/Home.js</code> and save to reload.
         </p>
+        <Hero />
       </div>
     );
   }
