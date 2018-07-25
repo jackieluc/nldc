@@ -1,12 +1,16 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import '../styles/components/Navigation.css';
+import styled from 'styled-components';
+
+const Logo = styled.img`
+  width: 150px;
+`;
 
 export default function Navigation() {
   return (
     <div className="navigation">
         <NavLink to="/">
-            <img src={require("../images/nldc2019-logo.png")} className="logo" title="logo" alt="NLDC 2019 Logo" />
+            <Logo src={require("../images/nldc2019-logo.png")} title="logo" alt="NLDC 2019 Logo" />
         </NavLink>
         <NavLink to="/sponsors">Sponsors</NavLink>
     </div>

@@ -1,12 +1,25 @@
 import React, { Component } from 'react';
-import '../styles/components/Hero.css';
+import styled from 'styled-components';
+
+const Title = styled.h1`
+  font-size: 5rem;
+  text-align: center;
+  color: palevioletred;
+`;
+
+const Wrapper = styled.section`
+  padding: 4em;
+  background: papayawhip;
+`;
 
 class Hero extends Component {
   render() {
     return (
-      <div className="hero">
-        <h1 className="title">Disrupt the now</h1>
-      </div>
+      <Wrapper>
+        <Title>
+          Disrupt the now!
+        </Title>
+      </Wrapper>
     );
   }
 }
