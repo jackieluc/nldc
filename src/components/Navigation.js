@@ -28,39 +28,34 @@ const Line = styled.span`
   position: absolute;
   width: 45%;
   height: 0.11rem;
-  border-radius: 0.1rem;
+  border-radius: 0.2rem;
   background: black;
   left: 27.5%;
+  transition: all cubic-bezier(0.42, 0, 0.45, 1.25) 0.27s;
   top: ${props => props.styles.topPosition}
 
   ${media.laptop`
     height: 0.19rem;
   `}
 
-  &.closed {
+  &.open {
     ${props => {
-      if (props.styles.line === 1) {
-        return `transform: rotate(45deg);
-          top:50%;
-        `
-      }
-      else {
-        return `transform: rotate(-45deg);
-          top:50%;
-        `
-      }
+      const deg = props.styles.line === 1 ? '45deg' : '-45deg';
+      return `transform: rotate(${deg});
+        top:50%;
+      `}      
     }
   }
 `;
 
 class Nav extends Component {
   render() {
-    const isMenuClosed = this.props.status.isMenuClosed ? 'closed' : null;
+    const isMenuOpen = this.props.status.isMenuOpen ? 'open' : null;
     return (
       <div className="nav-wrapper">
-        <Line styles={{ line: 1, topPosition: '35%' }} className={isMenuClosed}/>
-        <Line styles={{ line: 2, topPosition: '50%' }} className={isMenuClosed}/>
-        <Line styles={{ line: 3, topPosition: '65%' }} className={isMenuClosed}/>
+        <Line styles={{ line: 1, topPosition: '35%' }} className={isMenuOpen}/>
+        <Line styles={{ line: 2, topPosition: '50%' }} className={isMenuOpen}/>
+        <Line styles={{ line: 3, topPosition: '65%' }} className={isMenuOpen}/>
       </div>
     );
   }
@@ -69,7 +64,7 @@ class Nav extends Component {
 class Menu extends Component {
   render() {
     return (
-      <div className="navigation">
+      <div className="navigation-open">
         <NavLink to="/">
             <Logo src={require("../images/nldc2019-logo.png")} title="logo" alt="NLDC 2019 Logo" />
         </NavLink>
@@ -82,20 +77,22 @@ class Menu extends Component {
 export default class Navigation extends Component {
   constructor(props) {
     super(props);
-    this.state = { isMenuClosed: false };
+    this.state = { isMenuOpen: false };
     this.onClick = this.onClick.bind(this);
   }
 
   onClick() {
     this.setState({
-      isMenuClosed: !this.state.isMenuClosed,
+      isMenuOpen: !this.state.isMenuOpen,
     });
   }
 
   render() {
     return (
       <NavButton onClick={this.onClick}>
-        <Nav status={{ isMenuClosed: this.state.isMenuClosed }}/>
+        <Nav status={{ isMenuOpen: this.state.isMenuOpen }}>
+          {/* { this.state.isMenuOpen && <Menu /> } */}
+        </Nav>
       </NavButton>
     );
   }
