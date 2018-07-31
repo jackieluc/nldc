@@ -12,7 +12,6 @@ const Wrapper = styled.section`
   background: papayawhip;
 `;
 
-
 class Home extends Component {
   render() {
     return (

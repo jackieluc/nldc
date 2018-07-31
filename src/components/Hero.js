@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import media from '../utils/media';
 
 const Title = styled.h1`
   font-size: 5rem;
   text-align: center;
   color: palevioletred;
+  ${media.desktop`color: red;`}
 `;
 
 const Wrapper = styled.section`
