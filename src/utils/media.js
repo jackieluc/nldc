@@ -3,6 +3,7 @@ import { css } from 'styled-components';
 const sizes = {
     bigDesktop: 1800, 
     desktop: 1200,
+    laptop: 1024,
     tablet: 600,
     phone: 320,
 };
