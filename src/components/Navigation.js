@@ -43,7 +43,7 @@ const Line = styled.span`
   }
 `;
 
-const MenuWrapper = styled.div`
+const MenuWrapper = styled.nav`
   position: fixed;
   height: 100vh;
   width: 100vw;
