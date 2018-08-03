@@ -7,7 +7,7 @@ const Logo = styled.img`
   width: 150px;
 `;
 
-const NavButton = styled.button`
+const NavWrapper = styled.button`
   position: fixed;
   right: 2rem;
   top: 1.5rem;
@@ -17,6 +17,7 @@ const NavButton = styled.button`
   border-radius: 40px;
   box-shadow: 1px 2px 8px rgba(75, 97, 141, 0.32);
   background-color: white;
+  z-index: 999;
 
   ${media.laptop`
     width: 4rem;
@@ -42,14 +43,24 @@ const Line = styled.span`
   }
 `;
 
-class Nav extends Component {
+const MenuWrapper = styled.div`
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: #FAFAFA;
+  z-index: 2;
+  top: 0;
+  left: 0;
+`;
+
+class NavButton extends Component {
   render() {
-    const isMenuOpen = this.props.status.isMenuOpen ? 'open' : null;
+    const isOpen = this.props.isOpen ? 'open' : '';
     return (
       <div className="nav-wrapper">
-        <Line reverse styles={{ topPosition: '35%' }} className={isMenuOpen}/>
-        <Line styles={{ topPosition: '50%' }} className={isMenuOpen}/>
-        <Line styles={{ topPosition: '65%' }} className={isMenuOpen}/>
+        <Line reverse styles={{ topPosition: '35%' }} className={isOpen}/>
+        <Line styles={{ topPosition: '50%' }} className={isOpen}/>
+        <Line styles={{ topPosition: '65%' }} className={isOpen}/>
       </div>
     );
   }
@@ -58,12 +69,12 @@ class Nav extends Component {
 class Menu extends Component {
   render() {
     return (
-      <div className="navigation-open">
+      <MenuWrapper>
         <NavLink to="/">
             <Logo src={require("../images/nldc2019-logo.png")} title="logo" alt="NLDC 2019 Logo" />
         </NavLink>
         <NavLink to="/sponsors">Sponsors</NavLink>
-      </div>
+      </MenuWrapper>
     );
   }
 }
@@ -71,23 +82,26 @@ class Menu extends Component {
 export default class Navigation extends Component {
   constructor(props) {
     super(props);
-    this.state = { isMenuOpen: false };
-    this.onClick = this.onClick.bind(this);
+    this.state = { 
+      isOpen: false
+    };
+    this.toggleMenu = this.toggleMenu.bind(this);
   }
 
-  onClick() {
+  toggleMenu() {
     this.setState({
-      isMenuOpen: !this.state.isMenuOpen,
+      isOpen: !this.state.isOpen,
     });
   }
 
   render() {
     return (
-      <NavButton onClick={this.onClick}>
-        <Nav status={{ isMenuOpen: this.state.isMenuOpen }}>
-          {/* { this.state.isMenuOpen && <Menu /> } */}
-        </Nav>
-      </NavButton>
+      <div>
+        <NavWrapper onClick={this.toggleMenu}>
+          <NavButton isOpen={this.state.isOpen} />
+        </NavWrapper>
+        { this.state.isOpen && <Menu /> }
+      </div>
     );
   }
 }
