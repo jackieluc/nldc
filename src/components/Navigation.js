@@ -70,10 +70,10 @@ class Menu extends Component {
   render() {
     return (
       <MenuWrapper>
-        <NavLink to="/">
+        <NavLink to="/" onClick={this.props.action} >
             <Logo src={require("../images/nldc2019-logo.png")} title="logo" alt="NLDC 2019 Logo" />
         </NavLink>
-        <NavLink to="/sponsors">Sponsors</NavLink>
+        <NavLink to="/sponsors"onClick={this.props.action} >Sponsors</NavLink>
       </MenuWrapper>
     );
   }
@@ -100,7 +100,7 @@ export default class Navigation extends Component {
         <NavWrapper onClick={this.toggleMenu}>
           <NavButton isOpen={this.state.isOpen} />
         </NavWrapper>
-        { this.state.isOpen && <Menu /> }
+        { this.state.isOpen && <Menu action={this.toggleMenu} /> }
       </div>
     );
   }
