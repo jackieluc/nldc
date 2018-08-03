@@ -32,19 +32,13 @@ const Line = styled.span`
   background: black;
   left: 27.5%;
   transition: all cubic-bezier(0.42, 0, 0.45, 1.25) 0.27s;
-  top: ${props => props.styles.topPosition}
+  top: ${props => props.styles.topPosition || 0}
 
-  ${media.laptop`
-    height: 0.19rem;
-  `}
+  ${media.laptop`height: 0.19rem;`}
 
   &.open {
-    ${props => {
-      const deg = props.styles.line === 1 ? '45deg' : '-45deg';
-      return `transform: rotate(${deg});
-        top:50%;
-      `}      
-    }
+    ${props => props.reverse ? 'transform: rotate(-45deg);' : 'transform: rotate(45deg);'}
+    top: 50%;
   }
 `;
 
@@ -53,9 +47,9 @@ class Nav extends Component {
     const isMenuOpen = this.props.status.isMenuOpen ? 'open' : null;
     return (
       <div className="nav-wrapper">
-        <Line styles={{ line: 1, topPosition: '35%' }} className={isMenuOpen}/>
-        <Line styles={{ line: 2, topPosition: '50%' }} className={isMenuOpen}/>
-        <Line styles={{ line: 3, topPosition: '65%' }} className={isMenuOpen}/>
+        <Line reverse styles={{ topPosition: '35%' }} className={isMenuOpen}/>
+        <Line styles={{ topPosition: '50%' }} className={isMenuOpen}/>
+        <Line styles={{ topPosition: '65%' }} className={isMenuOpen}/>
       </div>
     );
   }
