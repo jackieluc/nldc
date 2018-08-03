@@ -6,7 +6,7 @@ const Title = styled.h1`
   font-size: 5rem;
   text-align: center;
   color: palevioletred;
-  ${media.desktop`color: red;`}
+  ${media.desktop`color: tomato;`}
 `;
 
 const Wrapper = styled.section`
