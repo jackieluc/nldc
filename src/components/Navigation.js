@@ -3,10 +3,6 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import media from '../utils/media';
 
-const Logo = styled.img`
-  width: 150px;
-`;
-
 const NavWrapper = styled.button`
   position: fixed;
   right: 2rem;
