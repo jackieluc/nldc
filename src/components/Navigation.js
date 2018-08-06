@@ -10,7 +10,7 @@ const Logo = styled.img`
 const NavWrapper = styled.button`
   position: fixed;
   right: 2rem;
-  top: 1.5rem;
+  top: 1rem;
   width: 3rem;
   height: 3rem;
   border: 0;
@@ -51,6 +51,26 @@ const MenuWrapper = styled.nav`
   z-index: 2;
   top: 0;
   left: 0;
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+  flex-direction: column;
+`;
+
+const StyledLink = styled(NavLink)`
+  color: #037EF3;
+  font-size: 1.6rem;
+  margin: 8px 10vw;
+  ${media.tablet`margin: 8px 5vw;`}
+
+  &:first-child {
+    margin-top: 5rem;
+    ${media.laptop`margin-top: 6rem;`}
+  }
+
+  &:hover {
+    color: #4ea8fd;
+  }
 `;
 
 class NavButton extends Component {
@@ -58,9 +78,9 @@ class NavButton extends Component {
     const isOpen = this.props.isOpen ? 'open' : '';
     return (
       <div className="nav-wrapper">
-        <Line reverse styles={{ topPosition: '35%' }} className={isOpen}/>
-        <Line styles={{ topPosition: '50%' }} className={isOpen}/>
-        <Line styles={{ topPosition: '65%' }} className={isOpen}/>
+        <Line reverse styles={{ topPosition: '35%' }} className={isOpen} />
+        <Line styles={{ topPosition: '50%' }} className={isOpen} />
+        <Line styles={{ topPosition: '65%' }} className={isOpen} />
       </div>
     );
   }
@@ -70,10 +90,8 @@ class Menu extends Component {
   render() {
     return (
       <MenuWrapper>
-        <NavLink to="/" onClick={this.props.action} >
-            <Logo src={require("../images/nldc2019-logo.png")} title="logo" alt="NLDC 2019 Logo" />
-        </NavLink>
-        <NavLink to="/sponsors"onClick={this.props.action} >Sponsors</NavLink>
+        <StyledLink to="/" onClick={this.props.action}>Home</StyledLink>
+        <StyledLink to="/sponsors"onClick={this.props.action}>Sponsors</StyledLink>
       </MenuWrapper>
     );
   }
