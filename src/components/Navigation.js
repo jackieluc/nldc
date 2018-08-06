@@ -48,10 +48,8 @@ const MenuWrapper = styled.nav`
   z-index: 2;
   top: 0;
   left: 0;
-  display: flex;
   justify-content: start;
   align-items: flex-end;
-  flex-direction: column;
 `;
 
 const StyledLink = styled(NavLink)`
@@ -113,7 +111,7 @@ export default class Navigation extends Component {
 
   render() {
     return (
-      <div>
+      <div className="mobile-nav">
         <NavWrapper onClick={this.toggleMenu}>
           <NavButton isOpen={this.state.isOpen} />
         </NavWrapper>

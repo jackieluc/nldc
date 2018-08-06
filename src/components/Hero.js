@@ -9,19 +9,19 @@ const Title = styled.h1`
   ${media.desktop`color: tomato;`}
 `;
 
-const Wrapper = styled.section`
-  padding: 4em;
+const HeroSection = styled.section`
+  padding: 4rem;
   background: papayawhip;
 `;
 
 class Hero extends Component {
   render() {
     return (
-      <Wrapper>
+      <HeroSection>
         <Title>
           Disrupt the now!
         </Title>
-      </Wrapper>
+      </HeroSection>
     );
   }
 }

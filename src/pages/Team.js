@@ -7,7 +7,7 @@ const Title = styled.h1`
   color: palevioletred;
 `;
 
-const Wrapper = styled.section`
+const TeamSection = styled.section`
   padding: 4em;
   background: papayawhip;
 `;
@@ -16,13 +16,13 @@ class Team extends Component {
   render() {
     return (
       <div className="team">
-        <Wrapper>
+        <TeamSection>
           <Title>
             Welcome to Tean
           </Title>
-        </Wrapper>
-        <p className="team-intro">
-          To get started, edit <code>src/pages/Team.js</code> and save to reload.
+        </TeamSection>
+        <p className="section team-intro">
+          To get started, edit src/pages/Team.js and save to reload.
         </p>
       </div>
     );

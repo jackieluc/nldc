@@ -17,6 +17,14 @@ injectGlobal`
     overflow-y: auto;
     background-color: #FAFAFA;
   }
+
+  section, nav {
+    display: flex;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 ReactDOM.render((

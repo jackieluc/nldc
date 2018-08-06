@@ -34,6 +34,8 @@ const AppIntro = styled.p`
 
 const Lorem = styled.p`
   max-width: 25vw;
+  margin: auto;
+  padding: 1rem;
 `;
 
 class Home extends Component {

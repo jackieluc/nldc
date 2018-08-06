@@ -7,7 +7,7 @@ const Title = styled.h1`
   color: palevioletred;
 `;
 
-const Wrapper = styled.section`
+const SponsorSection = styled.section`
   padding: 4em;
   background: papayawhip;
 `;
@@ -16,13 +16,13 @@ class Sponsors extends Component {
   render() {
     return (
       <div className="sponsors">
-        <Wrapper>
+        <SponsorSection>
           <Title>
             Welcome to Sponsors
           </Title>
-        </Wrapper>
-        <p className="sponsors-intro">
-          To get started, edit <code>src/pages/Sponsors.js</code> and save to reload.
+        </SponsorSection>
+        <p className="section sponsors-intro">
+          To get started, edit src/pages/Sponsors.js and save to reload.
         </p>
       </div>
     );
