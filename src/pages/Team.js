@@ -12,21 +12,21 @@ const Wrapper = styled.section`
   background: papayawhip;
 `;
 
-class Sponsors extends Component {
+class Team extends Component {
   render() {
     return (
-      <div className="sponsors">
+      <div className="team">
         <Wrapper>
           <Title>
-            Welcome to Sponsors
+            Welcome to Tean
           </Title>
         </Wrapper>
-        <p className="sponsors-intro">
-          To get started, edit <code>src/pages/Sponsors.js</code> and save to reload.
+        <p className="team-intro">
+          To get started, edit <code>src/pages/Team.js</code> and save to reload.
         </p>
       </div>
     );
   }
 }
 
-export default Sponsors;
+export default Team;

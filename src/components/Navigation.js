@@ -88,6 +88,7 @@ class Menu extends Component {
       <MenuWrapper>
         <StyledLink to="/" onClick={this.props.action}>Home</StyledLink>
         <StyledLink to="/sponsors"onClick={this.props.action}>Sponsors</StyledLink>
+        <StyledLink to="/team"onClick={this.props.action}>Team</StyledLink>
       </MenuWrapper>
     );
   }

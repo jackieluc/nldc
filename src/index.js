@@ -6,6 +6,7 @@ import { injectGlobal } from 'styled-components';
 import Navigation from './components/Navigation';
 import Home from './pages/Home';
 import Sponsors from './pages/Sponsors';
+import Team from './pages/Team';
 
 injectGlobal`
   body {
@@ -26,6 +27,7 @@ ReactDOM.render((
         <Route exact path='/' component={Home} />
         {/* <Route exact path='/about-us' component={AboutUs} /> */}
         <Route exact path='/sponsors' component={Sponsors} />
+        <Route exact path='/team' component={Team} />
         {/* <Route exact path='/schedule' component={Schedule} /> */}
         {/* <Route exact path='/events' component={Events} /> */}
         {/* <Route path="*" component={NotFoundPage} /> */}
