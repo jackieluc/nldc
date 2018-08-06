@@ -14,6 +14,7 @@ const NavWrapper = styled.button`
   box-shadow: 1px 2px 8px rgba(75, 97, 141, 0.32);
   background-color: white;
   z-index: 999;
+  outline: none;
 
   ${media.laptop`
     width: 4rem;
@@ -55,6 +56,7 @@ const MenuWrapper = styled.nav`
 
 const StyledLink = styled(NavLink)`
   color: #037EF3;
+  font-weight: 300;
   font-size: 1.6rem;
   margin: 8px 10vw;
   ${media.tablet`margin: 8px 5vw;`}
