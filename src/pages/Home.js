@@ -42,13 +42,13 @@ class Home extends Component {
   render() {
     return (
       <App>
-        <AppHeader>
+        {/* <AppHeader>
           <AppLogo src={logo} className="App-logo" alt="logo" />
           <AppTitle>Welcome to NLDC 2019</AppTitle>
         </AppHeader>
         <AppIntro>
           To get started, edit <code>src/pages/Home.js</code> and save to reload.
-        </AppIntro>
+        </AppIntro> */}
         <Hero />
         <Lorem>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa id neque aliquam vestibulum. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Etiam dignissim diam quis enim lobortis scelerisque. Suspendisse ultrices gravida dictum fusce ut placerat orci. At quis risus sed vulputate odio. Ultrices eros in cursus turpis massa tincidunt dui ut. Donec pretium vulputate sapien nec sagittis. Non nisi est sit amet. Augue eget arcu dictum varius duis at consectetur lorem.

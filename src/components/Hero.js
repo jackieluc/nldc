@@ -10,7 +10,7 @@ const Title = styled.h1`
 `;
 
 const HeroSection = styled.section`
-  padding: 4rem;
+  height: 85vh;
   background: papayawhip;
 `;
 
