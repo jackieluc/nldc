@@ -55,7 +55,7 @@ const MenuWrapper = styled.nav`
 const StyledLink = styled(NavLink)`
   color: #037EF3;
   font-weight: 300;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   margin: 8px 10vw;
   ${media.tablet`margin: 8px 5vw;`}
 
@@ -69,6 +69,18 @@ const StyledLink = styled(NavLink)`
   }
 `;
 
+class Menu extends Component {
+  render() {
+    return (
+      <MenuWrapper>
+        <StyledLink to="/" onClick={this.props.action}>Home</StyledLink>
+        <StyledLink to="/sponsors"onClick={this.props.action}>Sponsors</StyledLink>
+        <StyledLink to="/team"onClick={this.props.action}>Team</StyledLink>
+      </MenuWrapper>
+    );
+  }
+}
+
 class NavButton extends Component {
   render() {
     const isOpen = this.props.isOpen ? 'open' : '';
@@ -78,18 +90,6 @@ class NavButton extends Component {
         <Line styles={{ topPosition: '50%' }} className={isOpen} />
         <Line styles={{ topPosition: '65%' }} className={isOpen} />
       </div>
-    );
-  }
-}
-
-class Menu extends Component {
-  render() {
-    return (
-      <MenuWrapper>
-        <StyledLink to="/" onClick={this.props.action}>Home</StyledLink>
-        <StyledLink to="/sponsors"onClick={this.props.action}>Sponsors</StyledLink>
-        <StyledLink to="/team"onClick={this.props.action}>Team</StyledLink>
-      </MenuWrapper>
     );
   }
 }

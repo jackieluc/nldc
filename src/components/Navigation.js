@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
-import styled from 'styled-components';
-import media from '../utils/media';
 import MobileNavigation from './MobileNavigation';
+import DesktopNavigation from './DesktopNavigation';
 
 export default class Navigation extends Component {
-  render() {
-    return (
-        <MobileNavigation/>
-    );
-  }
+	render() {
+		return (
+      <div>
+			  <MobileNavigation/>
+			  <DesktopNavigation/>
+      </div>
+		);
+	}
 }
