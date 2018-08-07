@@ -18,7 +18,7 @@ class Team extends Component {
       <div className="team">
         <TeamSection>
           <Title>
-            Welcome to Tean
+            Welcome to Team
           </Title>
         </TeamSection>
         <p className="section team-intro">
