@@ -5,7 +5,7 @@ import media from '../utils/media';
 
 const NavWrapper = styled.button`
   position: fixed;
-  right: 2rem;
+  right: 1rem;
   top: 1rem;
   width: 3rem;
   height: 3rem;
