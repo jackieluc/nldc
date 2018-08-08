@@ -27,10 +27,25 @@ injectGlobal`
   }
 `;
 
+const routes = [
+  {
+    name: 'Home',
+    path: '/'
+  },
+  {
+    name: 'Sponsors',
+    path: '/sponsors'
+  },
+  {
+    name: 'Team',
+    path: '/team'
+  },
+];
+
 ReactDOM.render((
   <Router>
     <main>
-      <Navigation />
+      <Navigation routes={routes}/>
       <Switch>
         <Route exact path='/' component={Home} />
         {/* <Route exact path='/about-us' component={AboutUs} /> */}

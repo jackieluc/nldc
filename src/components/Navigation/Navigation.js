@@ -26,8 +26,9 @@ export default class Navigation extends Component {
 
 	render() {
     const { currentWindowWidth } = this.state;
+    const { routes } = this.props;
 		return (
-      currentWindowWidth < BreakPoints.laptop ? <MobileNavigation/> : <DesktopNavigation/>
+      currentWindowWidth < BreakPoints.laptop ? <MobileNavigation routes={routes}/> : <DesktopNavigation routes={routes}/>
 		);
 	}
 }

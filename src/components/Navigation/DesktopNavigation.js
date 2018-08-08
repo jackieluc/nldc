@@ -64,9 +64,7 @@ class Menu extends Component {
     const { currentWindowHeight, firstSectionHeight } = this.state;
     return (
       <MenuWrapper heights={{ currentWindowHeight, firstSectionHeight }}>
-        <StyledLink to="/" onClick={this.props.action}>Home</StyledLink>
-        <StyledLink to="/sponsors"onClick={this.props.action}>Sponsors</StyledLink>
-        <StyledLink to="/team"onClick={this.props.action}>Team</StyledLink>
+        { this.props.routes.map( route => <StyledLink to={route.path}>{route.name}</StyledLink>) }
       </MenuWrapper>
     );
   }
@@ -74,9 +72,10 @@ class Menu extends Component {
 
 export default class DesktopNavigation extends Component {
   render() {
+    const { routes } = this.props;
     return (
       <ResponsiveWrapper>
-        <Menu />
+        <Menu routes={routes}/>
       </ResponsiveWrapper>
     );
   }

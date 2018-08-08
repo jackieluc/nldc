@@ -73,9 +73,7 @@ class Menu extends Component {
   render() {
     return (
       <MenuWrapper>
-        <StyledLink to="/" onClick={this.props.action}>Home</StyledLink>
-        <StyledLink to="/sponsors"onClick={this.props.action}>Sponsors</StyledLink>
-        <StyledLink to="/team"onClick={this.props.action}>Team</StyledLink>
+        { this.props.routes.map( route => <StyledLink to={route.path} onClick={this.props.action}>{route.name}</StyledLink>) }
       </MenuWrapper>
     );
   }
@@ -112,12 +110,13 @@ export default class MobileNavigation extends Component {
 
   render() {
     const { isOpen } = this.state;
+    const { routes } = this.props;
     return (
       <ResponsiveWrapper>
         <NavWrapper onClick={this.toggleMenu}>
           <NavButton menu={isOpen} />
         </NavWrapper>
-        { isOpen && <Menu action={this.toggleMenu} /> }
+        { isOpen && <Menu action={this.toggleMenu} routes={routes} /> }
       </ResponsiveWrapper>
     );
   }
