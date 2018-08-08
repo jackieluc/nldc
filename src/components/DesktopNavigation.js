@@ -20,8 +20,8 @@ const MenuWrapper = styled.nav`
 const StyledLink = styled(NavLink)`
   color: #037EF3;
   font-weight: 300;
-  font-size: 1.3rem;
-  padding: 8px 2rem;
+  font-size: 1rem;
+  padding: 8px 1.5rem;
 `;
 
 class Menu extends Component {
