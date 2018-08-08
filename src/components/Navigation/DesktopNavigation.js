@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import { Media } from '../utils/media';
+import { Media } from '../../utils/media';
 
 const ResponsiveWrapper = styled.div`
   display: none;
@@ -35,7 +35,7 @@ const MenuWrapper = styled.nav`
     letter-spacing: 1px;
     text-decoration: none;
   `;
-  class Menu extends Component {
+class Menu extends Component {
   constructor(props) {
     super(props);
     this.state = { currentWindowHeight: 0, firstSectionHeight: 0 };

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
 import { injectGlobal } from 'styled-components';
-import Navigation from './components/Navigation';
+import Navigation from './components/Navigation/Navigation';
 import Home from './pages/Home';
 import Sponsors from './pages/Sponsors';
 import Team from './pages/Team';
