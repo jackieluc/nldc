@@ -27,6 +27,7 @@ const StyledLink = styled(NavLink)`
   font-size: 1.2rem;
   padding: 8px 1.5rem;
   letter-spacing: 1px;
+  text-decoration: none;
 `;
 
 class Menu extends Component {

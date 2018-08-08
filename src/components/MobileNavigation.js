@@ -54,10 +54,10 @@ const MenuWrapper = styled.nav`
 
 const StyledLink = styled(NavLink)`
   color: #037EF3;
-  font-weight: 300;
   font-size: 1.3rem;
   margin: 8px 10vw;
   ${media.tablet`margin: 8px 5vw;`}
+  text-decoration: none;
 
   &:first-child {
     margin-top: 5rem;
