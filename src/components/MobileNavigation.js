@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import media from '../utils/media';
+import { Media } from '../utils/media';
 
 const NavWrapper = styled.button`
   position: fixed;
@@ -16,7 +16,7 @@ const NavWrapper = styled.button`
   z-index: 999;
   outline: none;
 
-  ${media.laptop`
+  ${Media.laptop`
     width: 4rem;
     height: 4rem;
   `}
@@ -32,7 +32,7 @@ const Line = styled.span`
   transition: all cubic-bezier(0.42, 0, 0.45, 1.25) 0.27s;
   top: ${props => props.styles.topPosition || 0}
 
-  ${media.laptop`height: 0.19rem;`}
+  ${Media.laptop`height: 0.19rem;`}
 
   &.open {
     ${props => props.reverse ? 'transform: rotate(-45deg);' : 'transform: rotate(45deg);'}
@@ -56,12 +56,12 @@ const StyledLink = styled(NavLink)`
   color: #037EF3;
   font-size: 1.3rem;
   margin: 8px 10vw;
-  ${media.tablet`margin: 8px 5vw;`}
+  ${Media.tablet`margin: 8px 5vw;`}
   text-decoration: none;
 
   &:first-child {
     margin-top: 5rem;
-    ${media.laptop`margin-top: 6rem;`}
+    ${Media.laptop`margin-top: 6rem;`}
   }
 
   &:hover {
@@ -96,7 +96,7 @@ class NavButton extends Component {
 
 const ResponsiveWrapper = styled.div`
   display: block;
-  ${media.laptop`display: none;`}
+  ${Media.laptop`display: none;`}
 `;
 
 export default class MobileNavigation extends Component {

@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 
-const sizes = {
+const BreakPoints = {
     bigDesktop: 1800, 
     desktop: 1200,
     laptop: 1024,
@@ -8,13 +8,16 @@ const sizes = {
     phone: 320,
 };
 
-// Iterate through the sizes and create a media template
-const media = Object.keys(sizes).reduce((acc, label) => {
+// Iterate through the break point sizes and create a media template
+const Media = Object.keys(BreakPoints).reduce((acc, label) => {
     acc[label] = (...args) => css`
-        @media (min-width: ${sizes[label] / 16}em) {
+        @media (min-width: ${BreakPoints[label] / 16}em) {
             ${css(...args)}
         }`
     return acc;
 }, {});
 
-export default media;
+export { 
+    Media,
+    BreakPoints
+}

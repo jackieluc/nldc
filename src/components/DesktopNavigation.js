@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import media from '../utils/media';
+import { Media } from '../utils/media';
 
 const ResponsiveWrapper = styled.div`
   display: none;
-  ${media.laptop`display: block;`}
+  ${Media.laptop`display: block;`}
 `;
 
 
