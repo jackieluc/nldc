@@ -83,12 +83,12 @@ class Menu extends Component {
 
 class NavButton extends Component {
   render() {
-    const isOpen = this.props.isOpen ? 'open' : '';
+    const open = this.props.menu ? 'open' : '';
     return (
       <div>
-        <Line reverse styles={{ topPosition: '35%' }} className={isOpen} />
-        <Line styles={{ topPosition: '50%' }} className={isOpen} />
-        <Line styles={{ topPosition: '65%' }} className={isOpen} />
+        <Line reverse styles={{ topPosition: '35%' }} className={open} />
+        <Line styles={{ topPosition: '50%' }} className={open} />
+        <Line styles={{ topPosition: '65%' }} className={open} />
       </div>
     );
   }
@@ -102,25 +102,22 @@ const ResponsiveWrapper = styled.div`
 export default class MobileNavigation extends Component {
   constructor(props) {
     super(props);
-    this.state = { 
-      isOpen: false
-    };
+    this.state = { isOpen: false };
     this.toggleMenu = this.toggleMenu.bind(this);
   }
 
   toggleMenu() {
-    this.setState({
-      isOpen: !this.state.isOpen,
-    });
+    this.setState({ isOpen: !this.state.isOpen });
   }
 
   render() {
+    const { isOpen } = this.state;
     return (
       <ResponsiveWrapper>
         <NavWrapper onClick={this.toggleMenu}>
-          <NavButton isOpen={this.state.isOpen} />
+          <NavButton menu={isOpen} />
         </NavWrapper>
-        { this.state.isOpen && <Menu action={this.toggleMenu} /> }
+        { isOpen && <Menu action={this.toggleMenu} /> }
       </ResponsiveWrapper>
     );
   }
