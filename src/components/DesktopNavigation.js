@@ -10,17 +10,23 @@ const ResponsiveWrapper = styled.div`
 
 
 const MenuWrapper = styled.nav`
+  background-color: transparent;
+  height: 6vh;
+  padding: 8px 16px;
   position: fixed;
-  height: 10vh;
-  width: 100%;
-  justify-content: flex-end;
   flex-direction: row;
+  justify-content: flex-end;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
 `;
 
 const StyledLink = styled(NavLink)`
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 8px 1.5rem;
+  letter-spacing: 1px;
 `;
 
 class Menu extends Component {
