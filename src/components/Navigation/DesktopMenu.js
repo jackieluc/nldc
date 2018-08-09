@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const MenuWrapper = styled.nav`
-  ${heights => (heights.currentWindowHeight < heights.firstSectionHeight / 2
+  ${({ heights }) => (heights.currentWindowHeight < heights.firstSectionHeight / 2
     ? `background-color: transparent;
       a { color: white; };
     `

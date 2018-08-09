@@ -31,12 +31,12 @@ const Line = styled.span`
   background: black;
   left: 27.5%;
   transition: all cubic-bezier(0.42, 0, 0.45, 1.25) 0.27s;
-  top: ${styles => styles.topPosition || 0};
+  top: ${({ styles }) => styles.topPosition || 0};
 
   ${Media.laptop`height: 0.19rem;`}
   
   &.open {
-    ${reverse => (reverse
+    ${({ reverse }) => (reverse
     ? 'transform: rotate(-45deg);'
     : 'transform: rotate(45deg);')}
     top: 50%;
@@ -72,10 +72,10 @@ const StyledLink = styled(NavLink)`
   }
 `;
 
-const MobileMenu = ({ routes }) => (
+const MobileMenu = ({ routes, action }) => (
   <MenuWrapper>
     {routes.map(route => (
-      <StyledLink to={route.path} onClick={this.props.action}>
+      <StyledLink to={route.path} onClick={action}>
         {route.name}
       </StyledLink>
     ))}
@@ -84,6 +84,7 @@ const MobileMenu = ({ routes }) => (
 
 MobileMenu.propTypes = {
   routes: PropTypes.arrayOf(Object).isRequired,
+  action: PropTypes.func.isRequired,
 };
 
 const NavButton = ({ menu }) => (
