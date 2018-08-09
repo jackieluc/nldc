@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const Title = styled.h1`
@@ -12,21 +12,17 @@ const SponsorSection = styled.section`
   background: papayawhip;
 `;
 
-class Sponsors extends Component {
-  render() {
-    return (
-      <div className="sponsors">
-        <SponsorSection>
-          <Title>
-            Welcome to Sponsors
-          </Title>
-        </SponsorSection>
-        <p className="section sponsors-intro">
-          To get started, edit src/pages/Sponsors.js and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
+const Sponsors = () => (
+  <div className="sponsors">
+    <SponsorSection>
+      <Title>
+        Welcome to Sponsors
+      </Title>
+    </SponsorSection>
+    <p className="section sponsors-intro">
+      To get started, edit src/pages/Sponsors.js and save to reload.
+    </p>
+  </div>
+);
 
 export default Sponsors;
