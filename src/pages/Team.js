@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const Title = styled.h1`
@@ -12,21 +12,17 @@ const TeamSection = styled.section`
   background: papayawhip;
 `;
 
-class Team extends Component {
-  render() {
-    return (
-      <div className="team">
-        <TeamSection>
-          <Title>
-            Welcome to Team
-          </Title>
-        </TeamSection>
-        <p className="section team-intro">
-          To get started, edit src/pages/Team.js and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
+const Team = () => (
+  <div className="team">
+    <TeamSection>
+      <Title>
+        Welcome to Team
+      </Title>
+    </TeamSection>
+    <p className="section team-intro">
+      To get started, edit src/pages/Team.js and save to reload.
+    </p>
+  </div>
+);
 
 export default Team;
