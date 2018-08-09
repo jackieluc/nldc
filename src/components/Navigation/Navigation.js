@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import MobileNavigation from './MobileNavigation';
 import DesktopNavigation from './DesktopNavigation';
 import { BreakPoints } from '../../utils/media';
@@ -24,11 +25,17 @@ export default class Navigation extends Component {
     this.setState({ currentWindowWidth });
   }
 
-	render() {
+  render() {
     const { currentWindowWidth } = this.state;
     const { routes } = this.props;
-		return (
-      currentWindowWidth < BreakPoints.laptop ? <MobileNavigation routes={routes}/> : <DesktopNavigation routes={routes}/>
-		);
-	}
+    return (
+      currentWindowWidth < BreakPoints.laptop
+        ? <MobileNavigation routes={routes} />
+        : <DesktopNavigation routes={routes} />
+    );
+  }
 }
+
+Navigation.propTypes = {
+  routes: PropTypes.arrayOf(Object).isRequired,
+};
