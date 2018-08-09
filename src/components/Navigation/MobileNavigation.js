@@ -72,7 +72,7 @@ const StyledLink = styled(NavLink)`
   }
 `;
 
-const Menu = ({ routes }) => (
+const MobileMenu = ({ routes }) => (
   <MenuWrapper>
     {routes.map(route => (
       <StyledLink to={route.path} onClick={this.props.action}>
@@ -82,7 +82,7 @@ const Menu = ({ routes }) => (
   </MenuWrapper>
 );
 
-Menu.propTypes = {
+MobileMenu.propTypes = {
   routes: PropTypes.arrayOf(Object).isRequired,
 };
 
@@ -123,7 +123,7 @@ export default class MobileNavigation extends Component {
         <NavWrapper onClick={this.toggleMenu}>
           <NavButton menu={isOpen} />
         </NavWrapper>
-        {isOpen && <Menu action={this.toggleMenu} routes={routes} />}
+        {isOpen && <MobileMenu action={this.toggleMenu} routes={routes} />}
       </ResponsiveWrapper>
     );
   }
