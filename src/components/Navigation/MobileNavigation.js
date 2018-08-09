@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Media } from '../../utils/media';
 
@@ -30,12 +31,14 @@ const Line = styled.span`
   background: black;
   left: 27.5%;
   transition: all cubic-bezier(0.42, 0, 0.45, 1.25) 0.27s;
-  top: ${props => props.styles.topPosition || 0}
+  top: ${styles => styles.topPosition || 0};
 
   ${Media.laptop`height: 0.19rem;`}
-
+  
   &.open {
-    ${props => props.reverse ? 'transform: rotate(-45deg);' : 'transform: rotate(45deg);'}
+    ${reverse => (reverse
+    ? 'transform: rotate(-45deg);'
+    : 'transform: rotate(45deg);')}
     top: 50%;
   }
 `;
@@ -44,7 +47,7 @@ const MenuWrapper = styled.nav`
   position: fixed;
   height: 100vh;
   width: 100vw;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   z-index: 2;
   top: 0;
   left: 0;
@@ -53,7 +56,7 @@ const MenuWrapper = styled.nav`
 `;
 
 const StyledLink = styled(NavLink)`
-  color: #037EF3;
+  color: #037ef3;
   font-size: 1.3rem;
   margin: 8px 10vw;
   ${Media.tablet`margin: 8px 5vw;`}
@@ -69,32 +72,35 @@ const StyledLink = styled(NavLink)`
   }
 `;
 
-class Menu extends Component {
-  render() {
-    return (
-      <MenuWrapper>
-        { this.props.routes.map( route => <StyledLink to={route.path} onClick={this.props.action}>{route.name}</StyledLink>) }
-      </MenuWrapper>
-    );
-  }
-}
+const Menu = ({ routes }) => (
+  <MenuWrapper>
+    {routes.map(route => (
+      <StyledLink to={route.path} onClick={this.props.action}>
+        {route.name}
+      </StyledLink>
+    ))}
+  </MenuWrapper>
+);
 
-class NavButton extends Component {
-  render() {
-    const open = this.props.menu ? 'open' : '';
-    return (
-      <div>
-        <Line reverse styles={{ topPosition: '35%' }} className={open} />
-        <Line styles={{ topPosition: '50%' }} className={open} />
-        <Line styles={{ topPosition: '65%' }} className={open} />
-      </div>
-    );
-  }
-}
+Menu.propTypes = {
+  routes: PropTypes.arrayOf(Object).isRequired,
+};
+
+const NavButton = ({ menu }) => (
+  <div>
+    <Line reverse styles={{ topPosition: '35%' }} className={menu ? 'open' : ''} />
+    <Line styles={{ topPosition: '50%' }} className={menu ? 'open' : ''} />
+    <Line styles={{ topPosition: '65%' }} className={menu ? 'open' : ''} />
+  </div>
+);
+
+NavButton.propTypes = {
+  menu: PropTypes.bool.isRequired,
+};
 
 const ResponsiveWrapper = styled.div`
   display: block;
-  ${Media.laptop`display: none;`}
+  ${Media.laptop`display: none;`};
 `;
 
 export default class MobileNavigation extends Component {
@@ -105,7 +111,8 @@ export default class MobileNavigation extends Component {
   }
 
   toggleMenu() {
-    this.setState({ isOpen: !this.state.isOpen });
+    const { isOpen } = this.state;
+    this.setState({ isOpen: !isOpen });
   }
 
   render() {
@@ -116,8 +123,12 @@ export default class MobileNavigation extends Component {
         <NavWrapper onClick={this.toggleMenu}>
           <NavButton menu={isOpen} />
         </NavWrapper>
-        { isOpen && <Menu action={this.toggleMenu} routes={routes} /> }
+        {isOpen && <Menu action={this.toggleMenu} routes={routes} />}
       </ResponsiveWrapper>
     );
   }
 }
+
+MobileNavigation.propTypes = {
+  routes: PropTypes.bool.isRequired,
+};
