@@ -3,7 +3,8 @@
     "browser": true,
     "jest": true,
     "es6": true,
-    "node": true
+    "node": true,
+    "jquery": true
   },
   "extends": [
     "airbnb",
@@ -16,15 +17,19 @@
     "jsx-a11y",
     "prettier"
   ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "impliedStrict": true,
+      "jsx": true
+    }
+  },
   "rules": {
     "prettier/prettier": ["error", {
       "singleQuote": true,
       "trailingComma": "es5"
     }]
-  },
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    }
   }
 }
