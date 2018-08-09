@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import hexToRgba from 'hex-to-rgba';
 import '../images/princes-island-park.jpg';
@@ -19,16 +19,12 @@ const HeroSection = styled.section`
   color: white;
 `;
 
-class Hero extends Component {
-  render() {
-    return (
-      <HeroSection>
-        <Title>
-          Disrupt the now!
-        </Title>
-      </HeroSection>
-    );
-  }
-}
+const Hero = () => (
+  <HeroSection>
+    <Title>
+      Disrupt the now!
+    </Title>
+  </HeroSection>
+);
 
 export default Hero;
