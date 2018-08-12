@@ -88,11 +88,11 @@ MobileMenu.propTypes = {
 };
 
 const NavButton = ({ menu }) => (
-  <div>
+  <React.Fragment>
     <Line reverse styles={{ topPosition: '35%' }} className={menu ? 'open' : ''} />
     <Line styles={{ topPosition: '50%' }} className={menu ? 'open' : ''} />
     <Line styles={{ topPosition: '65%' }} className={menu ? 'open' : ''} />
-  </div>
+  </React.Fragment>
 );
 
 NavButton.propTypes = {
@@ -108,10 +108,10 @@ export default class MobileNavigation extends Component {
   constructor(props) {
     super(props);
     this.state = { isOpen: false };
-    this.toggleMenu = this.toggleMenu.bind(this);
+    // this.toggleMenu = this.toggleMenu.bind(this);
   }
 
-  toggleMenu() {
+  toggleMenu = () => {
     const { isOpen } = this.state;
     this.setState({ isOpen: !isOpen });
   }
