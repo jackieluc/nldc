@@ -26,6 +26,16 @@ injectGlobal`
     justify-content: center;
     align-items: center;
   }
+
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
 `;
 
 const routes = [
