@@ -5,12 +5,12 @@ import '../images/princes-island-park.jpg';
 
 const HeroSection = styled.section`
   height: 85vh;
-  background: ${hexToRgba('#2bc0e4', 0.8)};
-  background: -webkit-linear-gradient(to bottom, ${hexToRgba('#2bc0e4', 0.8)}, ${hexToRgba('#eaecc6', 0.7)});
-  background: linear-gradient(to bottom, ${hexToRgba('#2bc0e4', 0.8)}, ${hexToRgba('#eaecc6', 0.7)}), url('../static/media/princes-island-park.jpg');
+  background: ${hexToRgba('#2bc0e4', 0.7)};
+  background: -webkit-linear-gradient(to bottom, ${hexToRgba('#2bc0e4', 0.7)}, ${hexToRgba('#eaecc6', 0.6)});
+  background: linear-gradient(to bottom, ${hexToRgba('#2bc0e4', 0.7)}, ${hexToRgba('#eaecc6', 0.6)}), url('../static/media/princes-island-park.jpg');
   background-size: cover;
   background-position: center;
-  box-shadow: 0px 2px 6px rgba(75, 97, 141, 0.24);
+  box-shadow: 0px 2px 6px rgba(75, 97, 141, 0.4);
   color: white;
 `;
 
