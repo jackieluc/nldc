@@ -34,7 +34,6 @@ export default class Menu extends Component {
   constructor(props) {
     super(props);
     this.state = { currentWindowHeight: 0, firstSectionHeight: 0 };
-    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
 
   componentDidMount() {
@@ -46,7 +45,7 @@ export default class Menu extends Component {
     window.removeEventListener('scroll', this.updateWindowDimensions);
   }
 
-  updateWindowDimensions() {
+  updateWindowDimensions = () => {
     const currentWindowHeight = document.documentElement.scrollTop;
     const firstSectionHeight = document.getElementsByTagName('section')[0].clientHeight;
     this.setState({
