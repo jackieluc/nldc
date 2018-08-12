@@ -14,8 +14,8 @@ injectGlobal`
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
-    overflow-x: hidden;
-    overflow-y: auto;
+    // overflow-x: hidden;
+    // overflow-y: auto;
     background-color: #FAFAFA;
   }
 
@@ -31,10 +31,7 @@ injectGlobal`
     font-size: 5rem;
   }
   h2 {
-    font-size: 2rem;
-  }
-  h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 `;
 
