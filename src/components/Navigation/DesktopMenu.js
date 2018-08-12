@@ -60,7 +60,7 @@ export default class Menu extends Component {
     return (
       <MenuWrapper heights={{ currentWindowHeight, firstSectionHeight }}>
         { routes.map(route => (
-          <StyledLink to={route.path}>
+          <StyledLink to={route.path} key={route.name}>
             {route.name}
           </StyledLink>
         )) }

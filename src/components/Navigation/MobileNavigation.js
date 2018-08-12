@@ -75,7 +75,7 @@ const StyledLink = styled(NavLink)`
 const MobileMenu = ({ routes, action }) => (
   <MenuWrapper>
     {routes.map(route => (
-      <StyledLink to={route.path} onClick={action}>
+      <StyledLink to={route.path} onClick={action} key={route.name}>
         {route.name}
       </StyledLink>
     ))}
@@ -131,5 +131,5 @@ export default class MobileNavigation extends Component {
 }
 
 MobileNavigation.propTypes = {
-  routes: PropTypes.bool.isRequired,
+  routes: PropTypes.arrayOf(Object).isRequired,
 };
