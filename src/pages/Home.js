@@ -1,35 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import Hero from '../components/Hero';
+import EventDetails from '../components/EventDetails';
 
 const App = styled.div`
   text-align: center;
 `;
-
-// const AppHeader = styled.header`
-//   background-color: #222;
-//   height: 150px;
-//   padding: 20px;
-//   color: white;
-// `;
-
-// const rotate360 = keyframes`
-//   from { transform: rotate(0deg); }
-//   to { transform: rotate(360deg); }
-// `;
-
-// const AppLogo = styled.img`
-//   animation: ${rotate360} infinite 20s linear;
-//   height: 80px;
-// `;
-
-// const AppTitle = styled.h1`
-//   font-size 1.5em;
-// `;
-
-// const AppIntro = styled.p`
-//   font-size: large;
-// `;
 
 const Lorem = styled.p`
   max-width: 25vw;
@@ -39,14 +15,8 @@ const Lorem = styled.p`
 
 const Home = () => (
   <App>
-    {/* <AppHeader>
-      <AppLogo src={logo} className="App-logo" alt="logo" />
-      <AppTitle>Welcome to NLDC 2019</AppTitle>
-    </AppHeader>
-    <AppIntro>
-      To get started, edit <code>src/pages/Home.js</code> and save to reload.
-    </AppIntro> */}
     <Hero />
+    <EventDetails />
     <Lorem>
       { // eslint-disable-next-line
       } Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa id neque aliquam vestibulum. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Etiam dignissim diam quis enim lobortis scelerisque. Suspendisse ultrices gravida dictum fusce ut placerat orci. At quis risus sed vulputate odio. Ultrices eros in cursus turpis massa tincidunt dui ut. Donec pretium vulputate sapien nec sagittis. Non nisi est sit amet. Augue eget arcu dictum varius duis at consectetur lorem.
