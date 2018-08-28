@@ -2,6 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { Media } from '../utils/media';
 
+const EventDetailsSection = styled.section`
+  padding: 0 15px;
+`;
+
 const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -13,15 +17,17 @@ const Wrapper = styled.div`
 `;
 
 const Column = styled.div`
-  flex: 0 50%;
   box-sizing: border-box;
   padding-left: 0;
+
   ${Media.tablet`
-    padding-left: 20%;
+  flex: 0 50%;
+    padding-left: 18%;
   `}
 `;
 
 const ColumnRight = styled(Column)`
+  width: 100%;
   padding-left: 0;
 
   ${Media.tablet`
@@ -37,7 +43,7 @@ const EventTitle = styled.h2`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0 3px 6px rgba(103, 221, 166, 0.32);
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: left;
   margin-bottom: 0;
 `;
@@ -51,7 +57,7 @@ const EventInfoTitle = styled(EventTitle)`
 `;
 
 const EventDetails = () => (
-  <section>
+  <EventDetailsSection>
     <Wrapper>
       <Column>
         <EventTitle>
@@ -81,7 +87,7 @@ const EventDetails = () => (
         </EventDescription>
       </ColumnRight>
     </Wrapper>
-  </section>
+  </EventDetailsSection>
 );
 
 export default EventDetails;
