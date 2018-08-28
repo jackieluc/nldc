@@ -1,21 +1,33 @@
 import React from 'react';
 import styled from 'styled-components';
-
-const EventDetailsSection = styled.section`
-  padding: 0 30px;
-`;
+import { Media } from '../utils/media';
 
 const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 60%;
+  width: 100%;
+  ${Media.desktop`
+    width: 80%;
+  `}
 `;
 
 const Column = styled.div`
   flex: 0 50%;
   box-sizing: border-box;
-  padding: 0 15px;
+  padding-left: 0;
+  ${Media.tablet`
+    padding-left: 20%;
+  `}
+`;
+
+const ColumnRight = styled(Column)`
+  padding-left: 0;
+
+  ${Media.tablet`
+    padding-left: 10%;
+    padding-top: 2rem;
+  `}
 `;
 
 const EventTitle = styled.h2`
@@ -27,14 +39,19 @@ const EventTitle = styled.h2`
   text-shadow: 0 3px 6px rgba(103, 221, 166, 0.32);
   font-size: 2.5rem;
   text-align: left;
+  margin-bottom: 0;
 `;
 
 const EventDescription = styled.p`
   text-align: left;
 `;
 
+const EventInfoTitle = styled(EventTitle)`
+  font-size: 1.5rem;
+`;
+
 const EventDetails = () => (
-  <EventDetailsSection>
+  <section>
     <Wrapper>
       <Column>
         <EventTitle>
@@ -49,14 +66,22 @@ const EventDetails = () => (
           } Hundreds of AIESECers from 30 Universities across the country will remember NLDC in the decades to come. This five day conference is a time when our most dedicated volunteers come together to network and develop their leadership, sales, marketing, finance skills and so much more.
         </EventDescription>
       </Column>
-      <Column>
-        <p>
+      <ColumnRight>
+        <EventInfoTitle>
           Where
+        </EventInfoTitle>
+        <EventDescription>
+          To be Announced.
+        </EventDescription>
+        <EventInfoTitle>
           When
-        </p>
-      </Column>
+        </EventInfoTitle>
+        <EventDescription>
+          May 1st - 6th, 2019
+        </EventDescription>
+      </ColumnRight>
     </Wrapper>
-  </EventDetailsSection>
+  </section>
 );
 
 export default EventDetails;
