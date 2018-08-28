@@ -5,8 +5,7 @@ import { injectGlobal } from 'styled-components';
 import registerServiceWorker from './registerServiceWorker';
 import Navigation from './components/Navigation/Navigation';
 import Home from './pages/Home';
-import Sponsors from './pages/Sponsors';
-import Team from './pages/Team';
+import About from './pages/About';
 
 // eslint-disable-next-line
 injectGlobal`
@@ -41,12 +40,8 @@ const routes = [
     path: '/',
   },
   {
-    name: 'Sponsors',
-    path: '/sponsors',
-  },
-  {
-    name: 'Team',
-    path: '/team',
+    name: 'About',
+    path: '/about-us',
   },
 ];
 
@@ -57,8 +52,7 @@ ReactDOM.render((
       <Switch>
         <Route exact path="/" component={Home} />
         {/* <Route exact path='/about-us' component={AboutUs} /> */}
-        <Route exact path="/sponsors" component={Sponsors} />
-        <Route exact path="/team" component={Team} />
+        <Route exact path="/about-us" component={About} />
         {/* <Route exact path='/schedule' component={Schedule} /> */}
         {/* <Route exact path='/events' component={Events} /> */}
         {/* <Route path="*" component={NotFoundPage} /> */}
