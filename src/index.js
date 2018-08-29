@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { injectGlobal } from 'styled-components';
 import registerServiceWorker from './registerServiceWorker';
+import styles from './utils/styles';
 import Navigation from './components/Navigation/Navigation';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -16,6 +17,7 @@ injectGlobal`
     // overflow-x: hidden;
     // overflow-y: auto;
     background-color: #FAFAFA;
+    color: ${styles.textColour};
   }
 
   section, nav {
