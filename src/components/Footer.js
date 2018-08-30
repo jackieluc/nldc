@@ -7,7 +7,7 @@ const Footer = () => (
     <p>
       For any inquiries, please contact Jake Holder at
       {' '}
-      <a href="mailto:jacoby.holder@aiesec.net">
+      <a href="mailto:jacoby.holder@aiesec.net?subject=Sponsorship Inquiry">
         jacoby.holder@aiesec.net
       </a>
     </p>
