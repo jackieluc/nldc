@@ -18,6 +18,8 @@ injectGlobal`
     // overflow-y: auto;
     background-color: #FAFAFA;
     color: ${styles.textColour};
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased
   }
 
   section, nav {
