@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Styles from '../../utils/styles';
 
 const MenuWrapper = styled.nav`
   ${({ heights }) => (heights.currentWindowHeight < heights.firstSectionHeight / 2
@@ -9,7 +10,7 @@ const MenuWrapper = styled.nav`
       a { color: white; };
     `
     : `background-color: white;
-      a { color: #037EF3; };
+      a { color: ${Styles.themeColour} };
       box-shadow: 0 3px 6px rgba(75, 97, 141, 0.3);
     `)}
   height: 6vh;
@@ -24,7 +25,7 @@ const MenuWrapper = styled.nav`
   `;
 
 const StyledLink = styled(NavLink)`
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 8px 1.5rem;
     letter-spacing: 1px;
     text-decoration: none;

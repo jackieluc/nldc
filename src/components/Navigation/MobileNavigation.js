@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Media from '../../utils/media';
+import Styles from '../../utils/styles';
 
 const NavWrapper = styled.button`
   position: fixed;
@@ -56,8 +57,8 @@ const MenuWrapper = styled.nav`
 `;
 
 const StyledLink = styled(NavLink)`
-  color: #037EF3;
-  font-size: 1.3rem;
+  color: ${Styles.themeColour};
+  font-size: 1.2rem;
   margin: 8px 10vw;
   ${Media.tablet`margin: 8px 5vw;`}
   text-decoration: none;
