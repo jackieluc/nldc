@@ -53,7 +53,7 @@ const Hero = () => (
       National Leadership Development Conference
     </Subtitle>
     <DateInfo>
-      May 1st - 6th 2019
+      May 1st - 5th 2019
     </DateInfo>
     <LocationInfo>
       in Calgary, Alberta

@@ -59,11 +59,11 @@ export default class Menu extends Component {
     const { routes } = this.props;
     return (
       <MenuWrapper heights={{ currentWindowHeight, firstSectionHeight }}>
-        { routes.map(route => (
+        {routes.map(route => (
           <StyledLink to={route.path} key={route.name}>
             {route.name}
           </StyledLink>
-        )) }
+        ))}
       </MenuWrapper>
     );
   }
