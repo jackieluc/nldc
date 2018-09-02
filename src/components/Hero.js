@@ -26,7 +26,7 @@ const LogoImage = styled.img`
 
 const Subtitle = styled.h2`
   font-size: 1.5rem;
-  ${Media.desktop`font-size: 2rem;`}
+  ${Media.desktop`font-size: 3rem;`}
   line-height: 1;
   letter-spacing: 1px;
   margin: 0.5rem;
@@ -46,46 +46,32 @@ const Title = styled.h1`
   font-weight: lighter;
 `;
 
-const InfoWrapper = styled.div`
+const Info = styled.h3`
   display: block;
-  ${Media.tablet`display: inline-flex;`}
-  
-  & > h3 {
-    font-size: 1rem;
-    ${Media.desktop`font-size: 1.5rem;`}
-    font-weight: normal;
-    line-height: 1;
-    letter-spacing: 1px;
-    margin: 0;
-  }
+  font-size: 0.8rem;
+  ${Media.tablet`font-size: 1rem;`}
+  ${Media.desktop`font-size: 1.5rem;`}
+  color: ${Styles.textColour};
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
 `;
 
-const DateInfo = styled.h3`
-  color: ${Styles.lightRed};
-`;
-
-const LocationInfo = styled.h3`
-  ${Media.tablet`margin-left: 1rem !important;`}
-  color: ${Styles.themeColour};
-`;
 
 const Hero = () => (
   <HeroSection>
     <LogoImage src={LogoNldc} alt="NLDC 2019 Logo" />
     <Subtitle>
-      AIESEC CANADA&apos;S
+      AIESEC CANADA
     </Subtitle>
     <Title>
       National Leadership Development Conference
     </Title>
-    <InfoWrapper>
-      <DateInfo>
-        May 1st&ndash;5th 2019
-      </DateInfo>
-      <LocationInfo>
-        Calgary, Alberta
-      </LocationInfo>
-    </InfoWrapper>
+    <Info>
+      May 1&ndash;5, 2019 | Calgary, Alberta
+    </Info>
   </HeroSection>
 );
 

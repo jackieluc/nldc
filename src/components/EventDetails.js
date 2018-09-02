@@ -87,7 +87,7 @@ const EventDetails = () => (
           When
         </EventInfoTitle>
         <EventDescription>
-          May 1st - 5th, 2019
+          May 1&ndash;5, 2019
         </EventDescription>
       </ColumnRight>
     </Wrapper>
