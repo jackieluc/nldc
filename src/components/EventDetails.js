@@ -52,6 +52,11 @@ const EventDescription = styled.p`
   text-align: left;
 `;
 
+const AddressLink = styled.a`
+  text-align: left;
+  display: block;
+`;
+
 const EventInfoTitle = styled(EventTitle)`
   font-size: 1.5rem;
 `;
@@ -77,13 +82,16 @@ const EventDetails = () => (
           Where
         </EventInfoTitle>
         <EventDescription>
-          To be Announced.
+          SAIT (Southern Alberta Institute of Technology)
+          <AddressLink href="https://www.google.com/maps/place/SAIT/@51.0640269,-114.0907061,17z/data=!3m1!4b1!4m5!3m4!1s0x53716f9268a69e81:0xb1db5e68bd61e28!8m2!3d51.065755!4d-114.0897771" target="_blank" rel="noopener noreferrer">
+            1301-16 Avenue NW Calgary AB, T2M OL4
+          </AddressLink>
         </EventDescription>
         <EventInfoTitle>
           When
         </EventInfoTitle>
         <EventDescription>
-          May 1st - 6th, 2019
+          May 1st - 5th, 2019
         </EventDescription>
       </ColumnRight>
     </Wrapper>
