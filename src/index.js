@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { injectGlobal } from 'styled-components';
 import registerServiceWorker from './registerServiceWorker';
-import styles from './utils/styles';
+import Styles from './utils/styles';
 import Navigation from './components/Navigation/Navigation';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -17,7 +17,7 @@ injectGlobal`
     // overflow-x: hidden;
     // overflow-y: auto;
     background-color: #FAFAFA;
-    color: ${styles.textColour};
+    color: ${Styles.textColour};
     line-height: 1.5;
     -webkit-font-smoothing: antialiased
   }
@@ -31,9 +31,14 @@ injectGlobal`
   }
 
   h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
+
   h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
     font-size: 1.5rem;
   }
 `;
