@@ -69,7 +69,7 @@ const StyledLink = styled(NavLink)`
   }
 
   &:hover {
-    color: #4ea8fd;
+    color: ${Styles.hoverColour};
   }
 `;
 

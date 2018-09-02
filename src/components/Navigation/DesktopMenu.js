@@ -11,9 +11,9 @@ const MenuWrapper = styled.nav`
     `
     : `background-color: white;
       a { 
-        color: ${Styles.themeColour} 
+        color: ${Styles.themeColour};
         &:hover {
-          color: #4ea8fd;
+          color: ${Styles.hoverColour};
         }
       };
       box-shadow: 0 3px 6px rgba(75, 97, 141, 0.3);
@@ -36,7 +36,7 @@ const StyledLink = styled(NavLink)`
     text-decoration: none;
 
     &:hover {
-      color: #333333;
+      color: ${Styles.textColour};
     }
   `;
 
