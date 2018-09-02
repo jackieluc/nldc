@@ -7,15 +7,14 @@ import Styles from '../../utils/styles';
 const MenuWrapper = styled.nav`
   ${({ heights }) => (heights.currentWindowHeight < heights.firstSectionHeight / 2
     ? `background-color: transparent;
-      a { color: white; };
-    `
-    : `background-color: white;
-      a { 
-        color: ${Styles.themeColour};
+      a {
+        color: white;
         &:hover {
-          color: ${Styles.hoverColour};
+          color: ${Styles.textColour};
         }
       };
+    `
+    : `background-color: white;
       box-shadow: 0 3px 6px rgba(75, 97, 141, 0.3);
     `)}
   height: 6vh;
@@ -34,10 +33,6 @@ const StyledLink = styled(NavLink)`
     padding: 8px 1.5rem;
     letter-spacing: 1px;
     text-decoration: none;
-
-    &:hover {
-      color: ${Styles.textColour};
-    }
   `;
 
 export default class Menu extends Component {

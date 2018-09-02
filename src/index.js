@@ -41,6 +41,14 @@ injectGlobal`
   h3 {
     font-size: 1.5rem;
   }
+
+  a {
+    color: ${Styles.themeColour};
+  
+    &:hover {
+      color: ${Styles.hoverColour};
+    }
+  }
 `;
 
 const routes = [

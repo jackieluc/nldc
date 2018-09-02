@@ -57,7 +57,6 @@ const MenuWrapper = styled.nav`
 `;
 
 const StyledLink = styled(NavLink)`
-  color: ${Styles.themeColour};
   font-size: 1.2rem;
   margin: 8px 10vw;
   ${Media.tablet`margin: 8px 5vw;`}
@@ -66,10 +65,6 @@ const StyledLink = styled(NavLink)`
   &:first-child {
     margin-top: 5rem;
     ${Media.laptop`margin-top: 6rem;`}
-  }
-
-  &:hover {
-    color: ${Styles.hoverColour};
   }
 `;
 
