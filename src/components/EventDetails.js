@@ -70,11 +70,7 @@ const EventDetails = () => (
         </EventTitle>
         <EventDescription>
           { // eslint-disable-next-line
-          } It is our pleasure to invite you, on behalf of AIESEC Canada, to become a partner for our annual National Leadership Development Conference (NLDC). We are looking to form valuable partnerships with organizations that value leadership and diversity, innovation and technology, and entrepreneurial thinking. NLDC is the perfect occasion for your business to promote the rich opportunities that your organization has to offer to some of Canada’s next generation of business leaders.
-        </EventDescription>
-        <EventDescription>
-          { // eslint-disable-next-line
-          } Hundreds of AIESECers from 30 Universities across the country will remember NLDC in the decades to come. This five day conference is a time when our most dedicated volunteers come together to network and develop their leadership, sales, marketing, finance skills and so much more.
+          } AIESEC Canada’s National Leadership Development Conference (NLDC) is an annual 5-day event that brings together 300 business leaders from 30+ universities across Canada to network and develop their skills in teamwork, sales, finance, and marketing. In 2019, we are introducing the Innovation Series to connect our delegates with the leading businesses in technology and disruption.
         </EventDescription>
       </Column>
       <ColumnRight>
