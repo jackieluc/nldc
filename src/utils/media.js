@@ -17,7 +17,8 @@ const Media = Object.keys(BreakPoints).reduce((acc, label) => {
   return acc;
 }, {});
 
+export default Media;
+
 export {
-  Media,
   BreakPoints,
 };

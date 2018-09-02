@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Media } from '../../utils/media';
+import Media from '../../utils/media';
 
 const NavWrapper = styled.button`
   position: fixed;

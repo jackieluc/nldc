@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Media } from '../../utils/media';
+import Media from '../../utils/media';
 import DesktopMenu from './DesktopMenu';
 
 const ResponsiveWrapper = styled.div`

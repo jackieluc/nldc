@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Media } from '../utils/media';
+import Media from '../utils/media';
 
 const Footer = () => (
   <section>
