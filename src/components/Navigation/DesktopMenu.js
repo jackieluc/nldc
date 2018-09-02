@@ -10,7 +10,12 @@ const MenuWrapper = styled.nav`
       a { color: white; };
     `
     : `background-color: white;
-      a { color: ${Styles.themeColour} };
+      a { 
+        color: ${Styles.themeColour} 
+        &:hover {
+          color: #4ea8fd;
+        }
+      };
       box-shadow: 0 3px 6px rgba(75, 97, 141, 0.3);
     `)}
   height: 6vh;
@@ -29,6 +34,10 @@ const StyledLink = styled(NavLink)`
     padding: 8px 1.5rem;
     letter-spacing: 1px;
     text-decoration: none;
+
+    &:hover {
+      color: #333333;
+    }
   `;
 
 export default class Menu extends Component {
