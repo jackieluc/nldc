@@ -63,6 +63,7 @@ const AddToCalendar = styled.a`
   // Overwrite AddEvent 'Add to Calendar' styling
   font-family: 'Lato', sans-serif !important;
   font-size: 1rem !important;
+  padding: 13px 12px 12px 58px !important;
   width: 150px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   &:hover {
@@ -79,15 +80,10 @@ const AddToCalendar = styled.a`
     left: 20px !important;
     top: 18px !important;
   }
-
-  > p {
-    margin: 0;
-    padding-left: 15px;
-  }
-
 `;
 
-const CalendarSubtitle = styled.p`
+const CalendarSubtitle = styled.span`
+  display: block;
   font-size: 12px;
   margin: 3px 0 0 0 !important;
   color: #777777;
@@ -123,9 +119,7 @@ const EventDetails = () => (
         </EventDescription> */}
         <EventDescription>
           <AddToCalendar title="Add to Calendar" className="addeventatc" href="void(0)">
-            <p>
-              May 1&ndash;5, 2019
-            </p>
+            May 1&ndash;5, 2019
             <CalendarSubtitle>
               Add to Calendar
             </CalendarSubtitle>
