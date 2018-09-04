@@ -10,10 +10,9 @@ const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
-  ${Media.desktop`
-    width: 80%;
-  `}
+  ${Media.tablet`padding: 0 15px;`}
+  ${Media.laptop`width: 70%;`}
+  ${Media.desktop`width: 60%;`}
 `;
 
 const Column = styled.div`
@@ -21,17 +20,15 @@ const Column = styled.div`
   padding-left: 0;
 
   ${Media.tablet`
-  flex: 0 50%;
-    padding-left: 18%;
+    flex: 0 50%;
   `}
 `;
 
 const ColumnRight = styled(Column)`
   width: 100%;
-  padding-left: 0;
 
   ${Media.tablet`
-    padding-left: 10%;
+    padding-left: 8%;
     padding-top: 2rem;
   `}
 `;
@@ -66,7 +63,7 @@ const EventDetails = () => (
     <Wrapper>
       <Column>
         <EventTitle>
-          About the Event
+          Disrupting the Now.
         </EventTitle>
         <EventDescription>
           { // eslint-disable-next-line
