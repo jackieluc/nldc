@@ -111,6 +111,43 @@ const CalendarSubtitle = styled.em`
   color: #777777;
 `;
 
+const Calendar = () => (
+  <AddToCalendar title="Add to Calendar" className="addeventatc" href="void(0)">
+    May 1&ndash;5, 2019
+    <CalendarSubtitle>
+      Add to Calendar
+    </CalendarSubtitle>
+    <span className="start">
+      05/01/2019 09:00 AM
+    </span>
+    <span className="end">
+      05/05/2019 11:59 PM
+    </span>
+    <span className="timezone">
+      America/Edmonton
+    </span>
+    <span className="title">
+      AIESEC CANADA | NLDC 2019
+    </span>
+    <span className="description">
+      { // eslint-disable-next-line
+      } Join AIESEC Canada in &quot;Disrupting the Now&quot; at the National Leadership Development Conference in Calgary, Alberta from May 1&ndash;5, 2019.
+    </span>
+    <span className="location">
+      1301-16 Avenue NW Calgary AB, T2M OL4
+    </span>
+    <span className="organizer">
+      AIESEC Canada
+    </span>
+    <span className="organizer_email">
+      kkaren.ngo@aiesec.net
+    </span>
+    <span className="all_day_event">
+      true
+    </span>
+  </AddToCalendar>
+);
+
 const EventDetails = () => (
   <EventDetailsSection>
     <Wrapper>
@@ -136,44 +173,8 @@ const EventDetails = () => (
         <EventInfoTitle>
             When
         </EventInfoTitle>
-        {/* <EventDescription>
-            May 1&ndash;5, 2019
-          </EventDescription> */}
         <EventDescription>
-          <AddToCalendar title="Add to Calendar" className="addeventatc" href="void(0)">
-              May 1&ndash;5, 2019
-            <CalendarSubtitle>
-              Add to Calendar
-            </CalendarSubtitle>
-            <span className="start">
-              05/01/2019 09:00 AM
-            </span>
-            <span className="end">
-              05/05/2019 11:59 PM
-            </span>
-            <span className="timezone">
-              America/Edmonton
-            </span>
-            <span className="title">
-              AIESEC CANADA | NLDC 2019
-            </span>
-            <span className="description">
-              { // eslint-disable-next-line
-              } Join AIESEC Canada in &quot;Disrupting the Now&quot; at the National Leadership Development Conference in Calgary, Alberta from May 1&ndash;5, 2019.
-            </span>
-            <span className="location">
-              1301-16 Avenue NW Calgary AB, T2M OL4
-            </span>
-            <span className="organizer">
-              AIESEC Canada
-            </span>
-            <span className="organizer_email">
-              kkaren.ngo@aiesec.net
-            </span>
-            <span className="all_day_event">
-              true
-            </span>
-          </AddToCalendar>
+          <Calendar />
         </EventDescription>
       </ColumnRight>
     </Wrapper>
