@@ -44,9 +44,11 @@ injectGlobal`
 
   a {
     color: ${Styles.themeColour};
+    text-decoration: none;
   
     &:hover {
       color: ${Styles.hoverColour};
+      text-decoration: underline;
     }
   }
 `;
