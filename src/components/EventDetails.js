@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import Media from '../utils/media';
-import 'addevent';
 
 const EventDetailsSection = styled.section`
   padding: 0 15px;
@@ -61,28 +60,51 @@ const EventInfoTitle = styled(EventTitle)`
 
 const AddToCalendar = styled.a`
   // Overwrite AddEvent 'Add to Calendar' styling
-  font-family: 'Lato', sans-serif !important;
-  font-size: 1rem !important;
-  padding: 13px 12px 12px 58px !important;
-  width: 150px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  &:hover {
-    box-shadow: 0 5px 8px rgba(0,0,0,0.25), 0 5px 8px rgba(0,0,0,0.22);
+  &:focus {
+    outline: none;
   }
+  &.addeventatc {
+    font-family: 'Lato', sans-serif !important;
+    font-size: 1rem !important;
+    padding: 13px 12px 12px 58px !important;
+    font-weight: 400;
+    width: 150px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) !important;
+    &:hover {
+      box-shadow: 0 5px 8px rgba(0,0,0,0.25), 0 5px 8px rgba(0,0,0,0.22) !important;
+    }
 
-  // Overwrite AddEvent watermark
-  .addeventatc_dropdown .copyx {
-    display: none !important;
-  }
+    // Overwrite AddEvent dropdown styles
+    .addeventatc_dropdown {
+      font-family: 'Lato', sans-serif !important;
+      font-size: 1rem !important;
+      width: 222px !important;
 
-  // Overwrite AddEvent icon position
-  .addeventatc_icon {
-    left: 20px !important;
-    top: 18px !important;
+      > span {
+        font-weight: 400;
+      }
+
+      &.addeventatc-selected {
+        left: 0 !important;
+        top: 58px !important;
+      }
+
+      .copyx,
+      .ateyahoo,
+      em {
+        display: none !important;
+      }
+    }
+
+    // Overwrite AddEvent icon position
+    .addeventatc_icon {
+      left: 20px !important;
+      top: 18px !important;
+    }
   }
 `;
 
-const CalendarSubtitle = styled.span`
+const CalendarSubtitle = styled.em`
   display: block;
   font-size: 12px;
   margin: 3px 0 0 0 !important;
@@ -94,32 +116,32 @@ const EventDetails = () => (
     <Wrapper>
       <Column>
         <EventTitle>
-          Disrupting the Now.
+            Disrupting the Now.
         </EventTitle>
         <EventDescription>
           { // eslint-disable-next-line
-          } AIESEC Canada’s National Leadership Development Conference (NLDC) is an annual 5-day event that brings together 300 business leaders from 30+ universities across Canada to network and develop their skills in teamwork, sales, finance, and marketing. In 2019, we are introducing the Innovation Series to connect our delegates with the leading businesses in technology and disruption.
+            } AIESEC Canada’s National Leadership Development Conference (NLDC) is an annual 5-day event that brings together 300 business leaders from 30+ universities across Canada to network and develop their skills in teamwork, sales, finance, and marketing. In 2019, we are introducing the Innovation Series to connect our delegates with the leading businesses in technology and disruption.
         </EventDescription>
       </Column>
       <ColumnRight>
         <EventInfoTitle>
-          Where
+            Where
         </EventInfoTitle>
         <EventDescription>
-          SAIT (Southern Alberta Institute of Technology)
+            SAIT (Southern Alberta Institute of Technology)
           <AddressLink href="https://www.google.com/maps/place/SAIT/@51.0640269,-114.0907061,17z/data=!3m1!4b1!4m5!3m4!1s0x53716f9268a69e81:0xb1db5e68bd61e28!8m2!3d51.065755!4d-114.0897771" target="_blank" rel="noopener noreferrer">
-            1301-16 Avenue NW Calgary AB, T2M OL4
+              1301-16 Avenue NW Calgary AB, T2M OL4
           </AddressLink>
         </EventDescription>
         <EventInfoTitle>
-          When
+            When
         </EventInfoTitle>
         {/* <EventDescription>
-          May 1&ndash;5, 2019
-        </EventDescription> */}
+            May 1&ndash;5, 2019
+          </EventDescription> */}
         <EventDescription>
           <AddToCalendar title="Add to Calendar" className="addeventatc" href="void(0)">
-            May 1&ndash;5, 2019
+              May 1&ndash;5, 2019
             <CalendarSubtitle>
               Add to Calendar
             </CalendarSubtitle>
