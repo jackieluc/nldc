@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Media from '../../utils/media';
-import Styles from '../../utils/styles';
 
 const NavWrapper = styled.button`
   position: fixed;
@@ -104,7 +103,6 @@ export default class MobileNavigation extends Component {
   constructor(props) {
     super(props);
     this.state = { isOpen: false };
-    // this.toggleMenu = this.toggleMenu.bind(this);
   }
 
   toggleMenu = () => {
