@@ -5,6 +5,8 @@ const BreakPoints = {
   desktop: 1200,
   laptop: 1024,
   tablet: 600,
+  bigPhone: 425,
+  medPhone: 375,
   phone: 320,
 };
 
