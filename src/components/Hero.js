@@ -36,11 +36,13 @@ const Subtitle = styled.h2`
 `;
 
 const Title = styled.h1`
-  width: 100%;
-  ${Media.tablet`width: 75%;`}
+  max-width: 375px;
+  ${Media.tablet`
+    max-width: 100%;
+    width: 75%;
+  `}
   ${Media.laptop`width: 50%;`}
   font-size: 1.5rem;
-  ${Media.bigPhone`font-size: 2rem;`}
   ${Media.tablet`font-size: 2.5rem;`}
   ${Media.desktop`font-size: 3.5rem;`}
   line-height: 1;
