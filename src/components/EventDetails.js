@@ -18,7 +18,7 @@ const Wrapper = styled.div`
     box-shadow: 0 6px 34px ${hexToRgba('#9BCDFF', 0.5)};
   `}
   ${Media.laptop`width: 80%;`}
-  ${Media.desktop`width: 60%;`}
+  ${Media.desktop`width: 1200px;`}
 `;
 
 const Column = styled.div`
@@ -46,7 +46,7 @@ const EventTitle = styled.h2`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2rem;
-  ${Media.laptop`font-size: 2.5rem;`}
+  ${Media.laptop`font-size: 2.3rem;`}
   text-align: left;
   margin: 10px auto;
 `;

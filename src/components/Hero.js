@@ -37,12 +37,9 @@ const Subtitle = styled.h2`
 `;
 
 const Title = styled.h1`
-  max-width: 375px;
-  ${Media.tablet`
-  max-width: 100%;
-  width: 75%;
-  `}
-  ${Media.laptop`width: 50%;`}
+  width: 375px;
+  ${Media.tablet`width: 600px;`}
+  ${Media.desktop`width: 800px;`}
   font-size: 1.5rem;
   ${Media.medPhone`font-size: 1.9rem;`}
   ${Media.tablet`font-size: 2.5rem;`}
