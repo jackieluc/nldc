@@ -40,7 +40,7 @@ const Title = styled.h1`
   ${Media.tablet`width: 75%;`}
   ${Media.laptop`width: 50%;`}
   font-size: 1.5rem;
-  ${Media.bigPhone`font-size: 1.7rem;`}
+  ${Media.bigPhone`font-size: 2rem;`}
   ${Media.tablet`font-size: 2.5rem;`}
   ${Media.desktop`font-size: 3.5rem;`}
   line-height: 1;
