@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   ${Media.tablet`padding: 0 15px;`}
-  ${Media.laptop`width: 70%;`}
+  ${Media.laptop`width: 80%;`}
   ${Media.desktop`width: 60%;`}
 `;
 
@@ -42,6 +42,7 @@ const EventTitle = styled.h2`
   -webkit-text-fill-color: transparent;
   text-shadow: 0 3px 6px rgba(103, 221, 166, 0.32);
   font-size: 2rem;
+  ${Media.laptop`font-size: 2.5rem;`}
   text-align: left;
   margin-bottom: 0;
 `;
@@ -50,13 +51,20 @@ const EventDescription = styled.p`
   text-align: left;
 `;
 
+const DescriptionWrapper = styled.span`
+  font-size: 0.875rem;
+  ${Media.laptop`font-size: 1rem;`}
+`;
+
 const AddressLink = styled.a`
   text-align: left;
   display: block;
 `;
 
 const EventInfoTitle = styled(EventTitle)`
-  font-size: 1.5rem;
+  font-size: 2rem;
+  ${Media.tablet`font-size: 1.5rem;`}
+  ${Media.laptop`font-size: 1.75rem;`}
 `;
 
 const EventDetails = () => (
@@ -76,10 +84,12 @@ const EventDetails = () => (
             Where
         </EventInfoTitle>
         <EventDescription>
+          <DescriptionWrapper>
             SAIT (Southern Alberta Institute of Technology)
-          <AddressLink href="https://www.google.com/maps/place/SAIT/@51.0640269,-114.0907061,17z/data=!3m1!4b1!4m5!3m4!1s0x53716f9268a69e81:0xb1db5e68bd61e28!8m2!3d51.065755!4d-114.0897771" target="_blank" rel="noopener noreferrer">
-              1301-16 Avenue NW Calgary AB, T2M OL4
-          </AddressLink>
+            <AddressLink href="https://www.google.com/maps/place/SAIT/@51.0640269,-114.0907061,17z/data=!3m1!4b1!4m5!3m4!1s0x53716f9268a69e81:0xb1db5e68bd61e28!8m2!3d51.065755!4d-114.0897771" target="_blank" rel="noopener noreferrer">
+                1301-16 Avenue NW Calgary AB, T2M OL4
+            </AddressLink>
+          </DescriptionWrapper>
         </EventDescription>
         <EventInfoTitle>
             When

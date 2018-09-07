@@ -11,6 +11,7 @@ const AddToCalendar = styled.a`
     font-family: 'Lato', sans-serif !important;
     font-size: 1rem !important;
     padding: 13px 12px 12px 58px !important;
+    z-index: 2 !important;
     font-weight: 400;
     width: 150px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) !important;

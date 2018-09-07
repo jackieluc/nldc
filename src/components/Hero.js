@@ -25,8 +25,9 @@ const LogoImage = styled.img`
 `;
 
 const Subtitle = styled.h2`
-  font-size: 1.5rem;
-  ${Media.desktop`font-size: 3rem;`}
+  font-size: 1.2rem;
+  ${Media.tablet`font-size: 1.8rem;`}
+  ${Media.desktop`font-size: 2.5rem;`}
   line-height: 1;
   letter-spacing: 1px;
   margin: 0.5rem;
@@ -35,10 +36,11 @@ const Subtitle = styled.h2`
 
 const Title = styled.h1`
   width: 100%;
-  ${Media.tablet`width: 50%;`}
-  font-size: 2rem;
-  ${Media.laptop`font-size: 2.5rem;`}
-  ${Media.desktop`font-size: 4rem;`}
+  ${Media.tablet`width: 75%;`}
+  ${Media.laptop`width: 50%;`}
+  font-size: 1.5rem;
+  ${Media.tablet`font-size: 2.5rem;`}
+  ${Media.desktop`font-size: 3.5rem;`}
   line-height: 1;
   letter-spacing: 1px;
   margin-top: 0;
@@ -50,7 +52,7 @@ const Info = styled.h3`
   display: block;
   font-size: 0.8rem;
   ${Media.tablet`font-size: 1rem;`}
-  ${Media.desktop`font-size: 1.5rem;`}
+  ${Media.desktop`font-size: 1.3rem;`}
   color: ${Styles.textColour};
   font-weight: normal;
   line-height: 1;

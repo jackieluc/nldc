@@ -9,8 +9,8 @@ const SponsorDetailsSection = styled.section`
 const Wrapper = styled.div`
   margin: 0 auto;
   max-width: ${BreakPoints.desktop}px;
-  ${Media.tablet`padding: 0 15px;`}
-  ${Media.laptop`width: 35%;`}
+  ${Media.tablet`width: 75%`}
+  ${Media.laptop`width: 620px;`}
 `;
 
 const SponsorTitle = styled.h2`
@@ -20,7 +20,7 @@ const SponsorTitle = styled.h2`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0 3px 6px rgba(103, 221, 166, 0.32);
-  font-size: 2rem;
+  font-size: 2.5rem;
 `;
 
 const SponsorDescription = styled.p`

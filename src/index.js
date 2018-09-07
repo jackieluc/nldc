@@ -10,7 +10,11 @@ import About from './pages/About';
 
 // eslint-disable-next-line
 injectGlobal`
+  html {
+    font-size: 16px;
+  }
   body {
+    font-size: 16px;
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
