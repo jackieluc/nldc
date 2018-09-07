@@ -11,7 +11,10 @@ const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  ${Media.tablet`padding: 0 15px;`}
+  ${Media.tablet`
+    padding: 10px 35px;
+    box-shadow: 0 6px 34px rgba(83,40,255,.15);
+  `}
   ${Media.laptop`width: 80%;`}
   ${Media.desktop`width: 60%;`}
 `;
@@ -30,7 +33,7 @@ const ColumnRight = styled(Column)`
 
   ${Media.tablet`
     padding-left: 8%;
-    padding-top: 2rem;
+    padding-top: 10px;
   `}
 `;
 
@@ -44,7 +47,7 @@ const EventTitle = styled.h2`
   font-size: 2rem;
   ${Media.laptop`font-size: 2.5rem;`}
   text-align: left;
-  margin-bottom: 0;
+  margin: 10px auto;
 `;
 
 const EventDescription = styled.p`

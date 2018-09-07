@@ -13,7 +13,7 @@ const HeroSection = styled.section`
   background: linear-gradient(to bottom, ${hexToRgba('#2BC0E4', 0.8)}, ${hexToRgba('#EAECC6', 0.7)}), url('../static/media/princes-island-park.jpg');
   background-size: cover;
   background-position: center;
-  box-shadow: 0px 2px 6px rgba(75, 97, 141, 0.4);
+  box-shadow: 0 6px 34px rgba(83,40,255,.15);
   color: white;
   ${Media.desktop`padding-bottom: 2rem;`}
 `;
