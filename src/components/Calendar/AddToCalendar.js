@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import loadScript from 'load-script';
+import hexToRgba from 'hex-to-rgba';
 
 const AddToCalendar = styled.a`
   // Overwrite AddEvent 'Add to Calendar' styling
@@ -14,9 +15,11 @@ const AddToCalendar = styled.a`
     z-index: 2 !important;
     font-weight: 400;
     width: 150px;
-    box-shadow: 0 3px 6px rgba(83,40,255,.16), 0 3px 6px rgba(83,40,255,.23) !important;
+    -webkit-box-shadow: 0 3px 6px ${hexToRgba('#9BCDFF', 0.4)}, 0 3px 6px ${hexToRgba('#9BCDFF', 0.6)} !important;
+    box-shadow: 0 3px 6px ${hexToRgba('#9BCDFF', 0.4)}, 0 3px 6px ${hexToRgba('#9BCDFF', 0.6)} !important;
     &:hover {
-      box-shadow: 0 5px 8px rgba(83,40,255,.25), 0 5px 8px rgba(83,40,255,.22) !important;
+      -webkit-box-shadow: 0 5px 8px ${hexToRgba('#9BCDFF', 0.5)}, 0 5px 8px ${hexToRgba('#9BCDFF', 0.7)} !important;
+      box-shadow: 0 5px 8px ${hexToRgba('#9BCDFF', 0.5)}, 0 5px 8px ${hexToRgba('#9BCDFF', 0.7)} !important;
     }
 
     // Overwrite AddEvent dropdown styles
@@ -31,7 +34,9 @@ const AddToCalendar = styled.a`
 
       &.addeventatc-selected {
         left: 0 !important;
-        top: 58px !important;
+        z-index: 2 !important;
+        -webkit-box-shadow: ${hexToRgba('#9BCDFF', 0.4)} 0px 10px 26px !important;
+        box-shadow: ${hexToRgba('#9BCDFF', 0.4)} 0px 10px 26px !important;
       }
 
       .copyx,

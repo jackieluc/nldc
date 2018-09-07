@@ -19,7 +19,6 @@ const SponsorTitle = styled.h2`
   background: linear-gradient(to right, #9BCDFF, #7F7FD5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 3px 6px rgba(103, 221, 166, 0.32);
   font-size: 2.5rem;
 `;
 
@@ -29,10 +28,6 @@ const SponsorDescription = styled.p`
 
 const Cta = styled.a`
   text-align: center;
-`;
-
-const SponsorCard = styled.div`
-  box-shadow: rgba(83, 40, 255, 0.15) 0px 6px 34px;
 `;
 
 const SponsorDetails = () => (

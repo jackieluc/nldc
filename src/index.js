@@ -20,7 +20,7 @@ injectGlobal`
     font-family: 'Lato', sans-serif;
     // overflow-x: hidden;
     // overflow-y: auto;
-    background-color: #FAFAFA;
+    // background-color: #FAFAFA;
     color: ${Styles.textColour};
     line-height: 1.5;
     -webkit-font-smoothing: antialiased

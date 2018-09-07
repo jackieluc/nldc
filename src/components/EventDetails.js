@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import hexToRgba from 'hex-to-rgba';
 import AddToCalendar from './Calendar/AddToCalendar';
 import Media from '../utils/media';
 
@@ -13,7 +14,8 @@ const Wrapper = styled.div`
   justify-content: center;
   ${Media.tablet`
     padding: 10px 35px;
-    box-shadow: 0 6px 34px rgba(83,40,255,.15);
+    -webkit-box-shadow: 0 6px 34px ${hexToRgba('#9BCDFF', 0.5)};
+    box-shadow: 0 6px 34px ${hexToRgba('#9BCDFF', 0.5)};
   `}
   ${Media.laptop`width: 80%;`}
   ${Media.desktop`width: 60%;`}
@@ -43,7 +45,6 @@ const EventTitle = styled.h2`
   background: linear-gradient(to right, #9BCDFF, #7F7FD5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 3px 6px rgba(103, 221, 166, 0.32);
   font-size: 2rem;
   ${Media.laptop`font-size: 2.5rem;`}
   text-align: left;
