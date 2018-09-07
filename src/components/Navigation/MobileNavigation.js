@@ -48,7 +48,7 @@ const MenuWrapper = styled.nav`
   height: 100vh;
   width: 100vw;
   background-color: #fafafa;
-  z-index: 2;
+  z-index: 998;
   top: 0;
   left: 0;
   justify-content: start;
