@@ -27,6 +27,7 @@ const LogoImage = styled.img`
 
 const Subtitle = styled.h2`
   font-size: 1.2rem;
+  ${Media.medPhone`font-size: 1.6rem;`}
   ${Media.tablet`font-size: 1.8rem;`}
   ${Media.desktop`font-size: 2.5rem;`}
   line-height: 1;
@@ -38,11 +39,12 @@ const Subtitle = styled.h2`
 const Title = styled.h1`
   max-width: 375px;
   ${Media.tablet`
-    max-width: 100%;
-    width: 75%;
+  max-width: 100%;
+  width: 75%;
   `}
   ${Media.laptop`width: 50%;`}
   font-size: 1.5rem;
+  ${Media.medPhone`font-size: 1.9rem;`}
   ${Media.tablet`font-size: 2.5rem;`}
   ${Media.desktop`font-size: 3.5rem;`}
   line-height: 1;
