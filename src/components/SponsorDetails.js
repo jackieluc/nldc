@@ -15,8 +15,8 @@ const Wrapper = styled.div`
 
 const SponsorTitle = styled.h2`
   background: #7F7FD5;
-  background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
-  background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+  background: -webkit-linear-gradient(to right, #9BCDFF, #7F7FD5);
+  background: linear-gradient(to right, #9BCDFF, #7F7FD5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0 3px 6px rgba(103, 221, 166, 0.32);
