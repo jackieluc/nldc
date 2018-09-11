@@ -7,6 +7,7 @@ import Styles from './utils/styles';
 import Navigation from './components/Navigation/Navigation';
 import Home from './pages/Home';
 import About from './pages/About';
+import Sponsors from './pages/Sponsors';
 
 // eslint-disable-next-line
 injectGlobal`
@@ -66,6 +67,10 @@ const routes = [
     name: 'About',
     path: '/about-us',
   },
+  {
+    name: 'Sponsors',
+    path: '/sponsors',
+  },
 ];
 
 ReactDOM.render((
@@ -74,8 +79,8 @@ ReactDOM.render((
       <Navigation routes={routes} />
       <Switch>
         <Route exact path="/" component={Home} />
-        {/* <Route exact path='/about-us' component={AboutUs} /> */}
         <Route exact path="/about-us" component={About} />
+        <Route exact path="/sponsors" component={Sponsors} />
         {/* <Route exact path='/schedule' component={Schedule} /> */}
         {/* <Route exact path='/events' component={Events} /> */}
         {/* <Route path="*" component={NotFoundPage} /> */}
