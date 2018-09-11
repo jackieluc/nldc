@@ -22,12 +22,15 @@ const SponsorTitle = styled.h2`
   font-size: 2.5rem;
 `;
 
-const SponsorDescription = styled.p`
-  text-align: left;
-`;
-
-const Cta = styled.a`
+const SponsorDescription = styled.div`
+  width: 320px;
+  ${Media.bigPhone`width: 400px;`}
   text-align: center;
+  margin: 0 auto;
+
+  & > * {
+    margin: 0 auto;
+  }
 `;
 
 const SponsorDetails = () => (
@@ -37,12 +40,14 @@ const SponsorDetails = () => (
         Sponsors
       </SponsorTitle>
       <SponsorDescription>
-        { // eslint-disable-next-line
-        } In order to have a successful NLDC, we require funding for venues, events, speakers, and much more. We are looking to form valuable partnerships with organizations that value leadership, diversity, innovation, technology, and entrepreneurial thinking. NLDC is the perfect occasion for your organization to promote the rich opportunities that your organization has to offer to some of Canada's next generation of business leaders.
+        <p>
+          { // eslint-disable-next-line
+          } Our generous sponsors not only make NLDC possible — they are also joining us in <b>#DisruptingTheNow</b>.
+        </p>
+        <a href="mailto:jacoby.holder@aiesec.net?subject=Sponsorship Inquiry">
+          Interested in becoming a sponsor?
+        </a>
       </SponsorDescription>
-      <Cta href="mailto:jacoby.holder@aiesec.net?subject=Sponsorship Inquiry">
-        Interested in becoming a sponsor?
-      </Cta>
     </Wrapper>
   </SponsorDetailsSection>
 );
