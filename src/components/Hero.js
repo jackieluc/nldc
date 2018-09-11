@@ -37,13 +37,20 @@ const Subtitle = styled.h2`
 `;
 
 const Title = styled.h1`
-  width: 375px;
-  ${Media.tablet`width: 600px;`}
-  ${Media.desktop`width: 800px;`}
+  width: 320px;
   font-size: 1.5rem;
-  ${Media.medPhone`font-size: 1.9rem;`}
-  ${Media.tablet`font-size: 2.5rem;`}
-  ${Media.desktop`font-size: 3.5rem;`}
+  ${Media.medPhone`
+    font-size: 1.9rem;
+    width: 375px;
+  `}
+  ${Media.tablet`
+    font-size: 2.5rem;
+    width: 600px;
+  `}
+  ${Media.desktop`
+    font-size: 3.5rem;
+    width: 800px;
+  `}
   line-height: 1;
   letter-spacing: 1px;
   margin-top: 0;

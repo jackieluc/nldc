@@ -9,7 +9,7 @@ const SponsorDetailsSection = styled.section`
 const Wrapper = styled.div`
   margin: 0 auto;
   max-width: ${BreakPoints.desktop}px;
-  ${Media.tablet`width: 75%`}
+  ${Media.tablet`width: 75%;`}
   ${Media.laptop`width: 620px;`}
 `;
 
@@ -23,14 +23,10 @@ const SponsorTitle = styled.h2`
 `;
 
 const SponsorDescription = styled.div`
-  width: 320px;
-  ${Media.bigPhone`width: 400px;`}
+  width: 100%;
+  ${Media.tablet`width: 400px;`}
   text-align: center;
   margin: 0 auto;
-
-  & > * {
-    margin: 0 auto;
-  }
 `;
 
 const SponsorDetails = () => (

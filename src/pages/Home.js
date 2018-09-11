@@ -12,7 +12,7 @@ const App = styled.div`
 
 const Divider = styled.div`
   background-image: url('${Div}');
-  width: 300px;
+  width: 280px;
   height: 34px;
   margin: 0 auto;
 `;
