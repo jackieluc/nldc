@@ -4,8 +4,12 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Styles from '../../utils/styles';
 
+const isHomePage = location => location === '/';
+
+const isNearTop = heights => (heights.currentWindowHeight < heights.firstSectionHeight / 2);
+
 const MenuWrapper = styled.nav`
-  ${({ heights }) => (heights.currentWindowHeight < heights.firstSectionHeight / 2
+  ${({ location, heights }) => (isHomePage(location) && isNearTop(heights)
     ? `background-color: transparent;
       a {
         color: white;
@@ -14,9 +18,12 @@ const MenuWrapper = styled.nav`
         }
       };
     `
-    : `background-color: white;
-      box-shadow: 0 3px 6px rgba(75, 97, 141, 0.3);
-    `)}
+    : 'background-color: white;'
+  )}
+  ${({ heights }) => (isNearTop(heights)
+    ? 'box-shadow: none;'
+    : 'box-shadow: 0 3px 6px rgba(75, 97, 141, 0.3);'
+  )}
   height: 6vh;
   padding: 8px 16px;
   position: fixed;
@@ -38,16 +45,34 @@ const StyledLink = styled(NavLink)`
 export default class Menu extends Component {
   constructor(props) {
     super(props);
-    this.state = { currentWindowHeight: 0, firstSectionHeight: 0 };
+    this.state = {
+      location: '',
+      currentWindowHeight: 0,
+      firstSectionHeight: 0,
+    };
   }
 
   componentDidMount() {
+    this.updatePathLocation();
     this.updateWindowDimensions();
     window.addEventListener('scroll', this.updateWindowDimensions);
   }
 
+  componentDidUpdate() {
+    const { location } = this.state;
+    const currentLocation = document.location.pathname;
+    if (location !== currentLocation) {
+      this.updatePathLocation();
+    }
+  }
+
   componentWillUnmount() {
     window.removeEventListener('scroll', this.updateWindowDimensions);
+  }
+
+  updatePathLocation = () => {
+    const location = document.location.pathname;
+    this.setState({ location });
   }
 
   updateWindowDimensions = () => {
@@ -60,10 +85,10 @@ export default class Menu extends Component {
   }
 
   render() {
-    const { currentWindowHeight, firstSectionHeight } = this.state;
+    const { location, currentWindowHeight, firstSectionHeight } = this.state;
     const { routes } = this.props;
     return (
-      <MenuWrapper heights={{ currentWindowHeight, firstSectionHeight }}>
+      <MenuWrapper location={location} heights={{ currentWindowHeight, firstSectionHeight }}>
         {routes.map(route => (
           <StyledLink to={route.path} key={route.name}>
             {route.name}
