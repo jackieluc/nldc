@@ -80,7 +80,7 @@ const EventDetails = () => (
         </EventTitle>
         <EventDescription>
           { // eslint-disable-next-line
-            } AIESEC Canada’s National Leadership Development Conference (NLDC) is an annual 5-day event that brings together 300 business leaders from 30+ universities across Canada to network and develop their skills in teamwork, sales, finance, and marketing. In 2019, we are introducing the Innovation Series to connect our delegates with the leading businesses in technology and disruption.
+            } AIESEC Canada’s National Leadership Development Conference is an annual 5-day event that brings together 300 business leaders from 30+ universities across Canada to network and develop their skills in teamwork, sales, finance, and marketing. In 2019, we are introducing the Innovation Series to connect our delegates with the leading businesses in technology and disruption.
         </EventDescription>
       </Column>
       <ColumnRight>
