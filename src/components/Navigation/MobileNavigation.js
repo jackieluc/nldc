@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import hexToRgba from 'hex-to-rgba';
+import Styles from '../../utils/styles';
 import Media from '../../utils/media';
 
 const NavWrapper = styled.button`
@@ -12,7 +14,8 @@ const NavWrapper = styled.button`
   height: 3rem;
   border: 0;
   border-radius: 40px;
-  box-shadow: 1px 2px 8px rgba(75, 97, 141, 0.32);
+  -webkit-box-shadow: 1px 2px 8px ${hexToRgba('#9BCDFF', 0.9)};
+  box-shadow: 1px 2px 8px ${hexToRgba('#9BCDFF', 0.9)};
   background-color: white;
   z-index: 999;
   outline: none;
@@ -28,7 +31,7 @@ const Line = styled.span`
   width: 45%;
   height: 0.11rem;
   border-radius: 0.2rem;
-  background: black;
+  background: ${Styles.themeColour};
   left: 27.5%;
   transition: all cubic-bezier(0.42, 0, 0.45, 1.25) 0.27s;
   top: ${({ styles }) => styles.topPosition || 0};
@@ -47,12 +50,13 @@ const MenuWrapper = styled.nav`
   position: fixed;
   height: 100vh;
   width: 100vw;
-  background-color: #fafafa;
+  background-color: white;
   z-index: 998;
   top: 0;
   left: 0;
   justify-content: start;
   align-items: flex-end;
+  overflow: hidden;
 `;
 
 const StyledLink = styled(NavLink)`
