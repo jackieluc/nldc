@@ -6,7 +6,7 @@ import hexToRgba from 'hex-to-rgba';
 const AddToCalendar = styled.a`
   // Overwrite AddEvent 'Add to Calendar' styling
   &:focus {
-    outline: none;
+    outline-color: -webkit-focus-ring-color;
   }
   &.addeventatc {
     font-family: 'Lato', sans-serif !important;
