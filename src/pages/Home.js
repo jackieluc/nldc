@@ -6,7 +6,7 @@ import EventDetails from '../components/EventDetails';
 import SponsorDetails from '../components/SponsorDetails';
 import Footer from '../components/Footer';
 
-const Home = styled.div`
+const Wrapper = styled.div`
   text-align: center;
 `;
 
@@ -18,13 +18,13 @@ const Divider = styled.div`
 `;
 
 const Home = () => (
-  <Home>
+  <Wrapper>
     <Hero />
     <EventDetails />
     <Divider />
     <SponsorDetails />
     <Footer />
-  </Home>
+  </Wrapper>
 );
 
 export default Home;
