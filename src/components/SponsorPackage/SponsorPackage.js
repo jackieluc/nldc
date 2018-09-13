@@ -6,7 +6,6 @@ const Wrapper = styled.div`
   max-height: 500px;
   overflow: scroll;
   position: relative;
-  font-size: 0.7rem;
 `;
 
 const Table = styled.table`
@@ -16,10 +15,11 @@ const Table = styled.table`
 
 const Thead = styled.thead`
   th {
-    background: #FFF;
+    background: #FFFFFF;
     position: sticky;
     top: 0;
     padding: 10px;
+    font-size: 1rem;
 
     &:first-child {
       left: 0;
@@ -31,19 +31,22 @@ const Thead = styled.thead`
 const Tbody = styled.tbody`
   tr {
     td {
-      padding: 20px;
-      border-right: 1px solid #CCC;
+      padding: 10px;
+      border-right: 1px solid #CCCCCC;
+      font-size: 0.8rem;
+
       &:first-child {
         position: sticky;
         left: 0;
-        background: #FFF;
+        background: #FFFFFF;
+        font-size: 0.9rem;
       }
     }
   }
 `;
 
 const SponsorPackage = () => (
-  <Wrapper>
+  <Wrapper id="sponsorship-package">
     <Table>
       <Thead>
         <tr>
