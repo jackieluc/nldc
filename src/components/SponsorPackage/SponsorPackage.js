@@ -1,493 +1,476 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
-
-const cellStyles = css`
-  text-align center;
-  white-space: nowrap;
-  border-right: solid 1px black;
-  border-bottom: solid 1px black;
-
-  &:empty:after {
-    content: '\00a0';
-  }
-`;
-
-const stickyColumnStyle = css`
-  width: 200px;
-  position: absolute;
-  left: 0;
-  top: auto;
-  text-align: center;
-  border-left: solid 1px black;
-  border-bottom: solid 1px black;
-`;
+import styled from 'styled-components';
 
 const Wrapper = styled.div`
+  width: 100%;
+  max-height: 500px;
+  overflow: scroll;
   position: relative;
   font-size: 0.7rem;
 `;
 
 const Table = styled.table`
-  border: none;
-  border-spacing: 0;
+  position: relative;
+  border-collapse: collapse;
 `;
 
-const Th = styled.th`
-  ${cellStyles}
-  border-top: solid 1px black;
+const Thead = styled.thead`
+  th {
+    background: #FFF;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+
+    &:first-child {
+      left: 0;
+      z-index: 2;
+    }
+  }
 `;
 
-const Td = styled.td`
-  ${cellStyles}
-`;
-
-const StickyTd = styled(Td)`
-  ${stickyColumnStyle}
-`;
-
-const StickyTh = styled(Th)`
-  ${stickyColumnStyle}
-`;
-
-const ScrollingColumns = styled.div`
-  width: 120px;
-  overflow-x: scroll;
-  overflow-y: visible;
-  margin-left: 201px;
-  padding-bottom: 5px;
+const Tbody = styled.tbody`
+  tr {
+    td {
+      padding: 20px;
+      border-right: 1px solid #CCC;
+      &:first-child {
+        position: sticky;
+        left: 0;
+        background: #FFF;
+      }
+    }
+  }
 `;
 
 const SponsorPackage = () => (
   <Wrapper>
-    <ScrollingColumns>
-      <Table>
-        <thead>
-          <tr>
-            <StickyTh>
-              BENEFITS
-            </StickyTh>
-            <Th>
-              TITLE
-            </Th>
-            <Th>
-              GOLD
-            </Th>
-            <Th>
-              SILVER
-            </Th>
-            <Th>
-              BRONZE
-            </Th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <StickyTd>
-              <b>
-                BRANDING &amp; RECOGNITION
-              </b>
-            </StickyTd>
-            <Td>
-              <b>
-                ASK FOR DETAILS
-              </b>
-            </Td>
-            <Td>
-              <b>
-                $10,000
-              </b>
-            </Td>
-            <Td>
-              <b>
-                $5,000
-              </b>
-            </Td>
-            <Td>
-              <b>
-                $1,000
-              </b>
-            </Td>
-          </tr>
-          <tr>
-            <StickyTd>
-              Advertisement spot in Delegate Package
-            </StickyTd>
-            <Td>
-              ✓
-            </Td>
-            <Td>
-              ✓
-            </Td>
-            <Td>
-              ✓
-            </Td>
-            <Td>
-              ✓
-            </Td>
-          </tr>
-          <tr>
-            <StickyTd>
-              Recognition at plenaries
-            </StickyTd>
-            <Td>
-              ✓
-            </Td>
-            <Td>
-              ✓
-            </Td>
-            <Td>
-              ✓
-            </Td>
-            <Td>
-              ✓
-            </Td>
-          </tr>
-          <tr>
-            <StickyTd>
-              Promo products in Delegate Bags
-            </StickyTd>
-            <Td>
-              ✓
-            </Td>
-            <Td>
-              ✓
-            </Td>
-            <Td>
-              ✓
-            </Td>
-            <Td>
-              ✓
-            </Td>
-          </tr>
-          <tr>
-            <StickyTd>
-              Promo print materials in Delegate Bags
-            </StickyTd>
-            <Td>
-              ✓
-            </Td>
-            <Td>
-              ✓
-            </Td>
-            <Td>
-              ✓
-            </Td>
-            <Td>
-              ✓
-            </Td>
-          </tr>
-          <tr>
-            <StickyTd>
-              Photo booth branding
-            </StickyTd>
-            <Td>
-              ✓
-            </Td>
-            <Td>
-              ✓
-            </Td>
-            <Td>
-              ✓
-            </Td>
-            <Td>
-              ✓
-            </Td>
-          </tr>
-          <tr>
-            <StickyTd>
-              Social media promotion (#posts)
-            </StickyTd>
-            <Td>
-              10
-            </Td>
-            <Td>
-              7
-            </Td>
-            <Td>
-              4
-            </Td>
-            <Td>
-              3
-            </Td>
-          </tr>
-          <tr>
-            <StickyTd>
-              Logo on Conference Merchandise
-            </StickyTd>
-            <Td>
-              XL
-            </Td>
-            <Td>
-              LG
-            </Td>
-            <Td>
-              MD
-            </Td>
-            <Td>
-              SM
-            </Td>
-          </tr>
-          <tr>
-            <StickyTd>
-              Corporate videos played at plenaries
-            </StickyTd>
-            <Td>
-              ✓
-            </Td>
-            <Td>
-              ✓
-            </Td>
-            <Td>
-              ✓
-            </Td>
-            <Td />
-          </tr>
-          <tr>
-            <StickyTd>
-              Corporate profile on the website
-            </StickyTd>
-            <Td>
-              ✓
-            </Td>
-            <Td>
-              ✓
-            </Td>
-            <Td />
-            <Td />
-          </tr>
-          <tr>
-            <StickyTd>
-              Night events recognition
-            </StickyTd>
-            <Td>
-              ✓
-            </Td>
-            <Td>
-              ✓
-            </Td>
-            <Td />
-            <Td />
-          </tr>
-          <tr>
-            <StickyTd>
-              Promotional banner in Main Room
-            </StickyTd>
-            <Td>
-              ✓
-            </Td>
-            <Td>
-              ✓
-            </Td>
-            <Td />
-            <Td />
-          </tr>
-          <tr>
-            <StickyTd>
-              Branded Snapchat filter
-            </StickyTd>
-            <Td>
-              ✓
-            </Td>
-            <Td />
-            <Td />
-            <Td />
-          </tr>
-          <tr>
-            <StickyTd>
-              <b>
-                NETWORKING
-              </b>
-            </StickyTd>
-            <Td />
-            <Td />
-            <Td />
-            <Td />
-          </tr>
-          <tr>
-            <StickyTd>
-              Conference Boothing*
-            </StickyTd>
-            <Td>
-              ✓
-            </Td>
-            <Td>
-              ✓
-            </Td>
-            <Td>
-              ✓
-            </Td>
-            <Td>
-              ✓
-            </Td>
-          </tr>
-          <tr>
-            <StickyTd>
-              Logo on the website
-            </StickyTd>
-            <Td>
-              XL
-            </Td>
-            <Td>
-              LG
-            </Td>
-            <Td>
-              MD
-            </Td>
-            <Td>
-              SM
-            </Td>
-          </tr>
-          <tr>
-            <StickyTd>
-              External networking opportunities
-            </StickyTd>
-            <Td>
-              3
-            </Td>
-            <Td>
-              1
-            </Td>
-            <Td />
-            <Td />
-          </tr>
-          <tr>
-            <StickyTd>
-              Complimentary Banquet tickets
-            </StickyTd>
-            <Td>
-              4
-            </Td>
-            <Td>
-              2
-            </Td>
-            <Td />
-            <Td />
-          </tr>
-          <tr>
-            <StickyTd>
-              <b>
-                CORPORATE SOCIAL RESPONSIBILITY
-              </b>
-            </StickyTd>
-            <Td />
-            <Td />
-            <Td />
-            <Td />
-          </tr>
-          <tr>
-            <StickyTd>
-              SDG&apos;s recognition
-            </StickyTd>
-            <Td>
-              ✓
-            </Td>
-            <Td>
-              ✓
-            </Td>
-            <Td>
-              ✓
-            </Td>
-            <Td />
-          </tr>
-          <tr>
-            <StickyTd>
-              Sponsor a Student Leader recognition
-            </StickyTd>
-            <Td>
-              ✓
-            </Td>
-            <Td>
-              ✓
-            </Td>
-            <Td>
-              ✓
-            </Td>
-            <Td />
-          </tr>
-          <tr>
-            <StickyTd>
-              International recruitment discount
-            </StickyTd>
-            <Td>
-              100%
-            </Td>
-            <Td>
-              50%
-            </Td>
-            <Td>
-              25%
-            </Td>
-            <Td />
-          </tr>
-          <tr>
-            <StickyTd>
-              <b>
-                EXCLUSIVE
-              </b>
-            </StickyTd>
-            <Td />
-            <Td />
-            <Td />
-            <Td />
-          </tr>
-          <tr>
-            <StickyTd>
-              Full page profile in Delegate Package
-            </StickyTd>
-            <Td>
-              ✓
-            </Td>
-            <Td />
-            <Td />
-            <Td />
-          </tr>
-          <tr>
-            <StickyTd>
-              Access to shortlisted Delegate Resumes
-            </StickyTd>
-            <Td>
-              ✓
-            </Td>
-            <Td />
-            <Td />
-            <Td />
-          </tr>
-          <tr>
-            <StickyTd>
-              Banquet keynote
-            </StickyTd>
-            <Td>
-              ✓
-            </Td>
-            <Td />
-            <Td />
-            <Td />
-          </tr>
-          <tr>
-            <StickyTd>
-              Company-themed Delegate rooms
-            </StickyTd>
-            <Td>
-              ✓
-            </Td>
-            <Td />
-            <Td />
-            <Td />
-          </tr>
-          <tr>
-            <StickyTd>
-              Branded award presentation
-            </StickyTd>
-            <Td>
-              ✓
-            </Td>
-            <Td />
-            <Td />
-            <Td />
-          </tr>
-        </tbody>
-      </Table>
-    </ScrollingColumns>
+    <Table>
+      <Thead>
+        <tr>
+          <th>
+            BENEFITS
+          </th>
+          <th>
+            TITLE
+          </th>
+          <th>
+            GOLD
+          </th>
+          <th>
+            SILVER
+          </th>
+          <th>
+            BRONZE
+          </th>
+        </tr>
+      </Thead>
+      <Tbody>
+        <tr>
+          <td>
+            <b>
+              BRANDING &amp; RECOGNITION
+            </b>
+          </td>
+          <td>
+            <b>
+              ASK FOR DETAILS
+            </b>
+          </td>
+          <td>
+            <b>
+              $10,000
+            </b>
+          </td>
+          <td>
+            <b>
+              $5,000
+            </b>
+          </td>
+          <td>
+            <b>
+              $1,000
+            </b>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Advertisement spot in Delegate Package
+          </td>
+          <td>
+            ✓
+          </td>
+          <td>
+            ✓
+          </td>
+          <td>
+            ✓
+          </td>
+          <td>
+            ✓
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Recognition at plenaries
+          </td>
+          <td>
+            ✓
+          </td>
+          <td>
+            ✓
+          </td>
+          <td>
+            ✓
+          </td>
+          <td>
+            ✓
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Promo products in Delegate Bags
+          </td>
+          <td>
+            ✓
+          </td>
+          <td>
+            ✓
+          </td>
+          <td>
+            ✓
+          </td>
+          <td>
+            ✓
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Promo print materials in Delegate Bags
+          </td>
+          <td>
+            ✓
+          </td>
+          <td>
+            ✓
+          </td>
+          <td>
+            ✓
+          </td>
+          <td>
+            ✓
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Photo booth branding
+          </td>
+          <td>
+            ✓
+          </td>
+          <td>
+            ✓
+          </td>
+          <td>
+            ✓
+          </td>
+          <td>
+            ✓
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Social media promotion (#posts)
+          </td>
+          <td>
+            10
+          </td>
+          <td>
+            7
+          </td>
+          <td>
+            4
+          </td>
+          <td>
+            3
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Logo on Conference Merchandise
+          </td>
+          <td>
+            XL
+          </td>
+          <td>
+            LG
+          </td>
+          <td>
+            MD
+          </td>
+          <td>
+            SM
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Corporate videos played at plenaries
+          </td>
+          <td>
+            ✓
+          </td>
+          <td>
+            ✓
+          </td>
+          <td>
+            ✓
+          </td>
+          <td />
+        </tr>
+        <tr>
+          <td>
+            Corporate profile on the website
+          </td>
+          <td>
+            ✓
+          </td>
+          <td>
+            ✓
+          </td>
+          <td />
+          <td />
+        </tr>
+        <tr>
+          <td>
+            Night events recognition
+          </td>
+          <td>
+            ✓
+          </td>
+          <td>
+            ✓
+          </td>
+          <td />
+          <td />
+        </tr>
+        <tr>
+          <td>
+            Promotional banner in Main Room
+          </td>
+          <td>
+            ✓
+          </td>
+          <td>
+            ✓
+          </td>
+          <td />
+          <td />
+        </tr>
+        <tr>
+          <td>
+            Branded Snapchat filter
+          </td>
+          <td>
+            ✓
+          </td>
+          <td />
+          <td />
+          <td />
+        </tr>
+        <tr>
+          <td>
+            <b>
+              NETWORKING
+            </b>
+          </td>
+          <td />
+          <td />
+          <td />
+          <td />
+        </tr>
+        <tr>
+          <td>
+            Conference Boothing*
+          </td>
+          <td>
+            ✓
+          </td>
+          <td>
+            ✓
+          </td>
+          <td>
+            ✓
+          </td>
+          <td>
+            ✓
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Logo on the website
+          </td>
+          <td>
+            XL
+          </td>
+          <td>
+            LG
+          </td>
+          <td>
+            MD
+          </td>
+          <td>
+            SM
+          </td>
+        </tr>
+        <tr>
+          <td>
+            External networking opportunities
+          </td>
+          <td>
+            3
+          </td>
+          <td>
+            1
+          </td>
+          <td />
+          <td />
+        </tr>
+        <tr>
+          <td>
+            Complimentary Banquet tickets
+          </td>
+          <td>
+            4
+          </td>
+          <td>
+            2
+          </td>
+          <td />
+          <td />
+        </tr>
+        <tr>
+          <td>
+            <b>
+              CORPORATE SOCIAL RESPONSIBILITY
+            </b>
+          </td>
+          <td />
+          <td />
+          <td />
+          <td />
+        </tr>
+        <tr>
+          <td>
+            SDG&apos;s recognition
+          </td>
+          <td>
+            ✓
+          </td>
+          <td>
+            ✓
+          </td>
+          <td>
+            ✓
+          </td>
+          <td />
+        </tr>
+        <tr>
+          <td>
+            Sponsor a Student Leader recognition
+          </td>
+          <td>
+            ✓
+          </td>
+          <td>
+            ✓
+          </td>
+          <td>
+            ✓
+          </td>
+          <td />
+        </tr>
+        <tr>
+          <td>
+            International recruitment discount
+          </td>
+          <td>
+            100%
+          </td>
+          <td>
+            50%
+          </td>
+          <td>
+            25%
+          </td>
+          <td />
+        </tr>
+        <tr>
+          <td>
+            <b>
+              EXCLUSIVE
+            </b>
+          </td>
+          <td />
+          <td />
+          <td />
+          <td />
+        </tr>
+        <tr>
+          <td>
+            Full page profile in Delegate Package
+          </td>
+          <td>
+            ✓
+          </td>
+          <td />
+          <td />
+          <td />
+        </tr>
+        <tr>
+          <td>
+            Access to shortlisted Delegate Resumes
+          </td>
+          <td>
+            ✓
+          </td>
+          <td />
+          <td />
+          <td />
+        </tr>
+        <tr>
+          <td>
+            Banquet keynote
+          </td>
+          <td>
+            ✓
+          </td>
+          <td />
+          <td />
+          <td />
+        </tr>
+        <tr>
+          <td>
+            Company-themed Delegate rooms
+          </td>
+          <td>
+            ✓
+          </td>
+          <td />
+          <td />
+          <td />
+        </tr>
+        <tr>
+          <td>
+            Branded award presentation
+          </td>
+          <td>
+            ✓
+          </td>
+          <td />
+          <td />
+          <td />
+        </tr>
+      </Tbody>
+    </Table>
   </Wrapper>
 );
 
