@@ -30,17 +30,17 @@ const Title = styled.h1`
 
 const TitleSection = styled.section`
   margin-top: 4rem;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 `;
 
 const Description = styled(Col)`
   text-align: center;
-  margin: 0 auto 15px auto;
+  margin: 0 auto;
 `;
 
-const benefits1 = ['Keynote Presentations', 'Corporate Videos', 'Email Blast to Delegates', 'Plenary Recognition', 'Logo Exposure', 'Conference Website', 'Merchandise', 'Delegate Package', 'Snapchat Filters', 'Social Media Promotion', 'Promotional Products Distributed'];
+const benefits1 = ['Keynote Presentations', 'Corporate Videos', 'Email Blast to Delegates', 'Plenary Recognition', ['Logo Exposure', 'Conference Website', 'Merchandise', 'Delegate Package'], 'Snapchat Filters', 'Social Media Promotion', 'Promotional Products'];
 
-const benefits2 = ['Conference Boothing Table', 'Complimentary Banquet Tickets', 'External Speaking Opportunities', 'Innovation Series Workshops', 'Recruitment Materials Distributed'];
+const benefits2 = ['Conference Boothing Table', 'Complimentary Banquet Tickets', 'External Speaking Opportunities', 'Innovation Series Workshops', 'Recruitment Materials'];
 
 const benefits3 = ['International Recruitment Program Discount'];
 
@@ -55,9 +55,18 @@ const Sponsors = () => (
           <Description xs="12" lg="8">
             <p>
               { // eslint-disable-next-line
-              } In order to have a successful NLDC, we require funding for venues, events, speakers, and much more. We are looking to form valuable partnerships with organizations that value leadership, diversity, innovation, technology, and entrepreneurial thinking. NLDC is the perfect occasion for your organization to promote the rich opportunities that your organization has to offer to some of Canada's next generation of business leaders.
+              } In order to have a successful NLDC, we require funding for venues, events, speakers, and much more. We are looking to form valuable partnerships with organizations that value leadership, diversity, innovation, technology, and entrepreneurial thinking.
+            </p>
+            <p>
+              { // eslint-disable-next-line
+              } NLDC is the perfect occasion for your organization to promote the rich opportunities that your organization has to offer to some of Canada's next generation of business leaders.
             </p>
           </Description>
+          <Col xs="12">
+            <a href="mailto:jacoby.holder@aiesec.net?subject=Sponsorship Inquiry">
+              Interested in becoming a sponsor?
+            </a>
+          </Col>
         </Row>
       </TitleSection>
       <Divider />
