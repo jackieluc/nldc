@@ -14,8 +14,8 @@ const Wrapper = styled.div`
   justify-content: center;
   ${Media.tablet`
     padding: 10px 35px;
-    -webkit-box-shadow: 0 6px 34px ${hexToRgba('#9BCDFF', 0.5)};
-    box-shadow: 0 6px 34px ${hexToRgba('#9BCDFF', 0.5)};
+    -webkit-box-shadow: 0 6px 20px rgba(75, 97, 141, 0.3);
+    box-shadow: 0 6px 20px rgba(75, 97, 141, 0.3);
   `}
   ${Media.laptop`width: 80%;`}
   ${Media.desktop`width: 1200px;`}

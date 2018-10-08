@@ -15,11 +15,11 @@ const AddToCalendar = styled.a`
     z-index: 2 !important;
     font-weight: 400;
     width: 14rem;
-    -webkit-box-shadow: 0 3px 6px ${hexToRgba('#9BCDFF', 0.4)}, 0 3px 6px ${hexToRgba('#9BCDFF', 0.6)} !important;
-    box-shadow: 0 3px 6px ${hexToRgba('#9BCDFF', 0.4)}, 0 3px 6px ${hexToRgba('#9BCDFF', 0.6)} !important;
+    -webkit-box-shadow: 0 3px 6px rgba(75, 97, 141, 0.3), 0 3px 6px rgba(75, 97, 141, 0.5) !important;
+    box-shadow: 0 3px 6px rgba(75, 97, 141, 0.3), 0 3px 6px rgba(75, 97, 141, 0.5) !important;
     &:hover {
-      -webkit-box-shadow: 0 5px 8px ${hexToRgba('#9BCDFF', 0.5)}, 0 5px 8px ${hexToRgba('#9BCDFF', 0.7)} !important;
-      box-shadow: 0 5px 8px ${hexToRgba('#9BCDFF', 0.5)}, 0 5px 8px ${hexToRgba('#9BCDFF', 0.7)} !important;
+      -webkit-box-shadow: 0 5px 8px rgba(75, 97, 141, 0.4), 0 5px 8px rgba(75, 97, 141, 0.6) !important;
+      box-shadow: 0 5px 8px rgba(75, 97, 141, 0.4), 0 5px 8px rgba(75, 97, 141, 0.6) !important;
     }
 
     // Overwrite AddEvent dropdown styles
@@ -35,8 +35,8 @@ const AddToCalendar = styled.a`
       &.addeventatc-selected {
         left: 0 !important;
         z-index: 2 !important;
-        -webkit-box-shadow: ${hexToRgba('#9BCDFF', 0.4)} 0px 10px 26px !important;
-        box-shadow: ${hexToRgba('#9BCDFF', 0.4)} 0px 10px 26px !important;
+        -webkit-box-shadow: rgba(75, 97, 141, 0.3) 0px 10px 26px !important;
+        box-shadow: rgba(75, 97, 141, 0.3) 0px 10px 26px !important;
       }
 
       .copyx,
