@@ -14,7 +14,7 @@ const AddToCalendar = styled.a`
     padding: 13px 12px 12px 58px !important;
     z-index: 2 !important;
     font-weight: 400;
-    width: 150px;
+    width: 14rem;
     -webkit-box-shadow: 0 3px 6px ${hexToRgba('#9BCDFF', 0.4)}, 0 3px 6px ${hexToRgba('#9BCDFF', 0.6)} !important;
     box-shadow: 0 3px 6px ${hexToRgba('#9BCDFF', 0.4)}, 0 3px 6px ${hexToRgba('#9BCDFF', 0.6)} !important;
     &:hover {
