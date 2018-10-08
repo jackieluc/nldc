@@ -21,6 +21,8 @@ const ListGroupItemContainer = styled(ListGroupItem)`
   }
 `;
 
+const List = styled(ListGroupItemContainer)``;
+
 const SponsorPackage = ({ title, benefits }) => (
   <Card style={{ boxShadow: '0 3px 6px rgba(75, 97, 141, 0.3)' }}>
     <CardBodyContainer>
@@ -30,9 +32,26 @@ const SponsorPackage = ({ title, benefits }) => (
       <ListGroup>
         {
           benefits.map(benefit => (
-            <ListGroupItemContainer>
-              {benefit}
-            </ListGroupItemContainer>
+            typeof (benefit) === 'string'
+              ? (
+                <ListGroupItemContainer>
+                  {benefit}
+                </ListGroupItemContainer>
+              )
+              : (
+                <List>
+                  <li style={{ listStyle: 'none' }}>
+                    {benefit[0]}
+                  </li>
+                  {
+                    benefit.slice(1).map(subBenefit => (
+                      <li style={{ listStylePosition: 'inside', paddingLeft: '1rem' }}>
+                        {subBenefit}
+                      </li>
+                    ))
+                  }
+                </List>
+              )
           ))
         }
       </ListGroup>
