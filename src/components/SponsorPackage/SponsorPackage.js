@@ -13,18 +13,23 @@ const CardBodyContainer = styled(CardBody)`
 const ListGroupItemContainer = styled(ListGroupItem)`
   width: 100%;
   text-align: left;
-  border-radius: 0 !important;
   border-right: 0;
   border-left: 0;
+
+  &:first-child {
+    border-radius: 0;
+  }
+
   &:last-child {
     border-bottom: 0;
+    border-radius: 0 0 10px 10px !important;
   }
 `;
 
 const List = styled(ListGroupItemContainer)``;
 
 const SponsorPackage = ({ title, benefits }) => (
-  <Card style={{ boxShadow: '0 3px 6px rgba(75, 97, 141, 0.3)' }}>
+  <Card style={{ boxShadow: '0 3px 6px rgba(75, 97, 141, 0.3)', borderRadius: '10px' }}>
     <CardBodyContainer>
       <CardTitle style={{ color: styles.themeColour, margin: '1rem 0', fontWeight: 'bold' }}>
         {title}
@@ -40,12 +45,12 @@ const SponsorPackage = ({ title, benefits }) => (
               )
               : (
                 <List>
-                  <li style={{ listStyle: 'none' }}>
+                  <li style={{ listStyle: 'none', marginBottom: '10px' }}>
                     {benefit[0]}
                   </li>
                   {
                     benefit.slice(1).map(subBenefit => (
-                      <li style={{ listStylePosition: 'inside', paddingLeft: '1rem' }}>
+                      <li style={{ listStylePosition: 'inside', paddingLeft: '1rem', paddingBottom: '6px' }}>
                         {subBenefit}
                       </li>
                     ))

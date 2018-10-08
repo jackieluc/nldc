@@ -25,7 +25,7 @@ const Title = styled.h1`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2.5rem;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 `;
 
 const TitleSection = styled.section`
@@ -38,11 +38,11 @@ const Description = styled(Col)`
   margin: 0 auto;
 `;
 
-const benefits1 = ['Keynote Presentations', 'Corporate Videos', 'Email Blast to Delegates', 'Plenary Recognition', ['Logo Exposure', 'Conference Website', 'Merchandise', 'Delegate Package'], 'Snapchat Filters', 'Social Media Promotion', 'Promotional Products'];
+const benefits1 = ['Keynote presentations', 'Corporate videos', 'Plenary recognition', ['Logo exposure', 'Conference website', 'Merchandise', 'Delegate package'], 'Snapchat filters', 'Social media promotion', 'Promotional products'];
 
-const benefits2 = ['Conference Boothing Table', 'Complimentary Banquet Tickets', 'External Speaking Opportunities', 'Innovation Series Workshops', 'Recruitment Materials'];
+const benefits2 = ['Conference boothing table', 'Complimentary banquet tickets', 'External speaking opportunities', 'Innovation Series workshops', 'Recruitment materials', 'Email blast to delegates', 'Lunch with Leaders invintation', 'Delegate resumes'];
 
-const benefits3 = ['International Recruitment Program Discount'];
+const benefits3 = ['International recruitment program discount - Hire global talent'];
 
 const Sponsors = () => (
   <Wrapper>
@@ -64,25 +64,23 @@ const Sponsors = () => (
           </Description>
           <Col xs="12">
             <a href="mailto:jacoby.holder@aiesec.net?subject=Sponsorship Inquiry">
-              Interested in becoming a sponsor?
+              Become a sponsor today!
             </a>
           </Col>
         </Row>
       </TitleSection>
-      <Divider />
-      <section>
-        <Title>
-          Benefits
-        </Title>
-        <Row>
-          <CardDeck style={{ width: '100%' }}>
-            <SponsorPackage title="Branding & Recognition" benefits={benefits1} />
-            <SponsorPackage title="Networking & Recruitment" benefits={benefits2} />
-            <SponsorPackage title="Corporate & Social Responsibility" benefits={benefits3} />
-          </CardDeck>
-        </Row>
-      </section>
     </Container>
+    <Divider />
+    <section style={{ backgroundColor: '#F7F7F7', width: '100%', padding: '2rem 0' }}>
+      <Title>
+          Benefits
+      </Title>
+      <CardDeck>
+        <SponsorPackage title="Branding & Recognition" benefits={benefits1} />
+        <SponsorPackage title="Networking & Recruitment" benefits={benefits2} />
+        <SponsorPackage title="CSR" benefits={benefits3} />
+      </CardDeck>
+    </section>
   </Wrapper>
 );
 

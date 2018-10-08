@@ -41,7 +41,7 @@ const SponsorDetails = () => (
           } Our generous sponsors not only make NLDC possible — they are also joining us in <b>#DisruptingTheNow</b>.
         </p>
         <a href="mailto:jacoby.holder@aiesec.net?subject=Sponsorship Inquiry">
-          Interested in becoming a sponsor?
+          Become a sponsor today!
         </a>
       </SponsorDescription>
     </Wrapper>
