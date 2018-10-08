@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { injectGlobal } from 'styled-components';
 import registerServiceWorker from './registerServiceWorker';
