@@ -3,7 +3,16 @@ import styled from 'styled-components';
 import {
   Container, Row, Col, CardDeck,
 } from 'reactstrap';
+import Div from '../images/divider-right.svg';
+
 import SponsorPackage from '../components/SponsorPackage/SponsorPackage';
+
+const Divider = styled.div`
+  background-image: url('${Div}');
+  width: 280px;
+  height: 34px;
+  margin: 1rem auto;
+`;
 
 const Wrapper = styled.div`
   text-align: center;
@@ -51,6 +60,7 @@ const Sponsors = () => (
           </Description>
         </Row>
       </TitleSection>
+      <Divider />
       <section>
         <Title>
           Benefits

@@ -14,7 +14,7 @@ const Divider = styled.div`
   background-image: url('${Div}');
   width: 280px;
   height: 34px;
-  margin: 0 auto;
+  margin: 1rem auto;
 `;
 
 const Home = () => (
