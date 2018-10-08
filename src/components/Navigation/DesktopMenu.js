@@ -24,7 +24,7 @@ const MenuWrapper = styled.nav`
     ? 'box-shadow: none;'
     : 'box-shadow: 0 3px 6px rgba(75, 97, 141, 0.3);'
   )}
-  height: 6vh;
+  height: 60px;
   padding: 8px 16px;
   position: fixed;
   flex-direction: row;
