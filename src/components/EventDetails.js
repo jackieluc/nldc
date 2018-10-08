@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import hexToRgba from 'hex-to-rgba';
 import AddToCalendar from './Calendar/AddToCalendar';
 import Media from '../utils/media';
 
