@@ -33,7 +33,7 @@ const Subtitle = styled.h2`
   line-height: 1;
   letter-spacing: 1px;
   margin: 0.5rem;
-  font-weight: lighter;
+  font-weight: 300;
 `;
 
 const Title = styled.h1`
@@ -55,7 +55,7 @@ const Title = styled.h1`
   letter-spacing: 1px;
   margin-top: 0;
   margin-bottom: 1rem;
-  font-weight: lighter;
+  font-weight: 300;
 `;
 
 const Info = styled.h3`
