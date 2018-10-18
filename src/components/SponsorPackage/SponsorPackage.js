@@ -5,9 +5,16 @@ import {
   Card, CardTitle, CardBody, ListGroup, ListGroupItem,
 } from 'reactstrap';
 import styles from '../../utils/styles';
+import Media from '../../utils/media';
 
 const CardBodyContainer = styled(CardBody)`
   padding: 0 !important;
+`;
+
+const StyledCard = styled(Card)`
+  box-shadow: 0 3px 6px rgba(75, 97, 141, 0.3);
+  border-radius: 0;
+  ${Media.tablet`border-radius: 10px;`}
 `;
 
 const ListGroupItemContainer = styled(ListGroupItem)`
@@ -29,7 +36,7 @@ const ListGroupItemContainer = styled(ListGroupItem)`
 const List = styled(ListGroupItemContainer)``;
 
 const SponsorPackage = ({ title, benefits }) => (
-  <Card style={{ boxShadow: '0 3px 6px rgba(75, 97, 141, 0.3)', borderRadius: '10px' }}>
+  <StyledCard>
     <CardBodyContainer>
       <CardTitle style={{ color: styles.themeColour, margin: '1rem 0', fontWeight: 'bold' }}>
         {title}
@@ -61,7 +68,7 @@ const SponsorPackage = ({ title, benefits }) => (
         }
       </ListGroup>
     </CardBodyContainer>
-  </Card>
+  </StyledCard>
 );
 
 SponsorPackage.propTypes = {
