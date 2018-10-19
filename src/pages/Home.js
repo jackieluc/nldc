@@ -16,7 +16,6 @@ const Home = () => (
     <EventDetails />
     <Divider />
     <SponsorDetails />
-    <Footer />
   </Wrapper>
 );
 
