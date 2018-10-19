@@ -1,4 +1,5 @@
 import React from 'react';
+import MailChimp from './MailChimp/MailChimp';
 // import styled from 'styled-components';
 // import Media from '../utils/media';
 
@@ -11,6 +12,7 @@ const Footer = () => (
         jacoby.holder@aiesec.net
       </a>
     </p>
+    <MailChimp />
   </section>
 );
 
