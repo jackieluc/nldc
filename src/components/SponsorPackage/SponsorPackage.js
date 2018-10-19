@@ -33,7 +33,15 @@ const ListGroupItemContainer = styled(ListGroupItem)`
   }
 `;
 
-const List = styled(ListGroupItemContainer)``;
+const List = styled.ul`
+  width: 100%;
+  text-align: left;
+  padding: 0.75rem 1.25rem;
+
+  & > li {
+    list-style-type: disc;
+  }
+`;
 
 const SponsorPackage = ({ title, benefits }) => (
   <StyledCard>
@@ -46,18 +54,18 @@ const SponsorPackage = ({ title, benefits }) => (
           benefits.map(benefit => (
             typeof (benefit) === 'string'
               ? (
-                <ListGroupItemContainer>
+                <ListGroupItemContainer key={benefit}>
                   {benefit}
                 </ListGroupItemContainer>
               )
               : (
-                <List>
+                <List key={benefit[0]}>
                   <li style={{ listStyle: 'none', marginBottom: '10px' }}>
                     {benefit[0]}
                   </li>
                   {
                     benefit.slice(1).map(subBenefit => (
-                      <li style={{ listStylePosition: 'inside', paddingLeft: '1rem', paddingBottom: '6px' }}>
+                      <li key={subBenefit} style={{ listStylePosition: 'inside', paddingLeft: '1rem', paddingBottom: '6px' }}>
                         {subBenefit}
                       </li>
                     ))
