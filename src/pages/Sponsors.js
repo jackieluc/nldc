@@ -6,6 +6,7 @@ import {
 import Wave from '../components/Dividers/Wave';
 import styles from '../utils/styles';
 import SponsorPackage from '../components/SponsorPackage/SponsorPackage';
+import SponsorList from '../components/SponsorPackage/SponsorList';
 
 const Wrapper = styled.div`
   text-align: center;
@@ -42,13 +43,6 @@ const BenefitsTitle = styled.h1`
   color: #FFFFFF;
   font-size: 2.5rem;
   margin-bottom: 2rem;
-`;
-
-const Values = styled(Container)`
-  padding: 4rem 15px 2rem 15px;
-  background-color: #F9F9F9;
-  position: relative;
-  z-index: 2;
 `;
 
 const benefits1 = ['Keynote presentations', 'Corporate videos', 'Plenary recognition', ['Logo exposure', 'Conference website', 'Merchandise', 'Delegate package'], 'Snapchat filters', 'Social media promotion', 'Promotional products'];
@@ -94,25 +88,7 @@ const Sponsors = () => (
       </CardDeck>
     </Benefits>
     <Wave />
-    <Values fluid>
-      <Row>
-        <Description xs="12" md="10" xl="6">
-          <p>
-            { // eslint-disable-next-line
-            } For over 65 years, we have worked alongside government, businesses and talented  students to facilitate life changing professional experiences within hundreds of small to multinational businesses. We have provided talented youth with meaningful and challenging experiences to develop their leadership potential in Canada.
-          </p>
-          <div>
-            Please visit
-            {' '}
-            <a href="https://www.aiesec.ca/hire-global-talent/" target="_blank" rel="noopener noreferrer">
-              https://www.aiesec.ca/hire-global-talent/
-            </a>
-            {' '}
-            for more information.
-          </div>
-        </Description>
-      </Row>
-    </Values>
+    <SponsorList />
   </Wrapper>
 );
 
