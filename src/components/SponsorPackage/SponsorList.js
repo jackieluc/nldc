@@ -1,6 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Container, Card } from 'reactstrap';
+import styled from 'styled-components';
+import Media from '../../utils/media';
+import styles from '../../utils/styles';
 
 const Wrapper = styled.section`
   padding: 4rem 0 2rem 0;
@@ -14,7 +16,7 @@ const Tier = styled.div`
 `;
 
 const TierTitle = styled.h2`
-
+  color: ${styles.textColour};
 `;
 
 const LogoCard = styled(Card)`
@@ -35,7 +37,8 @@ const SponsorLink = styled.a`
 
 const Logo = styled.img`
   display: block;
-  width: 270px;
+  width: 190px;
+  ${Media.tablet`width:270px`}
   height: auto;
 `;
 
