@@ -45,8 +45,8 @@ const BenefitsTitle = styled.h1`
 `;
 
 const Values = styled(Container)`
-  padding-top: 4rem; 
-  background-color: #F4F7F8;
+  padding: 4rem 15px 2rem 15px;
+  background-color: #F9F9F9;
   position: relative;
   z-index: 2;
 `;
@@ -96,7 +96,7 @@ const Sponsors = () => (
     <Wave />
     <Values fluid>
       <Row>
-        <Description xs="12" md="9">
+        <Description xs="12" md="10" xl="6">
           <p>
             { // eslint-disable-next-line
             } For over 65 years, we have worked alongside government, businesses and talented  students to facilitate life changing professional experiences within hundreds of small to multinational businesses. We have provided talented youth with meaningful and challenging experiences to develop their leadership potential in Canada.
