@@ -46,7 +46,7 @@ const List = styled.ul`
 const SponsorPackage = ({ title, benefits }) => (
   <StyledCard>
     <CardBodyContainer>
-      <CardTitle style={{ color: styles.themeColour, margin: '1rem 0', fontWeight: 'bold' }}>
+      <CardTitle style={{ color: styles.textColour, margin: '1rem 0', fontWeight: 'bold' }}>
         {title}
       </CardTitle>
       <ListGroup>
