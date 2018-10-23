@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import Divider from '../components/Dividers/RightDivider';
 import Hero from '../components/Hero';
 import EventDetails from '../components/EventDetails';
+import AboutAiesec from '../components/About/AboutAiesec';
 import SponsorDetails from '../components/SponsorDetails';
 import SponsorList from '../components/SponsorPackage/SponsorList';
-import Footer from '../components/Footer';
 
 const Wrapper = styled.div`
   text-align: center;
@@ -15,7 +14,7 @@ const Home = () => (
   <Wrapper>
     <Hero />
     <EventDetails />
-    <Divider />
+    <AboutAiesec />
     <SponsorDetails />
     <SponsorList />
   </Wrapper>
