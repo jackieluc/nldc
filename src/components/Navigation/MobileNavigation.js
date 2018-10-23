@@ -70,12 +70,27 @@ const StyledLink = styled(NavLink)`
   }
 `;
 
+const StyledAnchor = styled.a`
+  font-size: 1.2rem;
+  margin: 8px 10vw;
+  ${Media.tablet`margin: 8px 5vw;`}
+  text-decoration: none;
+`;
+
 const MobileMenu = ({ routes, action }) => (
   <MenuWrapper>
     {routes.map(route => (
-      <StyledLink to={route.path} onClick={action} key={route.name}>
-        {route.name}
-      </StyledLink>
+      /^https?:\/\//.test(route.path)
+        ? (
+          <StyledAnchor href={route.path} target="_blank" rel="noopener noreferrer" key={route.name}>
+            {route.name}
+          </StyledAnchor>
+        )
+        : (
+          <StyledLink to={route.path} onClick={action} key={route.name}>
+            {route.name}
+          </StyledLink>
+        )
     ))}
   </MenuWrapper>
 );

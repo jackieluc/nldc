@@ -74,6 +74,10 @@ const routes = [
     name: 'Sponsors',
     path: '/sponsors',
   },
+  {
+    name: 'Contact us',
+    path: 'https://www.facebook.com/AIESECCanadaNLDC/',
+  },
 ];
 
 ReactDOM.render((

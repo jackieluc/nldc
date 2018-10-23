@@ -33,14 +33,21 @@ const MenuWrapper = styled.nav`
   left: 0;
   right: 0;
   z-index: 3;
-  `;
+`;
 
 const StyledLink = styled(NavLink)`
-    font-size: 1rem;
-    padding: 8px 1.5rem;
-    letter-spacing: 1px;
-    text-decoration: none;
-  `;
+  font-size: 1rem;
+  padding: 8px 1.5rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+`;
+
+const StyledAnchor = styled.a`
+  font-size: 1rem;
+  padding: 8px 1.5rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+`;
 
 export default class Menu extends Component {
   constructor(props) {
@@ -90,9 +97,17 @@ export default class Menu extends Component {
     return (
       <MenuWrapper location={location} heights={{ currentWindowHeight, firstSectionHeight }}>
         {routes.map(route => (
-          <StyledLink to={route.path} key={route.name}>
-            {route.name}
-          </StyledLink>
+          /^https?:\/\//.test(route.path)
+            ? (
+              <StyledAnchor href={route.path} target="_blank" rel="noopener noreferrer" key={route.name}>
+                {route.name}
+              </StyledAnchor>
+            )
+            : (
+              <StyledLink to={route.path} key={route.name}>
+                {route.name}
+              </StyledLink>
+            )
         ))}
       </MenuWrapper>
     );
