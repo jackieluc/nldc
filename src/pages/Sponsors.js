@@ -88,7 +88,7 @@ const Sponsors = () => (
       </CardDeck>
     </Benefits>
     <Wave />
-    <SponsorList />
+    <SponsorList paddingTop="4rem" />
   </Wrapper>
 );
 

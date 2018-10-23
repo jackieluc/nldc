@@ -1,11 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Container, Card } from 'reactstrap';
 import styled from 'styled-components';
 import Media from '../../utils/media';
 import Styles from '../../utils/styles';
 
 const Wrapper = styled.section`
-  padding: 4rem 0 2rem 0;
+  padding-bottom: 2rem;
 `;
 
 const Tier = styled.div`
@@ -91,8 +92,8 @@ const kindLogos = {
   esxossmanway: logos['Esxossmanway.png'],
 };
 
-const SponsorList = () => (
-  <Wrapper>
+const SponsorList = ({ paddingTop }) => (
+  <Wrapper style={{ paddingTop }}>
     <Container>
       <Tier>
         <TierTitle>
@@ -127,5 +128,13 @@ const SponsorList = () => (
     </Container>
   </Wrapper>
 );
+
+SponsorList.defaultProps = {
+  paddingTop: 0,
+};
+
+SponsorList.propTypes = {
+  paddingTop: PropTypes.string,
+};
 
 export default SponsorList;

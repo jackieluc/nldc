@@ -4,6 +4,7 @@ import Divider from '../components/Dividers/RightDivider';
 import Hero from '../components/Hero';
 import EventDetails from '../components/EventDetails';
 import SponsorDetails from '../components/SponsorDetails';
+import SponsorList from '../components/SponsorPackage/SponsorList';
 import Footer from '../components/Footer';
 
 const Wrapper = styled.div`
@@ -16,6 +17,7 @@ const Home = () => (
     <EventDetails />
     <Divider />
     <SponsorDetails />
+    <SponsorList />
   </Wrapper>
 );
 
