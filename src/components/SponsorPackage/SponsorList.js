@@ -130,7 +130,7 @@ const SponsorList = ({ paddingTop }) => (
 );
 
 SponsorList.defaultProps = {
-  paddingTop: 0,
+  paddingTop: '0',
 };
 
 SponsorList.propTypes = {

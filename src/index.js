@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Sponsors from './pages/Sponsors';
+import ScrollToTop from './components/ScrollToTop';
 
 // eslint-disable-next-line
 injectGlobal`
@@ -78,6 +79,7 @@ const routes = [
 ReactDOM.render((
   <Router>
     <main>
+      <ScrollToTop />
       <Navigation routes={routes} />
       <Switch>
         <Route exact path="/" component={Home} />
