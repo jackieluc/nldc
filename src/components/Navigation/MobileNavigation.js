@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import hexToRgba from 'hex-to-rgba';
 import Styles from '../../utils/styles';
 import Media from '../../utils/media';
 
@@ -14,8 +13,8 @@ const NavWrapper = styled.button`
   height: 3rem;
   border: 0;
   border-radius: 40px;
-  -webkit-box-shadow: 1px 2px 8px ${hexToRgba('#9BCDFF', 0.9)};
-  box-shadow: 1px 2px 8px ${hexToRgba('#9BCDFF', 0.9)};
+  -webkit-box-shadow: 1px 2px 8px rgba(75, 97, 141, 0.9);
+  box-shadow: 1px 2px 8px rgba(75, 97, 141, 0.9);
   background-color: white;
   z-index: 999;
   outline: none;
