@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Styles from '../utils/styles';
 import AddToCalendar from './Calendar/AddToCalendar';
 import Media from '../utils/media';
 
@@ -13,8 +14,7 @@ const Wrapper = styled.div`
   justify-content: center;
   ${Media.tablet`
     padding: 10px 35px;
-    -webkit-box-shadow: 0 6px 20px rgba(75, 97, 141, 0.3);
-    box-shadow: 0 6px 20px rgba(75, 97, 141, 0.3);
+    ${Styles.shadow}
   `}
   ${Media.laptop`width: 80%;`}
   ${Media.desktop`width: 1200px;`}
@@ -40,8 +40,8 @@ const ColumnRight = styled(Column)`
 
 const EventTitle = styled.h2`
   background: #7F7FD5;
-  background: -webkit-linear-gradient(to right, #9BCDFF, #7F7FD5);
-  background: linear-gradient(to right, #9BCDFF, #7F7FD5);
+  background: -webkit-linear-gradient(to right, ${Styles.themeColour}, #7F7FD5);
+  background: linear-gradient(to right, ${Styles.themeColour}, #7F7FD5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2rem;
@@ -65,6 +65,8 @@ const AddressLink = styled.a`
 `;
 
 const EventInfoTitle = styled(EventTitle)`
+  background: none;
+  -webkit-text-fill-color: ${Styles.textColour};
   font-size: 2rem;
   ${Media.tablet`font-size: 1.5rem;`}
   ${Media.laptop`font-size: 1.75rem;`}

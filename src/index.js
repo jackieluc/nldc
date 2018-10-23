@@ -46,7 +46,7 @@ injectGlobal`
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 
   a {

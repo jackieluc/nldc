@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Card } from 'reactstrap';
 import styled from 'styled-components';
 import Media from '../../utils/media';
-import styles from '../../utils/styles';
+import Styles from '../../utils/styles';
 
 const Wrapper = styled.section`
   padding: 4rem 0 2rem 0;
@@ -15,8 +15,9 @@ const Tier = styled.div`
   margin-right: auto;
 `;
 
-const TierTitle = styled.h2`
-  color: ${styles.textColour};
+const TierTitle = styled.h3`
+  color: ${Styles.textColour};
+  margin-bottom: 1rem;
 `;
 
 const LogoCard = styled(Card)`
@@ -27,6 +28,9 @@ const LogoCard = styled(Card)`
   flex-direction: initial;
   padding: 10px;
   margin-bottom: 60px;
+  border-radius: 0;
+  border: 0;
+  ${Styles.shadow}
 `;
 
 const SponsorLink = styled.a`

@@ -60,7 +60,7 @@ const Title = styled.h1`
 
 const Info = styled.h3`
   display: block;
-  font-size: 0.8rem;
+  font-size: 1rem;
   ${Media.tablet`font-size: 1rem;`}
   ${Media.desktop`font-size: 1.3rem;`}
   color: ${Styles.textColour};

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Styles from '../utils/styles';
 import Media, { BreakPoints } from '../utils/media';
 
 const SponsorDetailsSection = styled.section`
@@ -15,8 +16,8 @@ const Wrapper = styled.div`
 
 const SponsorTitle = styled.h2`
   background: #7F7FD5;
-  background: -webkit-linear-gradient(to right, #9BCDFF, #7F7FD5);
-  background: linear-gradient(to right, #9BCDFF, #7F7FD5);
+  background: -webkit-linear-gradient(to right, ${Styles.themeColour}, #7F7FD5);
+  background: linear-gradient(to right, ${Styles.themeColour}, #7F7FD5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2.5rem;

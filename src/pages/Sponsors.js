@@ -4,7 +4,7 @@ import {
   Container, Row, Col, CardDeck,
 } from 'reactstrap';
 import Wave from '../components/Dividers/Wave';
-import styles from '../utils/styles';
+import Styles from '../utils/styles';
 import SponsorPackage from '../components/SponsorPackage/SponsorPackage';
 import SponsorList from '../components/SponsorPackage/SponsorList';
 
@@ -14,8 +14,8 @@ const Wrapper = styled.div`
 
 const Title = styled.h1`
   background: #7F7FD5;
-  background: -webkit-linear-gradient(to right, ${styles.themeColour}, #7F7FD5);
-  background: linear-gradient(to right, ${styles.themeColour}, #7F7FD5);
+  background: -webkit-linear-gradient(to right, ${Styles.themeColour}, #7F7FD5);
+  background: linear-gradient(to right, ${Styles.themeColour}, #7F7FD5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2.5rem;
@@ -33,7 +33,7 @@ const Description = styled(Col)`
 `;
 
 const Benefits = styled.section`
-  background-color: ${styles.themeColour};
+  background-color: ${Styles.themeColour};
   width: 100%;
   padding: 2rem 0 6rem 0;
   margin-bottom: 0;
