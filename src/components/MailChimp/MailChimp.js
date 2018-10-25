@@ -6,6 +6,7 @@ import Media from '../../utils/media';
 
 const StyledForm = styled(Form)`
   text-align: center;
+  margin-bottom: 2rem;
 `;
 
 const StyledLabel = styled(Label)`
