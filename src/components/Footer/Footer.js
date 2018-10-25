@@ -12,6 +12,12 @@ const Wrapper = styled.footer`
   padding-bottom: 60px;
 `;
 
+const Div = styled.div`
+  position: relative;
+  display: block;
+  text-align: center;
+`;
+
 const Link = styled.a`
   position: absolute;
   top: -140px;
@@ -20,12 +26,6 @@ const Link = styled.a`
 
 const Img = styled.img`
   width: 240px;
-`;
-
-const Div = styled.div`
-  position: relative;
-  display: block;
-  text-align: center;
 `;
 
 const Footer = () => (
