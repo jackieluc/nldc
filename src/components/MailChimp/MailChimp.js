@@ -33,6 +33,7 @@ const SubmitButton = styled(Input)`
   &:focus {
     color: #FFFFFF;
     background-color: ${styles.hoverColour};
+    cursor: pointer;
   }
 
   ${Media.tablet`
