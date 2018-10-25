@@ -28,7 +28,8 @@ const SubmitButton = styled(Input)`
   background-color: ${styles.themeColour};
   ${styles.shadow}
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: #FFFFFF;
     background-color: ${styles.hoverColour};
   }
