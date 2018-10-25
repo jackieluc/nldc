@@ -53,7 +53,7 @@ export default function MailChimp() {
       noValidate
     >
       <StyledLabel htmlFor="EMAIL">
-        Subscribe for Conference Updates!
+        Subscribe for conference updates!
         <StyledInput
           type="email"
           name="EMAIL"
