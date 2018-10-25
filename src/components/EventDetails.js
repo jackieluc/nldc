@@ -85,21 +85,21 @@ const EventDetails = () => (
       </Column>
       <ColumnRight>
         <EventInfoTitle>
+          When
+        </EventInfoTitle>
+        <EventDescription>
+          <AddToCalendar />
+        </EventDescription>
+        <EventInfoTitle>
             Where
         </EventInfoTitle>
         <EventDescription>
           <DescriptionWrapper>
-            SAIT (Southern Alberta Institute of Technology)
+            SAIT (Southern Alberta Institute of Technology), Calgary, Alberta
             <AddressLink href="https://www.google.com/maps/place/SAIT/@51.0640269,-114.0907061,17z/data=!3m1!4b1!4m5!3m4!1s0x53716f9268a69e81:0xb1db5e68bd61e28!8m2!3d51.065755!4d-114.0897771" target="_blank" rel="noopener noreferrer">
                 1301-16 Avenue NW Calgary AB, T2M OL4
             </AddressLink>
           </DescriptionWrapper>
-        </EventDescription>
-        <EventInfoTitle>
-            When
-        </EventInfoTitle>
-        <EventDescription>
-          <AddToCalendar />
         </EventDescription>
       </ColumnRight>
     </Wrapper>

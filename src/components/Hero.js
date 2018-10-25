@@ -82,7 +82,7 @@ const Hero = () => (
       National Leadership Development Conference
     </Title>
     <Info>
-      May 1&ndash;5, 2019 | Calgary, Alberta
+      May 1&ndash;5, 2019 | SAIT Calgary, Alberta
     </Info>
   </HeroSection>
 );
