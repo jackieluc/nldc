@@ -1,16 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import hexToRgba from 'hex-to-rgba';
 import Media from '../utils/media';
-import Styles from '../utils/styles';
 import LogoNldc from '../images/nldc2019-logo.png';
 import '../images/princes-island-park.jpg';
 
 const HeroSection = styled.section`
   height: 85vh;
-  background: ${hexToRgba('#2BC0E4', 0.8)};
-  background: -webkit-linear-gradient(to bottom, ${hexToRgba('#2BC0E4', 0.8)}, ${hexToRgba('#EAECC6', 0.7)});
-  background: linear-gradient(to bottom, ${hexToRgba('#2BC0E4', 0.8)}, ${hexToRgba('#EAECC6', 0.7)}), url('../static/media/princes-island-park.jpg');
+  background: rgba(75,75,75,0.5);
+  background: -webkit-linear-gradient(to bottom, rgba(75,75,75,0.5), rgba(75,75,75,0.5));
+  background: linear-gradient(to bottom, rgba(75,75,75,0.5), rgba(75,75,75,0.5)), url('../static/media/princes-island-park.jpg');
   background-size: cover;
   background-position: center;
   -webkit-box-shadow: 0 4px 20px rgba(75, 97, 141, 0.4);
@@ -60,15 +58,17 @@ const Title = styled.h1`
 
 const Info = styled.h3`
   display: block;
-  font-size: 1rem;
+  font-size: 0.7rem;
   ${Media.tablet`font-size: 1rem;`}
   ${Media.desktop`font-size: 1.3rem;`}
-  color: ${Styles.textColour};
+  color: #FFFFFF;
   font-weight: normal;
   line-height: 1;
   letter-spacing: 1px;
   margin: 0;
   text-transform: uppercase;
+  padding: 5px;
+  border: 2px solid white;
 `;
 
 
@@ -82,7 +82,7 @@ const Hero = () => (
       National Leadership Development Conference
     </Title>
     <Info>
-      May 1&ndash;5, 2019 | SAIT Calgary, Alberta
+      May 1&ndash;5, 2019 | Calgary, Alberta
     </Info>
   </HeroSection>
 );
