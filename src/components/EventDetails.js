@@ -90,7 +90,7 @@ const EventDetails = () => (
         <EventDescription>
           <AddToCalendar />
         </EventDescription>
-        <EventInfoTitle>
+        {/* <EventInfoTitle>
             Where
         </EventInfoTitle>
         <EventDescription>
@@ -100,7 +100,7 @@ const EventDetails = () => (
                 1301-16 Avenue NW Calgary AB, T2M OL4
             </AddressLink>
           </DescriptionWrapper>
-        </EventDescription>
+        </EventDescription> */}
       </ColumnRight>
     </Wrapper>
   </EventDetailsSection>
