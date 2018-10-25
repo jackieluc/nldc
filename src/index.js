@@ -6,7 +6,7 @@ import { injectGlobal } from 'styled-components';
 import registerServiceWorker from './registerServiceWorker';
 import Styles from './utils/styles';
 import Navigation from './components/Navigation/Navigation';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Sponsors from './pages/Sponsors';
