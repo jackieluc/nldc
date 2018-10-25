@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Media from '../utils/media';
-import LogoNldc from '../images/nldc2019-logo.png';
+import WhiteNldcLogo from '../images/nldc2019-logo-white.png';
 import '../images/princes-island-park.jpg';
 
 const HeroSection = styled.section`
@@ -74,7 +74,7 @@ const Info = styled.h3`
 
 const Hero = () => (
   <HeroSection>
-    <LogoImage src={LogoNldc} alt="NLDC 2019 Logo" />
+    <LogoImage src={WhiteNldcLogo} alt="NLDC 2019 Logo" />
     <Subtitle>
       AIESEC CANADA
     </Subtitle>

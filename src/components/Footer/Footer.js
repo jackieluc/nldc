@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Container } from 'reactstrap';
 import MailChimp from '../MailChimp/MailChimp';
 import SocialMedia from './SocialMedia';
-import NldcLogo from '../../images/nldc2019-logo.png';
+import BlackNldcLogo from '../../images/nldc2019-logo-black.png';
 
 const Wrapper = styled.footer`
   background-color: #F9F9F9;
@@ -32,7 +32,7 @@ const Footer = () => (
   <Wrapper>
     <Div>
       <Link href="/">
-        <Img src={NldcLogo} alt="NLDC Logo" />
+        <Img src={BlackNldcLogo} alt="NLDC Logo" />
       </Link>
       <Container>
         <MailChimp />
