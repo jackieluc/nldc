@@ -5,10 +5,6 @@ import styled from 'styled-components';
 import Media from '../../utils/media';
 import Styles from '../../utils/styles';
 
-const Wrapper = styled.section`
-  padding-bottom: 2rem;
-`;
-
 const Tier = styled.div`
   width: 100%;
   max-width: 640px;
@@ -98,7 +94,7 @@ const kindLogos = {
 };
 
 const SponsorList = ({ paddingTop }) => (
-  <Wrapper style={{ paddingTop }}>
+  <section style={{ paddingTop }}>
     <Container>
       <Tier>
         <TierTitle>
@@ -141,7 +137,7 @@ const SponsorList = ({ paddingTop }) => (
         </LogoCard>
       </Tier>
     </Container>
-  </Wrapper>
+  </section>
 );
 
 SponsorList.defaultProps = {
