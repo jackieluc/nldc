@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import MailChimp from '../MailChimp/MailChimp';
 import Styles from '../../utils/styles';
 import Media from '../../utils/media';
 
@@ -56,6 +57,11 @@ const MenuWrapper = styled.nav`
   justify-content: start;
   align-items: flex-end;
   overflow: hidden;
+
+  > form {
+    position: absolute !important;
+    bottom: 0 !important;
+  }
 `;
 
 const StyledLink = styled(NavLink)`
@@ -92,6 +98,7 @@ const MobileMenu = ({ routes, action }) => (
           </StyledLink>
         )
     ))}
+    <MailChimp />
   </MenuWrapper>
 );
 
