@@ -66,10 +66,10 @@ const routes = [
     name: 'Home',
     path: '/',
   },
-  {
-    name: 'About',
-    path: '/about-us',
-  },
+  // {
+  //   name: 'About',
+  //   path: '/about-us',
+  // },
   {
     name: 'Sponsors',
     path: '/sponsors',
