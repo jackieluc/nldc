@@ -49,6 +49,7 @@ const Logo = styled.img`
 
 const tier = {
   title: 'Title Sponsors',
+  innovationTitle: 'Innovation Title Sponsor',
   gold: 'Gold Sponsors',
   silver: 'Silver Sponsors',
   bronze: 'Bronze Sponsors',
@@ -70,6 +71,10 @@ const logos = importAll(require.context('../../images', false, /\.(png|jpe?g|svg
 
 const titleLogos = {
 
+};
+
+const innovationTitleLogo = {
+  hunterhub: logos['hunterhub.jpg'],
 };
 
 const goldLogos = {
@@ -95,6 +100,16 @@ const kindLogos = {
 const SponsorList = ({ paddingTop }) => (
   <Wrapper style={{ paddingTop }}>
     <Container>
+      <Tier>
+        <TierTitle>
+          {tier.innovationTitle}
+        </TierTitle>
+        <LogoCard>
+          <SponsorLink href="https://go.ucalgary.ca/hunter-hub/" rel="noopener noreferrer">
+            <Logo src={innovationTitleLogo.hunterhub} alt="" />
+          </SponsorLink>
+        </LogoCard>
+      </Tier>
       <Tier>
         <TierTitle>
           {tier.bronze}
