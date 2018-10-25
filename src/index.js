@@ -87,7 +87,7 @@ ReactDOM.render((
       <Navigation routes={routes} />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/about-us" component={About} />
+        {/* <Route exact path="/about-us" component={About} /> */}
         <Route exact path="/sponsors" component={Sponsors} />
         {/* <Route exact path='/schedule' component={Schedule} /> */}
         {/* <Route exact path='/events' component={Events} /> */}
