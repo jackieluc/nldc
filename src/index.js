@@ -32,7 +32,7 @@ injectGlobal`
 
   section, nav {
     display: flex;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;

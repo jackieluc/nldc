@@ -13,6 +13,7 @@ const Title = styled.h2`
 `;
 
 const Text = styled.p`
+  padding: 0 15px;
   text-align: left;
   ${Media.tablet`text-align: center;`}
 `;
@@ -39,28 +40,30 @@ const CTA = styled.a`
 `;
 
 const AboutAiesec = () => (
-  <Container fluid style={{ marginBottom: '2rem' }}>
-    <Row style={{ background: Styles.themeColour, padding: '2rem 0' }}>
-      <Col xs="12" md="10" lg="8" xl="6" style={{ margin: '0 auto' }}>
-        <About>
-          <Title>
-            About AIESEC
-          </Title>
-          <Text>
-            { // eslint-disable-next-line
-            } AIESEC is the largest  non-governmental not-for-profit organisation offering platforms for young people to explore and develop their leadership through our global exchange program. Since we were founded, we have engaged and developed over 1,000,000 young people who have been through an AIESEC experiences.
-          </Text>
-          <Text>
-            { // eslint-disable-next-line
-            } We are in consultative status with the United Nations Economic and Social Council (ECOSOC), affiliated with the UN DPI, member of ICMYO, and is recognized by UNESCO.
-          </Text>
-          <CTA href="https://aiesec.org/about-us" target="_blank" rel="noopener noreferrer">
-            Find out more about AIESEC
-          </CTA>
-        </About>
-      </Col>
-    </Row>
-  </Container>
+  <section>
+    <Container fluid style={{ background: Styles.themeColour, padding: '3rem 0' }}>
+      <Row>
+        <Col xs="12" md="10" lg="8" xl="6" style={{ margin: '0 auto' }}>
+          <About>
+            <Title>
+              About AIESEC
+            </Title>
+            <Text>
+              { // eslint-disable-next-line
+              } AIESEC is the largest  non-governmental not-for-profit organisation offering platforms for young people to explore and develop their leadership through our global exchange program. Since we were founded, we have engaged and developed over 1,000,000 young people who have been through an AIESEC experiences.
+            </Text>
+            <Text>
+              { // eslint-disable-next-line
+              } We are in consultative status with the United Nations Economic and Social Council (ECOSOC), affiliated with the UN DPI, member of ICMYO, and is recognized by UNESCO.
+            </Text>
+            <CTA href="https://aiesec.org/about-us" target="_blank" rel="noopener noreferrer">
+              Find out more about AIESEC
+            </CTA>
+          </About>
+        </Col>
+      </Row>
+    </Container>
+  </section>
 );
 
 export default AboutAiesec;
