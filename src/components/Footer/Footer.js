@@ -32,7 +32,7 @@ const Footer = () => (
   <Wrapper>
     <Div>
       <Link href="/">
-        <Img src={NldcLogo} alt="" />
+        <Img src={NldcLogo} alt="NLDC Logo" />
       </Link>
       <Container>
         <MailChimp />
