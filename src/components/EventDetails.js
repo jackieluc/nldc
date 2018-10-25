@@ -14,7 +14,6 @@ const Wrapper = styled.div`
   justify-content: center;
   ${Media.tablet`
     padding: 10px 35px;
-    ${Styles.shadow}
   `}
   ${Media.laptop`width: 80%;`}
   ${Media.desktop`width: 1200px;`}
