@@ -11,10 +11,10 @@ const AddToCalendar = styled.a`
   &.addeventatc {
     font-family: 'Lato', sans-serif !important;
     font-size: 1rem !important;
-    padding: 13px 12px 12px 58px !important;
+    padding: 13px 12px 12px 65px !important;
     z-index: 2 !important;
     font-weight: 400;
-    width: 14rem;
+    width: 15rem;
     -webkit-box-shadow: 0 3px 6px rgba(75, 97, 141, 0.3), 0 3px 6px rgba(75, 97, 141, 0.5) !important;
     box-shadow: 0 3px 6px rgba(75, 97, 141, 0.3), 0 3px 6px rgba(75, 97, 141, 0.5) !important;
     &:hover {
@@ -26,7 +26,7 @@ const AddToCalendar = styled.a`
     .addeventatc_dropdown {
       font-family: 'Lato', sans-serif !important;
       font-size: 1rem !important;
-      width: 222px !important;
+      width: 15rem !important;
 
       > span {
         font-weight: 400;
@@ -50,13 +50,16 @@ const AddToCalendar = styled.a`
     .addeventatc_icon {
       left: 20px !important;
       top: 18px !important;
+      width: 22px;
+      height: 22px;
+      background-size: 22px 22px;
     }
   }
 `;
 
 const CalendarSubtitle = styled.em`
   display: block;
-  font-size: 12px;
+  font-size: 16px;
   margin: 3px 0 0 0 !important;
   color: #777777;
 `;
