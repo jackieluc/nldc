@@ -60,6 +60,7 @@ const MenuWrapper = styled.nav`
 
   > form {
     margin-top: auto;
+    margin-bottom: 10vh;
   }
 `;
 
