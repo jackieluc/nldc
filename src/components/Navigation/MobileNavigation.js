@@ -57,10 +57,12 @@ const MenuWrapper = styled.nav`
   justify-content: start;
   align-items: flex-end;
   overflow: hidden;
+  text-transform: uppercase;
 
   > form {
     margin-top: auto;
     margin-bottom: 10vh;
+    text-transform: none;
   }
 `;
 

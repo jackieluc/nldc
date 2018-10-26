@@ -10,6 +10,7 @@ const About = styled.div`
 
 const Title = styled.h2`
   margin-bottom: 1rem;
+  text-transform: uppercase;
 `;
 
 const Text = styled.p`
@@ -20,12 +21,13 @@ const Text = styled.p`
 const CTA = styled.a`
   color: white;
   display: block;
-  padding-top: 2rem;
+  margin-top: 2rem;
   margin-left: -25px;
+  text-decoration: underline;
 
   &:hover {
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   &:after {

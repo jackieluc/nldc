@@ -42,6 +42,7 @@ const MenuWrapper = styled.nav`
   top: 0;
   flex-direction: row;
   z-index: 3;
+  text-transform: uppercase;
 `;
 
 const StyledLink = styled(NavLink)`

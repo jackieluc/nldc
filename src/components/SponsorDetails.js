@@ -21,6 +21,7 @@ const SponsorTitle = styled.h2`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2.5rem;
+  text-transform: uppercase;
 `;
 
 const SponsorDescription = styled.div`

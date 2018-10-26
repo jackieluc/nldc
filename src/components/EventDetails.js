@@ -43,25 +43,26 @@ const EventTitle = styled.h2`
   background: linear-gradient(to right, ${Styles.themeColour}, #7F7FD5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 2rem;
+  font-size: 1.6rem;
   ${Media.laptop`font-size: 2.3rem;`}
   text-align: left;
   margin: 10px auto;
+  text-transform: uppercase;
 `;
 
 const EventDescription = styled.p`
   text-align: left;
 `;
 
-const DescriptionWrapper = styled.span`
-  font-size: 0.875rem;
-  ${Media.laptop`font-size: 1rem;`}
-`;
+// const DescriptionWrapper = styled.span`
+//   font-size: 0.875rem;
+//   ${Media.laptop`font-size: 1rem;`}
+// `;
 
-const AddressLink = styled.a`
-  text-align: left;
-  display: block;
-`;
+// const AddressLink = styled.a`
+//   text-align: left;
+//   display: block;
+// `;
 
 const EventInfoTitle = styled(EventTitle)`
   background: none;
@@ -69,6 +70,7 @@ const EventInfoTitle = styled(EventTitle)`
   font-size: 2rem;
   ${Media.tablet`font-size: 1.5rem;`}
   ${Media.laptop`font-size: 1.75rem;`}
+  text-transform: none;
 `;
 
 const EventDetails = () => (

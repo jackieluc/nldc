@@ -20,6 +20,7 @@ const Title = styled.h1`
   -webkit-text-fill-color: transparent;
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  text-transform: uppercase;
 `;
 
 const TitleSection = styled.section`
@@ -30,6 +31,7 @@ const TitleSection = styled.section`
 const Description = styled(Col)`
   text-align: center;
   margin: 0 auto;
+  max-width: 992px;
 `;
 
 const Benefits = styled.section`
@@ -43,6 +45,7 @@ const BenefitsTitle = styled.h1`
   color: #FFFFFF;
   font-size: 2.5rem;
   margin-bottom: 2rem;
+  text-transform: uppercase;
 `;
 
 const benefits1 = ['Keynote presentations', 'Corporate videos', 'Plenary recognition', ['Logo exposure', 'Conference website', 'Merchandise', 'Delegate package'], 'Snapchat filters', 'Social media promotion', 'Promotional products'];
@@ -59,7 +62,7 @@ const Sponsors = () => (
           Sponsors
         </Title>
         <Row>
-          <Description xs="12" lg="8">
+          <Description xs="12">
             <p>
               { // eslint-disable-next-line
               } In order to have a successful NLDC, we require funding for venues, events, speakers, and much more. We are looking to form valuable partnerships with organizations that value leadership, diversity, innovation, technology, and entrepreneurial thinking.
