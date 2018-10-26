@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import { Container } from 'reactstrap';
 import MailChimp from '../MailChimp/MailChimp';
 import SocialMedia from './SocialMedia';
-import BlackNldcLogo from '../../images/nldc2019-logo-black.png';
+
+const BlackNldcLogo = require('../../images/nldc2019-logo-black.png');
 
 const Wrapper = styled.footer`
   background-color: #F9F9F9;
