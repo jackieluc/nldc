@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { injectGlobal } from 'styled-components';
+import ReactGA from 'react-ga';
 import registerServiceWorker from './registerServiceWorker';
 import Styles from './utils/styles';
 import Navigation from './components/Navigation/Navigation';
@@ -61,6 +62,12 @@ injectGlobal`
     }
   }
 `;
+
+if (window.location.hostname === 'nldcnow') {
+  ReactGA.initialize('UA-120821697-1');
+  ReactGA.pageview(window.location.pathname + window.location.search);
+  console.log('nldcnow.com');
+}
 
 const routes = [
   {
