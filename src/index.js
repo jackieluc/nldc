@@ -66,7 +66,6 @@ injectGlobal`
 if (window.location.hostname === 'nldcnow') {
   ReactGA.initialize('UA-120821697-1');
   ReactGA.pageview(window.location.pathname + window.location.search);
-  console.log('nldcnow.com');
 }
 
 const routes = [

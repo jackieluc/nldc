@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import loadScript from 'load-script';
-import hexToRgba from 'hex-to-rgba';
 
 const AddToCalendar = styled.a`
   // Overwrite AddEvent 'Add to Calendar' styling
