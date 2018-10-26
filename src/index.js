@@ -8,9 +8,9 @@ import Styles from './utils/styles';
 import Navigation from './components/Navigation/Navigation';
 import Footer from './components/Footer/Footer';
 import Home from './pages/Home';
-import About from './pages/About';
+// import About from './pages/About';
 import Sponsors from './pages/Sponsors';
-import ScrollToTop from './components/ScrollToTop';
+import ScrollToTop from './utils/ScrollToTop';
 
 // eslint-disable-next-line
 injectGlobal`
