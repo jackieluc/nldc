@@ -59,7 +59,7 @@ const AddToCalendar = styled.a`
 
 const CalendarSubtitle = styled.em`
   display: block;
-  font-size: 16px;
+  font-size: 12px;
   margin: 3px 0 0 0 !important;
   color: #777777;
 `;
@@ -104,7 +104,7 @@ export default class CalendarCta extends React.Component {
           America/Edmonton
         </span>
         <span className="title">
-          AIESEC CANADA | NLDC 2019
+          NLDC 2019 | AIESEC CANADA
         </span>
         <span className="description">
           { // eslint-disable-next-line
