@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import MailChimp from '../MailChimp/MailChimp';
 import Styles from '../../utils/styles';
 import Media from '../../utils/media';
+import SocialMedia from '../Footer/SocialMedia';
 
 const NavWrapper = styled.button`
   position: fixed;
@@ -60,8 +61,11 @@ const MenuWrapper = styled.nav`
   text-transform: uppercase;
 
   > form {
-    margin-top: auto;
-    margin-bottom: 10vh;
+    margin: auto auto 2rem auto;
+    text-transform: none;
+  }
+  > div {
+    margin: 0 auto 15vh auto;
     text-transform: none;
   }
 `;
@@ -101,6 +105,7 @@ const MobileMenu = ({ routes, action }) => (
         )
     ))}
     <MailChimp />
+    <SocialMedia />
   </MenuWrapper>
 );
 
