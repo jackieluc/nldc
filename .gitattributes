@@ -1,6 +1,5 @@
 * text=auto
 * text eol=lf
-*.gif diff=image
-*.jpg diff=image
-*.jpeg diff=image
-*.png diff=image
+*.jpg binary
+*.png binary
+*.gif binary
