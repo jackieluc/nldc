@@ -10,6 +10,7 @@ const About = styled.div`
 
 const Title = styled.h2`
   margin-bottom: 1rem;
+  text-transform: uppercase;
 `;
 
 const Text = styled.p`
