@@ -59,8 +59,7 @@ const MenuWrapper = styled.nav`
   overflow: hidden;
 
   > form {
-    position: absolute !important;
-    bottom: 0 !important;
+    margin-top: auto;
   }
 `;
 
