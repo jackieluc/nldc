@@ -31,6 +31,7 @@ injectGlobal`
   }
 
   section, nav {
+    width: 100%;
     display: flex;
     margin-bottom: 3rem;
     flex-direction: column;

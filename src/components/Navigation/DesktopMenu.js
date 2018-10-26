@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Styles from '../../utils/styles';
+import BlackNldcLogo from '../../images/nldc2019-logo-black.png';
 
 const isHomePage = location => location === '/';
 
@@ -17,21 +18,29 @@ const MenuWrapper = styled.nav`
           color: ${Styles.textColour};
         }
       };
+      justify-content: flex-end;
+      > a:first-of-type {
+        display: none;
+      };
     `
-    : 'background-color: white;'
+    : `background-color: white;
+      justify-content: none;
+      > a:first-of-type {
+        padding: 0;
+        margin-right: auto;
+      };
+    `
   )}
   ${({ heights }) => (isNearTop(heights)
     ? 'box-shadow: none;'
     : 'box-shadow: 0 3px 6px rgba(75, 97, 141, 0.3);'
   )}
+  display: flex;
   height: 60px;
   padding: 8px 16px;
   position: fixed;
-  flex-direction: row;
-  justify-content: flex-end;
   top: 0;
-  left: 0;
-  right: 0;
+  flex-direction: row;
   z-index: 3;
 `;
 
@@ -47,6 +56,11 @@ const StyledAnchor = styled.a`
   padding: 8px 1.5rem;
   letter-spacing: 1px;
   text-decoration: none;
+`;
+
+const Logo = styled.img`
+  width: 120px;
+  height: 54px;
 `;
 
 export default class Menu extends Component {
@@ -96,6 +110,9 @@ export default class Menu extends Component {
     const { routes } = this.props;
     return (
       <MenuWrapper location={location} heights={{ currentWindowHeight, firstSectionHeight }}>
+        <StyledAnchor href="/">
+          <Logo src={BlackNldcLogo} alt="" />
+        </StyledAnchor>
         {routes.map(route => (
           /^https?:\/\//.test(route.path)
             ? (
