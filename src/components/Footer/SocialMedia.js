@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import FacebookLogo from '../../images/facebook.png';
 import LinkedinLogo from '../../images/linkedin.png';
-import TwitterLogo from '../../images/twitter.png';
+import InstagramLogo from '../../images/instagram.png';
 
 const Wrapper = styled.div`
   display: flex;
@@ -34,7 +34,7 @@ export default function SocialMedia() {
         <img src={LinkedinLogo} alt="LinkedIn Logo - link to NLDC 2019 LinkedIn page" />
       </a>
       <a href="https://www.instagram.com/aieseccanadanldc/" target="_blank" rel="noopener noreferrer">
-        <img src={TwitterLogo} alt="Instagram Logo - link to NLDC 2019 Instagram page" />
+        <img src={InstagramLogo} alt="Instagram Logo - link to NLDC 2019 Instagram page" />
       </a>
     </Wrapper>
   );
