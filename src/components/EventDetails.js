@@ -68,7 +68,7 @@ const EventDetails = () => (
           </EventDescription>
         </Col>
       </StyledRow>
-      <StyledRow>
+      {/* <StyledRow>
         <Col xs="12" sm="10" lg={{ size: 6, offset: 6 }}>
           <EventInfoTitle>
             Where
@@ -80,7 +80,7 @@ const EventDetails = () => (
             </AddressLink>
           </EventDescription>
         </Col>
-      </StyledRow>
+      </StyledRow> */}
     </Container>
   </section>
 );
