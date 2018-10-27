@@ -147,9 +147,9 @@ module.exports = {
           {
             test: /\.(otf|woff|woff2|eot|ttf)$/,
             use: [{
-                loader: require.resolve('url-loader'),
+                loader: require.resolve('file-loader'),
                 options: {
-                  limit: 10000,
+                  limit: 100000,
                   name: 'static/media/fonts/[name].[ext]',
                 }
             }]
