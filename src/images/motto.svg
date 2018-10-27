@@ -1,0 +1,27 @@
+<svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 70 40" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @font-face {
+      font-family: "BillyOhio";
+      src: url("../utils/fonts/billy-ohio.otf") format("opentype");
+    }
+    .disrupting { 
+      font-family: BillyOhio, lato, sans-serif;
+      font-size: 21px;
+    }
+    .the,
+    .period { 
+      font-family: lato, sans-serif;
+      font-weight: 300;
+    }
+    .now { 
+      font-family: lato, sans-serif;
+      font-weight: 700;
+      font-style: italic;
+    }
+  </style>
+
+  <text x="0" y="20" class="disrupting">Disrupting</text>
+  <text x="0" y="35" class="the">the</text>
+  <text x="25" y="35" class="now">now </text>
+  <text x="50" y="35" class="period">.</text>
+</svg>
