@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Styles from '../utils/styles';
 import AddToCalendar from './Calendar/AddToCalendar';
 import Media from '../utils/media';
-import Motto from '../images/motto.svg';
+import Motto from './Motto';
 
 const ConferenceDescription = styled.div`
   width: 100%;
@@ -15,11 +15,13 @@ const StyledRow = styled(Row)`
   margin-bottom: 2rem;
 `;
 
-const MottoWrapper = styled.img`
+const MottoWrapper = styled.div`
   margin: 0 auto 2rem auto;
   ${Media.medPhone`width: 20rem;`}
-  ${Media.tablet`margin: 0 auto;`}
-  ${Media.laptop`width: 26rem;`}
+  ${Media.laptop`
+    width: 26rem;
+    margin: 0 auto;
+  `}
 `;
 
 const DescriptionWrapper = styled(Col)`
@@ -48,7 +50,10 @@ const EventDetails = () => (
       <ConferenceDescription>
         <StyledRow>
           <Col xs="12" sm="10" lg="6">
-            <MottoWrapper src={Motto} alt="Disrupting the now." />
+            {/* <MottoWrapper src={Motto} alt="Disrupting the now." /> */}
+            <MottoWrapper>
+              <Motto />
+            </MottoWrapper>
           </Col>
           <DescriptionWrapper xs="12" sm="10" lg="6">
             <EventDescription>

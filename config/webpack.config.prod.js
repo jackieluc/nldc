@@ -136,23 +136,12 @@ module.exports = {
           // "url" loader works just like "file" loader but it also embeds
           // assets smaller than specified size as data URLs to avoid requests.
           {
-            test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+            test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/, /\.svg$/],
             loader: require.resolve('file-loader'),
             options: {
               limit: 10000,
               name: 'static/media/[name].[ext]',
             },
-          },
-          // Process fonts
-          {
-            test: /\.(otf|woff|woff2|eot|ttf)$/,
-            use: [{
-                loader: require.resolve('file-loader'),
-                options: {
-                  limit: 100000,
-                  name: 'static/media/fonts/[name].[ext]',
-                }
-            }]
           },
           // Process JS with Babel.
           {
