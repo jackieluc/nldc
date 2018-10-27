@@ -2,7 +2,7 @@
   <style>
     @font-face {
       font-family: "BillyOhio";
-      src: url("../utils/fonts/billy-ohio.otf") format("opentype");
+      src: url("../static/media/fonts/billy-ohio.otf") format("opentype");
     }
     .disrupting { 
       font-family: BillyOhio, lato, sans-serif;

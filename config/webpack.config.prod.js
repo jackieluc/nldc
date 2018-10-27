@@ -149,7 +149,7 @@ module.exports = {
             use: [{
                 loader: require.resolve('file-loader'),
                 options: {
-                  name: 'static/media/fonts[name].[ext]',
+                  name: 'static/media/fonts/[name].[ext]',
                 }
             }]
           },
