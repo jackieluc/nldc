@@ -140,10 +140,11 @@ module.exports = {
           },
           // Process fonts
           {
-            test: /\.(woff(2)?|otf|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+            test: /\.(otf|woff|woff2|eot|ttf)$/,
             use: [{
-                loader: require.resolve('file-loader'),
+                loader: require.resolve('url-loader'),
                 options: {
+                  limit: 10000,
                   name: 'static/media/fonts/[name].[ext]',
                 }
             }]

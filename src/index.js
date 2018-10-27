@@ -12,6 +12,7 @@ import Home from './pages/Home';
 // import About from './pages/About';
 import Sponsors from './pages/Sponsors';
 import ScrollToTop from './utils/ScrollToTop';
+import './utils/fonts/fonts.css';
 
 // eslint-disable-next-line
 injectGlobal`
@@ -22,13 +23,13 @@ injectGlobal`
     font-size: 16px;
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', 'BillyOhio', sans-serif;
     // overflow-x: hidden;
     // overflow-y: auto;
     // background-color: #FAFAFA;
     color: ${Styles.textColour};
     line-height: 1.5;
-    -webkit-font-smoothing: antialiased
+    -webkit-font-smoothing: antialiased;
   }
 
   section, nav {
