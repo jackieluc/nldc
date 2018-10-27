@@ -138,6 +138,16 @@ module.exports = {
               name: 'static/media/[name].[ext]',
             },
           },
+          // Process fonts
+          {
+            test: /\.(woff(2)?|otf|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+            use: [{
+                loader: require.resolve('file-loader'),
+                options: {
+                  name: 'static/media/fonts/[name].[ext]',
+                }
+            }]
+          },
           // Process JS with Babel.
           {
             test: /\.(js|jsx|mjs)$/,
