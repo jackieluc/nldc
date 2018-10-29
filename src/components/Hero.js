@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import MailChimp from './MailChimp/MailChimp';
 import Media from '../utils/media';
 import WhiteNldcLogo from '../images/nldc2019-logo-white.png';
 import '../images/princes-island-park.jpg';
 
 const HeroSection = styled.section`
-  height: 85vh;
+  height: 95vh;
   background: rgba(20,20,20,0.8);
   background: -webkit-linear-gradient(to bottom, rgba(20,20,20,0.8), rgba(20,20,20,0.8));
   background: linear-gradient(to bottom, rgba(20,20,20,0.8), rgba(20,20,20,0.8)), url('../static/media/princes-island-park.jpg');
@@ -18,6 +19,7 @@ const HeroSection = styled.section`
 `;
 
 const LogoImage = styled.img`
+  margin-top: auto;
   width: 250px;
   ${Media.tablet`width: 350px;`}
   ${Media.laptop`width: 450px;`}
@@ -65,12 +67,18 @@ const Info = styled.h3`
   font-weight: normal;
   line-height: 1;
   letter-spacing: 1px;
-  margin: 0;
   text-transform: uppercase;
+  margin-bottom: 2rem;
   padding: 5px;
   border: 2px solid white;
 `;
 
+const HeroMailChimp = styled(MailChimp)`
+  margin-top: auto;
+  margin-bottom: 1rem;
+  font-size: 0.7rem;
+  ${Media.tablet`font-size: 1rem;`}
+`;
 
 const Hero = () => (
   <HeroSection>
@@ -84,6 +92,7 @@ const Hero = () => (
     <Info>
       May 1&ndash;5, 2019 | Calgary, Alberta
     </Info>
+    <HeroMailChimp />
   </HeroSection>
 );
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import { Form, Label, Input } from 'reactstrap';
 import styles from '../../utils/styles';
 import Media from '../../utils/media';
@@ -26,6 +27,7 @@ const SubmitButton = styled(Input)`
   padding: 6px;
   margin: 0;
   color: #FFFFFF;
+  border-color: transparent;
   background-color: ${styles.themeColour};
   ${styles.shadow}
 
@@ -42,14 +44,14 @@ const SubmitButton = styled(Input)`
   `}
 `;
 
-export default function MailChimp() {
+export default function MailChimp({ className }) {
   return (
     <StyledForm
+      className={className}
       action="//nldcnow.us19.list-manage.com/subscribe/post?u=fe2fa79735e47235c75788bce&amp;id=fb15ca4f23"
       method="post"
       id="mc-embedded-subscribe-form"
       name="mc-embedded-subscribe-form"
-      className="validate"
       target="_blank"
       noValidate
     >
@@ -70,3 +72,11 @@ export default function MailChimp() {
     </StyledForm>
   );
 }
+
+MailChimp.defaultProps = {
+  className: '',
+};
+
+MailChimp.propTypes = {
+  className: PropTypes.string,
+};
