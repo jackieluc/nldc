@@ -12,10 +12,14 @@ import Home from './pages/Home';
 // import About from './pages/About';
 import Sponsors from './pages/Sponsors';
 import ScrollToTop from './utils/ScrollToTop';
-import './utils/fonts/fonts.css';
 
 // eslint-disable-next-line
 injectGlobal`
+  @font-face {
+    font-family: 'BillyOhio';
+    src: url('../static/media/fonts/billy-ohio.otf') format('opentype');
+  }
+
   html {
     font-size: 16px;
   }
