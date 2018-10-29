@@ -6,7 +6,7 @@ import WhiteNldcLogo from '../images/nldc2019-logo-white.png';
 import '../images/princes-island-park.jpg';
 
 const HeroSection = styled.section`
-  height: 95vh;
+  height: 85vh;
   background: rgba(20,20,20,0.8);
   background: -webkit-linear-gradient(to bottom, rgba(20,20,20,0.8), rgba(20,20,20,0.8));
   background: linear-gradient(to bottom, rgba(20,20,20,0.8), rgba(20,20,20,0.8)), url('../static/media/princes-island-park.jpg');
@@ -15,7 +15,6 @@ const HeroSection = styled.section`
   -webkit-box-shadow: 0 4px 20px rgba(75, 97, 141, 0.4);
   box-shadow: 0 4px 20px rgba(75, 97, 141, 0.4);
   color: white;
-  ${Media.desktop`padding-bottom: 2rem;`}
 `;
 
 const LogoImage = styled.img`
@@ -76,8 +75,6 @@ const Info = styled.h3`
 const HeroMailChimp = styled(MailChimp)`
   margin-top: auto;
   margin-bottom: 1rem;
-  font-size: 0.7rem;
-  ${Media.tablet`font-size: 1rem;`}
 `;
 
 const Hero = () => (
