@@ -66,7 +66,7 @@ const EventDetails = () => (
       <StyledRow>
         <Col xs="12" sm="10" lg={{ size: 6, offset: 6 }}>
           <EventInfoTitle>
-            When
+            Save the date!
           </EventInfoTitle>
           <EventDescription>
             <AddToCalendar />
