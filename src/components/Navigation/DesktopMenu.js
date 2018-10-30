@@ -15,7 +15,7 @@ const MenuWrapper = styled.nav`
       a {
         color: white;
         &:hover {
-          color: ${Styles.textColour};
+          color: ${Styles.hoverColour};
         }
       };
       justify-content: flex-end;
