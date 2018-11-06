@@ -22,6 +22,7 @@ const SponsorTitle = styled.h2`
   -webkit-text-fill-color: transparent;
   font-size: 2.5rem;
   text-transform: uppercase;
+  margin-bottom: 2rem;
 `;
 
 const SponsorDescription = styled.div`
@@ -43,7 +44,7 @@ const SponsorDetails = () => (
           } Our generous corporate partners not only make NLDC possible — they are also joining us in <b>#DisruptingTheNow</b>.
         </p>
         <a href="mailto:jacoby.holder@aiesec.net?subject=Sponsorship Inquiry">
-          Become our partner today!
+          Contact us to become a partner!
         </a>
       </SponsorDescription>
     </Wrapper>

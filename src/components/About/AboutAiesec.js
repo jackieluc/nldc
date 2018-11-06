@@ -9,8 +9,9 @@ const About = styled.div`
 `;
 
 const Title = styled.h2`
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   text-transform: uppercase;
+  font-size: 2.5rem;
 `;
 
 const Text = styled.p`
@@ -23,11 +24,11 @@ const CTA = styled.a`
   display: block;
   margin-top: 2rem;
   margin-left: -25px;
-  text-decoration: underline;
+  text-decoration: none;
 
   &:hover {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
   }
 
   &:after {

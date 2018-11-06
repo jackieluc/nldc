@@ -19,7 +19,7 @@ const Title = styled.h1`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   text-transform: uppercase;
 `;
 
@@ -74,7 +74,7 @@ const Sponsors = () => (
           </Description>
           <Col xs="12">
             <a href="mailto:jacoby.holder@aiesec.net?subject=Sponsorship Inquiry">
-              Become our partner today!
+              Contact us to become a partner!
             </a>
           </Col>
         </Row>
