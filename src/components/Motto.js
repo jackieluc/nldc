@@ -20,7 +20,7 @@ const Now = styled.text`
 const Dot = styled(The)``;
 
 const Motto = () => (
-  <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 70 40" width="100%" height="auto">
+  <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 70 40" width="100%" height="100%">
     <Disrupting x="0" y="20">
       Disrupting
     </Disrupting>
