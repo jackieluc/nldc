@@ -17,7 +17,7 @@ import ScrollToTop from './utils/ScrollToTop';
 injectGlobal`
   @font-face {
     font-family: 'BillyOhio';
-    src: url('../static/media/fonts/billy-ohio.otf') format('opentype');
+    src: url('/fonts/billy-ohio.otf') format('opentype');
   }
 
   html {
