@@ -71,7 +71,7 @@ const HeroMailChimp = styled(MailChimp)`
 
 const Hero = () => (
   <HeroSection>
-    <Container style={{ padding: '0' }}>
+    <Container style={{ marginTop: 'auto', padding: '0' }}>
       <LogoImage src={WhiteNldcLogo} alt="NLDC 2019 Logo" />
       <Title>
         AIESEC CANADA
