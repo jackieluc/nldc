@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container, Row, Col } from 'reactstrap';
 import styled from 'styled-components';
 import MailChimp from './MailChimp/MailChimp';
 import Media from '../utils/media';
@@ -24,50 +25,41 @@ const LogoImage = styled.img`
   ${Media.laptop`width: 450px;`}
 `;
 
-const Subtitle = styled.h2`
+const Title = styled.h1`
+  display: block;
   font-size: 1.2rem;
   ${Media.medPhone`font-size: 1.6rem;`}
   ${Media.tablet`font-size: 1.8rem;`}
   ${Media.desktop`font-size: 2.5rem;`}
   line-height: 1;
   letter-spacing: 1px;
-  margin: 0.5rem;
-  font-weight: 300;
-`;
-
-const Title = styled.h1`
-  width: 320px;
-  font-size: 1.5rem;
-  ${Media.medPhone`
-    font-size: 1.9rem;
-    width: 375px;
-  `}
-  ${Media.tablet`
-    font-size: 2.5rem;
-    width: 600px;
-  `}
-  ${Media.desktop`
-    font-size: 3.5rem;
-    width: 800px;
-  `}
-  line-height: 1;
-  letter-spacing: 1px;
   margin-top: 0;
   margin-bottom: 1rem;
   font-weight: 300;
+
+  span {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    ${Media.medPhone`font-size: 1.9rem;`}
+    ${Media.tablet`font-size: 2.5rem;`}
+    ${Media.desktop`font-size: 3.5rem;`}
+  };
 `;
 
 const Info = styled.h3`
   display: block;
+  max-width: 240px;
   font-size: 0.7rem;
-  ${Media.tablet`font-size: 1rem;`}
-  ${Media.desktop`font-size: 1.3rem;`}
+  ${Media.tablet`font-size: 1rem; max-width: 320px;`}
+  ${Media.desktop`font-size: 1.3rem; max-width: 400px;`}
   color: #FFFFFF;
   font-weight: normal;
   line-height: 1;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem auto;
   padding: 5px;
   border: 2px solid white;
 `;
@@ -79,17 +71,22 @@ const HeroMailChimp = styled(MailChimp)`
 
 const Hero = () => (
   <HeroSection>
-    <LogoImage src={WhiteNldcLogo} alt="NLDC 2019 Logo" />
-    <Subtitle>
-      AIESEC CANADA
-    </Subtitle>
-    <Title>
-      National Leadership Development Conference
-    </Title>
-    <Info>
-      May 1&ndash;5, 2019 | Calgary, Alberta
-    </Info>
-    <HeroMailChimp />
+    <Container style={{ padding: '0' }}>
+      <LogoImage src={WhiteNldcLogo} alt="NLDC 2019 Logo" />
+      <Title>
+        AIESEC CANADA
+        <span>
+          National Leadership
+        </span>
+        <span>
+          Development Conference
+        </span>
+      </Title>
+      <Info>
+        May 1&ndash;5, 2019 | Calgary, Alberta
+      </Info>
+      <HeroMailChimp />
+    </Container>
   </HeroSection>
 );
 
