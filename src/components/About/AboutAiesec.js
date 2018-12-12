@@ -42,8 +42,8 @@ const CTA = styled.a`
 `;
 
 const AboutAiesec = () => (
-  <section>
-    <Container fluid style={{ background: Styles.themeColour, padding: '3rem 15px' }}>
+  <section style={{ background: Styles.themeColour }}>
+    <Container fluid>
       <Row>
         <Col xs="12" md="10" lg="8" xl="6" style={{ margin: '0 auto' }}>
           <About>

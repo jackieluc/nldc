@@ -8,11 +8,12 @@ import Motto from './Motto';
 
 const ConferenceDescription = styled.div`
   width: 100%;
+  padding-bottom: 2rem;
+  ${Media.laptop`padding-bottom: 0;`}
 `;
 
 const StyledRow = styled(Row)`
   justify-content: center;
-  margin-bottom: 2rem;
 `;
 
 const MottoWrapper = styled.div`

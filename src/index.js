@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { injectGlobal } from 'styled-components';
 import ReactGA from 'react-ga';
+import Media from './utils/media';
 import registerServiceWorker from './registerServiceWorker';
 import Styles from './utils/styles';
 import Navigation from './components/Navigation/Navigation';
@@ -39,10 +40,15 @@ injectGlobal`
   section, nav {
     width: 100%;
     display: flex;
-    margin-bottom: 3rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 3rem 0;
+  }
+
+  nav {
+    padding: 0;
+    ${Media.laptop`padding: 3rem 0;`}
   }
 
   h1 {
