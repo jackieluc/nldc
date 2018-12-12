@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container } from 'reactstrap';
 import styled from 'styled-components';
 import MailChimp from './MailChimp/MailChimp';
 import Media from '../utils/media';
@@ -85,8 +85,8 @@ const Hero = () => (
       <Info>
         May 1&ndash;5, 2019 | Calgary, Alberta
       </Info>
-      <HeroMailChimp />
     </Container>
+    <HeroMailChimp />
   </HeroSection>
 );
 
