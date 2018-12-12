@@ -27,7 +27,7 @@ const SubmitButton = styled(Input)`
   padding: 6px;
   margin: 0;
   color: #FFFFFF;
-  border-color: transparent;
+  border: none;
   background-color: ${styles.themeColour};
   ${styles.shadow}
 
