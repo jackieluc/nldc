@@ -22,19 +22,17 @@ const StyledInput = styled(Input)`
 
 const SubmitButton = styled(Input)`
   display: inline-block;
-  border-radius: 4px;
-  width: 290px;
-  padding: 6px;
+  border-radius: 40px;
   margin: 0;
   color: #FFFFFF;
   border: none;
-  background-color: ${styles.themeColour};
+  background-color: ${styles.lightRed};
   ${styles.shadow}
 
   &:hover,
   &:focus {
     color: #FFFFFF;
-    background-color: ${styles.hoverColour};
+    background-color: ${styles.red};
     cursor: pointer;
   }
 
