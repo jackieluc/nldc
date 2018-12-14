@@ -22,6 +22,7 @@ const StyledInput = styled(Input)`
 
 const SubmitButton = styled(Input)`
   display: inline-block;
+  width: 290px;
   border-radius: 40px;
   margin: 0;
   color: #FFFFFF;
