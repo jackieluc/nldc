@@ -5,6 +5,7 @@ import {
 } from 'reactstrap';
 import Wave from '../components/Dividers/Wave';
 import Styles from '../utils/styles';
+import SponsorCTA from '../components/SponsorPackage/SponsorCTA';
 import SponsorPackage from '../components/SponsorPackage/SponsorPackage';
 import SponsorList from '../components/SponsorPackage/SponsorList';
 
@@ -73,9 +74,7 @@ const Sponsors = () => (
             </p>
           </Description>
           <Col xs="12">
-            <a href="mailto:jacoby.holder@aiesec.net?subject=Sponsorship Inquiry">
-              Contact us to become a partner!
-            </a>
+            <SponsorCTA />
           </Col>
         </Row>
       </TitleSection>
