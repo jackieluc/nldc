@@ -27,10 +27,8 @@ const LogoImage = styled.img`
 
 const Title = styled.h1`
   display: block;
-  font-size: 1.2rem;
-  ${Media.medPhone`font-size: 1.6rem;`}
-  ${Media.tablet`font-size: 1.8rem;`}
-  ${Media.desktop`font-size: 2.5rem;`}
+  font-size: calc(24px + 46 * (100vw - 450px) / 900);
+  ${Media.laptop`font-size: 2.5rem;`}
   line-height: 1;
   letter-spacing: 1px;
   margin-top: 0;
@@ -42,9 +40,8 @@ const Title = styled.h1`
     text-align: center;
     margin: 0 auto;
     font-size: 1.5rem;
-    ${Media.medPhone`font-size: 1.9rem;`}
-    ${Media.tablet`font-size: 2.5rem;`}
-    ${Media.desktop`font-size: 3.5rem;`}
+    font-size: calc(32px + 46 * (100vw - 450px) / 900);
+    ${Media.laptop`font-size: 3.5rem;`}
   };
 `;
 
