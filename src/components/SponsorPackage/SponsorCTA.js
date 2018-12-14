@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import styles from '../../utils/styles';
+import Styles from '../../utils/styles';
 
 const CTA = styled.a`
   display: inline-block;
@@ -9,13 +9,13 @@ const CTA = styled.a`
   margin: 0;
   color: #FFFFFF;
   border: none;
-  background-color: ${styles.lightRed};
-  ${styles.shadow}
+  background-color: ${Styles.lightRed};
+  ${Styles.shadow}
 
   &:hover,
   &:focus {
     color: #FFFFFF;
-    background-color: ${styles.red};
+    background-color: ${Styles.red};
     cursor: pointer;
     text-decoration: none;
   }

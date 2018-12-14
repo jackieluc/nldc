@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import {
   Card, CardTitle, CardBody, ListGroup, ListGroupItem,
 } from 'reactstrap';
-import styles from '../../utils/styles';
+import Styles from '../../utils/styles';
 import Media from '../../utils/media';
 
 const CardBodyContainer = styled(CardBody)`
@@ -46,7 +46,7 @@ const List = styled.ul`
 const SponsorPackage = ({ title, benefits }) => (
   <StyledCard>
     <CardBodyContainer>
-      <CardTitle style={{ color: styles.textColour, margin: '1rem 0', fontWeight: 'bold' }}>
+      <CardTitle style={{ color: Styles.textColour, margin: '1rem 0', fontWeight: 'bold' }}>
         {title}
       </CardTitle>
       <ListGroup>
