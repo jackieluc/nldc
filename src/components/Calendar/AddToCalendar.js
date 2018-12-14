@@ -10,7 +10,8 @@ const AddToCalendar = styled.a`
   &.addeventatc {
     font-family: 'Lato', sans-serif !important;
     font-size: 1rem !important;
-    padding: 13px 12px 12px 65px !important;
+    padding: 13px 12px 12px 85px !important
+    border-radius: 40px;
     z-index: 2 !important;
     font-weight: 400;
     width: 15rem;
@@ -47,11 +48,11 @@ const AddToCalendar = styled.a`
 
     // Overwrite AddEvent icon position
     .addeventatc_icon {
-      left: 20px !important;
-      top: 18px !important;
-      width: 22px;
-      height: 22px;
-      background-size: 22px 22px;
+      left: 35px !important;
+      top: 16px !important;
+      width: 24px;
+      height: 24px;
+      background-size: 24px 24px;
     }
   }
 `;
