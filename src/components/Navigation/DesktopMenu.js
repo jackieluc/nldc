@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Styles from '../../utils/styles';
 import BlackNldcLogo from '../../images/nldc2019-logo-black.png';
 
 const isHomePage = location => location === '/';
@@ -15,7 +14,7 @@ const MenuWrapper = styled.nav`
       a {
         color: white;
         &:hover {
-          color: ${Styles.hoverColour};
+          color: #333;
         }
       };
       justify-content: flex-end;
