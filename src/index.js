@@ -94,10 +94,6 @@ const routes = [
     name: 'Home',
     path: '/',
   },
-  // {
-  //   name: 'About',
-  //   path: '/about',
-  // },
   {
     name: 'Corporate Partners',
     path: '/corporate-partners',
@@ -115,7 +111,6 @@ ReactDOM.render((
       <Navigation routes={routes} />
       <Switch>
         <Route exact path="/" component={Home} />
-        {/* <Route exact path="/about" component={About} /> */}
         <Route exact path="/corporate-partners" component={CorporatePartners} />
         {/* <Route exact path='/schedule' component={Schedule} /> */}
         {/* <Route exact path='/events' component={Events} /> */}
