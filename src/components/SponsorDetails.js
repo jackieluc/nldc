@@ -16,11 +16,7 @@ const Wrapper = styled.div`
 `;
 
 const SponsorTitle = styled.h2`
-  background: #7F7FD5;
-  background: -webkit-linear-gradient(to right, ${Styles.themeColour}, #7F7FD5);
-  background: linear-gradient(to right, ${Styles.themeColour}, #7F7FD5);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: ${Styles.themeColour}
   font-size: 2.5rem;
   text-transform: uppercase;
   margin-bottom: 2rem;
@@ -33,6 +29,14 @@ const SponsorDescription = styled.div`
   margin: 0 auto;
 `;
 
+const Description = styled.p`
+  margin-bottom: 2rem;
+`;
+
+const Highlight = styled.b`
+  ${Styles.highlight}
+`;
+
 const SponsorDetails = () => (
   <SponsorDetailsSection>
     <Wrapper>
@@ -40,10 +44,10 @@ const SponsorDetails = () => (
         Corporate Partners
       </SponsorTitle>
       <SponsorDescription>
-        <p>
+        <Description>
           { // eslint-disable-next-line
-          } Our generous corporate partners not only make NLDC possible — they are also joining us in <b>#DisruptingTheNow</b>.
-        </p>
+          } Our generous corporate partners not only make NLDC possible — they are also joining us in <Highlight>#DisruptingTheNow</Highlight>.
+        </Description>
         <SponsorCTA />
       </SponsorDescription>
     </Wrapper>
