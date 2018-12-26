@@ -1,8 +1,11 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import styled from 'styled-components';
-import Styles from '../../utils/styles';
 import Media from '../../utils/media';
+
+const Wrapper = styled.section`
+  background-image: linear-gradient( 135deg, #74C7D9 40%, #037EF3 100%);
+`;
 
 const About = styled.div`
   color: white;
@@ -42,7 +45,7 @@ const CTA = styled.a`
 `;
 
 const AboutAiesec = () => (
-  <section style={{ background: Styles.themeColour }}>
+  <Wrapper>
     <Container fluid>
       <Row>
         <Col xs="12" md="10" lg="8" xl="6" style={{ margin: '0 auto' }}>
@@ -65,7 +68,7 @@ const AboutAiesec = () => (
         </Col>
       </Row>
     </Container>
-  </section>
+  </Wrapper>
 );
 
 export default AboutAiesec;
