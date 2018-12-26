@@ -8,9 +8,7 @@ import '../images/princes-island-park.jpg';
 
 const HeroSection = styled.section`
   height: 85vh;
-  background: rgba(20,20,20,0.8);
-  background: -webkit-linear-gradient(to bottom, rgba(20,20,20,0.8), rgba(20,20,20,0.8));
-  background: linear-gradient(to bottom, rgba(20,20,20,0.8), rgba(20,20,20,0.8)), url('../static/media/princes-island-park.jpg');
+  background-image: linear-gradient( 135deg, rgba(116, 199, 217, 0.75) 40%, rgba(3, 126, 243, 0.75) 100%), url('../static/media/princes-island-park.jpg');
   background-size: cover;
   background-position: center;
   -webkit-box-shadow: 0 4px 20px rgba(75, 97, 141, 0.4);
