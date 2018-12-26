@@ -28,7 +28,7 @@ const TitleSection = styled.section`
 const Description = styled(Col)`
   text-align: center;
   margin: 0 auto 2rem auto;
-  max-width: 992px;
+  max-width: 700px;
 `;
 
 const Benefits = styled.section`
@@ -40,7 +40,7 @@ const Benefits = styled.section`
 `;
 
 const BenefitsTitle = styled.h1`
-  color: #FFFFFF;
+  color: white;
   font-size: 2.5rem;
   margin-bottom: 2rem;
   text-transform: uppercase;
@@ -61,7 +61,7 @@ const Sponsors = () => (
         </Title>
         <Row>
           <Description xs="12">
-            <p>
+            <p style={{ marginBottom: '1rem' }}>
               { // eslint-disable-next-line
               } In order to have a successful NLDC, we require funding for venues, events, speakers, and much more. We are looking to form valuable partnerships with organizations that value leadership, diversity, innovation, technology, and entrepreneurial thinking.
             </p>
