@@ -39,25 +39,28 @@ const SponsorLink = styled.a`
 const Logo = styled.img`
   display: block;
   width: 190px;
-  ${Media.tablet`width: 270px`}
+  ${Media.tablet`width: 270px;`}
   height: auto;
 
   &.hunter-hub {
     width: 270px;
-    ${Media.bigPhone`width: 360px`}
-    ${Media.tablet`width: 540px`}
+    ${Media.tablet`width: 540px;`}
+  }
+  &.avnet {
+    width: 100px;
+    ${Media.tablet`width: 160px`}
   }
   &.aeso {
     width: 135px;
-    ${Media.tablet`width: 180px`}
+    ${Media.tablet`width: 180px;`}
   }
   &.pwc {
     width: 80px;
-    ${Media.tablet`width: 135px`}
+    ${Media.tablet`width: 135px;`}
   }
   &.marquee {
     width: 120px;
-    ${Media.tablet`width: 160px`}
+    ${Media.tablet`width: 160px;`}
   }
 `;
 
@@ -146,7 +149,7 @@ const SponsorList = ({ paddingTop }) => (
             <Logo src={innovationLogos.hunterhub} alt="" className="hunter-hub" />
           </SponsorLink>
           <SponsorLink href="https://www.avnet.com/" target="_blank" rel="noopener noreferrer">
-            <Logo src={innovationLogos.avnet} alt="" />
+            <Logo src={innovationLogos.avnet} alt="" className="avnet" />
           </SponsorLink>
         </LogoCard>
       </Tier>
