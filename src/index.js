@@ -50,6 +50,16 @@ injectGlobal`
     padding: 0;
     ${Media.laptop`padding: 3rem 0;`}
   }
+  p {
+    margin: 0;
+  }
+
+  h1, h2, h3, h4, h5, p, span, li {
+    &::selection {
+      background: ${Styles.themeColour};
+      color: white;
+    }
+  }
 
   h1 {
     font-size: 4rem;
@@ -86,7 +96,7 @@ const routes = [
   },
   // {
   //   name: 'About',
-  //   path: '/about-us',
+  //   path: '/about',
   // },
   {
     name: 'Corporate Partners',
@@ -105,7 +115,7 @@ ReactDOM.render((
       <Navigation routes={routes} />
       <Switch>
         <Route exact path="/" component={Home} />
-        {/* <Route exact path="/about-us" component={About} /> */}
+        {/* <Route exact path="/about" component={About} /> */}
         <Route exact path="/corporate-partners" component={CorporatePartners} />
         {/* <Route exact path='/schedule' component={Schedule} /> */}
         {/* <Route exact path='/events' component={Events} /> */}
