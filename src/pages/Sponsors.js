@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import {
   Container, Row, Col, CardDeck,
@@ -54,6 +55,23 @@ const benefits3 = ['International recruitment program discount - Hire global tal
 
 const Sponsors = () => (
   <Wrapper>
+    <Helmet>
+      <title>
+        Sponsors | NLDC 2019
+      </title>
+      <link rel="canonical" href="https://www.nldc2019.com/sponsors" />
+      <meta name="description" content="Join us in &#34;Disrupting the Now!&#34; May 1&ndash;5, 2019 at the National Leadership Development Conference in Calgary." />
+      <meta name="keywords" content="nldc 2019 sponsor, sponsors, sponsor, nldc sponsor, aiesec sponsor, title sponsor, innovation sponsor, gold sponsor, silver sponsor, bronze sponsor" />
+      <meta property="og:title" content="Sponsors | NLDC 2019" />
+      <meta property="og:type" content="website" />
+      <meta
+        property="og:description"
+        content="Join us in &#34;Disrupting the Now!&#34; May 1&ndash;5, 2019 at the National Leadership Development Conference in Calgary."
+      />
+      <meta property="og:url" content="https://www.nldc2019.com/sponsors" />
+      <meta property="og:site_name" content="Sponsors | NLDC 2019" />
+      <meta property="og:image" content="https://www.nldc2019.com/static/media/nldc2019-logo-black.png" />
+    </Helmet>
     <Container>
       <TitleSection>
         <Title>
