@@ -10,8 +10,7 @@ import Styles from './utils/styles';
 import Navigation from './components/Navigation/Navigation';
 import Footer from './components/Footer/Footer';
 import Home from './pages/Home';
-// import About from './pages/About';
-import CorporatePartners from './pages/CorporatePartners';
+import Sponsors from './pages/Sponsors';
 import ScrollToTop from './utils/ScrollToTop';
 
 // eslint-disable-next-line
@@ -95,8 +94,8 @@ const routes = [
     path: '/',
   },
   {
-    name: 'Corporate Partners',
-    path: '/corporate-partners',
+    name: 'Sponsors',
+    path: '/sponsors',
   },
   {
     name: 'Contact us',
@@ -111,7 +110,7 @@ ReactDOM.render((
       <Navigation routes={routes} />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/corporate-partners" component={CorporatePartners} />
+        <Route exact path="/sponsors" component={Sponsors} />
         {/* <Route exact path='/schedule' component={Schedule} /> */}
         {/* <Route exact path='/events' component={Events} /> */}
         {/* <Route path="*" component={NotFoundPage} /> */}

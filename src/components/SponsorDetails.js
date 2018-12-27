@@ -41,7 +41,7 @@ const SponsorDetails = () => (
   <SponsorDetailsSection>
     <Wrapper>
       <SponsorTitle>
-        Corporate Partners
+        Sponsors
       </SponsorTitle>
       <SponsorDescription>
         <Description>

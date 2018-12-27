@@ -57,7 +57,7 @@ const Sponsors = () => (
     <Container>
       <TitleSection>
         <Title>
-          Corporate Partners
+          Sponsors
         </Title>
         <Row>
           <Description xs="12">

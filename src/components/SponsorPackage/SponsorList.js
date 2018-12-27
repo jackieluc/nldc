@@ -65,14 +65,14 @@ const Logo = styled.img`
 `;
 
 const tier = {
-  title: 'Title Partner',
-  innovation: 'Innovation Partners',
-  gold: 'Gold Partner',
-  silver: 'Silver Partners',
-  bronze: 'Bronze Partners',
+  title: 'Title Sponsor',
+  innovation: 'Innovation Sponsors',
+  gold: 'Gold Sponsor',
+  silver: 'Silver Sponsors',
+  bronze: 'Bronze Sponsors',
+  meal: 'Meal Sponsor',
   event: 'Event Partners',
   kind: 'In-kind Partners',
-  meal: 'Meal Partner',
 };
 
 /**
