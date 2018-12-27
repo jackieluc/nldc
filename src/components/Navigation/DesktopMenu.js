@@ -97,12 +97,14 @@ export default class Menu extends Component {
   }
 
   updateWindowDimensions = () => {
-    const currentWindowHeight = document.documentElement.scrollTop;
-    const firstSectionHeight = document.getElementsByTagName('section')[0].clientHeight;
-    this.setState({
-      currentWindowHeight,
-      firstSectionHeight,
-    });
+    if (document.getElementsByTagName('section')[0]) {
+      const currentWindowHeight = document.documentElement.scrollTop;
+      const firstSectionHeight = document.getElementsByTagName('section')[0].clientHeight;
+      this.setState({
+        currentWindowHeight,
+        firstSectionHeight,
+      });
+    }
   }
 
   render() {
