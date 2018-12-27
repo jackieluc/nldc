@@ -11,6 +11,7 @@ import Navigation from './components/Navigation/Navigation';
 import Footer from './components/Footer/Footer';
 import Home from './pages/Home';
 import Sponsors from './pages/Sponsors';
+import FAQ from './pages/FAQ';
 import ScrollToTop from './utils/ScrollToTop';
 
 // eslint-disable-next-line
@@ -98,7 +99,11 @@ const routes = [
     path: '/sponsors',
   },
   {
-    name: 'Contact us',
+    name: 'FAQ',
+    path: '/faq',
+  },
+  {
+    name: 'Contact',
     path: 'https://www.facebook.com/AIESECCanadaNLDC/',
   },
 ];
@@ -111,6 +116,7 @@ ReactDOM.render((
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/sponsors" component={Sponsors} />
+        <Route exact path="/faq" component={FAQ} />
         {/* <Route exact path='/schedule' component={Schedule} /> */}
         {/* <Route exact path='/events' component={Events} /> */}
         {/* <Route path="*" component={NotFoundPage} /> */}
