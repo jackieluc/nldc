@@ -3,14 +3,13 @@ import { Container } from 'reactstrap';
 import styled from 'styled-components';
 import MailChimp from './MailChimp/MailChimp';
 import Media from '../utils/media';
+import Styles from '../utils/styles';
 import WhiteNldcLogo from '../images/nldc2019-logo-white.png';
-import '../images/princes-island-park.jpg';
+import '../images/calgary.jpg';
 
 const HeroSection = styled.section`
   height: 85vh;
-  background: rgba(20,20,20,0.8);
-  background: -webkit-linear-gradient(to bottom, rgba(20,20,20,0.8), rgba(20,20,20,0.8));
-  background: linear-gradient(to bottom, rgba(20,20,20,0.8), rgba(20,20,20,0.8)), url('../static/media/princes-island-park.jpg');
+  background-image: linear-gradient( 135deg, rgba(116, 199, 217, 0.75) 40%, rgba(3, 126, 243, 0.75) 100%), url('../static/media/calgary.jpg');
   background-size: cover;
   background-position: center;
   -webkit-box-shadow: 0 4px 20px rgba(75, 97, 141, 0.4);
@@ -56,9 +55,17 @@ const Info = styled.h3`
   line-height: 1;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin: 0 auto 2rem auto;
+  margin: 0 auto 1rem auto;
   padding: 5px;
   border: 2px solid white;
+`;
+
+const TicketInfo = styled(Info)`
+  border: 0;
+  color: ${Styles.lightRed};
+  background: white;
+  font-size: 1rem;
+  font-weight: bold;
 `;
 
 const HeroMailChimp = styled(MailChimp)`
@@ -82,6 +89,9 @@ const Hero = () => (
       <Info>
         May 1&ndash;5, 2019 | Calgary, Alberta
       </Info>
+      <TicketInfo>
+        Tickets will be available in Spring
+      </TicketInfo>
     </Container>
     <HeroMailChimp />
   </HeroSection>

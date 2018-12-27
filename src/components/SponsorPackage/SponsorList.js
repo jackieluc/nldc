@@ -27,7 +27,7 @@ const LogoCard = styled(Card)`
   margin-bottom: 60px;
   border-radius: 0;
   border: 0;
-  ${Styles.shadow}
+  ${Styles.blueShadow}
 `;
 
 const SponsorLink = styled.a`
@@ -39,18 +39,40 @@ const SponsorLink = styled.a`
 const Logo = styled.img`
   display: block;
   width: 190px;
-  ${Media.tablet`width:270px`}
+  ${Media.tablet`width: 270px;`}
   height: auto;
+
+  &.hunter-hub {
+    width: 270px;
+    ${Media.tablet`width: 500px;`}
+  }
+  &.avnet {
+    width: 100px;
+    ${Media.tablet`width: 160px`}
+  }
+  &.aeso {
+    width: 135px;
+    ${Media.tablet`width: 180px;`}
+  }
+  &.pwc {
+    width: 80px;
+    ${Media.tablet`width: 135px;`}
+  }
+  &.marquee {
+    width: 120px;
+    ${Media.tablet`width: 160px;`}
+  }
 `;
 
 const tier = {
-  title: 'Title Sponsors',
-  innovationTitle: 'Innovation Title Sponsor',
-  gold: 'Gold Sponsors',
+  title: 'Title Sponsor',
+  innovation: 'Innovation Sponsors',
+  gold: 'Gold Sponsor',
   silver: 'Silver Sponsors',
   bronze: 'Bronze Sponsors',
-  event: 'Event Sponsors',
-  kind: 'In Kind Sponsors',
+  meal: 'Meal Sponsor',
+  event: 'Event Partners',
+  kind: 'In-kind Partners',
 };
 
 /**
@@ -66,31 +88,43 @@ const importAll = (r) => {
 const logos = importAll(require.context('../../images', false, /\.(png|jpe?g|svg)$/));
 
 const titleLogos = {
-
+  nutrien: logos['nutrien.png'],
 };
 
-const innovationTitleLogo = {
+const innovationLogos = {
   hunterhub: logos['hunterhub.jpg'],
+  avnet: logos['avnet.png'],
 };
 
 const goldLogos = {
-
+  ced: logos['ced.png'],
 };
 
 const silverLogos = {
-
+  atb: logos['atb.png'],
+  ccal: logos['ccal.png'],
+  haskayne: logos['haskayne.jpg'],
 };
 
 const bronzeLogos = {
   husky: logos['Husky.png'],
+  aeso: logos['aeso.png'],
 };
 
 const eventLogos = {
   knoxville: logos['Knoxville.png'],
+  commonwealth: logos['commonwealth.png'],
+  marquee: logos['marquee.jpeg'],
 };
 
 const kindLogos = {
   esxossmanway: logos['Esxossmanway.png'],
+  flyingsquirrel: logos['flyingsquirrel.png'],
+  rumbleboxing: logos['rumbleboxing.jpg'],
+};
+
+const mealLogos = {
+  pwc: logos['pwc.png'],
 };
 
 const SponsorList = ({ paddingTop }) => (
@@ -98,11 +132,50 @@ const SponsorList = ({ paddingTop }) => (
     <Container>
       <Tier>
         <TierTitle>
-          {tier.innovationTitle}
+          {tier.title}
         </TierTitle>
         <LogoCard>
-          <SponsorLink href="https://go.ucalgary.ca/hunter-hub/" rel="noopener noreferrer">
-            <Logo src={innovationTitleLogo.hunterhub} alt="" />
+          <SponsorLink href="https://www.nutrien.com/" target="_blank" rel="noopener noreferrer">
+            <Logo src={titleLogos.nutrien} alt="" />
+          </SponsorLink>
+        </LogoCard>
+      </Tier>
+      <Tier>
+        <TierTitle>
+          {tier.innovation}
+        </TierTitle>
+        <LogoCard>
+          <SponsorLink href="https://go.ucalgary.ca/hunter-hub/" target="_blank" rel="noopener noreferrer">
+            <Logo src={innovationLogos.hunterhub} alt="" className="hunter-hub" />
+          </SponsorLink>
+          <SponsorLink href="https://www.avnet.com/" target="_blank" rel="noopener noreferrer">
+            <Logo src={innovationLogos.avnet} alt="" className="avnet" />
+          </SponsorLink>
+        </LogoCard>
+      </Tier>
+      <Tier>
+        <TierTitle>
+          {tier.gold}
+        </TierTitle>
+        <LogoCard>
+          <SponsorLink href="https://www.calgaryeconomicdevelopment.com/" target="_blank" rel="noopener noreferrer">
+            <Logo src={goldLogos.ced} alt="" />
+          </SponsorLink>
+        </LogoCard>
+      </Tier>
+      <Tier>
+        <TierTitle>
+          {tier.silver}
+        </TierTitle>
+        <LogoCard>
+          <SponsorLink href="https://www.atb.com/" target="_blank" rel="noopener noreferrer">
+            <Logo src={silverLogos.atb} alt="" />
+          </SponsorLink>
+          <SponsorLink href="https://haskayne.ucalgary.ca/ccal/" target="_blank" rel="noopener noreferrer">
+            <Logo src={silverLogos.ccal} alt="" />
+          </SponsorLink>
+          <SponsorLink href="https://haskayne.ucalgary.ca/" target="_blank" rel="noopener noreferrer">
+            <Logo src={silverLogos.haskayne} alt="" />
           </SponsorLink>
         </LogoCard>
       </Tier>
@@ -111,8 +184,21 @@ const SponsorList = ({ paddingTop }) => (
           {tier.bronze}
         </TierTitle>
         <LogoCard>
-          <SponsorLink href="http://www.huskyenergy.ca/" rel="noopener noreferrer">
+          <SponsorLink href="http://www.huskyenergy.ca/" target="_blank" rel="noopener noreferrer">
             <Logo src={bronzeLogos.husky} alt="" />
+          </SponsorLink>
+          <SponsorLink href="https://www.aeso.ca/" target="_blank" rel="noopener noreferrer">
+            <Logo src={bronzeLogos.aeso} alt="" className="aeso" />
+          </SponsorLink>
+        </LogoCard>
+      </Tier>
+      <Tier>
+        <TierTitle>
+          {tier.meal}
+        </TierTitle>
+        <LogoCard>
+          <SponsorLink href="https://www.pwc.com/ca/en/" target="_blank" rel="noopener noreferrer">
+            <Logo src={mealLogos.pwc} alt="" className="pwc" />
           </SponsorLink>
         </LogoCard>
       </Tier>
@@ -121,8 +207,14 @@ const SponsorList = ({ paddingTop }) => (
           {tier.event}
         </TierTitle>
         <LogoCard>
-          <SponsorLink href="https://www.knoxcalgary.com/" rel="noopener noreferrer">
+          <SponsorLink href="https://www.knoxcalgary.com/" target="_blank" rel="noopener noreferrer">
             <Logo src={eventLogos.knoxville} alt="" />
+          </SponsorLink>
+          <SponsorLink href="http://commonwealthbar.ca/" target="_blank" rel="noopener noreferrer">
+            <Logo src={eventLogos.commonwealth} alt="" />
+          </SponsorLink>
+          <SponsorLink href="http://marqueecalgary.com/" target="_blank" rel="noopener noreferrer">
+            <Logo src={eventLogos.marquee} alt="" className="marquee" />
           </SponsorLink>
         </LogoCard>
       </Tier>
@@ -131,8 +223,14 @@ const SponsorList = ({ paddingTop }) => (
           {tier.kind}
         </TierTitle>
         <LogoCard>
-          <SponsorLink href="https://www.esxossmanway.ca/" rel="noopener noreferrer">
+          <SponsorLink href="https://www.esxossmanway.ca/" target="_blank" rel="noopener noreferrer">
             <Logo src={kindLogos.esxossmanway} alt="" />
+          </SponsorLink>
+          <SponsorLink href="http://rumbleboxing.com/" target="_blank" rel="noopener noreferrer">
+            <Logo src={kindLogos.rumbleboxing} alt="" />
+          </SponsorLink>
+          <SponsorLink href="https://flyingsquirrelsports.ca/" target="_blank" rel="noopener noreferrer">
+            <Logo src={kindLogos.flyingsquirrel} alt="" />
           </SponsorLink>
         </LogoCard>
       </Tier>

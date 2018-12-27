@@ -1,9 +1,11 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import {
   Container, Row, Col, CardDeck,
 } from 'reactstrap';
 import Wave from '../components/Dividers/Wave';
+import Media from '../utils/media';
 import Styles from '../utils/styles';
 import SponsorCTA from '../components/SponsorPackage/SponsorCTA';
 import SponsorPackage from '../components/SponsorPackage/SponsorPackage';
@@ -14,11 +16,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h1`
-  background: #7F7FD5;
-  background: -webkit-linear-gradient(to right, ${Styles.themeColour}, #7F7FD5);
-  background: linear-gradient(to right, ${Styles.themeColour}, #7F7FD5);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: ${Styles.themeColour};
   font-size: 2.5rem;
   margin-bottom: 2rem;
   text-transform: uppercase;
@@ -26,24 +24,24 @@ const Title = styled.h1`
 
 const TitleSection = styled.section`
   margin-top: 4rem;
-  margin-bottom: 2rem;
 `;
 
 const Description = styled(Col)`
   text-align: center;
-  margin: 0 auto;
-  max-width: 992px;
+  margin: 0 auto 2rem auto;
+  max-width: 700px;
 `;
 
 const Benefits = styled.section`
-  background-color: ${Styles.themeColour};
+  background: linear-gradient( 135deg, #74C7D9 40%, #037EF3 100%);
   width: 100%;
   padding: 2rem 0 6rem 0;
+  ${Media.laptop`padding: 2rem 0 10rem 0`}
   margin-bottom: 0;
 `;
 
 const BenefitsTitle = styled.h1`
-  color: #FFFFFF;
+  color: white;
   font-size: 2.5rem;
   margin-bottom: 2rem;
   text-transform: uppercase;
@@ -57,14 +55,31 @@ const benefits3 = ['International recruitment program discount - Hire global tal
 
 const Sponsors = () => (
   <Wrapper>
+    <Helmet>
+      <title>
+        Sponsors | NLDC 2019
+      </title>
+      <link rel="canonical" href="https://www.nldc2019.com/sponsors" />
+      <meta name="description" content="Join us in &#34;Disrupting the Now!&#34; May 1&ndash;5, 2019 at the National Leadership Development Conference in Calgary." />
+      <meta name="keywords" content="nldc 2019 sponsor, sponsors, sponsor, nldc sponsor, aiesec sponsor, title sponsor, innovation sponsor, gold sponsor, silver sponsor, bronze sponsor" />
+      <meta property="og:title" content="Sponsors | NLDC 2019" />
+      <meta property="og:type" content="website" />
+      <meta
+        property="og:description"
+        content="Join us in &#34;Disrupting the Now!&#34; May 1&ndash;5, 2019 at the National Leadership Development Conference in Calgary."
+      />
+      <meta property="og:url" content="https://www.nldc2019.com/sponsors" />
+      <meta property="og:site_name" content="Sponsors | NLDC 2019" />
+      <meta property="og:image" content="https://www.nldc2019.com/static/media/nldc2019-logo-black.png" />
+    </Helmet>
     <Container>
       <TitleSection>
         <Title>
-          Corporate Partners
+          Sponsors
         </Title>
         <Row>
           <Description xs="12">
-            <p>
+            <p style={{ marginBottom: '1rem' }}>
               { // eslint-disable-next-line
               } In order to have a successful NLDC, we require funding for venues, events, speakers, and much more. We are looking to form valuable partnerships with organizations that value leadership, diversity, innovation, technology, and entrepreneurial thinking.
             </p>
