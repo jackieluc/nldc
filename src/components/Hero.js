@@ -3,6 +3,7 @@ import { Container } from 'reactstrap';
 import styled from 'styled-components';
 import MailChimp from './MailChimp/MailChimp';
 import Media from '../utils/media';
+import Styles from '../utils/styles';
 import WhiteNldcLogo from '../images/nldc2019-logo-white.png';
 import '../images/calgary.jpg';
 
@@ -54,9 +55,16 @@ const Info = styled.h3`
   line-height: 1;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin: 0 auto 2rem auto;
+  margin: 0 auto 1rem auto;
   padding: 5px;
   border: 2px solid white;
+`;
+
+const TicketInfo = styled(Info)`
+  border: 0;
+  color: ${Styles.lightRed};
+  background: white;
+  font-weight: bold;
 `;
 
 const HeroMailChimp = styled(MailChimp)`
@@ -80,6 +88,9 @@ const Hero = () => (
       <Info>
         May 1&ndash;5, 2019 | Calgary, Alberta
       </Info>
+      <TicketInfo>
+        Tickets available in Spring
+      </TicketInfo>
     </Container>
     <HeroMailChimp />
   </HeroSection>
