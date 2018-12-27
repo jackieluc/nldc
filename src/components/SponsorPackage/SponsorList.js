@@ -44,7 +44,7 @@ const Logo = styled.img`
 
   &.hunter-hub {
     width: 270px;
-    ${Media.tablet`width: 540px;`}
+    ${Media.tablet`width: 500px;`}
   }
   &.avnet {
     width: 100px;
