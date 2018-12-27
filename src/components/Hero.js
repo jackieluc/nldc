@@ -64,6 +64,7 @@ const TicketInfo = styled(Info)`
   border: 0;
   color: ${Styles.lightRed};
   background: white;
+  font-size: 1rem;
   font-weight: bold;
 `;
 
@@ -89,7 +90,7 @@ const Hero = () => (
         May 1&ndash;5, 2019 | Calgary, Alberta
       </Info>
       <TicketInfo>
-        Tickets available in Spring
+        Tickets will be available in Spring
       </TicketInfo>
     </Container>
     <HeroMailChimp />
