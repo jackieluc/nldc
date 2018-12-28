@@ -11,13 +11,16 @@ const StyledForm = styled(Form)`
 `;
 
 const StyledLabel = styled(Label)`
-  display: inline-block;
   width: 290px;
-  text-align: left;
+  ${Media.tablet`width: 100%`};
+  text-align: center;
+  font-weight: bold;
 `;
 
 const StyledInput = styled(Input)`
-  margin-top: 0.5rem;
+  display: inline-block;
+  width: 290px;
+  margin: 0.5rem 0;
 `;
 
 const SubmitButton = styled(Input)`
@@ -43,7 +46,9 @@ const SubmitButton = styled(Input)`
   `}
 `;
 
-export default function MailChimp({ className }) {
+export default function MailChimp({ className, customContent }) {
+  const defaultContent = 'Subscribe for conference updates!';
+
   return (
     <StyledForm
       className={className}
@@ -55,15 +60,15 @@ export default function MailChimp({ className }) {
       noValidate
     >
       <StyledLabel htmlFor="EMAIL">
-        Subscribe for conference updates!
-        <StyledInput
-          type="email"
-          name="EMAIL"
-          id="mce-EMAIL"
-          placeholder="Email address"
-          required
-        />
+        { customContent !== '' ? customContent : defaultContent }
       </StyledLabel>
+      <StyledInput
+        type="email"
+        name="EMAIL"
+        id="mce-EMAIL"
+        placeholder="Email address"
+        required
+      />
       <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
         <input type="text" name="b_fe2fa79735e47235c75788bce_fb15ca4f23" tabIndex="-1" value="" />
       </div>
@@ -74,8 +79,10 @@ export default function MailChimp({ className }) {
 
 MailChimp.defaultProps = {
   className: '',
+  customContent: '',
 };
 
 MailChimp.propTypes = {
   className: PropTypes.string,
+  customContent: PropTypes.string,
 };
