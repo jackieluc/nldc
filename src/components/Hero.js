@@ -81,7 +81,7 @@ const Hero = () => (
         May 1&ndash;5, 2019 | Calgary, Alberta
       </Info>
     </Container>
-    <HeroMailChimp customContent="Tickets Available in Spring 2019. Please Subscribe for Conference Updated!" />
+    <HeroMailChimp customContent="Tickets Available in Spring 2019. Please Subscribe for Conference Updates!" />
   </HeroSection>
 );
 
