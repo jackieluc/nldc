@@ -86,7 +86,8 @@ const tier = {
  */
 const importAll = (r) => {
   const images = {};
-  r.keys().map((item) => { images[item.replace('./', '')] = r(item); });
+  // eslint-disable-next-line no-return-assign
+  r.keys().map(item => images[item.replace('./', '')] = r(item));
   return images;
 };
 
