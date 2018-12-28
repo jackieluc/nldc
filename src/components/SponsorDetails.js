@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Styles from '../utils/styles';
 import Media, { BreakPoints } from '../utils/media';
-import SponsorCTA from './SponsorPackage/SponsorCTA';
+import LearnMoreCTA from './SponsorPackage/LearnMoreCTA';
 
 const SponsorDetailsSection = styled.section`
   padding: 3rem 15px;
@@ -46,9 +46,9 @@ const SponsorDetails = () => (
       <SponsorDescription>
         <Description>
           { // eslint-disable-next-line
-          } Our generous corporate partners not only make NLDC possible — they are also joining us in <Highlight>#DisruptingTheNow</Highlight>.
+          } We would like to thank our corporate partners for supporting youth leadership and our 2019 mission in <Highlight>#DisruptingTheNow</Highlight>.
         </Description>
-        <SponsorCTA />
+        <LearnMoreCTA />
       </SponsorDescription>
     </Wrapper>
   </SponsorDetailsSection>

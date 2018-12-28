@@ -47,7 +47,7 @@ const SubmitButton = styled(Input)`
 `;
 
 export default function MailChimp({ className, customContent }) {
-  const defaultContent = 'Subscribe for conference updates!';
+  const defaultContent = 'Please subscribe for conference updates!';
 
   return (
     <StyledForm
