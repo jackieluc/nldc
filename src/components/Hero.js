@@ -60,14 +60,6 @@ const Info = styled.h3`
   border: 2px solid white;
 `;
 
-const TicketInfo = styled(Info)`
-  border: 0;
-  color: ${Styles.lightRed};
-  background: white;
-  font-size: 1rem;
-  font-weight: bold;
-`;
-
 const HeroMailChimp = styled(MailChimp)`
   margin-top: auto;
   margin-bottom: 1rem;
@@ -89,11 +81,8 @@ const Hero = () => (
       <Info>
         May 1&ndash;5, 2019 | Calgary, Alberta
       </Info>
-      <TicketInfo>
-        Tickets will be available in Spring
-      </TicketInfo>
     </Container>
-    <HeroMailChimp />
+    <HeroMailChimp customContent="Tickets Available in Spring 2019. Please Subscribe for Conference Updated!" />
   </HeroSection>
 );
 
