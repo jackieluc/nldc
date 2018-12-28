@@ -3,7 +3,6 @@ import { Container } from 'reactstrap';
 import styled from 'styled-components';
 import MailChimp from './MailChimp/MailChimp';
 import Media from '../utils/media';
-import Styles from '../utils/styles';
 import WhiteNldcLogo from '../images/nldc2019-logo-white.png';
 import '../images/calgary.jpg';
 
