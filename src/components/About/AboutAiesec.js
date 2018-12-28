@@ -27,9 +27,9 @@ const CTA = styled.a`
   display: inline-block;
   border-radius: 40px;
   margin: 0;
-  border: none;
+  border: 2px solid white;
   color: white;
-  background-color: ${Styles.lightRed};
+  background-color: transparent;
   ${Styles.shadow}
   padding: .7rem 3rem .7rem 1.7rem;
   margin-top: 2rem;
@@ -37,7 +37,8 @@ const CTA = styled.a`
   &:hover,
   &:focus {
     color: white;
-    background-color: ${Styles.red};
+    background-color: ${Styles.themeColour};
+    border: 2px solid ${Styles.themeColour};
     cursor: pointer;
     text-decoration: none;
   }
