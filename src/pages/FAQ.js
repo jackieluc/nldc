@@ -6,8 +6,12 @@ import Styles from '../utils/styles';
 import QuestionsAndAnswers from '../components/Faq/QuestionsAndAnswers';
 
 const Wrapper = styled.section`
-margin-top: 4rem;
-text-align: center;
+  margin-top: 4rem;
+  text-align: center;
+
+  ul, ol {
+    padding-left: 1.25rem;
+  }
 `;
 
 const Title = styled.h1`

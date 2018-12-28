@@ -60,7 +60,12 @@ const Logo = styled.img`
   }
   &.marquee {
     width: 120px;
-    ${Media.tablet`width: 160px;`}
+  }
+  &.flying-squirrel {
+    width: 160px;
+  }
+  &.partners {
+    width: 180px;
   }
 `;
 
@@ -81,7 +86,7 @@ const tier = {
  */
 const importAll = (r) => {
   const images = {};
-  r.keys().map((item) => { images[item.replace('./', '')] = r(item); });
+  r.keys().forEach((item) => { images[item.replace('./', '')] = r(item); });
   return images;
 };
 
@@ -208,10 +213,10 @@ const SponsorList = ({ paddingTop }) => (
         </TierTitle>
         <LogoCard>
           <SponsorLink href="https://www.knoxcalgary.com/" target="_blank" rel="noopener noreferrer">
-            <Logo src={eventLogos.knoxville} alt="" />
+            <Logo src={eventLogos.knoxville} alt="" className="partners" />
           </SponsorLink>
           <SponsorLink href="http://commonwealthbar.ca/" target="_blank" rel="noopener noreferrer">
-            <Logo src={eventLogos.commonwealth} alt="" />
+            <Logo src={eventLogos.commonwealth} alt="" className="partners" />
           </SponsorLink>
           <SponsorLink href="http://marqueecalgary.com/" target="_blank" rel="noopener noreferrer">
             <Logo src={eventLogos.marquee} alt="" className="marquee" />
@@ -224,13 +229,13 @@ const SponsorList = ({ paddingTop }) => (
         </TierTitle>
         <LogoCard>
           <SponsorLink href="https://www.esxossmanway.ca/" target="_blank" rel="noopener noreferrer">
-            <Logo src={kindLogos.esxossmanway} alt="" />
+            <Logo src={kindLogos.esxossmanway} alt="" className="partners" />
           </SponsorLink>
           <SponsorLink href="http://rumbleboxing.com/" target="_blank" rel="noopener noreferrer">
-            <Logo src={kindLogos.rumbleboxing} alt="" />
+            <Logo src={kindLogos.rumbleboxing} alt="" className="partners" />
           </SponsorLink>
           <SponsorLink href="https://flyingsquirrelsports.ca/" target="_blank" rel="noopener noreferrer">
-            <Logo src={kindLogos.flyingsquirrel} alt="" />
+            <Logo src={kindLogos.flyingsquirrel} alt="" className="flying-squirrel" />
           </SponsorLink>
         </LogoCard>
       </Tier>

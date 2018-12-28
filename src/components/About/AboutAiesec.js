@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import styled from 'styled-components';
 import Media from '../../utils/media';
+import Styles from '../../utils/styles';
 
 const Wrapper = styled.section`
   background-image: linear-gradient( 135deg, #74C7D9 40%, #037EF3 100%);
@@ -23,15 +24,22 @@ const Text = styled.p`
 `;
 
 const CTA = styled.a`
+  display: inline-block;
+  border-radius: 40px;
+  margin: 0;
+  border: none;
   color: white;
-  display: block;
+  background-color: ${Styles.lightRed};
+  ${Styles.shadow}
+  padding: .7rem 3rem .7rem 1.7rem;
   margin-top: 2rem;
-  margin-left: -25px;
-  text-decoration: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: white;
-    text-decoration: underline;
+    background-color: ${Styles.red};
+    cursor: pointer;
+    text-decoration: none;
   }
 
   &:after {
@@ -55,7 +63,7 @@ const AboutAiesec = () => (
             </Title>
             <Text>
               { // eslint-disable-next-line
-              } AIESEC is the largest  non-governmental not-for-profit organisation offering platforms for young people to explore and develop their leadership through our global exchange program. Since we were founded, we have engaged and developed over 1,000,000 young people who have been through an AIESEC experiences.
+              } AIESEC is the largest  non-governmental not-for-profit organisation offering platforms for young people to explore and develop their leadership through our global exchange program. Since we were founded, we have engaged and developed over 1,000,000 AIESECers.
             </Text>
             <Text>
               { // eslint-disable-next-line

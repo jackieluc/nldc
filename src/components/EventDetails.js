@@ -81,7 +81,7 @@ const EventDetails = () => (
               </AddressLink>
             </EventDescription>
             <EventInfoTitle>
-              Save the date!
+              Save the Date!
             </EventInfoTitle>
             <EventDescription>
               <AddToCalendar />
