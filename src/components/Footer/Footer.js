@@ -7,7 +7,7 @@ import SocialMedia from './SocialMedia';
 const BlackNldcLogo = require('../../images/nldc2019-logo-black.png');
 
 const Wrapper = styled.footer`
-  background-color: whitesmoke;
+  background-image: linear-gradient( 135deg, #74C7D9 40%, #037EF3 100%);
   margin: 0;
   padding-top: 80px;
   padding-bottom: 60px;
@@ -21,7 +21,7 @@ const Div = styled.div`
 
 const Link = styled.a`
   position: absolute;
-  top: -140px;
+  top: -135px;
   margin-left: -120px;
 `;
 
