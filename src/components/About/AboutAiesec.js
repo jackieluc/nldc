@@ -27,7 +27,7 @@ const CTA = styled.a`
   display: inline-block;
   border-radius: 40px;
   margin: 0;
-  border: 2px solid white;
+  border: 1px solid white;
   color: white;
   background-color: transparent;
   ${Styles.shadow}
@@ -38,7 +38,7 @@ const CTA = styled.a`
   &:focus {
     color: white;
     background-color: ${Styles.themeColour};
-    border: 2px solid ${Styles.themeColour};
+    border-color: ${Styles.themeColour};
     cursor: pointer;
     text-decoration: none;
   }
