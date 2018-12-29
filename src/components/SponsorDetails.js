@@ -2,14 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import Styles from '../utils/styles';
 import Media, { BreakPoints } from '../utils/media';
-import LearnMoreCTA from './SponsorPackage/LearnMoreCTA';
 
 const SponsorDetailsSection = styled.section`
-  padding: 3rem 15px;
+  padding: 3rem 15px 0;
 `;
 
 const Wrapper = styled.div`
   margin: 0 auto;
+  z-index: 2;
   max-width: ${BreakPoints.desktop}px;
   ${Media.tablet`width: 75%;`}
   ${Media.laptop`width: 620px;`}
@@ -46,9 +46,8 @@ const SponsorDetails = () => (
       <SponsorDescription>
         <Description>
           { // eslint-disable-next-line
-          } We would like to thank our corporate partners for supporting youth leadership and our 2019 mission in <Highlight>#DisruptingTheNow</Highlight>.
+          } We would like to thank our corporate sponsors for supporting youth leadership and our 2019 mission in <Highlight>#DisruptingTheNow</Highlight>.
         </Description>
-        <LearnMoreCTA />
       </SponsorDescription>
     </Wrapper>
   </SponsorDetailsSection>

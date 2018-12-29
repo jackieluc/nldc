@@ -5,7 +5,9 @@ import Hero from '../components/Hero';
 import EventDetails from '../components/EventDetails';
 import AboutAiesec from '../components/About/AboutAiesec';
 import SponsorDetails from '../components/SponsorDetails';
+import LearnMoreCTA from '../components/SponsorPackage/LearnMoreCTA';
 import SponsorList from '../components/SponsorPackage/SponsorList';
+import PartnerList from '../components/SponsorPackage/PartnerList';
 
 const Wrapper = styled.div`
   text-align: center;
@@ -39,7 +41,9 @@ const Home = () => (
     <EventDetails />
     <AboutAiesec />
     <SponsorDetails />
+    <LearnMoreCTA />
     <SponsorList />
+    <PartnerList />
   </Wrapper>
 );
 

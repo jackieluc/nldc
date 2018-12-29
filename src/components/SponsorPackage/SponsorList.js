@@ -59,26 +59,15 @@ const Logo = styled.img`
     width: 80px;
     ${Media.tablet`width: 135px;`}
   }
-  &.marquee {
-    width: 120px;
-  }
-  &.flying-squirrel {
-    width: 160px;
-  }
-  &.partners {
-    width: 180px;
-  }
 `;
 
 const tier = {
-  title: 'Title Sponsor',
-  innovation: 'Innovation Sponsors',
-  gold: 'Gold Sponsor',
-  silver: 'Silver Sponsors',
-  bronze: 'Bronze Sponsors',
-  meal: 'Meal Sponsor',
-  event: 'Event Partners',
-  kind: 'In-kind Partners',
+  title: 'Title',
+  innovation: 'Innovation',
+  gold: 'Gold',
+  silver: 'Silver',
+  bronze: 'Bronze',
+  meal: 'Meal',
 };
 
 const titleLogos = {
@@ -103,18 +92,6 @@ const silverLogos = {
 const bronzeLogos = {
   husky: Logos['Husky.png'],
   aeso: Logos['aeso.png'],
-};
-
-const eventLogos = {
-  knoxville: Logos['Knoxville.png'],
-  commonwealth: Logos['commonwealth.png'],
-  marquee: Logos['marquee.jpeg'],
-};
-
-const kindLogos = {
-  esxossmanway: Logos['Esxossmanway.png'],
-  flyingsquirrel: Logos['flyingsquirrel.png'],
-  rumbleboxing: Logos['rumbleboxing.jpg'],
 };
 
 const mealLogos = {
@@ -193,38 +170,6 @@ const SponsorList = ({ paddingTop }) => (
         <LogoCard>
           <SponsorLink href="https://www.pwc.com/ca/en/" target="_blank" rel="noopener noreferrer">
             <Logo src={mealLogos.pwc} alt="" className="pwc" />
-          </SponsorLink>
-        </LogoCard>
-      </Tier>
-      <Tier>
-        <TierTitle>
-          {tier.event}
-        </TierTitle>
-        <LogoCard>
-          <SponsorLink href="https://www.knoxcalgary.com/" target="_blank" rel="noopener noreferrer">
-            <Logo src={eventLogos.knoxville} alt="" className="partners" />
-          </SponsorLink>
-          <SponsorLink href="http://commonwealthbar.ca/" target="_blank" rel="noopener noreferrer">
-            <Logo src={eventLogos.commonwealth} alt="" className="partners" />
-          </SponsorLink>
-          <SponsorLink href="http://marqueecalgary.com/" target="_blank" rel="noopener noreferrer">
-            <Logo src={eventLogos.marquee} alt="" className="marquee" />
-          </SponsorLink>
-        </LogoCard>
-      </Tier>
-      <Tier>
-        <TierTitle>
-          {tier.kind}
-        </TierTitle>
-        <LogoCard>
-          <SponsorLink href="https://www.esxossmanway.ca/" target="_blank" rel="noopener noreferrer">
-            <Logo src={kindLogos.esxossmanway} alt="" className="partners" />
-          </SponsorLink>
-          <SponsorLink href="http://rumbleboxing.com/" target="_blank" rel="noopener noreferrer">
-            <Logo src={kindLogos.rumbleboxing} alt="" className="partners" />
-          </SponsorLink>
-          <SponsorLink href="https://flyingsquirrelsports.ca/" target="_blank" rel="noopener noreferrer">
-            <Logo src={kindLogos.flyingsquirrel} alt="" className="flying-squirrel" />
           </SponsorLink>
         </LogoCard>
       </Tier>
