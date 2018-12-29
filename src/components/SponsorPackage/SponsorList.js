@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Card } from 'reactstrap';
 import styled from 'styled-components';
+import Logos from '../../utils/logos';
 import Media from '../../utils/media';
 import Styles from '../../utils/styles';
 
@@ -80,56 +81,44 @@ const tier = {
   kind: 'In-kind Partners',
 };
 
-/**
- * Snippet from:
- * https://stackoverflow.com/questions/42118296/dynamically-import-images-from-a-directory-using-webpack
- */
-const importAll = (r) => {
-  const images = {};
-  r.keys().forEach((item) => { images[item.replace('./', '')] = r(item); });
-  return images;
-};
-
-const logos = importAll(require.context('../../images', false, /\.(png|jpe?g|svg)$/));
-
 const titleLogos = {
-  nutrien: logos['nutrien.png'],
+  nutrien: Logos['nutrien.png'],
 };
 
 const innovationLogos = {
-  hunterhub: logos['hunterhub.jpg'],
-  avnet: logos['avnet.png'],
+  hunterhub: Logos['hunterhub.jpg'],
+  avnet: Logos['avnet.png'],
 };
 
 const goldLogos = {
-  ced: logos['ced.png'],
+  ced: Logos['ced.png'],
 };
 
 const silverLogos = {
-  atb: logos['atb.png'],
-  ccal: logos['ccal.png'],
-  haskayne: logos['haskayne.jpg'],
+  atb: Logos['atb.png'],
+  ccal: Logos['ccal.png'],
+  haskayne: Logos['haskayne.jpg'],
 };
 
 const bronzeLogos = {
-  husky: logos['Husky.png'],
-  aeso: logos['aeso.png'],
+  husky: Logos['Husky.png'],
+  aeso: Logos['aeso.png'],
 };
 
 const eventLogos = {
-  knoxville: logos['Knoxville.png'],
-  commonwealth: logos['commonwealth.png'],
-  marquee: logos['marquee.jpeg'],
+  knoxville: Logos['Knoxville.png'],
+  commonwealth: Logos['commonwealth.png'],
+  marquee: Logos['marquee.jpeg'],
 };
 
 const kindLogos = {
-  esxossmanway: logos['Esxossmanway.png'],
-  flyingsquirrel: logos['flyingsquirrel.png'],
-  rumbleboxing: logos['rumbleboxing.jpg'],
+  esxossmanway: Logos['Esxossmanway.png'],
+  flyingsquirrel: Logos['flyingsquirrel.png'],
+  rumbleboxing: Logos['rumbleboxing.jpg'],
 };
 
 const mealLogos = {
-  pwc: logos['pwc.png'],
+  pwc: Logos['pwc.png'],
 };
 
 const SponsorList = ({ paddingTop }) => (
