@@ -189,9 +189,9 @@ const SponsorList = ({ paddingTop }) => (
           {tier.bronze}
         </TierTitle>
         <LogoCard>
-          <SponsorLink href="http://www.huskyenergy.ca/" target="_blank" rel="noopener noreferrer">
+          {/* <SponsorLink href="http://www.huskyenergy.ca/" target="_blank" rel="noopener noreferrer">
             <Logo src={bronzeLogos.husky} alt="" />
-          </SponsorLink>
+          </SponsorLink> */}
           <SponsorLink href="https://www.aeso.ca/" target="_blank" rel="noopener noreferrer">
             <Logo src={bronzeLogos.aeso} alt="" className="aeso" />
           </SponsorLink>
