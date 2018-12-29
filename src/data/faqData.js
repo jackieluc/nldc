@@ -32,7 +32,13 @@ const faq = [
   },
   {
     question: 'Do we have any travel discounts?',
-    answer: 'Yes! WestJet has offered a discount code <span>2T8G3KG</span> for 5% off economy and 10% off premium flights.',
+    answer: `Yes! WestJet is happy to offer a <b>5% off Econo* and 10% off Flex and Plus fares for travel within Canada and from Mexico into and out of Calgary.</b> Please visit <a href="https://www.westjet.com/conventions" target="_blank" rel="noopener noreferrer">www.westjet.com/conventions</a> to make a booking online.
+      <br/>
+      <ul style="list-style: none; padding: 1.25rem 0;">
+        <li>Coupon Code: <span>2T8G3KG</span></li>
+        <li>Travel from: <span>April 22, 2019 to May 12, 2019</span></li>
+      </ul>
+      <b>* Travel Agents use only </b> - Please use Promo Code WBB70`,
   },
 ];
 
