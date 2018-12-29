@@ -31,7 +31,7 @@ const CTA = styled.a`
   color: white;
   background-color: transparent;
   ${Styles.shadow}
-  padding: .7rem 3rem .7rem 1.7rem;
+  padding: .7rem 2rem;
   margin-top: 2rem;
 
   &:hover,
@@ -41,15 +41,6 @@ const CTA = styled.a`
     border-color: ${Styles.themeColour};
     cursor: pointer;
     text-decoration: none;
-  }
-
-  &:after {
-    content: "→";
-    display: inline-block;
-    margin-left: .236em;
-    margin-right: -1.618em;
-    position: relative;
-    top: .01em;
   }
 `;
 
@@ -71,7 +62,7 @@ const AboutAiesec = () => (
               } We are in consultative status with the United Nations Economic and Social Council (ECOSOC), affiliated with the UN DPI, member of ICMYO, and is recognized by UNESCO.
             </Text>
             <CTA href="https://www.aiesec.org/" target="_blank" rel="noopener noreferrer">
-              Find out more about AIESEC
+              Find out More About AIESEC
             </CTA>
           </About>
         </Col>
