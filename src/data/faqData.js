@@ -32,7 +32,7 @@ const faq = [
   },
   {
     question: 'Do we have any travel discounts?',
-    answer: `Yes! WestJet is happy to offer a <b>5% off Econo* and 10% off Flex and Plus fares for travel within Canada and from Mexico into and out of Calgary.</b> Please visit <a href="https://www.westjet.com/conventions" target="_blank" rel="noopener noreferrer">www.westjet.com/conventions</a> to make a booking online.
+    answer: `Yes! <div style="color: #00467F; display: inline-block; font-weight: bold;">WestJet</div> is happy to offer a <b>5% off Econo* and 10% off Flex and Plus fares for travel within Canada and from Mexico into and out of Calgary.</b> Please visit <a href="https://www.westjet.com/conventions" target="_blank" rel="noopener noreferrer">www.westjet.com/conventions</a> to make a booking online.
       <br/>
       <ul style="list-style: none; padding: 1.25rem 0;">
         <li>Coupon Code: <span>2T8G3KG</span></li>
