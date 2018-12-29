@@ -5,7 +5,7 @@ import Styles from '../../utils/styles';
 const CTA = styled.a`
   display: inline-block;
   border-radius: 40px;
-  padding: .7rem 1.2rem;
+  padding: .7rem 2rem;
   margin: 0;
   color: #FFFFFF;
   border: none;

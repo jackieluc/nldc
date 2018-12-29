@@ -27,12 +27,33 @@ const faq = [
             </ul>`,
   },
   {
+    question: 'Do we have any travel discounts?',
+    answer: `Yes! <div style="color: #00467F; display: inline-block; font-weight: bold;">WestJet</div> is happy to offer a <b>5% off Econo* and 10% off Flex and Plus fares for travel within Canada and from Mexico into and out of Calgary.</b> Please visit <a href="https://www.westjet.com/conventions" target="_blank" rel="noopener noreferrer">www.westjet.com/conventions</a> to make a booking online.
+      <br/>
+      <ul style="list-style: none; padding: 1.25rem 0;">
+        <li>Coupon Code: <span>2T8G3KG</span></li>
+        <li>Travel from: <span>April 22, 2019 to May 12, 2019</span></li>
+      </ul>
+      <b>* Travel Agents use only </b> - Please use Promo Code: WBB70`,
+  },
+  {
     question: 'Can I stay before and after the conference?',
     answer: 'Yes, these additional costs are TBD.',
   },
   {
-    question: 'Do we have any travel discounts?',
-    answer: 'Yes! WestJet has offered a discount code <span>2T8G3KG</span> for 5% off economy and 10% off premium flights.',
+    question: 'When should I arrive at the conference venue?',
+    answer: `<ul>
+              <li>Pre-conference delegates should book their flights to arrive on the evening of the <span>April 27</span>.</li>
+              <li>All other AIESEC delegates should book their flight to arrive on the evening of <span>April 29</span>.</li>
+            </ul>`,
+  },
+  {
+    question: 'How much cash should I bring?',
+    answer: 'Please bring <span>$40+</span> to be safe. These can cover night event tickets, merchandise, raffles, etc...',
+  },
+  {
+    question: 'Can non-AIESECers attend NLDC 2019?',
+    answer: 'Yes, you can purchase an <span>External Delegate ticket</span> and attend the Youth 2 Business (Y2B) Forum and the Innovation Series.',
   },
 ];
 
