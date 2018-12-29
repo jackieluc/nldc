@@ -84,7 +84,7 @@ injectGlobal`
   }
 `;
 
-if (window.location.hostname === 'nldcnow') {
+if (window.location.hostname === 'www.nldcnow.com') {
   ReactGA.initialize('UA-120821697-1');
   ReactGA.pageview(window.location.pathname + window.location.search);
 }
