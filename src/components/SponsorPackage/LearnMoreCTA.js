@@ -7,6 +7,7 @@ const CTA = styled.a`
   border-radius: 40px;
   padding: .7rem 2rem;
   margin: 0;
+  margin-bottom: 2rem;
   color: #FFFFFF;
   border: none;
   background-color: ${Styles.lightRed};

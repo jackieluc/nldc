@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Card } from 'reactstrap';
 import styled from 'styled-components';
+import Logos from '../../utils/logos';
 import Media from '../../utils/media';
 import Styles from '../../utils/styles';
 
@@ -58,78 +59,43 @@ const Logo = styled.img`
     width: 80px;
     ${Media.tablet`width: 135px;`}
   }
-  &.marquee {
-    width: 120px;
-  }
-  &.flying-squirrel {
-    width: 160px;
-  }
-  &.partners {
-    width: 180px;
-  }
 `;
 
 const tier = {
-  title: 'Title Sponsor',
-  innovation: 'Innovation Sponsors',
-  gold: 'Gold Sponsor',
-  silver: 'Silver Sponsors',
-  bronze: 'Bronze Sponsors',
-  meal: 'Meal Sponsor',
-  event: 'Event Partners',
-  kind: 'In-kind Partners',
+  title: 'Title',
+  innovation: 'Innovation',
+  gold: 'Gold',
+  silver: 'Silver',
+  bronze: 'Bronze',
+  meal: 'Meal',
 };
-
-/**
- * Snippet from:
- * https://stackoverflow.com/questions/42118296/dynamically-import-images-from-a-directory-using-webpack
- */
-const importAll = (r) => {
-  const images = {};
-  r.keys().forEach((item) => { images[item.replace('./', '')] = r(item); });
-  return images;
-};
-
-const logos = importAll(require.context('../../images', false, /\.(png|jpe?g|svg)$/));
 
 const titleLogos = {
-  nutrien: logos['nutrien.png'],
+  nutrien: Logos['nutrien.png'],
 };
 
 const innovationLogos = {
-  hunterhub: logos['hunterhub.jpg'],
-  avnet: logos['avnet.png'],
+  hunterhub: Logos['hunterhub.jpg'],
+  avnet: Logos['avnet.png'],
 };
 
 const goldLogos = {
-  ced: logos['ced.png'],
+  ced: Logos['ced.png'],
 };
 
 const silverLogos = {
-  atb: logos['atb.png'],
-  ccal: logos['ccal.png'],
-  haskayne: logos['haskayne.jpg'],
+  atb: Logos['atb.png'],
+  ccal: Logos['ccal.png'],
+  haskayne: Logos['haskayne.jpg'],
 };
 
 const bronzeLogos = {
-  husky: logos['Husky.png'],
-  aeso: logos['aeso.png'],
-};
-
-const eventLogos = {
-  knoxville: logos['Knoxville.png'],
-  commonwealth: logos['commonwealth.png'],
-  marquee: logos['marquee.jpeg'],
-};
-
-const kindLogos = {
-  esxossmanway: logos['Esxossmanway.png'],
-  flyingsquirrel: logos['flyingsquirrel.png'],
-  rumbleboxing: logos['rumbleboxing.jpg'],
+  husky: Logos['Husky.png'],
+  aeso: Logos['aeso.png'],
 };
 
 const mealLogos = {
-  pwc: logos['pwc.png'],
+  pwc: Logos['pwc.png'],
 };
 
 const SponsorList = ({ paddingTop }) => (
@@ -204,38 +170,6 @@ const SponsorList = ({ paddingTop }) => (
         <LogoCard>
           <SponsorLink href="https://www.pwc.com/ca/en/" target="_blank" rel="noopener noreferrer">
             <Logo src={mealLogos.pwc} alt="" className="pwc" />
-          </SponsorLink>
-        </LogoCard>
-      </Tier>
-      <Tier>
-        <TierTitle>
-          {tier.event}
-        </TierTitle>
-        <LogoCard>
-          <SponsorLink href="https://www.knoxcalgary.com/" target="_blank" rel="noopener noreferrer">
-            <Logo src={eventLogos.knoxville} alt="" className="partners" />
-          </SponsorLink>
-          <SponsorLink href="http://commonwealthbar.ca/" target="_blank" rel="noopener noreferrer">
-            <Logo src={eventLogos.commonwealth} alt="" className="partners" />
-          </SponsorLink>
-          <SponsorLink href="http://marqueecalgary.com/" target="_blank" rel="noopener noreferrer">
-            <Logo src={eventLogos.marquee} alt="" className="marquee" />
-          </SponsorLink>
-        </LogoCard>
-      </Tier>
-      <Tier>
-        <TierTitle>
-          {tier.kind}
-        </TierTitle>
-        <LogoCard>
-          <SponsorLink href="https://www.esxossmanway.ca/" target="_blank" rel="noopener noreferrer">
-            <Logo src={kindLogos.esxossmanway} alt="" className="partners" />
-          </SponsorLink>
-          <SponsorLink href="http://rumbleboxing.com/" target="_blank" rel="noopener noreferrer">
-            <Logo src={kindLogos.rumbleboxing} alt="" className="partners" />
-          </SponsorLink>
-          <SponsorLink href="https://flyingsquirrelsports.ca/" target="_blank" rel="noopener noreferrer">
-            <Logo src={kindLogos.flyingsquirrel} alt="" className="flying-squirrel" />
           </SponsorLink>
         </LogoCard>
       </Tier>

@@ -9,7 +9,9 @@ import Media from '../utils/media';
 import Styles from '../utils/styles';
 import SponsorCTA from '../components/SponsorPackage/SponsorCTA';
 import SponsorPackage from '../components/SponsorPackage/SponsorPackage';
+import SponsorDetails from '../components/SponsorDetails';
 import SponsorList from '../components/SponsorPackage/SponsorList';
+import PartnerList from '../components/SponsorPackage/PartnerList';
 
 const Wrapper = styled.div`
   text-align: center;
@@ -110,7 +112,9 @@ const Sponsors = () => (
       </CardDeck>
     </Benefits>
     <Wave />
-    <SponsorList paddingTop="4rem" />
+    <SponsorDetails />
+    <SponsorList />
+    <PartnerList />
   </Wrapper>
 );
 
