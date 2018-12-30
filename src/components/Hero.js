@@ -69,7 +69,6 @@ const Hero = () => (
     <Container style={{ marginTop: 'auto', padding: '0' }}>
       <LogoImage src={WhiteNldcLogo} alt="NLDC 2019 Logo" />
       <Title>
-        AIESEC CANADA
         <span>
           National Leadership
         </span>
