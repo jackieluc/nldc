@@ -46,7 +46,7 @@ const SponsorDetails = () => (
       <SponsorDescription>
         <Description>
           { // eslint-disable-next-line
-          } We would like to thank our corporate sponsors for supporting youth leadership and our 2019 mission in <Highlight>#DisruptingTheNow</Highlight>.
+          } We would like to thank our corporate partners for supporting youth leadership and our 2019 mission in <Highlight>#DisruptingTheNow</Highlight>.
         </Description>
       </SponsorDescription>
     </Wrapper>

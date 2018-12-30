@@ -61,7 +61,7 @@ const Logo = styled.img`
 
 const tier = {
   event: 'Event',
-  kind: 'In-kind',
+  kind: 'In-Kind',
 };
 
 const eventLogos = {
