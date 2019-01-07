@@ -57,7 +57,19 @@ const faq = [
   },
   {
     question: 'Can non-AIESECers attend NLDC 2019?',
-    answer: 'Yes, you can purchase an <span>External Delegate ticket</span> and attend the Youth 2 Business (Y2B) Forum and the Innovation Series.',
+    answer: 'Yes, we would love for any students or new grads to purchase an <span>External Delegate ticket</span> and attend the Youth 2 Business (Y2B) Forum and the Innovation Series. Prices TBD.',
+  },
+  {
+    question: 'What is the legal drinking age in Calgary, Alberta?',
+    answer: 'The legal drinking age is <span>18 years old</span>. Please bring <span>2 pieces of government ID</span> for access to night events.',
+  },
+  {
+    question: 'What do I need to pack?',
+    answer: 'Some basic items include toiletries, pajamas, shoes, AIESEC swag, laptop, charger, etc... A detailed list will be provided in April.',
+  },
+  {
+    question: 'I am planning to drive, will I get free parking?',
+    answer: 'Yes, all conference delegates will receive a parking pass. You will need to submit a request here at <a href="https://bit.ly/NLDCParking" target="_blank" rel="noopener noreferrer">bit.ly/NLDCParking</a>.',
   },
 ];
 
