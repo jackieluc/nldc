@@ -36,7 +36,7 @@ const PartnerDetails = () => (
   <PartnerDetailsSection>
     <Wrapper>
       <PartnerTitle>
-        Partners
+        Potential Partners
       </PartnerTitle>
       <PartnerDescription>
         <Description>
