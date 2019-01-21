@@ -11,7 +11,7 @@ const StyledForm = styled(Form)`
 `;
 
 const StyledLabel = styled(Label)`
-  width: 290px;
+  width: 300px;
   ${Media.tablet`width: 100%`};
   text-align: center;
   font-weight: bold;
