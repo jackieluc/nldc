@@ -92,9 +92,9 @@ const StyledAnchor = styled.a`
 const MobileMenu = ({ routes, action }) => (
   <MenuWrapper>
     {routes.map(route => (
-      /^https?:\/\//.test(route.path)
+      /^https?:\/\/|^mailto?:/.test(route.path)
         ? (
-          <StyledAnchor href={route.path} target="_blank" rel="noopener noreferrer" key={route.name}>
+          <StyledAnchor href={route.path} key={route.name}>
             {route.name}
           </StyledAnchor>
         )
