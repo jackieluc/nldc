@@ -49,12 +49,15 @@ const Logo = styled.img`
     ${Media.tablet`width: 135px;`}
   }
   &.marquee {
-    width: 120px;
+    width: 90px;
+  }
+  &.rumble-boxing {
+    width: 210px;
   }
   &.flying-squirrel {
-    width: 160px;
+    width: 140px;
   }
-  &.partners {
+  &.esxoss {
     width: 180px;
   }
 `;
@@ -103,10 +106,10 @@ const PartnerList = ({ paddingTop }) => (
           </TierTitle>
           <LogoCard>
             <SponsorLink href="https://www.esxossmanway.ca/" target="_blank" rel="noopener noreferrer">
-              <Logo src={kindLogos.esxossmanway} alt="" className="partners" />
+              <Logo src={kindLogos.esxossmanway} alt="" className="esxoss" />
             </SponsorLink>
             <SponsorLink href="http://rumbleboxing.com/" target="_blank" rel="noopener noreferrer">
-              <Logo src={kindLogos.rumbleboxing} alt="" className="partners" />
+              <Logo src={kindLogos.rumbleboxing} alt="" className="rumble-boxing" />
             </SponsorLink>
             <SponsorLink href="https://flyingsquirrelsports.ca/" target="_blank" rel="noopener noreferrer">
               <Logo src={kindLogos.flyingsquirrel} alt="" className="flying-squirrel" />
