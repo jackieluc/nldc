@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Card } from 'reactstrap';
 import styled from 'styled-components';
-import Logos from '../../utils/logos';
+import { sponsorLogos as Logos } from '../../utils/logos';
 import Media from '../../utils/media';
 import Styles from '../../utils/styles';
 

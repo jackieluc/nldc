@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import FacebookLogo from '../../images/facebook.png';
-import LinkedinLogo from '../../images/linkedin.png';
-import InstagramLogo from '../../images/instagram.png';
+import FacebookLogo from '../../images/social-media/facebook.png';
+import LinkedinLogo from '../../images/social-media/linkedin.png';
+import InstagramLogo from '../../images/social-media/instagram.png';
 
 const Wrapper = styled.div`
   display: flex;

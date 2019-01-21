@@ -8,6 +8,13 @@ const importAll = (r) => {
   return images;
 };
 
-const logos = importAll(require.context('../images', false, /\.(png|jpe?g|svg)$/));
+// Can't seem to use variable paths to the separate directories of logos...
 
-export default logos;
+const sponsorLogos = importAll(require.context('../images/sponsors', false, /\.(png|jpe?g|svg)$/));
+
+const partnerLogos = importAll(require.context('../images/partners', false, /\.(png|jpe?g|svg)$/));
+
+module.exports = {
+  sponsorLogos,
+  partnerLogos,
+};
