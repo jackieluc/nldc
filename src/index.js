@@ -104,7 +104,7 @@ const routes = [
   },
   {
     name: 'Contact',
-    path: 'https://www.facebook.com/AIESECCanadaNLDC/',
+    path: 'mailto:kkaren.ngo@aiesec.net',
   },
 ];
 

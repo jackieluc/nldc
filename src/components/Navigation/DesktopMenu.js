@@ -116,9 +116,9 @@ export default class Menu extends Component {
           <Logo src={BlackNldcLogo} alt="" />
         </StyledAnchor>
         {routes.map(route => (
-          /^https?:\/\//.test(route.path)
+          /^https?:\/\/|^mailto?:/.test(route.path)
             ? (
-              <StyledAnchor href={route.path} target="_blank" rel="noopener noreferrer" key={route.name}>
+              <StyledAnchor href={route.path} key={route.name}>
                 {route.name}
               </StyledAnchor>
             )
