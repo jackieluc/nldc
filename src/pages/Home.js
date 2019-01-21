@@ -21,7 +21,7 @@ const Home = () => (
       </title>
       <link rel="canonical" href="https://www.nldcnow.com/" />
       <meta name="description" content="Join us in &#34;Disrupting the Now!&#34; May 1&ndash;5, 2019 at the National Leadership Development Conference in Calgary." />
-      <meta name="keywords" content="AIESEC, Canada, Calgary, NLDC, national, leadership, development, conference, 2019, AIESEC.org, nldc 2019, national leadership development conference" />
+      <meta name="keywords" content="AIESEC, Canada, Calgary, NLDC, national, leadership, development, conference, 2019, AIESEC.org, AIESEC.ca nldc 2019, national leadership development conference" />
       <meta property="og:title" content="AIESEC | NLDC 2019" />
       <meta property="og:type" content="website" />
       <meta
