@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Container, Card } from 'reactstrap';
 import styled from 'styled-components';
 import PartnerDetails from './PartnerDetails';
-import Logos from '../../utils/logos';
+import { partnerLogos as Logos } from '../../utils/logos';
 import Media from '../../utils/media';
 import Styles from '../../utils/styles';
 
@@ -41,13 +41,8 @@ const SponsorLink = styled.a`
 const Logo = styled.img`
   display: block;
   width: 190px;
-  ${Media.tablet`width: 270px;`}
   height: auto;
 
-  &.pwc {
-    width: 80px;
-    ${Media.tablet`width: 135px;`}
-  }
   &.marquee {
     width: 90px;
   }
@@ -57,7 +52,7 @@ const Logo = styled.img`
   &.flying-squirrel {
     width: 140px;
   }
-  &.esxoss {
+  &.partners {
     width: 180px;
   }
 `;
@@ -106,7 +101,7 @@ const PartnerList = ({ paddingTop }) => (
           </TierTitle>
           <LogoCard>
             <SponsorLink href="https://www.esxossmanway.ca/" target="_blank" rel="noopener noreferrer">
-              <Logo src={kindLogos.esxossmanway} alt="" className="esxoss" />
+              <Logo src={kindLogos.esxossmanway} alt="" className="partners" />
             </SponsorLink>
             <SponsorLink href="http://rumbleboxing.com/" target="_blank" rel="noopener noreferrer">
               <Logo src={kindLogos.rumbleboxing} alt="" className="rumble-boxing" />
