@@ -11,6 +11,7 @@ import Navigation from './components/Navigation/Navigation';
 import Footer from './components/Footer/Footer';
 import Home from './pages/Home';
 import Sponsors from './pages/Sponsors';
+import Y2b from './pages/Y2b';
 import FAQ from './pages/FAQ';
 import ScrollToTop from './utils/ScrollToTop';
 
@@ -99,6 +100,10 @@ const routes = [
     path: '/sponsors',
   },
   {
+    name: 'Y2B',
+    path: '/youth2business',
+  },
+  {
     name: 'FAQ',
     path: '/faq',
   },
@@ -116,6 +121,7 @@ ReactDOM.render((
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/sponsors" component={Sponsors} />
+        <Route exact path="/youth2business" component={Y2b} />
         <Route exact path="/faq" component={FAQ} />
         {/* <Route exact path='/schedule' component={Schedule} /> */}
         {/* <Route exact path='/events' component={Events} /> */}
