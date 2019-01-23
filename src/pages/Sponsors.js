@@ -1,4 +1,5 @@
 import React from 'react';
+import Layout from '../components/layout';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import {
@@ -56,66 +57,68 @@ const benefits2 = ['Conference boothing table', 'Complimentary banquet tickets',
 const benefits3 = ['International recruitment program discount - Hire global talent', 'For over 65 years, we have worked alongside government, businesses and talented  students to facilitate life changing professional experiences within hundreds of small to multinational businesses. We have provided talented youth with meaningful and challenging experiences to develop their leadership potential in Canada.'];
 
 const Sponsors = () => (
-  <Wrapper>
-    <Helmet>
-      <title>
-        Sponsors | NLDC 2019
-      </title>
-      <link rel="canonical" href="https://www.nldcnow.com/sponsors" />
-      <meta name="description" content="Join us in &#34;Disrupting the Now!&#34; May 1&ndash;5, 2019 at the National Leadership Development Conference in Calgary." />
-      <meta name="keywords" content="nldc 2019 sponsor, sponsors, sponsor, nldc sponsor, aiesec sponsor, title sponsor, innovation sponsor, gold sponsor, silver sponsor, bronze sponsor" />
-      <meta property="og:title" content="Sponsors | NLDC 2019" />
-      <meta property="og:type" content="website" />
-      <meta
-        property="og:description"
-        content="Join us in &#34;Disrupting the Now!&#34; May 1&ndash;5, 2019 at the National Leadership Development Conference in Calgary."
-      />
-      <meta property="og:url" content="https://www.nldcnow.com/sponsors" />
-      <meta property="og:site_name" content="Sponsors | NLDC 2019" />
-      <meta property="og:image" content="https://www.nldcnow.com/static/media/nldc2019-logo-black.png" />
-      <meta name="twitter:card" content="summary" />
-      <meta name="twitter:url" content="https://www.nldcnow.com/sponsors" />
-      <meta name="twitter:title" content="Sponsors | NLDC 2019" />
-      <meta name="twitter:description" content="Join us in &#34;Disrupting the Now!&#34; May 1&ndash;5, 2019 at the National Leadership Development Conference in Calgary." />
-      <meta name="twitter:image" content="https://www.nldcnow.com/static/media/nldc2019-logo-black.png" />
-    </Helmet>
-    <Container>
-      <TitleSection>
-        <Title>
-          Sponsors
-        </Title>
-        <Row>
-          <Description xs="12">
-            <p style={{ marginBottom: '1rem' }}>
-              { // eslint-disable-next-line
-              } In order to have a successful NLDC, we require funding for venues, events, speakers, and much more. We are looking to form valuable partnerships with organizations that value leadership, diversity, innovation, technology, and entrepreneurial thinking.
-            </p>
-            <p>
-              { // eslint-disable-next-line
-              } NLDC is the perfect occasion for your organization to promote the rich opportunities that your organization has to offer to some of Canada's next generation of business leaders.
-            </p>
-          </Description>
-          <Col xs="12">
-            <SponsorCTA />
-          </Col>
-        </Row>
-      </TitleSection>
-    </Container>
-    <Benefits>
-      <BenefitsTitle>
-        Benefits
-      </BenefitsTitle>
-      <CardDeck style={{ maxWidth: '992px' }}>
-        <SponsorPackage title="Branding & Recognition" benefits={benefits1} />
-        <SponsorPackage title="Networking & Recruitment" benefits={benefits2} />
-        <SponsorPackage title="CSR" benefits={benefits3} />
-      </CardDeck>
-    </Benefits>
-    <Wave />
-    <SponsorDetails />
-    <SponsorList />
-    <PartnerList />
-  </Wrapper>
+  <Layout>
+    <Wrapper>
+      <Helmet>
+        <title>
+          Sponsors | NLDC 2019
+        </title>
+        <link rel="canonical" href="https://www.nldcnow.com/sponsors" />
+        <meta name="description" content="Join us in &#34;Disrupting the Now!&#34; May 1&ndash;5, 2019 at the National Leadership Development Conference in Calgary." />
+        <meta name="keywords" content="nldc 2019 sponsor, sponsors, sponsor, nldc sponsor, aiesec sponsor, title sponsor, innovation sponsor, gold sponsor, silver sponsor, bronze sponsor" />
+        <meta property="og:title" content="Sponsors | NLDC 2019" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:description"
+          content="Join us in &#34;Disrupting the Now!&#34; May 1&ndash;5, 2019 at the National Leadership Development Conference in Calgary."
+        />
+        <meta property="og:url" content="https://www.nldcnow.com/sponsors" />
+        <meta property="og:site_name" content="Sponsors | NLDC 2019" />
+        <meta property="og:image" content="https://www.nldcnow.com/static/media/nldc2019-logo-black.png" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:url" content="https://www.nldcnow.com/sponsors" />
+        <meta name="twitter:title" content="Sponsors | NLDC 2019" />
+        <meta name="twitter:description" content="Join us in &#34;Disrupting the Now!&#34; May 1&ndash;5, 2019 at the National Leadership Development Conference in Calgary." />
+        <meta name="twitter:image" content="https://www.nldcnow.com/static/media/nldc2019-logo-black.png" />
+      </Helmet>
+      <Container>
+        <TitleSection>
+          <Title>
+            Sponsors
+          </Title>
+          <Row>
+            <Description xs="12">
+              <p style={{ marginBottom: '1rem' }}>
+                { // eslint-disable-next-line
+                } In order to have a successful NLDC, we require funding for venues, events, speakers, and much more. We are looking to form valuable partnerships with organizations that value leadership, diversity, innovation, technology, and entrepreneurial thinking.
+              </p>
+              <p>
+                { // eslint-disable-next-line
+                } NLDC is the perfect occasion for your organization to promote the rich opportunities that your organization has to offer to some of Canada's next generation of business leaders.
+              </p>
+            </Description>
+            <Col xs="12">
+              <SponsorCTA />
+            </Col>
+          </Row>
+        </TitleSection>
+      </Container>
+      <Benefits>
+        <BenefitsTitle>
+          Benefits
+        </BenefitsTitle>
+        <CardDeck style={{ maxWidth: '992px' }}>
+          <SponsorPackage title="Branding & Recognition" benefits={benefits1} />
+          <SponsorPackage title="Networking & Recruitment" benefits={benefits2} />
+          <SponsorPackage title="CSR" benefits={benefits3} />
+        </CardDeck>
+      </Benefits>
+      <Wave />
+      <SponsorDetails />
+      <SponsorList />
+      <PartnerList />
+    </Wrapper>
+  </Layout>
 );
 
 export default Sponsors;

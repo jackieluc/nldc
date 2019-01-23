@@ -1,9 +1,30 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
+import Navigation from './Navigation/Navigation';
 
-import Header from './header'
-import './layout.css'
+const routes = [
+  {
+    name: 'Home',
+    path: '/',
+  },
+  {
+    name: 'Sponsors',
+    path: '/sponsors',
+  },
+  {
+    name: 'Y2B',
+    path: '/youth2business',
+  },
+  {
+    name: 'FAQ',
+    path: '/faq',
+  },
+  {
+    name: 'Contact',
+    path: 'mailto:kkaren.ngo@aiesec.net',
+  },
+];
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -18,7 +39,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Navigation routes={routes} />
         <div
           style={{
             margin: `0 auto`,
