@@ -6,4 +6,4 @@
 [[redirects]]
   from    = "/youth2business"
   to      = "/404"
-  status  = 404
+  status  = 302
