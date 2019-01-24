@@ -87,10 +87,10 @@ const routes = [
     name: 'Sponsors',
     path: '/sponsors',
   },
-  {
-    name: 'Y2B',
-    path: '/youth2business',
-  },
+  // {
+  //   name: 'Y2B',
+  //   path: '/youth2business',
+  // },
   {
     name: 'FAQ',
     path: '/faq',
