@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Media from '../../utils/media';
 import Styles from '../../utils/styles';
 import AiesecLogo from '../../images/aiesec-logo.png';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 const Wrapper = styled.section`
   background-image: linear-gradient( 135deg, #74C7D9 40%, #037EF3 100%);
@@ -33,7 +34,7 @@ const Text = styled.p`
   ${Media.tablet`text-align: center;`}
 `;
 
-const CTA = styled.a`
+const CTA = styled(OutboundLink)`
   display: inline-block;
   border-radius: 40px;
   margin: 0;
