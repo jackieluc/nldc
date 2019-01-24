@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Media from '../../utils/media';
 import Styles from '../../utils/styles';
 import AiesecLogo from '../../images/aiesec-logo.png';
-import { OutboundLink } from 'gatsby-plugin-google-analytics';
+// import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 const Wrapper = styled.section`
   background-image: linear-gradient( 135deg, #74C7D9 40%, #037EF3 100%);
@@ -75,9 +75,9 @@ const AboutAiesec = () => (
               } We are in consultative status with the United Nations Economic and Social Council (ECOSOC), affiliated with the UN DPI, member of ICMYO, and is recognized by UNESCO.
             </Text>
             <CTAWrapper>
-              <OutboundLink href="https://www.aiesec.ca/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.aiesec.ca/" target="_blank" rel="noopener noreferrer">
                 Find out More About AIESEC
-              </OutboundLink>
+              </a>
             </CTAWrapper>
           </About>
         </Col>
