@@ -18,13 +18,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `NLDC 2019`,
+        short_name: `NLDC`,
         start_url: `/`,
         background_color: `#FFFFFF`,
         theme_color: `#037EF3`,
         display: `minimal-ui`,
-        icon: `src/images/nldc2019-logo-black.png`, // This path is relative to the root of the site.
+        icon: `src/images/nldc2019-logo.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
