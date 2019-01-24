@@ -99,10 +99,10 @@ const routes = [
     name: 'Sponsors',
     path: '/sponsors',
   },
-  {
-    name: 'Y2B',
-    path: '/youth2business',
-  },
+  // {
+  //   name: 'Y2B',
+  //   path: '/youth2business',
+  // },
   {
     name: 'FAQ',
     path: '/faq',
@@ -121,7 +121,7 @@ ReactDOM.render((
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/sponsors" component={Sponsors} />
-        <Route exact path="/youth2business" component={Y2b} />
+        {/* <Route exact path="/youth2business" component={Y2b} /> */}
         <Route exact path="/faq" component={FAQ} />
         {/* <Route exact path='/schedule' component={Schedule} /> */}
         {/* <Route exact path='/events' component={Events} /> */}
