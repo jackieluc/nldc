@@ -9,7 +9,7 @@ import registerServiceWorker from './registerServiceWorker';
 import Styles from './utils/styles';
 import Navigation from './components/Navigation/Navigation';
 import Footer from './components/Footer/Footer';
-import Home from './pages/home';
+import Home from './pages';
 import Sponsors from './pages/sponsors';
 import Y2b from './pages/youth2business';
 import FAQ from './pages/faq';

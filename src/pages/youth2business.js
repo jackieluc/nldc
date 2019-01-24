@@ -1,4 +1,5 @@
 import React from 'react';
+import Layout from '../components/layout'
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import {
@@ -44,36 +45,38 @@ const BenefitsTitle = styled.h1`
 `;
 
 const Y2b = () => (
-  <Wrapper>
-    <Helmet>
-      <title>
-        Youth 2 Business | NLDC 2019
-      </title>
-      <link rel="canonical" href="https://www.nldcnow.com/youth2business" />
-      <meta name="description" content="Join us in &#34;Disrupting the Now!&#34; May 1&ndash;5, 2019 at the National Leadership Development Conference in Calgary." />
-      <meta name="keywords" content="nldc 2019 youth2business, youth2business, youth, nldc sponsor, abusiness, youth to business, youthtobusiness, aiesec" />
-      <meta property="og:title" content="Youth 2 Business | NLDC 2019" />
-      <meta property="og:type" content="website" />
-      <meta
-        property="og:description"
-        content="Join us in &#34;Disrupting the Now!&#34; May 1&ndash;5, 2019 at the National Leadership Development Conference in Calgary."
-      />
-      <meta property="og:url" content="https://www.nldcnow.com/youth2business" />
-      <meta property="og:site_name" content="Youth 2 Business | NLDC 2019" />
-      <meta property="og:image" content="https://www.nldcnow.com/static/media/nldc2019-logo-black.png" />
-      <meta name="twitter:card" content="summary" />
-      <meta name="twitter:url" content="https://www.nldcnow.com/youth2business" />
-      <meta name="twitter:title" content="Youth 2 Business | NLDC 2019" />
-      <meta name="twitter:description" content="Join us in &#34;Disrupting the Now!&#34; May 1&ndash;5, 2019 at the National Leadership Development Conference in Calgary." />
-      <meta name="twitter:image" content="https://www.nldcnow.com/static/media/nldc2019-logo-black.png" />
-    </Helmet>
-    <Container>
-      <TitleSection>
-        <Image src={Y2bLogo} alt="Youth 2 Business Logo" />
-      </TitleSection>
-    </Container>
-    <Y2bList />
-  </Wrapper>
+  <Layout>
+    <Wrapper>
+      <Helmet>
+        <title>
+          Youth 2 Business | NLDC 2019
+        </title>
+        <link rel="canonical" href="https://www.nldcnow.com/youth2business" />
+        <meta name="description" content="Join us in &#34;Disrupting the Now!&#34; May 1&ndash;5, 2019 at the National Leadership Development Conference in Calgary." />
+        <meta name="keywords" content="nldc 2019 youth2business, youth2business, youth, nldc sponsor, abusiness, youth to business, youthtobusiness, aiesec" />
+        <meta property="og:title" content="Youth 2 Business | NLDC 2019" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:description"
+          content="Join us in &#34;Disrupting the Now!&#34; May 1&ndash;5, 2019 at the National Leadership Development Conference in Calgary."
+        />
+        <meta property="og:url" content="https://www.nldcnow.com/youth2business" />
+        <meta property="og:site_name" content="Youth 2 Business | NLDC 2019" />
+        <meta property="og:image" content="https://www.nldcnow.com/static/media/nldc2019-logo-black.png" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:url" content="https://www.nldcnow.com/youth2business" />
+        <meta name="twitter:title" content="Youth 2 Business | NLDC 2019" />
+        <meta name="twitter:description" content="Join us in &#34;Disrupting the Now!&#34; May 1&ndash;5, 2019 at the National Leadership Development Conference in Calgary." />
+        <meta name="twitter:image" content="https://www.nldcnow.com/static/media/nldc2019-logo-black.png" />
+      </Helmet>
+      <Container>
+        <TitleSection>
+          <Image src={Y2bLogo} alt="Youth 2 Business Logo" />
+        </TitleSection>
+      </Container>
+      <Y2bList />
+    </Wrapper>
+  </Layout>
 );
 
 export default Y2b;

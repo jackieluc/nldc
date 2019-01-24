@@ -4,11 +4,11 @@ import styled from 'styled-components';
 import MailChimp from './MailChimp/MailChimp';
 import Media from '../utils/media';
 import WhiteNldcLogo from '../images/nldc2019-logo-white.png';
-import '../images/calgary.jpg';
+import Calgary from '../images/calgary.jpg';
 
 const HeroSection = styled.section`
   height: 85vh;
-  background-image: linear-gradient( 135deg, rgba(116, 199, 217, 0.75) 40%, rgba(3, 126, 243, 0.75) 100%), url('../static/media/calgary.jpg');
+  background-image: linear-gradient( 135deg, rgba(116, 199, 217, 0.75) 40%, rgba(3, 126, 243, 0.75) 100%), url(${Calgary});
   background-size: cover;
   background-position: center;
   -webkit-box-shadow: 0 4px 20px rgba(75, 97, 141, 0.4);

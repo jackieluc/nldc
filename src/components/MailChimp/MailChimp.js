@@ -70,7 +70,7 @@ export default function MailChimp({ className, customContent }) {
         required
       />
       <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
-        <input type="text" name="b_fe2fa79735e47235c75788bce_fb15ca4f23" tabIndex="-1" value="" />
+        <input type="text" name="b_fe2fa79735e47235c75788bce_fb15ca4f23" tabIndex="-1" />
       </div>
       <SubmitButton type="submit" value="Get Updates" name="subscribe" id="mc-embedded-subscribe" />
     </StyledForm>
