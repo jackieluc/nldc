@@ -51,8 +51,12 @@ const Logo = styled.img`
     width: 100px;
     ${Media.tablet`width: 160px`}
   }
+  &.husky {
+    width: 180px;
+    ${Media.tablet`width: 230px;`}
+  }
   &.aeso {
-    width: 135px;
+    width: 150px;
     ${Media.tablet`width: 180px;`}
   }
   &.pwc {
@@ -155,9 +159,9 @@ const SponsorList = ({ paddingTop }) => (
           {tier.bronze}
         </TierTitle>
         <LogoCard>
-          {/* <SponsorLink href="http://www.huskyenergy.ca/" target="_blank" rel="noopener noreferrer">
-            <Logo src={bronzeLogos.husky} alt="" />
-          </SponsorLink> */}
+          <SponsorLink href="http://www.huskyenergy.ca/" target="_blank" rel="noopener noreferrer">
+            <Logo src={bronzeLogos.husky} alt="" className="husky" />
+          </SponsorLink>
           <SponsorLink href="https://www.aeso.ca/" target="_blank" rel="noopener noreferrer">
             <Logo src={bronzeLogos.aeso} alt="" className="aeso" />
           </SponsorLink>
