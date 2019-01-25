@@ -34,26 +34,24 @@ const Text = styled.p`
   ${Media.tablet`text-align: center;`}
 `;
 
-const CTAWrapper = styled.div`
-  > a {
-    display: inline-block;
-    border-radius: 40px;
-    margin: 0;
-    border: 1px solid white;
+const CTA = styled.div`
+  display: inline-block;
+  border-radius: 40px;
+  margin: 0;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  ${Styles.shadow}
+  padding: .7rem 2rem;
+  margin-top: 2rem;
+
+  &:hover,
+  &:focus {
     color: white;
-    background-color: transparent;
-    ${Styles.shadow}
-    padding: .7rem 2rem;
-    margin-top: 2rem;
-  
-    &:hover,
-    &:focus {
-      color: white;
-      background-color: ${Styles.themeColour};
-      border-color: ${Styles.themeColour};
-      cursor: pointer;
-      text-decoration: none;
-    }
+    background-color: ${Styles.themeColour};
+    border-color: ${Styles.themeColour};
+    cursor: pointer;
+    text-decoration: none;
   }
 `;
 
@@ -74,11 +72,9 @@ const AboutAiesec = () => (
               { // eslint-disable-next-line
               } We are in consultative status with the United Nations Economic and Social Council (ECOSOC), affiliated with the UN DPI, member of ICMYO, and is recognized by UNESCO.
             </Text>
-            <CTAWrapper>
-              <a href="https://www.aiesec.ca/" target="_blank" rel="noopener noreferrer">
-                Find out More About AIESEC
-              </a>
-            </CTAWrapper>
+            <CTA href="https://www.aiesec.ca/" target="_blank" rel="noopener noreferrer">
+              Find out More About AIESEC
+            </CTA>
           </About>
         </Col>
       </Row>
