@@ -7,12 +7,13 @@ import Media from '../utils/media';
 import Styles from '../utils/styles';
 import Navigation from './Navigation/Navigation';
 import Footer from './Footer/Footer';
+import BillyOhio from '../fonts/billy-ohio.otf';
 
 // eslint-disable-next-line
 const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'BillyOhio';
-    src: url('/fonts/billy-ohio.otf') format('opentype');
+    src: url(${BillyOhio}) format('opentype');
   }
 
   html {

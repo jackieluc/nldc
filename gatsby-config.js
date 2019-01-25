@@ -35,6 +35,17 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Lato:300,400,700']
+        },
+        custom: {
+          families: ['BillyOhio']
+        }
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
