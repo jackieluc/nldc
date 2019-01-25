@@ -23,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 16px;
     margin: 0;
     padding: 0;
-    font-family: 'Lato', 'BillyOhio', sans-serif;
+    font-family: 'Lato', sans-serif, 'BillyOhio';
     // overflow-x: hidden;
     // overflow-y: auto;
     // background-color: #FAFAFA;
