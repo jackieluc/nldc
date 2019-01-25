@@ -16,7 +16,7 @@ const Wrapper = styled.div`
 `;
 
 const SponsorTitle = styled.h2`
-  color: ${Styles.themeColour}
+  color: ${Styles.themeColour};
   font-size: 2.5rem;
   text-transform: uppercase;
   margin-bottom: 2rem;
@@ -34,7 +34,7 @@ const Description = styled.p`
 `;
 
 const Highlight = styled.b`
-  ${Styles.highlight}
+  ${Styles.highlight};
 `;
 
 const SponsorDetails = () => (
