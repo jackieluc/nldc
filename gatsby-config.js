@@ -3,6 +3,7 @@ module.exports = {
     title: `NLDC 2019 | AIESEC`,
     description: `Join us in "Disrupting the Now!" May 1 - 5, 2019 at the National Leadership Development Conference in Calgary.`,
     author: `@jackieluc`,
+    siteUrl: `https://www.nldcnow.com`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -30,24 +31,30 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-120821697-1",
+        trackingId: `UA-120821697-1`,
         head: true,
       },
     },
     `gatsby-plugin-styled-components`,
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: `gatsby-plugin-web-font-loader`,
       options: {
         google: {
-          families: ['Lato:300,400,700']
+          families: [`Lato:300,400,700`]
         },
         custom: {
-          families: ['BillyOhio']
+          families: [`BillyOhio`]
         }
+      }
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: [`/youth2business`]
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+    // `gatsby-plugin-offline`,
   ],
 }
