@@ -2,16 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 import loadScript from 'load-script';
 
-const AddToCalendar = styled.a`
+const AddToCalendar = styled.button`
   // Overwrite AddEvent 'Add to Calendar' styling
+  border-radius: 40px !important;
+  padding: 13px 12px 12px 35px !important;
+
   &:focus {
     outline-color: -webkit-focus-ring-color;
   }
   &.addeventatc {
     font-family: 'Lato', sans-serif !important;
     font-size: 1rem !important;
-    padding: 13px 12px 12px 85px !important
-    border-radius: 40px;
     z-index: 2 !important;
     font-weight: 400;
     width: 15rem;
@@ -60,7 +61,7 @@ const AddToCalendar = styled.a`
 const CalendarSubtitle = styled.em`
   display: block;
   font-size: 12px;
-  margin: 3px 0 0 0 !important;
+  margin: 3px 20px 0 0 !important;
   color: #777777;
 `;
 
@@ -89,7 +90,7 @@ export default class CalendarCta extends React.Component {
     if (loading) return null;
 
     return (
-      <AddToCalendar title="Add to Calendar" className="addeventatc" href="void(0)">
+      <AddToCalendar className="addeventatc" aria-label="Add to Calendar">
         May 1&ndash;5, 2019
         <CalendarSubtitle>
           Add to Calendar
