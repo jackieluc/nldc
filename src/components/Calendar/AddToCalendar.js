@@ -104,17 +104,17 @@ export default class CalendarCta extends React.Component {
           America/Edmonton
         </span>
         <span className="title">
-          NLDC 2019 | AIESEC CANADA
+        NLDC 2019 | AIESEC in CANADA
         </span>
         <span className="description">
           { // eslint-disable-next-line
-          } Join AIESEC Canada in &quot;Disrupting the Now&quot; at the National Leadership Development Conference in Calgary, Alberta from May 1&ndash;5, 2019.
+          } Join AIESEC in Canada in &quot;Disrupting the Now&quot; at the National Leadership Development Conference in Calgary, Alberta from May 1&ndash;5, 2019.
         </span>
         <span className="location">
           1301-16 Avenue NW Calgary AB, T2M OL4
         </span>
         <span className="organizer">
-          AIESEC Canada
+          AIESEC in Canada
         </span>
         <span className="organizer_email">
           kkaren.ngo@aiesec.net
