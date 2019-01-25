@@ -48,7 +48,7 @@ const Info = styled.h3`
   max-width: 240px;
   font-size: 0.7rem;
   ${Media.tablet`font-size: 1rem; max-width: 320px;`}
-  ${Media.desktop`font-size: 1.3rem; max-width: 400px;`}
+  ${Media.desktop`font-size: 1.3rem; max-width: 420px;`}
   color: #FFFFFF;
   font-weight: normal;
   line-height: 1;
