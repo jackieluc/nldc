@@ -19,8 +19,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `NLDC 2019`,
-        short_name: `NLDC`,
+        name: `National Leadership Development Conference 2019`,
+        short_name: `NLDC 2019`,
         start_url: `/`,
         background_color: `#FFFFFF`,
         theme_color: `#037EF3`,
