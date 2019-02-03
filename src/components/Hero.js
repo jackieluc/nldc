@@ -1,14 +1,14 @@
 import React from 'react';
+import { StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image';
 import { Container } from 'reactstrap';
 import styled from 'styled-components';
 import MailChimp from './MailChimp/MailChimp';
 import Media from '../utils/media';
-import WhiteNldcLogo from '../images/nldc2019-logo-white.png';
-import Calgary from '../images/calgary.jpg';
 
 const HeroSection = styled.section`
   height: 85vh;
-  background-image: linear-gradient( 135deg, rgba(116, 199, 217, 0.75) 40%, rgba(3, 126, 243, 0.75) 100%), url(${Calgary});
+  background-image: linear-gradient( 135deg, rgba(116, 199, 217, 0.75) 40%, rgba(3, 126, 243, 0.75) 100%), url(${props => props.bgImage.calgary.childImageSharp.fluid.src});
   background-size: cover;
   background-position: center;
   -webkit-box-shadow: 0 4px 20px rgba(75, 97, 141, 0.4);
@@ -16,8 +16,8 @@ const HeroSection = styled.section`
   color: white;
 `;
 
-const LogoImage = styled.img`
-  margin-top: auto;
+const LogoImage = styled(Img)`
+  margin: auto auto 0 auto;
   width: 250px;
   ${Media.tablet`width: 350px;`}
   ${Media.laptop`width: 450px;`}
@@ -64,24 +64,48 @@ const HeroMailChimp = styled(MailChimp)`
   margin-bottom: 1rem;
 `;
 
-const Hero = () => (
-  <HeroSection>
-    <Container style={{ marginTop: 'auto', padding: '0' }}>
-      <LogoImage src={WhiteNldcLogo} alt="NLDC 2019 Logo" />
-      <Title>
-        <span>
-          National Leadership
-        </span>
-        <span>
-          Development Conference
-        </span>
-      </Title>
-      <Info>
-        May 1&ndash;5, 2019 | Calgary, Alberta
-      </Info>
-    </Container>
-    <HeroMailChimp customContent="Tickets Available in Spring 2019. Please Subscribe for Conference Updates!" />
-  </HeroSection>
+const PageQuery = graphql`
+  query {
+    logo: file(relativePath: { eq: "nldc2019-logo-white.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    calgary: file(relativePath: { eq: "calgary.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
+
+const Hero = (props) => (
+  <StaticQuery
+    query={PageQuery}
+    render={data => (
+      <HeroSection bgImage={data}>
+        <Container style={{ marginTop: 'auto', padding: '0' }}>
+          <LogoImage fluid={data.logo.childImageSharp.fluid} />
+          <Title>
+            <span>
+              National Leadership
+            </span>
+            <span>
+              Development Conference
+            </span>
+          </Title>
+          <Info>
+            May 1&ndash;5, 2019 | Calgary, Alberta
+          </Info>
+        </Container>
+        <HeroMailChimp customContent="Tickets Available in Spring 2019. Please Subscribe for Conference Updates!" />
+      </HeroSection>
+    )}
+  />
 );
 
 export default Hero;
