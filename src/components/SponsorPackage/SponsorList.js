@@ -51,6 +51,10 @@ const Logo = styled.img`
     width: 100px;
     ${Media.tablet`width: 160px`}
   }
+  &.ccal {
+    width: 210px;
+    ${Media.tablet`width: 310px;`}
+  }
   &.husky {
     width: 180px;
     ${Media.tablet`width: 230px;`}
@@ -89,7 +93,7 @@ const goldLogos = {
 
 const silverLogos = {
   atb: Logos['atb.png'],
-  ccal: Logos['ccal.png'],
+  ccal: Logos['ccal.jpg'],
   haskayne: Logos['haskayne.jpg'],
 };
 
@@ -147,7 +151,7 @@ const SponsorList = ({ paddingTop }) => (
             <Logo src={silverLogos.atb} alt="" />
           </SponsorLink>
           <SponsorLink href="https://haskayne.ucalgary.ca/ccal/" target="_blank" rel="noopener noreferrer">
-            <Logo src={silverLogos.ccal} alt="" />
+            <Logo src={silverLogos.ccal} alt="" className="ccal" />
           </SponsorLink>
           <SponsorLink href="https://haskayne.ucalgary.ca/" target="_blank" rel="noopener noreferrer">
             <Logo src={silverLogos.haskayne} alt="" />
