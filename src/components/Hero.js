@@ -89,7 +89,7 @@ const Hero = (props) => (
     render={data => (
       <HeroSection bgImage={data}>
         <Container style={{ marginTop: 'auto', padding: '0' }}>
-          <LogoImage fluid={data.logo.childImageSharp.fluid} />
+          <LogoImage fluid={data.logo.childImageSharp.fluid} alt="NLDC 2019 Logo" />
           <Title>
             <span>
               National Leadership

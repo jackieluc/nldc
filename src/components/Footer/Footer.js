@@ -48,7 +48,7 @@ const Footer = (props) => (
       <Wrapper>
         <Div>
           <Link href="/">
-            <LogoImage fluid={data.logo.childImageSharp.fluid} />
+            <LogoImage fluid={data.logo.childImageSharp.fluid} alt="NLDC 2019 Logo" />
           </Link>
           <Container>
             <MailChimp />
