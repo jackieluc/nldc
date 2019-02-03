@@ -9,10 +9,10 @@ import registerServiceWorker from './registerServiceWorker';
 import Styles from './utils/styles';
 import Navigation from './components/Navigation/Navigation';
 import Footer from './components/Footer/Footer';
-import Home from './pages/Home';
-import Sponsors from './pages/Sponsors';
-import Y2b from './pages/Y2b';
-import FAQ from './pages/FAQ';
+import Home from './pages';
+import Sponsors from './pages/sponsors';
+import Y2b from './pages/youth2business';
+import FAQ from './pages/faq';
 import ScrollToTop from './utils/ScrollToTop';
 
 // eslint-disable-next-line

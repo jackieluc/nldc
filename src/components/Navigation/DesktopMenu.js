@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link as NavLink} from 'gatsby';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import BlackNldcLogo from '../../images/nldc2019-logo-black.png';
