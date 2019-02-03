@@ -1,5 +1,5 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image';
 import styled from 'styled-components';
 import { Container } from 'reactstrap';
@@ -19,7 +19,7 @@ const Div = styled.div`
   text-align: center;
 `;
 
-const Link = styled.a`
+const Link = styled(Link)`
   position: absolute;
   top: -135px;
   margin-left: -120px;
@@ -47,7 +47,7 @@ const Footer = (props) => (
     render={data => (
       <Wrapper>
         <Div>
-          <Link href="/">
+          <Link to="/">
             <LogoImage fluid={data.logo.childImageSharp.fluid} alt="NLDC 2019 Logo" />
           </Link>
           <Container>
