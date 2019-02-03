@@ -1,10 +1,10 @@
 import React from 'react';
+import { StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image';
 import styled from 'styled-components';
 import { Container } from 'reactstrap';
 import MailChimp from '../MailChimp/MailChimp';
 import SocialMedia from './SocialMedia';
-
-const BlackNldcLogo = require('../../images/nldc2019-logo-black.png');
 
 const Wrapper = styled.footer`
   background-image: linear-gradient( 135deg, #74C7D9 40%, #037EF3 100%);
@@ -25,22 +25,39 @@ const Link = styled.a`
   margin-left: -120px;
 `;
 
-const Img = styled.img`
+const LogoImage = styled(Img)`
   width: 240px;
 `;
 
-const Footer = () => (
-  <Wrapper>
-    <Div>
-      <Link href="/">
-        <Img src={BlackNldcLogo} alt="NLDC Logo" />
-      </Link>
-      <Container>
-        <MailChimp />
-        <SocialMedia />
-      </Container>
-    </Div>
-  </Wrapper>
+const PageQuery = graphql`
+  query {
+    logo: file(relativePath: { eq: "nldc2019-logo-black.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
+
+const Footer = (props) => (
+    <StaticQuery
+    query={PageQuery}
+    render={data => (
+      <Wrapper>
+        <Div>
+          <Link href="/">
+            <LogoImage fluid={data.logo.childImageSharp.fluid} />
+          </Link>
+          <Container>
+            <MailChimp />
+            <SocialMedia />
+          </Container>
+        </Div>
+      </Wrapper>
+    )}
+  />
 );
 
 export default Footer;

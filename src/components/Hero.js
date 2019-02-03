@@ -68,7 +68,7 @@ const PageQuery = graphql`
   query {
     logo: file(relativePath: { eq: "nldc2019-logo-white.png" }) {
       childImageSharp {
-        fluid(maxWidth: 1000) {
+        fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
