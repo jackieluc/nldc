@@ -3,6 +3,11 @@
   publish = "/public"
   command = "npm run build"
 
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    cache-control = "max-age=0,no-cache,no-store,must-revalidate"
+
 [[redirects]]
   from    = "/youth2business"
   to      = "/404"
