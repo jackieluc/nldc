@@ -6,35 +6,31 @@ import { Container } from 'reactstrap';
 import MailChimp from '../MailChimp/MailChimp';
 import SocialMedia from './SocialMedia';
 
-const Wrapper = styled.footer`
+const FooterSection = styled.footer`
   background-image: linear-gradient( 135deg, #74C7D9 40%, #037EF3 100%);
   margin: 0;
   padding-top: 80px;
   padding-bottom: 60px;
 `;
 
-const Div = styled.div`
+const Wrapper = styled.div`
   position: relative;
   display: block;
   text-align: center;
 `;
 
-const Link = styled(Link)`
+const StyledLink = styled(Link)`
   position: absolute;
   top: -135px;
   margin-left: -120px;
-`;
-
-const LogoImage = styled(Img)`
-  width: 240px;
 `;
 
 const PageQuery = graphql`
   query {
     logo: file(relativePath: { eq: "nldc2019-logo-black.png" }) {
       childImageSharp {
-        fluid(maxWidth: 500) {
-          ...GatsbyImageSharpFluid
+        fixed(width: 240) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
@@ -45,17 +41,17 @@ const Footer = (props) => (
     <StaticQuery
     query={PageQuery}
     render={data => (
-      <Wrapper>
-        <Div>
-          <Link to="/">
-            <LogoImage fluid={data.logo.childImageSharp.fluid} alt="NLDC 2019 Logo" />
-          </Link>
+      <FooterSection>
+        <Wrapper>
+          <StyledLink to="/">
+            <Img fixed={data.logo.childImageSharp.fixed} alt="NLDC 2019 Logo" />
+          </StyledLink>
           <Container>
             <MailChimp />
             <SocialMedia />
           </Container>
-        </Div>
-      </Wrapper>
+        </Wrapper>
+      </FooterSection>
     )}
   />
 );
