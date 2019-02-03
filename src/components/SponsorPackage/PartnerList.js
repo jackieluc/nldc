@@ -36,24 +36,31 @@ const SponsorLink = styled.a`
   display: block;
   margin: 20px 10px;
   text-decoration: none;
+
+  &.vertical-margins {
+    margin: 0 10px;
+  }
 `;
 
 const Logo = styled.img`
   display: block;
   width: 190px;
   height: auto;
-
+  
+  &.partners {
+    width: 180px;
+  }
   &.marquee {
     width: 90px;
   }
   &.rumble-boxing {
-    width: 210px;
+    width: 220px;
   }
   &.flying-squirrel {
-    width: 140px;
+    width: 160px;
   }
-  &.partners {
-    width: 180px;
+  &.xerox {
+    width: 210px;
   }
 `;
 
@@ -72,6 +79,7 @@ const kindLogos = {
   esxossmanway: Logos['Esxossmanway.png'],
   flyingsquirrel: Logos['flyingsquirrel.png'],
   rumbleboxing: Logos['rumbleboxing.jpg'],
+  xerox: Logos['xerox.jpg'],
 };
 
 const PartnerList = ({ paddingTop }) => (
@@ -87,12 +95,12 @@ const PartnerList = ({ paddingTop }) => (
             <SponsorLink href="https://www.knoxcalgary.com/" target="_blank" rel="noopener noreferrer">
               <Logo src={eventLogos.knoxville} alt="" className="partners" />
             </SponsorLink>
-            <SponsorLink href="http://commonwealthbar.ca/" target="_blank" rel="noopener noreferrer">
+            {/* <SponsorLink href="http://commonwealthbar.ca/" target="_blank" rel="noopener noreferrer">
               <Logo src={eventLogos.commonwealth} alt="" className="partners" />
             </SponsorLink>
             <SponsorLink href="http://marqueecalgary.com/" target="_blank" rel="noopener noreferrer">
               <Logo src={eventLogos.marquee} alt="" className="marquee" />
-            </SponsorLink>
+            </SponsorLink> */}
           </LogoCard>
         </Tier>
         <Tier>
@@ -101,13 +109,16 @@ const PartnerList = ({ paddingTop }) => (
           </TierTitle>
           <LogoCard>
             <SponsorLink href="https://www.esxossmanway.ca/" target="_blank" rel="noopener noreferrer">
-              <Logo src={kindLogos.esxossmanway} alt="" className="partners" />
+              <Logo src={kindLogos.esxossmanway} alt="" />
             </SponsorLink>
             <SponsorLink href="http://rumbleboxing.com/" target="_blank" rel="noopener noreferrer">
               <Logo src={kindLogos.rumbleboxing} alt="" className="rumble-boxing" />
             </SponsorLink>
             <SponsorLink href="https://flyingsquirrelsports.ca/" target="_blank" rel="noopener noreferrer">
               <Logo src={kindLogos.flyingsquirrel} alt="" className="flying-squirrel" />
+            </SponsorLink>
+            <SponsorLink href="https://www.xerox.ca/" className="vertical-margins" target="_blank" rel="noopener noreferrer">
+              <Logo src={kindLogos.xerox} alt="" className="xerox" />
             </SponsorLink>
           </LogoCard>
         </Tier>
