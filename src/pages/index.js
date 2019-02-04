@@ -30,12 +30,12 @@ const Home = () => (
         <meta property="og:description" content="Join us in &#34;Disrupting the Now!&#34; May 1&ndash;5, 2019 at the National Leadership Development Conference in Calgary." />
         <meta property="og:url" content="https://www.nldcnow.com/" />
         <meta property="og:site_name" content="AIESEC | NLDC 2019" />
-        <meta property="og:image" content={`https://www.nldcnow.com/${Logo}`} />
+        <meta property="og:image" content={`https://www.nldcnow.com${Logo}`} />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:url" content="https://www.nldcnow.com/" />
         <meta name="twitter:title" content="AIESEC | NLDC 2019" />
         <meta name="twitter:description" content="Join us in &#34;Disrupting the Now!&#34; May 1&ndash;5, 2019 at the National Leadership Development Conference in Calgary." />
-        <meta name="twitter:image" content={`https://www.nldcnow.com/${Logo}`} />
+        <meta name="twitter:image" content={`https://www.nldcnow.com${Logo}`} />
       </Helmet>
       <Hero />
       <EventDetails />
