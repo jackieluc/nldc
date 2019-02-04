@@ -71,6 +71,7 @@ const Sponsors = () => (
         <meta property="og:url" content="https://www.nldcnow.com/sponsors" />
         <meta property="og:site_name" content="Sponsors | NLDC 2019" />
         <meta property="og:image" content={`https://www.nldcnow.com${Logo}`} />
+        <meta property="fb:app_id" content="594354454320006" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:url" content="https://www.nldcnow.com/sponsors" />
         <meta name="twitter:title" content="Sponsors | NLDC 2019" />

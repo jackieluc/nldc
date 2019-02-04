@@ -50,6 +50,7 @@ const FAQ = () => (
         <meta property="og:url" content="https://www.nldcnow.com/faq" />
         <meta property="og:site_name" content="FAQ | NLDC 2019" />
         <meta property="og:image" content={`https://www.nldcnow.com${Logo}`} />
+        <meta property="fb:app_id" content="594354454320006" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:url" content="https://www.nldcnow.com/faq" />
         <meta name="twitter:title" content="FAQ | NLDC 2019" />
