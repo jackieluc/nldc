@@ -2,9 +2,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
-import {
-  Container, Row, Col, CardDeck,
-} from 'reactstrap';
+import { Container, Row, Col, CardDeck } from 'reactstrap';
 import Wave from '../components/Dividers/Wave';
 import Media from '../utils/media';
 import Styles from '../utils/styles';
@@ -13,6 +11,7 @@ import SponsorPackage from '../components/SponsorPackage/SponsorPackage';
 import SponsorDetails from '../components/SponsorDetails';
 import SponsorList from '../components/SponsorPackage/SponsorList';
 import PartnerList from '../components/SponsorPackage/PartnerList';
+import Logo from '../images/nldc2019-logo-black.png';
 
 const Wrapper = styled.div`
   text-align: center;
@@ -68,18 +67,16 @@ const Sponsors = () => (
         <meta name="keywords" content="nldc 2019 sponsor, sponsors, sponsor, nldc sponsor, aiesec sponsor, title sponsor, innovation sponsor, gold sponsor, silver sponsor, bronze sponsor" />
         <meta property="og:title" content="Sponsors | NLDC 2019" />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:description"
-          content="Join us in &#34;Disrupting the Now!&#34; May 1&ndash;5, 2019 at the National Leadership Development Conference in Calgary."
-        />
+        <meta property="og:description" content="Join us in &#34;Disrupting the Now!&#34; May 1&ndash;5, 2019 at the National Leadership Development Conference in Calgary." />
         <meta property="og:url" content="https://www.nldcnow.com/sponsors" />
         <meta property="og:site_name" content="Sponsors | NLDC 2019" />
-        <meta property="og:image" content="https://www.nldcnow.com/static/media/nldc2019-logo-black.png" />
+        <meta property="og:image" content={`https://www.nldcnow.com${Logo}`} />
+        <meta property="fb:app_id" content="594354454320006" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:url" content="https://www.nldcnow.com/sponsors" />
         <meta name="twitter:title" content="Sponsors | NLDC 2019" />
         <meta name="twitter:description" content="Join us in &#34;Disrupting the Now!&#34; May 1&ndash;5, 2019 at the National Leadership Development Conference in Calgary." />
-        <meta name="twitter:image" content="https://www.nldcnow.com/static/media/nldc2019-logo-black.png" />
+        <meta name="twitter:image" content={`https://www.nldcnow.com${Logo}`} />
       </Helmet>
       <Container>
         <TitleSection>
