@@ -78,7 +78,7 @@ const eventLogos = {
 const kindLogos = {
   esxossmanway: Logos['Esxossmanway.png'],
   flyingsquirrel: Logos['flyingsquirrel.png'],
-  rumbleboxing: Logos['rumbleboxing.jpg'],
+  rumbleboxing: Logos['rumbleboxing.png'],
   xerox: Logos['xerox.jpg'],
 };
 
