@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -106,32 +106,46 @@ const routes = [
   },
 ];
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
+export default class Layout extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  componentDidMount() {
+    // Remove any service worker: sw.js or service-worker.js from old deploys
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function(registrations) {
+        for (let registration of registrations) {
+          registration.unregister();
         }
-      }
-    `}
-    render={data => (
-      <>
-        <GlobalStyle />
-        <Navigation routes={routes} />
-        <main>
-          {children}
-        </main>
-        <Footer />
-      </>
-    )}
-  />
-)
+      });
+    }
+  }
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  render() {
+    const { children } = this.props;
+    return (
+      <StaticQuery
+        query={graphql`
+          query SiteTitleQuery {
+            site {
+              siteMetadata {
+                title
+              }
+            }
+          }
+        `}
+        render={data => (
+          <>
+            <GlobalStyle />
+            <Navigation routes={routes} />
+            <main>
+              {children}
+            </main>
+            <Footer />
+          </>
+        )}
+      />
+    )
+  }
 }
-
-export default Layout
