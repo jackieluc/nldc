@@ -29,12 +29,7 @@ module.exports = {
       },
     },
     // `gatsby-plugin-offline`,
-    {
-      resolve: `gatsby-plugin-remove-serviceworker`,
-      options: {
-        filename: 'service-worker.js',
-      }
-    },
+    `gatsby-plugin-remove-serviceworker`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
