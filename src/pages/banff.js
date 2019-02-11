@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Layout from '../components/layout';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
-import styles from '../utils/styles';
 import Media, { BreakPoints } from '../utils/media';
 import Logo from '../images/nldc2019-logo-black.png';
 import { ReactTypeformEmbed } from 'react-typeform-embed';
@@ -27,11 +26,7 @@ export default class Banff extends Component {
   }
 
   componentDidMount() {
-    let currentBreakPoint = {};
-
-    if (typeof window !== 'undefined') {
-      currentBreakPoint = window.matchMedia(`(min-width: ${BreakPoints.laptop}px)`);
-    }
+    const currentBreakPoint = window.matchMedia(`(min-width: ${BreakPoints.laptop}px)`);
     
     if (currentBreakPoint.matches) {
       let newTypeFormStyle = { ...this.state.typeFormStyle };
@@ -68,7 +63,7 @@ export default class Banff extends Component {
             <meta name="twitter:description" content="Post Conference Banff Retreat Survey - Our current idea is Banff on May 6 and Lake Louise on May 7." />
             <meta name="twitter:image" content={`https://www.nldcnow.com${Logo}`} />
           </Helmet>
-          <ReactTypeformEmbed url='https://karen1337.typeform.com/to/ZMRewG' style={typeFormStyle} autoOpen={true} />
+          { typeof window !== 'undefined' && <ReactTypeformEmbed url='https://karen1337.typeform.com/to/ZMRewG' style={typeFormStyle} autoOpen={true} /> }
         </Wrapper>
       </Layout>
     )}
