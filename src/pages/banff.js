@@ -27,7 +27,11 @@ export default class Banff extends Component {
   }
 
   componentDidMount() {
-    const currentBreakPoint = window.matchMedia( `(min-width: ${BreakPoints.laptop}px)` );
+    let currentBreakPoint = {};
+
+    if (typeof window !== 'undefined') {
+      currentBreakPoint = window.matchMedia(`(min-width: ${BreakPoints.laptop}px)`);
+    }
     
     if (currentBreakPoint.matches) {
       let newTypeFormStyle = { ...this.state.typeFormStyle };
