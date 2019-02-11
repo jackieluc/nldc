@@ -12,8 +12,3 @@
   from    = "/youth2business"
   to      = "/404"
   status  = 301
-
-[[redirects]]
-  from    = "/banff"
-  to      = "https://karen1337.typeform.com/to/ZMRewG"
-  status  = 301
