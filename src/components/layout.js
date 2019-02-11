@@ -97,6 +97,10 @@ const routes = [
     path: '/faq',
   },
   {
+    name: 'Banff Survey',
+    path: '/banff',
+  },
+  {
     name: 'Contact',
     path: 'mailto:kkaren.ngo@aiesec.net',
   },

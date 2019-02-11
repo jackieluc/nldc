@@ -4,7 +4,6 @@ import { Container, Card } from 'reactstrap';
 import styled from 'styled-components';
 import PartnerDetails from './PartnerDetails';
 import { partnerLogos as Logos } from '../../utils/logos';
-import Media from '../../utils/media';
 import Styles from '../../utils/styles';
 
 const Tier = styled.div`
@@ -37,8 +36,8 @@ const SponsorLink = styled.a`
   margin: 20px 10px;
   text-decoration: none;
 
-  &.vertical-margins {
-    margin: 0 10px;
+  &.last {
+    margin-top: 0;
   }
 `;
 
@@ -62,6 +61,9 @@ const Logo = styled.img`
   &.xerox {
     width: 210px;
   }
+  &.phoneloops {
+    width: 200px;
+  }
 `;
 
 const tier = {
@@ -80,6 +82,7 @@ const kindLogos = {
   flyingsquirrel: Logos['flyingsquirrel.png'],
   rumbleboxing: Logos['rumbleboxing.png'],
   xerox: Logos['xerox.jpg'],
+  phoneloops: Logos['phoneloops.jpg'],
 };
 
 const PartnerList = ({ paddingTop }) => (
@@ -117,8 +120,11 @@ const PartnerList = ({ paddingTop }) => (
             <SponsorLink href="https://flyingsquirrelsports.ca/" target="_blank" rel="noopener noreferrer">
               <Logo src={kindLogos.flyingsquirrel} alt="" className="flying-squirrel" />
             </SponsorLink>
-            <SponsorLink href="https://www.xerox.ca/" className="vertical-margins" target="_blank" rel="noopener noreferrer">
+            <SponsorLink href="https://www.xerox.ca/" target="_blank" rel="noopener noreferrer">
               <Logo src={kindLogos.xerox} alt="" className="xerox" />
+            </SponsorLink>
+            <SponsorLink href="https://phoneloops.com/" className="last" target="_blank" rel="noopener noreferrer">
+              <Logo src={kindLogos.phoneloops} alt="" className="phoneloops" />
             </SponsorLink>
           </LogoCard>
         </Tier>

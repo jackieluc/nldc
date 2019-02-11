@@ -28,7 +28,8 @@ module.exports = {
         icon: `src/images/nldc2019-logo.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-offline`,
+    // `gatsby-plugin-offline`,
+    `gatsby-plugin-remove-serviceworker`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
