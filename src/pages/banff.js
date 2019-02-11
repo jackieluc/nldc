@@ -20,7 +20,7 @@ export default class Banff extends Component {
         position: 'relative',
         height: '100vh',
         marginBottom: '3rem',
-        zIndex: '1000',
+        zIndex: '0',
       },
     }
   }
@@ -32,7 +32,6 @@ export default class Banff extends Component {
       let newTypeFormStyle = { ...this.state.typeFormStyle };
 
       newTypeFormStyle.height = '92.7vh';
-      newTypeFormStyle.zIndex = '0';
 
       this.setState({ typeFormStyle: newTypeFormStyle })
     }
