@@ -113,6 +113,10 @@ export default class Layout extends Component {
 
   componentDidMount() {
     // Remove any service worker: sw.js or service-worker.js from old deploys
+    self.addEventListener('install', () => {
+      self.skipWaiting();
+    });
+    
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.getRegistrations().then(function(registrations) {
         for (let registration of registrations) {
