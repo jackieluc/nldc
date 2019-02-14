@@ -19,7 +19,7 @@ export default class Banff extends Component {
       typeFormStyle: {
         position: 'relative',
         height: '100vh',
-        marginBottom: '3rem',
+        overflowY: 'hidden',
         zIndex: '0',
       },
     }
@@ -40,7 +40,7 @@ export default class Banff extends Component {
   render() {
     const { typeFormStyle } = this.state;
     return (
-      <Layout>
+      <Layout noFooter>
         <Wrapper>
           <Helmet>
             <title>

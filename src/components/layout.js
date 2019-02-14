@@ -123,7 +123,7 @@ export default class Layout extends Component {
   }
 
   render() {
-    const { children } = this.props;
+    const { children, noFooter } = this.props;
     return (
       <StaticQuery
         query={graphql`
@@ -140,9 +140,9 @@ export default class Layout extends Component {
             <GlobalStyle />
             <Navigation routes={routes} />
             <main>
-              {children}
+              { children }
             </main>
-            <Footer />
+            { noFooter ? '' : <Footer /> }
           </>
         )}
       />
