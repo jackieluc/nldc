@@ -46,7 +46,7 @@ const MenuWrapper = styled.nav`
 `;
 
 const ButtonAnchor = styled.a`
-  font=size: 1rem;
+  font-size: 1rem;
   padding: 14px 1.5rem;
   letter-spacing 1px;
   text-decoration: none;
@@ -125,7 +125,7 @@ export default class Menu extends Component {
         { 
           routes.map(route => (
             route.button
-              ? <ButtonAnchor href={route.path} key={route.naem}>
+              ? <ButtonAnchor href={route.path} key={route.name}>
                   { route.name }
                 </ButtonAnchor>
               : <StyledAnchor href={route.path} key={route.name}>
