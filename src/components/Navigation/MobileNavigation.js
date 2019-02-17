@@ -89,11 +89,14 @@ const ButtonAnchor = styled.a`
   background-color: ${Styles.lightRed};
   border-radius: 30px;
   color: white;
-  &:hover {
-    color: black;
-  }
   margin-right: 5vw;
   ${Media.laptop`margin-right: 0;`}
+  
+  &:hover {
+    color: white;
+    background-color: ${Styles.red};
+    text-decoration: none;
+  }
 `;
 
 const MobileMenu = ({ routes, action }) => (

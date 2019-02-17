@@ -53,8 +53,11 @@ const ButtonAnchor = styled.a`
   background-color: ${Styles.lightRed};
   border-radius: 30px;
   color: white;
+  
   &:hover {
-    color: black;
+    color: white !important;
+    background-color: ${Styles.red};
+    text-decoration: none;
   }
 `;
 
