@@ -107,7 +107,7 @@ const SubList = styled.ul`
 
 const PageQuery = graphql`
   query {
-    logo: file(relativePath: { eq: "atb-listens.png" }) {
+    atblistens: file(relativePath: { eq: "atb-listens.png" }) {
       childImageSharp {
         fixed(width: 265) {
           ...GatsbyImageSharpFixed
@@ -198,7 +198,7 @@ const ATBContest = (props) => (
               </p>
             </ContestDescription>
             <a href="https://www.atb.com/Pages/default.aspx" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
-              <Img fixed={data.logo.childImageSharp.fixed} alt="ATB Listens logo" />
+              <Img fixed={data.atblistens.childImageSharp.fixed} alt="ATB Listens logo" />
             </a>
           </Half>
         </Wrapper>
