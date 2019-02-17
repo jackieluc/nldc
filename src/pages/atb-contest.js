@@ -113,6 +113,13 @@ const PageQuery = graphql`
           ...GatsbyImageSharpFixed
         }
       }
+    },
+    manifesto: allFile(filter: { extension: { eq: "pdf" } }) {
+      edges {
+        node {
+          publicURL
+        }
+      }
     }
   }
 `;
@@ -171,7 +178,7 @@ const ATBContest = (props) => (
             <Title>How to enter</Title>
             <ContestDescription>
               <OrderedList>
-                <li>Watch the <a href="https://alphabeta.atb.com/careers" target="_blank" rel="noopener noreferrer">Transformation anthem</a> on ATB alphaBeta and get to know the transformation manifesto.</li>
+                <li>Watch the <a href="https://alphabeta.atb.com/careers" target="_blank" rel="noopener noreferrer">Transformation anthem</a> on ATB alphaBeta and get to know the  <a href={data.manifesto.edges[0].node.publicURL} target="_blank" rel="noopener noreferrer">transformation manifesto</a>.</li>
                 <li>Answer the following questions using a social media post, funny meme, boomerang, &lt;90 second video or any creative means:</li>
                 <SubList>
                   <li>How do you live the transformation manifesto every day?</li>
