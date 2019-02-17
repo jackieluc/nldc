@@ -66,8 +66,7 @@ const HeroMailChimp = styled(MailChimp)`
 `;
 
 const StyledLink = styled.a`
-  font-size: 0.5rem;
-  ${Media.tablet`font-size: 0.7rem;`}
+  font-size: 0.7rem;
   ${Media.laptop`font-size: 0.9rem;`}
   padding: 10px 1rem;
   ${Media.tablet`padding: 14px 1.5rem;`}
