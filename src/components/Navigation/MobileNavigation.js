@@ -83,7 +83,7 @@ const StyledAnchor = styled.a`
 
 const ButtonAnchor = styled.a`
   font-size: 1rem;
-  padding: 10px 1rem;
+  padding: 10px 1.5rem;
   letter-spacing 1px;
   text-decoration: none;
   background-color: ${Styles.lightRed};
