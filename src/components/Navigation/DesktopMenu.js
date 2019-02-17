@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Link as NavLink} from 'gatsby';
+import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Styles from '../../utils/styles';
 import BlackNldcLogo from '../../images/nldc2019-logo-black.png';
 
 const isHomePage = location => location === '/';
@@ -44,11 +45,17 @@ const MenuWrapper = styled.nav`
   text-transform: uppercase;
 `;
 
-const StyledLink = styled(NavLink)`
-  font-size: 1rem;
-  padding: 8px 1.5rem;
-  letter-spacing: 1px;
+const ButtonAnchor = styled.a`
+  font=size: 1rem;
+  padding: 14px 1.5rem;
+  letter-spacing 1px;
   text-decoration: none;
+  background-color: ${Styles.lightRed};
+  border-radius: 30px;
+  color: white;
+  &:hover {
+    color: black;
+  }
 `;
 
 const StyledAnchor = styled.a`
@@ -112,22 +119,20 @@ export default class Menu extends Component {
     const { routes } = this.props;
     return (
       <MenuWrapper location={location} heights={{ currentWindowHeight, firstSectionHeight }}>
-        <StyledAnchor href="/">
+        <Link to="/">
           <Logo src={BlackNldcLogo} alt="" />
-        </StyledAnchor>
-        {routes.map(route => (
-          /^https?:\/\/|^mailto?:/.test(route.path)
-            ? (
-              <StyledAnchor href={route.path} key={route.name}>
-                {route.name}
-              </StyledAnchor>
-            )
-            : (
-              <StyledLink to={route.path} key={route.name}>
-                {route.name}
-              </StyledLink>
-            )
-        ))}
+        </Link>
+        { 
+          routes.map(route => (
+            route.button
+              ? <ButtonAnchor href={route.path} key={route.naem}>
+                  { route.name }
+                </ButtonAnchor>
+              : <StyledAnchor href={route.path} key={route.name}>
+                  { route.name }
+                </StyledAnchor>
+          ))
+        }
       </MenuWrapper>
     );
   }
