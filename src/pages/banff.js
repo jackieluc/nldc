@@ -31,7 +31,7 @@ export default class Banff extends Component {
     if (currentBreakPoint.matches) {
       let newTypeFormStyle = { ...this.state.typeFormStyle };
 
-      newTypeFormStyle.height = '92.7vh';
+      newTypeFormStyle.height = '93vh';
 
       this.setState({ typeFormStyle: newTypeFormStyle })
     }
