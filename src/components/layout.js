@@ -83,10 +83,12 @@ const routes = [
   {
     name: 'Home',
     path: '/',
+    button: false,
   },
   {
     name: 'Sponsors',
     path: '/sponsors',
+    button: false,
   },
   // {
   //   name: 'Y2B',
@@ -95,14 +97,22 @@ const routes = [
   {
     name: 'FAQ',
     path: '/faq',
+    button: false,
   },
   {
     name: 'Banff Survey',
     path: '/banff',
+    button: false,
   },
   {
     name: 'Contact',
     path: 'mailto:kkaren.ngo@aiesec.net',
+    button: false,
+  },
+  {
+    name: 'Attend for Free',
+    path: '/atb-contest',
+    button: true,
   },
 ];
 
@@ -127,7 +137,7 @@ export default class Layout extends Component {
   }
 
   render() {
-    const { children } = this.props;
+    const { children, noFooter } = this.props;
     return (
       <StaticQuery
         query={graphql`
@@ -144,9 +154,9 @@ export default class Layout extends Component {
             <GlobalStyle />
             <Navigation routes={routes} />
             <main>
-              {children}
+              { children }
             </main>
-            <Footer />
+            { noFooter ? '' : <Footer /> }
           </>
         )}
       />

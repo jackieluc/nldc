@@ -19,7 +19,7 @@ export default class Banff extends Component {
       typeFormStyle: {
         position: 'relative',
         height: '100vh',
-        marginBottom: '3rem',
+        overflowY: 'hidden',
         zIndex: '0',
       },
     }
@@ -31,7 +31,7 @@ export default class Banff extends Component {
     if (currentBreakPoint.matches) {
       let newTypeFormStyle = { ...this.state.typeFormStyle };
 
-      newTypeFormStyle.height = '92.7vh';
+      newTypeFormStyle.height = '93vh';
 
       this.setState({ typeFormStyle: newTypeFormStyle })
     }
@@ -40,7 +40,7 @@ export default class Banff extends Component {
   render() {
     const { typeFormStyle } = this.state;
     return (
-      <Layout>
+      <Layout noFooter>
         <Wrapper>
           <Helmet>
             <title>

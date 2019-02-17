@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link as NavLink} from 'gatsby';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import MailChimp from '../MailChimp/MailChimp';
@@ -70,7 +69,7 @@ const MenuWrapper = styled.nav`
   }
 `;
 
-const StyledLink = styled(NavLink)`
+const StyledAnchor = styled.a`
   font-size: 1.2rem;
   margin: 8px 10vw;
   ${Media.tablet`margin: 8px 5vw;`}
@@ -82,27 +81,35 @@ const StyledLink = styled(NavLink)`
   }
 `;
 
-const StyledAnchor = styled.a`
-  font-size: 1.2rem;
-  margin: 8px 10vw;
-  ${Media.tablet`margin: 8px 5vw;`}
+const ButtonAnchor = styled.a`
+  font-size: 1rem;
+  padding: 10px 1.5rem;
+  letter-spacing 1px;
   text-decoration: none;
+  background-color: ${Styles.lightRed};
+  border-radius: 30px;
+  color: white;
+  margin-right: 5vw;
+  ${Media.laptop`margin-right: 0;`}
+  
+  &:hover {
+    color: white;
+    background-color: ${Styles.red};
+    text-decoration: none;
+  }
 `;
 
 const MobileMenu = ({ routes, action }) => (
   <MenuWrapper>
-    {routes.map(route => (
-      /^https?:\/\/|^mailto?:/.test(route.path)
-        ? (
-          <StyledAnchor href={route.path} key={route.name}>
-            {route.name}
-          </StyledAnchor>
-        )
-        : (
-          <StyledLink to={route.path} onClick={action} key={route.name}>
-            {route.name}
-          </StyledLink>
-        )
+    { 
+      routes.map(route => (
+        route.button
+          ? <ButtonAnchor href={route.path} key={route.name}>
+              { route.name }
+            </ButtonAnchor>
+          : <StyledAnchor href={route.path} key={route.name}>
+              { route.name }
+            </StyledAnchor>
     ))}
     <MailChimp />
     <SocialMedia />

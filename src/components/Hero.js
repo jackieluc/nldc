@@ -3,6 +3,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image';
 import { Container } from 'reactstrap';
 import styled from 'styled-components';
+import Styles from '../utils/styles';
 import MailChimp from './MailChimp/MailChimp';
 import Media from '../utils/media';
 
@@ -54,7 +55,7 @@ const Info = styled.h3`
   line-height: 1;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin: 0 auto 1rem auto;
+  margin: 1rem auto 2rem auto;
   padding: 5px;
   border: 2px solid white;
 `;
@@ -62,6 +63,25 @@ const Info = styled.h3`
 const HeroMailChimp = styled(MailChimp)`
   margin-top: auto;
   margin-bottom: 1rem;
+`;
+
+const StyledLink = styled.a`
+  font-size: 0.7rem;
+  ${Media.laptop`font-size: 0.9rem;`}
+  padding: 10px 1rem;
+  ${Media.tablet`padding: 14px 1.5rem;`}
+  letter-spacing 1px;
+  text-decoration: none;
+  background-color: ${Styles.lightRed};
+  border-radius: 30px;
+  color: white;
+  text-transform: uppercase;
+  
+  &:hover {
+    color: white;
+    background-color: ${Styles.red};
+    text-decoration: none;
+  }
 `;
 
 const PageQuery = graphql`
@@ -101,6 +121,7 @@ const Hero = (props) => (
           <Info>
             May 1&ndash;5, 2019 | Calgary, Alberta
           </Info>
+          <StyledLink href="/atb-contest">Attend for Free</StyledLink>
         </Container>
         <HeroMailChimp customContent="Tickets Available in Spring 2019. Please Subscribe for Conference Updates!" />
       </HeroSection>
