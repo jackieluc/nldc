@@ -123,7 +123,6 @@ const Hero = (props) => (
           </Info>
           <StyledLink href="/atbcontest">Attend for Free</StyledLink>
         </Container>
-        <HeroMailChimp customContent="Tickets Available in Spring 2019. Please Subscribe for Conference Updates!" />
       </HeroSection>
     )}
   />
