@@ -121,7 +121,7 @@ const Hero = (props) => (
           <Info>
             May 1&ndash;5, 2019 | Calgary, Alberta
           </Info>
-          <StyledLink href="/atb-contest">Attend for Free</StyledLink>
+          <StyledLink href="/atbcontest">Attend for Free</StyledLink>
         </Container>
         <HeroMailChimp customContent="Tickets Available in Spring 2019. Please Subscribe for Conference Updates!" />
       </HeroSection>

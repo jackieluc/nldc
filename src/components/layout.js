@@ -111,7 +111,7 @@ const routes = [
   },
   {
     name: 'Attend for Free',
-    path: '/atb-contest',
+    path: '/atbcontest',
     button: true,
   },
 ];
