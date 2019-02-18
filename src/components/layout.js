@@ -105,14 +105,14 @@ const routes = [
     button: false,
   },
   {
-    name: 'Contact',
-    path: 'mailto:kkaren.ngo@aiesec.net',
+    name: 'Attend for Free',
+    path: '/atbcontest',
     button: false,
   },
   {
-    name: 'Attend for Free',
-    path: '/atb-contest',
-    button: true,
+    name: 'Contact',
+    path: 'mailto:kkaren.ngo@aiesec.net',
+    button: false,
   },
 ];
 

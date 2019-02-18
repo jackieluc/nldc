@@ -134,18 +134,18 @@ const ATBContest = (props) => (
             <title>
               ATB Contest | NLDC 2019
             </title>
-            <link rel="canonical" href="https://www.nldcnow.com/atb-contest" />
+            <link rel="canonical" href="https://www.nldcnow.com/atbcontest" />
             <meta name="description" content="I am a Transformer Contest. Calling all transformers... Attend the National Leadership Development Conference 2019... on ATB!" />
             <meta name="keywords" content="nldc 2019 atb contest, atb contest, nldc atb contest, aiesec atb contest, contest, atb, free, flights" />
             <meta property="og:title" content="ATB Contest | NLDC 2019" />
             <meta property="og:type" content="website" />
             <meta property="og:description" content="I am a Transformer Contest. Calling all transformers... Attend the National Leadership Development Conference 2019... on ATB!" />
-            <meta property="og:url" content="https://www.nldcnow.com/atb-contest" />
+            <meta property="og:url" content="https://www.nldcnow.com/atbcontest" />
             <meta property="og:site_name" content="ATB Contest | NLDC 2019" />
             <meta property="og:image" content={`https://www.nldcnow.com${Logo}`} />
             <meta property="fb:app_id" content="594354454320006" />
             <meta name="twitter:card" content="summary" />
-            <meta name="twitter:url" content="https://www.nldcnow.com/atb-contest" />
+            <meta name="twitter:url" content="https://www.nldcnow.com/atbcontest" />
             <meta name="twitter:title" content="ATB Contest | NLDC 2019" />
             <meta name="twitter:description" content="I am a Transformer Contest. Calling all transformers... Attend the National Leadership Development Conference 2019... on ATB!" />
             <meta name="twitter:image" content={`https://www.nldcnow.com${Logo}`} />

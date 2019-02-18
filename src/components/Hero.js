@@ -55,14 +55,9 @@ const Info = styled.h3`
   line-height: 1;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin: 1rem auto 2rem auto;
+  margin: 1rem auto;
   padding: 5px;
   border: 2px solid white;
-`;
-
-const HeroMailChimp = styled(MailChimp)`
-  margin-top: auto;
-  margin-bottom: 1rem;
 `;
 
 const StyledLink = styled.a`
@@ -76,6 +71,8 @@ const StyledLink = styled.a`
   border-radius: 30px;
   color: white;
   text-transform: uppercase;
+  margin-top: auto;
+  margin-bottom: 1rem;
   
   &:hover {
     color: white;
@@ -121,9 +118,8 @@ const Hero = (props) => (
           <Info>
             May 1&ndash;5, 2019 | Calgary, Alberta
           </Info>
-          <StyledLink href="/atb-contest">Attend for Free</StyledLink>
         </Container>
-        <HeroMailChimp customContent="Tickets Available in Spring 2019. Please Subscribe for Conference Updates!" />
+        <StyledLink href="/atbcontest">Attend for Free</StyledLink>
       </HeroSection>
     )}
   />
