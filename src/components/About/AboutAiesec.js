@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import Media from '../../utils/media';
 import Styles from '../../utils/styles';
 import AiesecLogo from '../../images/aiesec-logo.png';
-// import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 const Wrapper = styled.section`
   background-image: linear-gradient( 135deg, #74C7D9 40%, #037EF3 100%);
@@ -25,7 +24,7 @@ const Logo = styled.div`
 
   > img {
     width: 300px;
-    ${Media.bigPhone`width: 380px`}
+    ${Media.tablet`width: 380px`}
   }
 `;
 
