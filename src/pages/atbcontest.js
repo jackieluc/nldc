@@ -67,6 +67,8 @@ const StyledHeader = styled.div`
 
   p {
     ${Media.tablet`width: 40rem;`}
+    ${Media.laptop`width: 100%;`}
+    ${Media.desktop`width: 40rem;`}
     margin: 0 auto;
     text-align: center;
   }
@@ -74,6 +76,8 @@ const StyledHeader = styled.div`
 
 const ContestDescription = styled.div`
   ${Media.tablet`width: 40rem;`}
+  ${Media.laptop`width: 100%;`}
+  ${Media.desktop`width: 40rem;`}
   margin: 0 auto;
 `;
 
