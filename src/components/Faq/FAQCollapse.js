@@ -71,7 +71,11 @@ class FAQCollapse extends Component {
     const { question, answer } = this.props;
     return (
       <Wrapper>
-        <StyledButton id={question.replace(/\?/g, '').replace(/\s+/g, '-').toLowerCase()} onClick={this.toggle} className={collapse ? 'open' : 'closed'}>
+        <StyledButton
+          id={question.replace(/\,|\?/g, '').replace(/\s+/g, '-').toLowerCase()}
+          onClick={this.toggle}
+          className={collapse ? 'open' : 'closed'}
+        >
           { question }
         </StyledButton>
         <Collapse isOpen={collapse}>
