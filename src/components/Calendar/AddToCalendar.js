@@ -86,12 +86,13 @@ export default class CalendarCta extends React.Component {
 
   render() {
     const { loading } = this.state;
+    const { category } = this.props;
 
     if (loading) return null;
 
     return (
       <AddToCalendar className="addeventatc" aria-label="Add to Calendar">
-        May 1&ndash;5, 2019
+        { category === 'aiesec' ? 'May 1-5, 2019' : 'May 1-2, 2019' }
         <CalendarSubtitle>
           Add to Calendar
         </CalendarSubtitle>
@@ -99,13 +100,13 @@ export default class CalendarCta extends React.Component {
           05/01/2019 09:00 AM
         </span>
         <span className="end">
-          05/05/2019 11:59 PM
+          { category === 'aiesec' ? '05/05/2019 11:59 PM' : '05/02/2019 11:59 PM' }
         </span>
         <span className="timezone">
           America/Edmonton
         </span>
         <span className="title">
-        NLDC 2019 | AIESEC in CANADA
+          NLDC 2019 | AIESEC in CANADA
         </span>
         <span className="description">
           { // eslint-disable-next-line
