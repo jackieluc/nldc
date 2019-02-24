@@ -32,6 +32,16 @@ const EventDescription = styled.div`
   text-align: left;
   margin-top: 1rem;
   margin-bottom: 2rem;
+  
+  div {
+    display: inline-block;
+    text-align: center;
+    
+    &:last-of-type {
+      margin-top: 10px;
+      ${Media.tablet`margin: 0 0 0 20px;`}
+    }
+  }
 `;
 
 const AddressLink = styled.a`
@@ -84,7 +94,14 @@ const EventDetails = () => (
               Save the Date!
             </EventInfoTitle>
             <EventDescription>
-              <AddToCalendar />
+              <div>
+                <h4>AIESEC Delegates</h4>
+                <AddToCalendar category="aiesec" />
+              </div>
+              <div>
+                <h4>External Delegates</h4>
+                <AddToCalendar category="external" />
+              </div>
             </EventDescription>
           </DescriptionWrapper>
         </StyledRow>
