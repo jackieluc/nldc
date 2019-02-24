@@ -57,7 +57,7 @@ const faq = [
   },
   {
     question: 'Can non-AIESECers attend NLDC 2019?',
-    answer: 'Yes, we would love for any students or new grads to purchase an <span>External Delegate ticket</span> and attend the Youth 2 Business (Y2B) Forum and the Innovation Series. Prices TBD.',
+    answer: 'Yes! You can purchase your tickets at <a href="https://bit.ly/Y2B2019Forum" target="_blank" rel="noopener noreferrer">bit.ly/Y2B2019Forum</a> and attend our Launch and Youth to Business Forum on May 1-2.',
   },
   {
     question: 'What is the legal drinking age in Calgary, Alberta?',
@@ -70,6 +70,10 @@ const faq = [
   {
     question: 'I am planning to drive, will I get free parking?',
     answer: 'Yes, all conference delegates will receive a parking pass. You will need to submit a request here at <a href="https://bit.ly/NLDCParking" target="_blank" rel="noopener noreferrer">bit.ly/NLDCParking</a>.',
+  },
+  {
+    question: 'When should I book my flight to return home?',
+    answer: 'The conference checkout will be on May 6. We are planning to host a Banff Retreat after NLDC from May 6 to 7 so please book your flight after May 7 if you would like to attend.'
   },
 ];
 

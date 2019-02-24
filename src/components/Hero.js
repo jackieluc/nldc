@@ -8,7 +8,7 @@ import MailChimp from './MailChimp/MailChimp';
 import Media from '../utils/media';
 
 const HeroSection = styled.section`
-  height: 85vh;
+  min-height: 85vh;
   background-image: linear-gradient( 135deg, rgba(116, 199, 217, 0.75) 40%, rgba(3, 126, 243, 0.75) 100%), url(${props => props.bgImage.calgary.childImageSharp.fluid.src});
   background-size: cover;
   background-position: center;

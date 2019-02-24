@@ -5,8 +5,6 @@ import {
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Styles from '../../utils/styles';
-// import '../../images/plus.png';
-// import '../../images/subtract.png';
 
 const Wrapper = styled.div`
   width: 100%;
@@ -45,20 +43,6 @@ const StyledButton = styled.button`
     color: ${Styles.themeColour};
     outline: 0;
   }
-
-  // &.open:after {
-  //   display: inline-block;
-  //   content: url('../static/media/plus.png');
-  //   width: 32px;
-  //   height: 32px;
-  // }
-
-  // &.closed:after {
-  //   display: inline-block;
-  //   content: url('../static/media/subtract.png');
-  //   width: 32px;
-  //   height: 32px;
-  // }
 `;
 
 const StyledCard = styled(Card)`
@@ -87,7 +71,11 @@ class FAQCollapse extends Component {
     const { question, answer } = this.props;
     return (
       <Wrapper>
-        <StyledButton onClick={this.toggle} className={collapse ? 'open' : 'closed'}>
+        <StyledButton
+          id={question.replace(/\,|\?/g, '').replace(/\s+/g, '-').toLowerCase()}
+          onClick={this.toggle}
+          className={collapse ? 'open' : 'closed'}
+        >
           { question }
         </StyledButton>
         <Collapse isOpen={collapse}>

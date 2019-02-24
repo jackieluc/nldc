@@ -18,18 +18,17 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     font-size: 16px;
+    scroll-behavior: smooth;
   }
   body {
     font-size: 16px;
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif, 'BillyOhio';
-    // overflow-x: hidden;
-    // overflow-y: auto;
-    // background-color: #FAFAFA;
     color: ${Styles.textColour};
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
   }
 
   section, nav {

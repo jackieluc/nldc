@@ -9,8 +9,8 @@ import Styles from '../utils/styles';
 import Logo from '../images/nldc2019-logo-black.png';
 
 const Wrapper = styled.div`
-  height: 100%;
-  ${Media.laptop`height: 100vh;`}
+  min-height: 100vh;
+  overflow: hidden;
   text-align: left;
   display: flex;
   flex-direction: column;
