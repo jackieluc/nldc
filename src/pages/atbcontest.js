@@ -41,7 +41,7 @@ const Half = styled.div`
   justify-content: center;
   flex: 1;
   padding: 0 20px 3rem 20px;
-  overflow-y: scroll;
+  overflow-y: auto;
 
   ${({ gradient }) => gradient
     ? `
