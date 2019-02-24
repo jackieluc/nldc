@@ -44,9 +44,9 @@ const Title = styled.h1`
 
 const Info = styled.h3`
   display: block;
-  max-width: 320px;
+  max-width: 220px;
   font-size: 1rem;
-  ${Media.desktop`font-size: 1.3rem; max-width: 420px;`}
+  ${Media.desktop`font-size: 1.3rem; max-width: 300px;`}
   color: #FFFFFF;
   font-weight: normal;
   line-height: 1;
@@ -113,7 +113,10 @@ const Hero = () => (
             </span>
           </Title>
           <Info>
-            May 1&ndash;5, 2019 | Calgary, Alberta
+            May 1&ndash;5, 2019
+            <span style={{ display: 'block', marginTop: '5px' }}>
+              Calgary | Alberta
+            </span>
           </Info>
         </Container>
         <StyledLink href="/atbcontest">Attend for Free</StyledLink>
