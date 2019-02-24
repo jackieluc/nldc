@@ -4,7 +4,6 @@ import Img from 'gatsby-image';
 import { Container } from 'reactstrap';
 import styled from 'styled-components';
 import Styles from '../utils/styles';
-import MailChimp from './MailChimp/MailChimp';
 import Media from '../utils/media';
 
 const HeroSection = styled.section`
@@ -38,7 +37,6 @@ const Title = styled.h1`
     display: block;
     text-align: center;
     margin: 0 auto;
-    font-size: 1.5rem;
     font-size: calc(32px + 46 * (100vw - 450px) / 900);
     ${Media.laptop`font-size: 3.5rem;`}
   };
@@ -46,9 +44,8 @@ const Title = styled.h1`
 
 const Info = styled.h3`
   display: block;
-  max-width: 240px;
-  font-size: 0.7rem;
-  ${Media.tablet`font-size: 1rem; max-width: 320px;`}
+  max-width: 320px;
+  font-size: 1rem;
   ${Media.desktop`font-size: 1.3rem; max-width: 420px;`}
   color: #FFFFFF;
   font-weight: normal;
@@ -61,22 +58,22 @@ const Info = styled.h3`
 `;
 
 const StyledLink = styled.a`
-  font-size: 0.7rem;
-  ${Media.laptop`font-size: 0.9rem;`}
-  padding: 10px 1rem;
-  ${Media.tablet`padding: 14px 1.5rem;`}
-  letter-spacing 1px;
+  font-size: 12px;
+  padding: 14px 6px;
+  width: 180px;
+  letter-spacing 2px;
   text-decoration: none;
-  background-color: ${Styles.lightRed};
-  border-radius: 30px;
+  background-image: linear-gradient( 135deg, rgba(232, 93, 94, 1) 40%, rgba(207, 66, 79, 1) 100%);
+  border-radius: 6px;
   color: white;
   text-transform: uppercase;
   margin-top: auto;
   margin-bottom: 1rem;
+  ${Styles.shadow}
   
   &:hover {
     color: white;
-    background-color: ${Styles.red};
+    background: ${Styles.red};
     text-decoration: none;
   }
 `;
@@ -100,7 +97,7 @@ const PageQuery = graphql`
   }
 `;
 
-const Hero = (props) => (
+const Hero = () => (
   <StaticQuery
     query={PageQuery}
     render={data => (
