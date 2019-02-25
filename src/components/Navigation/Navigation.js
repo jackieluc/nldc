@@ -8,7 +8,6 @@ export default class Navigation extends Component {
   constructor(props) {
     super(props);
     this.state = { currentWindowWidth: 0 };
-    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
 
   componentDidMount() {
@@ -20,7 +19,7 @@ export default class Navigation extends Component {
     window.removeEventListener('resize', this.updateWindowDimensions);
   }
 
-  updateWindowDimensions() {
+  updateWindowDimensions = () => {
     const currentWindowWidth = window.innerWidth;
     this.setState({ currentWindowWidth });
   }
