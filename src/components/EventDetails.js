@@ -18,7 +18,7 @@ const MottoWrapper = styled.div`
   margin: 0 auto 2rem auto;
   ${Media.medPhone`width: 20rem;`}
   ${Media.laptop`
-    width: 26rem;
+    width: 23rem;
     margin: 0 auto;
   `}
 `;
@@ -89,7 +89,7 @@ const EventDetails = () => (
               <Motto />
             </MottoWrapper>
             <IframeWrapper>
-              <iframe width="480" height="270" src="https://www.youtube.com/embed/QEl_5L_37B0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true" />
+              <iframe width="480" height="270" src="https://www.youtube.com/embed/QEl_5L_37B0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
             </IframeWrapper>
           </Col>
           <DescriptionWrapper xs="12" sm="10" lg="6" style={{ display: 'block', textAlign: 'left' }}>
