@@ -23,7 +23,7 @@ const CTA = styled.a`
 
 const SponsorCTA = () => (
   <CTA href="mailto:jacoby.holder@aiesec.net?subject=Sponsorship Inquiry">
-    Become our partner
+    Become Our Partner
   </CTA>
 );
 
