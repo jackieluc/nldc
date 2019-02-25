@@ -23,6 +23,26 @@ const MottoWrapper = styled.div`
   `}
 `;
 
+const IframeWrapper = styled.div`
+  display: none;
+  ${Media.tablet`
+    display: block;
+    margin-bottom: 2rem;
+  `}
+  ${Media.laptop`margin-bottom: 0;`}
+
+  iframe {
+    ${Media.laptop`
+      width: 440px;
+      height: 247.5px;
+    `}
+    ${Media.desktop`
+      width: 480px;
+      height: 270px;
+    `}
+  }
+`;
+
 const DescriptionWrapper = styled(Col)`
   display: flex;
   align-items: center;
@@ -68,6 +88,9 @@ const EventDetails = () => (
             <MottoWrapper>
               <Motto />
             </MottoWrapper>
+            <IframeWrapper>
+              <iframe width="480" height="270" src="https://www.youtube.com/embed/QEl_5L_37B0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true" />
+            </IframeWrapper>
           </Col>
           <DescriptionWrapper xs="12" sm="10" lg="6" style={{ display: 'block', textAlign: 'left' }}>
             <EventInfoTitle>
