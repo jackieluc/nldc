@@ -17,10 +17,7 @@ const StyledRow = styled(Row)`
 const MottoWrapper = styled.div`
   margin: 0 auto 2rem auto;
   ${Media.medPhone`width: 20rem;`}
-  ${Media.laptop`
-    width: 23rem;
-    margin: 0 auto;
-  `}
+  ${Media.laptop`margin: 0 auto;`}
 `;
 
 const IframeWrapper = styled.div`
