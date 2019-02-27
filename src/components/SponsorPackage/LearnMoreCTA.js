@@ -24,7 +24,7 @@ const CTA = styled.a`
 
 const LearnMoreCTA = () => (
   <CTA href="/sponsors">
-    Learn More
+    Discover Sponsorship Benefits
   </CTA>
 );
 

@@ -26,7 +26,7 @@ const LogoCard = styled(Card)`
   flex-direction: initial;
   padding: 10px;
   margin-bottom: 60px;
-  border-radius: 0;
+  border-radius: 6px;
   border: 0;
   ${Styles.blueShadow}
 `;

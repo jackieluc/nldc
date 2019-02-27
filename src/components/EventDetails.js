@@ -6,26 +6,91 @@ import AddToCalendar from './Calendar/AddToCalendar';
 import Media from '../utils/media';
 import Motto from './Motto';
 
+const TallerContainer = styled(Container)`
+  ${Media.laptop`
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  `}
+`;
+
 const ConferenceDescription = styled.div`
   width: 100%;
 `;
 
 const StyledRow = styled(Row)`
+  display: flex;
   justify-content: center;
+  align-items: center;
 `;
 
 const MottoWrapper = styled.div`
   margin: 0 auto 2rem auto;
   ${Media.medPhone`width: 20rem;`}
+  ${Media.laptop`margin: 0 auto;`}
+`;
+
+const IframeWrapper = styled.div`
+  display: none;
+  ${Media.tablet`
+    display: block;
+    margin-bottom: 2rem;
+  `}
   ${Media.laptop`
-    width: 26rem;
-    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 0;
+  `}
+
+  iframe {
+    ${Styles.shadow}
+    ${Media.laptop`
+      width: 440px;
+      height: 247.5px;
+    `}
+    ${Media.desktop`
+      width: 480px;
+      height: 270px;
+    `}
+  }
+`;
+
+const BgOffset = styled.div`
+  background-color: rgb(207, 66, 79);
+  position: absolute;
+  margin-top: 2rem;
+  top: 195px;
+  bottom: 0px;
+  z-index: -1;
+  ${Media.tablet`
+    width: 480px;
+    height: 270px;
+    right: 40px;
+  `}
+  ${Media.laptop`
+    width: 440px;
+    height: 247.5px;
+    right: 5px;
+  `}
+  ${Media.desktop`
+    width: 480px;
+    height: 270px;
+    right: 75px;
   `}
 `;
 
 const DescriptionWrapper = styled(Col)`
-  display: flex;
+  display: block;
   align-items: center;
+  text-align: left;
+
+  ${Media.tablet`
+    border: 1px solid #ccc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    ${Styles.shadow}
+  `}
 `;
 
 const EventDescription = styled.div`
@@ -60,16 +125,20 @@ const EventInfoTitle = styled.h2`
 
 const EventDetails = () => (
   <section>
-    <Container>
+    <TallerContainer>
       <ConferenceDescription>
         <StyledRow>
-          <Col xs="12" sm="10" lg="6">
+          <Col xs="12" sm="10" lg="6" xl="7">
             {/* <MottoWrapper src={Motto} alt="Disrupting the now." /> */}
             <MottoWrapper>
               <Motto />
             </MottoWrapper>
+            <IframeWrapper>
+              <iframe width="480" height="270" src="https://www.youtube.com/embed/QEl_5L_37B0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+              <BgOffset />
+            </IframeWrapper>
           </Col>
-          <DescriptionWrapper xs="12" sm="10" lg="6" style={{ display: 'block', textAlign: 'left' }}>
+          <DescriptionWrapper xs="12" sm="10" lg="6" xl="5">
             <EventInfoTitle>
               What is NLDC?
             </EventInfoTitle>
@@ -106,7 +175,7 @@ const EventDetails = () => (
           </DescriptionWrapper>
         </StyledRow>
       </ConferenceDescription>
-    </Container>
+    </TallerContainer>
   </section>
 );
 
