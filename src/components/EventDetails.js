@@ -73,7 +73,7 @@ const BgOffset = styled.div`
   ${Media.desktop`
     width: 480px;
     height: 270px;
-    right: 30px;
+    right: 75px;
   `}
 `;
 
@@ -128,7 +128,7 @@ const EventDetails = () => (
     <TallerContainer>
       <ConferenceDescription>
         <StyledRow>
-          <Col xs="12" sm="10" lg="6">
+          <Col xs="12" sm="10" lg="6" xl="7">
             {/* <MottoWrapper src={Motto} alt="Disrupting the now." /> */}
             <MottoWrapper>
               <Motto />
@@ -138,7 +138,7 @@ const EventDetails = () => (
               <BgOffset />
             </IframeWrapper>
           </Col>
-          <DescriptionWrapper xs="12" sm="10" lg="6">
+          <DescriptionWrapper xs="12" sm="10" lg="6" xl="5">
             <EventInfoTitle>
               What is NLDC?
             </EventInfoTitle>
