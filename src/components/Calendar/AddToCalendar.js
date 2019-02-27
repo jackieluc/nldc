@@ -15,7 +15,7 @@ const AddToCalendar = styled.button`
     font-size: 1rem !important;
     z-index: 2 !important;
     font-weight: 400;
-    width: 15rem;
+    width: 12rem;
     -webkit-box-shadow: 0 3px 6px rgba(75, 97, 141, 0.3), 0 3px 6px rgba(75, 97, 141, 0.5) !important;
     box-shadow: 0 3px 6px rgba(75, 97, 141, 0.3), 0 3px 6px rgba(75, 97, 141, 0.5) !important;
     &:hover {
@@ -27,7 +27,7 @@ const AddToCalendar = styled.button`
     .addeventatc_dropdown {
       font-family: 'Lato', sans-serif !important;
       font-size: 1rem !important;
-      width: 15rem !important;
+      width: 12rem !important;
 
       > span {
         font-weight: 400;
@@ -49,7 +49,7 @@ const AddToCalendar = styled.button`
 
     // Overwrite AddEvent icon position
     .addeventatc_icon {
-      left: 35px !important;
+      left: 20px !important;
       top: 16px !important;
       width: 24px;
       height: 24px;
