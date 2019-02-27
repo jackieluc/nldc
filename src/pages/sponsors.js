@@ -53,7 +53,7 @@ const benefits1 = ['Keynote presentations', 'Corporate videos', 'Plenary recogni
 
 const benefits2 = ['Conference boothing table', 'Complimentary banquet tickets', 'External speaking opportunities', 'Innovation Series workshops', 'Recruitment materials', 'Email blast to delegates', 'Lunch with Leaders invintation', 'Delegate resumes'];
 
-const benefits3 = ['International recruitment program discount - Hire global talent', 'For over 65 years, we have worked alongside government, businesses and talented  students to facilitate life changing professional experiences within hundreds of small to multinational businesses. We have provided talented youth with meaningful and challenging experiences to develop their leadership potential in Canada.'];
+const benefits3 = ['International recruitment program discount - Hire global talent', 'For over 60 years, we have worked alongside government, businesses and talented  students to facilitate life changing professional experiences within hundreds of small to multinational businesses. We have provided talented youth with meaningful and challenging experiences to develop their leadership potential in Canada.'];
 
 const Sponsors = () => (
   <Layout>

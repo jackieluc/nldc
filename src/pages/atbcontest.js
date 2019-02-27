@@ -172,7 +172,6 @@ const ATBContest = (props) => (
                 <OrderedList eligibility>
                   <li>Must be a member in good standing of AIESEC Canada and registered for post secondary at a Canadian Institution.</li>
                   <li>18 years or older</li>
-                  <li>Must be in the fields of innovation, computer science/business technology, math, engineering, or related.</li>
                 </OrderedList>
                 <p>Click <a href="https://docs.google.com/document/d/1YuQa8JHHKwqHI-OlmxT69AqQWYtVSt6FKTQ_En_VMKw/edit?fbclid=IwAR3BVSn0G8knXNSePGjN1jUCG58xAW4th0vf9VebtHbjGXqBtbSf1J719Sc" target="_blank" rel="noopener noreferrer">here</a> for full contest terms & conditions.</p>
               </EligibilityDescription>
