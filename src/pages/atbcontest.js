@@ -2,6 +2,7 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import Layout from '../components/layout';
+import ExampleModal from '../components/AtbContest/ExampleModal';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import Media from '../utils/media';
@@ -79,6 +80,10 @@ const ContestDescription = styled.div`
   ${Media.laptop`width: 100%;`}
   ${Media.desktop`width: 40rem;`}
   margin: 0 auto;
+
+  p {
+    margin-bottom: 1rem;
+  }
 `;
 
 const EligibilityDescription = styled.div`
@@ -161,12 +166,13 @@ const ATBContest = (props) => (
               <p>Attend the National Leadership Development Conference 2019... on ATB!</p>
             </StyledHeader>
             <ContestDescription>
-              <p style={{ marginBottom: '1rem' }}>
+              <p>
                 Consistently named one of Canada’s top employers, <a href="https://www.atb.com/careers/Pages/default.aspx" target="_blank" rel="noopener noreferrer">ATB Financial</a> is actively <a href="http://atbalphabeta.com" target="_blank" rel="noopener noreferrer">disrupting banking</a> in order deliver happiness to Albertans, and the world. Within ATB’s 5,300 person strong team, you’ll find 1,000 dedicated transformers working at the forefront of technology, data, CX, AI, blockchain and everything in between.
               </p>
-              <p style={{ marginBottom: '2rem' }}>
+              <p>
                 ATB invests in its transformers, future and current. If you’re a transformer, then enter ATB’s “I am a Transformer” contest in order to win a chance to have your NLDC delegate fee covered. ATB is always on the search for those that live and breathe our mission and culture. When we find them, we invest in them. Here’s your chance for ATB to invest in you as you continue your leadership journey by attending the NLDC - on us. There are 10 spots up for grabs, valued at $400... enter now!
               </p>
+              <ExampleModal />
               <EligibilityDescription>
                 <h4>Eligibility Requirements</h4>
                 <OrderedList eligibility>
