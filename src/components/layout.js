@@ -88,10 +88,6 @@ const routes = [
     path: '/sponsors',
     button: false,
   },
-  // {
-  //   name: 'Y2B',
-  //   path: '/youth2business',
-  // },
   {
     name: 'FAQ',
     path: '/faq',
