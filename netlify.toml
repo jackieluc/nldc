@@ -12,3 +12,8 @@
   for = "/service-worker.js"
   [headers.values]
     cache-control = "max-age=0,no-cache,no-store,must-revalidate"
+
+[[redirects]]
+  from    = "/banff"
+  to      = "https://bit.ly/nldc2019banff"
+  status  = 301

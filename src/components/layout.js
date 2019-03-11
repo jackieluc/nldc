@@ -89,24 +89,24 @@ const routes = [
     button: false,
   },
   {
-    name: 'FAQ',
-    path: '/faq',
-    button: false,
-  },
-  {
-    name: 'Banff Survey',
+    name: 'Banff',
     path: '/banff',
     button: false,
   },
   {
-    name: 'Attend for Free',
-    path: '/atbcontest',
+    name: 'FAQ',
+    path: '/faq',
     button: false,
   },
   {
     name: 'Contact',
     path: 'mailto:kkaren.ngo@aiesec.net',
     button: false,
+  },
+  {
+    name: 'Get your tickets',
+    path: 'https://bit.ly/Y2B2019Forum',
+    button: true,
   },
 ];
 
@@ -117,6 +117,10 @@ export default class Layout extends Component {
 
   componentDidMount() {
     // Remove any service worker: sw.js or service-worker.js from old deploys
+    self.addEventListener('install', () => {
+      self.skipWaiting();
+    });
+    
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.getRegistrations().then(function(registrations) {
         for (let registration of registrations) {
