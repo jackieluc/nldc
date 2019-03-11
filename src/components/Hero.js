@@ -119,7 +119,7 @@ const Hero = () => (
             </span>
           </Info>
         </Container>
-        <StyledLink href="/atbcontest">Attend for Free</StyledLink>
+        <StyledLink href="https://bit.ly/Y2B2019Forum">Get your tickets</StyledLink>
       </HeroSection>
     )}
   />

@@ -93,24 +93,24 @@ const routes = [
   //   path: '/youth2business',
   // },
   {
-    name: 'FAQ',
-    path: '/faq',
-    button: false,
-  },
-  {
-    name: 'Banff Survey',
+    name: 'Banff',
     path: '/banff',
     button: false,
   },
   {
-    name: 'Attend for Free',
-    path: '/atbcontest',
+    name: 'FAQ',
+    path: '/faq',
     button: false,
   },
   {
     name: 'Contact',
     path: 'mailto:kkaren.ngo@aiesec.net',
     button: false,
+  },
+  {
+    name: 'Get your tickets',
+    path: 'https://bit.ly/Y2B2019Forum',
+    button: true,
   },
 ];
 
