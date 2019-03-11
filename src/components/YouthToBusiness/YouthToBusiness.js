@@ -5,11 +5,11 @@ import { Container, Row, Col } from 'reactstrap';
 import styled from 'styled-components';
 import Media from '../../utils/media';
 import Styles from '../../utils/styles';
+import Testimonials from './Testimonials';
 
 const Wrapper = styled.section`
   ${Media.laptop`
     margin-top: 3rem;
-    margin-bottom: 3rem;
   `}
 `;
 
@@ -121,6 +121,33 @@ const BgOffset = styled.div`
   `}
 `;
 
+const ResponsiveSvg = styled.svg`
+  position: absolute;
+  left: 15px;
+  width: 290px;
+  height: 290px;
+  margin-top: 2rem;
+
+  ${Media.laptop`
+    left: -60px;
+    width: 470px;
+    height: 470px;
+    float: left;
+  `}
+`;
+
+const TestimonialBackground = () => (
+  <ResponsiveSvg viewBox="0 0 470 470" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="235" cy="235" r="235" fill="url(#paint0_linear)"/>
+    <defs>
+      <linearGradient id="paint0_linear" x1="68.4361" y1="86.1787" x2="399.753" y2="406.271" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#30C39F"/>
+        <stop offset="1" stop-color="#037EF3"/>
+      </linearGradient>
+    </defs>
+  </ResponsiveSvg>
+);
+
 const PageQuery = graphql`
   query {
     y2blogo: file(relativePath: { eq: "youthtobusiness/youthtobusiness.png" }) {
@@ -176,9 +203,15 @@ const YouthToBusiness = (props) => (
               </IframeWrapper>
             </Col>
           </CenteredRow>
-          {/* <Img fixed={data.lachlan.childImageSharp.fixed} alt="Lachlan Karr Portrait" />
-          <Img fixed={data.jeanluc.childImageSharp.fixed} alt="Jean-Luc Ong Portrait" />
-          <Img fixed={data.emmerson.childImageSharp.fixed} alt="Emmerson Cheung Portrait" /> */}
+          <CenteredRow>
+            <Col xs={12} sm={10}>
+            <TestimonialBackground />
+            <Testimonials />
+              {/* <Img fixed={data.lachlan.childImageSharp.fixed} alt="Lachlan Karr Portrait" />
+              <Img fixed={data.jeanluc.childImageSharp.fixed} alt="Jean-Luc Ong Portrait" />
+              <Img fixed={data.emmerson.childImageSharp.fixed} alt="Emmerson Cheung Portrait" /> */}
+            </Col>
+          </CenteredRow>
         </Container>
       </Wrapper>
     )}
