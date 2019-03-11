@@ -172,7 +172,7 @@ const YouthToBusiness = (props) => (
                 <Img fluid={data.y2blogo.childImageSharp.fluid} alt="Youth to Business Forum Logo" />
               </LogoWrapper>
               <Subtitle>Connecting the leaders of tomorrow with the leaders of today through dialogue on relvant global topics.</Subtitle>
-              <PrimaryCTA href="https://www.eventbrite.com/e/youth-to-business-forum-2019-tickets-55679122755" target="_blank" rel="noopener noreferrer">Get Your Tickets</PrimaryCTA>
+              <PrimaryCTA href="https://bit.ly/Y2B2019Forum" target="_blank" rel="noopener noreferrer">Get Your Tickets</PrimaryCTA>
               <SecondaryCTA href="https://www.aiesec.ca/youthtobusiness/" target="_blank" rel="noopener noreferrer">Find out More About Y2B</SecondaryCTA>
             </Col>
             <Col xs={12} sm={10} lg={6}>
