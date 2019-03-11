@@ -157,27 +157,6 @@ const PageQuery = graphql`
         }
       }
     },
-    lachlan: file(relativePath: { eq: "youthtobusiness/lachlan-karr.png" }) {
-      childImageSharp {
-        fixed(width: 400) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    },
-    jeanluc: file(relativePath: { eq: "youthtobusiness/jeanluc-ong.jpg" }) {
-      childImageSharp {
-        fixed(width: 400) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    },
-    emmerson: file(relativePath: { eq: "youthtobusiness/emmerson-cheung.jpg" }) {
-      childImageSharp {
-        fixed(width: 400) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    },
   }
 `;
 
@@ -207,9 +186,6 @@ const YouthToBusiness = (props) => (
             <Col xs={12} sm={10}>
             <TestimonialBackground />
             <Testimonials />
-              {/* <Img fixed={data.lachlan.childImageSharp.fixed} alt="Lachlan Karr Portrait" />
-              <Img fixed={data.jeanluc.childImageSharp.fixed} alt="Jean-Luc Ong Portrait" />
-              <Img fixed={data.emmerson.childImageSharp.fixed} alt="Emmerson Cheung Portrait" /> */}
             </Col>
           </CenteredRow>
         </Container>
