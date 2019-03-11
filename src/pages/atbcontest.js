@@ -90,7 +90,7 @@ const ATBContest = (props) => (
             <Title>"I am a Transformer Contest" is now over!</Title>
             <ContestDescription>
               <p style={{ fontWeight: 'bold' }}>
-                We would like to thank ATB Financial for sponsoring this contest. We will make special announcements regarding the winners shortly. Please make sure you like our facebook and follow our instagram to stay tuned!
+                We would like to thank ATB Financial for sponsoring this contest. We will make special announcements regarding the winners shortly. Please make sure you like our <a href="https://www.facebook.com/AIESECCanadaNLDC/" target="_blank" rel="noopener noreferrer">Facebook</a> and follow our <a href="https://www.instagram.com/aieseccanadanldc/" target="_blank" rel="noopener noreferrer">Instagram</a> to stay tuned!
               </p>
               <p>
                 Make sure we don’t miss your entry - send us an email at <a href="mailto:alphabeta@atb.com">alphabeta@atb.com</a> with your full name, public link to contest entry, telephone and email for contest communication purposes only.
