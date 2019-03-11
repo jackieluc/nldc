@@ -141,8 +141,8 @@ const TestimonialBackground = () => (
     <circle cx="235" cy="235" r="235" fill="url(#paint0_linear)"/>
     <defs>
       <linearGradient id="paint0_linear" x1="68.4361" y1="86.1787" x2="399.753" y2="406.271" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#30C39F"/>
-        <stop offset="1" stop-color="#037EF3"/>
+        <stop stopColor="#30C39F"/>
+        <stop offset="1" stopColor="#037EF3"/>
       </linearGradient>
     </defs>
   </ResponsiveSvg>
