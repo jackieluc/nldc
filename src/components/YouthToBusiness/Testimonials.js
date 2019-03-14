@@ -18,6 +18,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: left;
 `;
 
 const StyledCarousel = styled(Carousel)`
@@ -55,8 +56,17 @@ const TestimonialImg = styled.img`
 
 const TestimonialWrapper = styled.div`
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
   padding: 20px 30px;
+`;
+
+const NameWrapper = styled.div`
+  h3 {
+    color: ${Styles.themeColour};
+    margin-bottom: 0;
+  }
 `;
 
 const items = [
@@ -64,7 +74,7 @@ const items = [
     src: LachlanImg,
     testimonial: `I've had the pleasure of attending three NLDCs during my time in AIESEC and the conference has been a consistent source of motivation, connection, and development. The conference has allowed me to build lasting relationships with my AIESEC colleague as well as business professionals such as Erin Williams of the Asia Pacific Foundation and Manisha Narula of the League of Innovators. The conference is a must for any AIESECer.`,
     name: `Lachlan Karr`,
-    title: `National VP, Business Development, AIESEC in Canada 2018-2029`,
+    title: `National VP, Business Development, AIESEC in Canada 2018-2019`,
   },
   {
     src: JeanlucImg,
@@ -125,10 +135,10 @@ class Testimonials extends Component {
           <TestimonialImg src={item.src} alt={item.altText} />
           <TestimonialWrapper>
             <p>{ item.testimonial }</p>
-            <div>
+            <NameWrapper>
               <h3>{ item.name }</h3>
               <p>{ item.title }</p>
-            </div>
+            </NameWrapper>
           </TestimonialWrapper>
         </StyledCarouselItem>
       );
