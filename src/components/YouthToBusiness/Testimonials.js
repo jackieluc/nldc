@@ -27,6 +27,10 @@ const StyledCarousel = styled(Carousel)`
   font-size: 14px;
   box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
   -webkit-box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+
+  .carousel-indicators {
+    display: none;
+  }
 `;
 
 const StyledCarouselItem = styled(CarouselItem)`
@@ -38,6 +42,7 @@ const StyledCarouselItem = styled(CarouselItem)`
   &.active {
     opacity: 1;
     transition: opacity .6s ease-out;
+    z-index: 2;
   }
 
   &.carousel-item-right {
@@ -67,6 +72,10 @@ const NameWrapper = styled.div`
     color: ${Styles.themeColour};
     margin-bottom: 0;
   }
+`;
+
+const Control = styled(CarouselControl)`
+  z-index: 3;
 `;
 
 const items = [
@@ -178,8 +187,8 @@ class Testimonials extends Component {
         <StyledCarousel activeIndex={activeIndex} next={this.next} previous={this.previous} interval="1000000">
           <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
             { slides }
-          <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
-          <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
+          <Control direction="prev" directionText="Previous" onClickHandler={this.previous} />
+          <Control direction="next" directionText="Next" onClickHandler={this.next} />
         </StyledCarousel>
       </Wrapper>
     );
