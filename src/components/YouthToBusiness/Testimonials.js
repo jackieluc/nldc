@@ -10,7 +10,7 @@ import Media from '../../utils/media';
 import Styles from '../../utils/styles';
 import LachlanImg from '../../images/youthtobusiness/lachlan-karr.png'
 import JeanlucImg from '../../images/youthtobusiness/jeanluc-ong.jpg'
-import EmmersonImg from '../../images/youthtobusiness/emmerson-cheung.jpg'
+import EmersonImg from '../../images/youthtobusiness/emerson-cheung.jpg'
 
 const Wrapper = styled.div`
   margin-top: 2rem;
@@ -54,7 +54,6 @@ const TestimonialImg = styled.img`
 `;
 
 const TestimonialWrapper = styled.div`
-  // padding-left: 300px;
   display: flex;
   align-items: center;
   padding: 20px 30px;
@@ -64,14 +63,20 @@ const items = [
   {
     src: LachlanImg,
     testimonial: `I've had the pleasure of attending three NLDCs during my time in AIESEC and the conference has been a consistent source of motivation, connection, and development. The conference has allowed me to build lasting relationships with my AIESEC colleague as well as business professionals such as Erin Williams of the Asia Pacific Foundation and Manisha Narula of the League of Innovators. The conference is a must for any AIESECer.`,
+    name: `Lachlan Karr`,
+    title: `National VP, Business Development, AIESEC in Canada 2018-2029`,
   },
   {
     src: JeanlucImg,
     testimonial: `The Y2B forum is an absolutely unreal experience. To be in the same room as business professionals who only want the best for each young person at this conference is amazing. You get the chance to get see these professionals at a different level as opposed to hearing the same general advice that you can get anywhere else.`,
+    name: `Jean-Luc Ong`,
+    title: `Local Committee President, AIESEC in Calgary 2018`,
   },
   {
-    src: EmmersonImg,
+    src: EmersonImg,
     testimonial: `I attended NLDC last year, and the conference truly showed me every aspect of what AIESEC can provide. I made so many connections outside my local chapter and felt the passion that AIESEC shared with every single delegate. The Youth to Business Forum had amazing speakers where they connected their company values to AIESEC values, and that allowed me to see the impact that AIESEC is making outside of this organization. Most importantly, NLDC allowed me to reflect on myself and understand how much AIESEC has changed me to a better leader. It was this conference that motivated me to strive for more and bring equally great experiences AIESEC has brought me to every single member in AIESEC in Canada.`,
+    name: `Emerson Cheung`,
+    title: `National President, AIESEC in Canada 2019-2020`,
   }
 ];
 
@@ -120,6 +125,10 @@ class Testimonials extends Component {
           <TestimonialImg src={item.src} alt={item.altText} />
           <TestimonialWrapper>
             <p>{ item.testimonial }</p>
+            <div>
+              <h3>{ item.name }</h3>
+              <p>{ item.title }</p>
+            </div>
           </TestimonialWrapper>
         </StyledCarouselItem>
       );
