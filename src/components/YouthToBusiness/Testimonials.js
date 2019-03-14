@@ -4,7 +4,6 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption
 } from 'reactstrap';
 import styled from 'styled-components';
 import Media from '../../utils/media';
@@ -21,27 +20,58 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
+const StyledCarousel = styled(Carousel)`
+  background: white;
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  -webkit-box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+`;
+
 const StyledCarouselItem = styled(CarouselItem)`
+  width: 900px;
   height: 300px;
+  display: flex !important;
+  opacity: 0;
+
+  &.active {
+    opacity: 1;
+    transition: opacity .6s ease-out;
+  }
+
+  &.carousel-item-right {
+    img {
+      opacity: 0;
+    }
+  }
 `;
 
 const TestimonialImg = styled.img`
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
+  float: left;
+  border-radius: 8px 0 0 8px;
+`;
+
+const TestimonialWrapper = styled.div`
+  // padding-left: 300px;
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
 `;
 
 const items = [
   {
     src: LachlanImg,
-    testimonial: 'Slide 1',
+    testimonial: `I've had the pleasure of attending three NLDCs during my time in AIESEC and the conference has been a consistent source of motivation, connection, and development. The conference has allowed me to build lasting relationships with my AIESEC colleague as well as business professionals such as Erin Williams of the Asia Pacific Foundation and Manisha Narula of the League of Innovators. The conference is a must for any AIESECer.`,
   },
   {
     src: JeanlucImg,
-    testimonial: 'Slide 2',
+    testimonial: `The Y2B forum is an absolutely unreal experience. To be in the same room as business professionals who only want the best for each young person at this conference is amazing. You get the chance to get see these professionals at a different level as opposed to hearing the same general advice that you can get anywhere else.`,
   },
   {
     src: EmmersonImg,
-    testimonial: 'Slide 3',
+    testimonial: `I attended NLDC last year, and the conference truly showed me every aspect of what AIESEC can provide. I made so many connections outside my local chapter and felt the passion that AIESEC shared with every single delegate. The Youth to Business Forum had amazing speakers where they connected their company values to AIESEC values, and that allowed me to see the impact that AIESEC is making outside of this organization. Most importantly, NLDC allowed me to reflect on myself and understand how much AIESEC has changed me to a better leader. It was this conference that motivated me to strive for more and bring equally great experiences AIESEC has brought me to every single member in AIESEC in Canada.`,
   }
 ];
 
@@ -86,27 +116,23 @@ class Testimonials extends Component {
 
     const slides = items.map((item) => {
       return (
-        <StyledCarouselItem
-          onExiting={this.onExiting}
-          onExited={this.onExited}
-          key={item.src}
-        >
-          <img src={item.src} alt={item.altText} />
-          <div>
-            <p>{item.testimonial}</p>
-          </div>
+        <StyledCarouselItem onExiting={this.onExiting} onExited={this.onExited} key={item.src}>
+          <TestimonialImg src={item.src} alt={item.altText} />
+          <TestimonialWrapper>
+            <p>{ item.testimonial }</p>
+          </TestimonialWrapper>
         </StyledCarouselItem>
       );
     });
 
     return (
       <Wrapper>
-        <Carousel activeIndex={activeIndex} next={this.next} previous={this.previous} interval="10000">
+        <StyledCarousel activeIndex={activeIndex} next={this.next} previous={this.previous} interval="1000000">
           <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
-          {slides}
+            { slides }
           <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
           <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
-        </Carousel>
+        </StyledCarousel>
       </Wrapper>
     );
   };
