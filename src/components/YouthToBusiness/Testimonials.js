@@ -11,6 +11,7 @@ import Styles from '../../utils/styles';
 import LachlanImg from '../../images/youthtobusiness/lachlan-karr.png'
 import JeanlucImg from '../../images/youthtobusiness/jeanluc-ong.jpg'
 import EmersonImg from '../../images/youthtobusiness/emerson-cheung.jpg'
+import Arrow from '../../images/youthtobusiness/arrow.png';
 
 const Wrapper = styled.div`
   margin-top: 2rem;
@@ -74,8 +75,30 @@ const NameWrapper = styled.div`
   }
 `;
 
-const Control = styled(CarouselControl)`
-  z-index: 3;
+const CarouselButton = styled.button`
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 10;
+  top: 120px;
+  // top: 77px;
+  // top: calc(100px - 23px);
+  background: white;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 6px 12px -2px rgba(50,50,93,.25), 0 3px 7px -3px rgba(0,0,0,.3);
+  box-shadow: 0 6px 12px -2px rgba(50,50,93,.25), 0 3px 7px -3px rgba(0,0,0,.3);
+  text-indent: -9000px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: all .15s;
+  transition: all .15s;
+
+  &:focus,
+  &:hover {
+    outline: none;
+  }
 `;
 
 const items = [
@@ -187,8 +210,12 @@ class Testimonials extends Component {
         <StyledCarousel activeIndex={activeIndex} next={this.next} previous={this.previous} interval="1000000">
           <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
             { slides }
-          <Control direction="prev" directionText="Previous" onClickHandler={this.previous} />
-          <Control direction="next" directionText="Next" onClickHandler={this.next} />
+          <CarouselButton onClick={this.previous} style={{ left: '-20px' }}>
+            <img src={Arrow} style={{ transform: 'scaleX(-1)', width: '25px' }} />
+          </CarouselButton>
+          <CarouselButton onClick={this.next} style={{ right: '-20px' }}>
+            <img src={Arrow} style={{ width: '25px' }} />
+          </CarouselButton>
         </StyledCarousel>
       </Wrapper>
     );
