@@ -86,6 +86,7 @@ const CarouselButton = styled.button`
   background: white;
   width: 46px;
   height: 46px;
+  border-color: transparent;
   border-radius: 50%;
   -webkit-box-shadow: 0 6px 12px -2px rgba(50,50,93,.25), 0 3px 7px -3px rgba(0,0,0,.3);
   box-shadow: 0 6px 12px -2px rgba(50,50,93,.25), 0 3px 7px -3px rgba(0,0,0,.3);
@@ -98,6 +99,10 @@ const CarouselButton = styled.button`
   &:focus,
   &:hover {
     outline: none;
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+    -webkit-box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+    box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
   }
 `;
 
@@ -211,10 +216,10 @@ class Testimonials extends Component {
           <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
             { slides }
           <CarouselButton onClick={this.previous} style={{ left: '-20px' }}>
-            <img src={Arrow} style={{ transform: 'scaleX(-1)', width: '25px' }} />
+            <img src={Arrow} style={{ transform: 'scaleX(-1)', width: '20px' }} />
           </CarouselButton>
           <CarouselButton onClick={this.next} style={{ right: '-20px' }}>
-            <img src={Arrow} style={{ width: '25px' }} />
+            <img src={Arrow} style={{ width: '20px' }} />
           </CarouselButton>
         </StyledCarousel>
       </Wrapper>
