@@ -36,7 +36,9 @@ const StyledCarousel = styled(Carousel)`
 
 const StyledCarouselItem = styled(CarouselItem)`
   width: 100%;
-  height: 300px;
+  height: 100%;
+  ${Media.tablet`height: 400px;`}
+  ${Media.laptop`height: 300px;`}
   display: flex !important;
   opacity: 0;
 
@@ -57,7 +59,12 @@ const TestimonialImg = styled.img`
   width: 300px;
   height: 300px;
   float: left;
-  border-radius: 8px 0 0 8px;
+  margin: 0 auto;
+  ${Media.tablet`margin: auto 0 auto 20px;`}
+  ${Media.laptop`
+    margin: 0;
+    border-radius: 8px 0 0 8px;
+  `}
 `;
 
 const TestimonialWrapper = styled.div`
@@ -65,7 +72,8 @@ const TestimonialWrapper = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: start;
-  padding: 20px 30px;
+  ${Media.tablet`padding: 20px;`}
+  ${Media.laptop`padding: 20px 30px;`}
 `;
 
 const NameWrapper = styled.div`
@@ -80,9 +88,8 @@ const CarouselButton = styled.button`
   justify-content: center;
   position: absolute;
   z-index: 10;
-  top: 120px;
-  // top: 77px;
-  // top: calc(100px - 23px);
+  ${Media.tablet`top: 180px;`}
+  ${Media.laptop`top: 120px;`}
   background: white;
   width: 46px;
   height: 46px;
@@ -95,6 +102,11 @@ const CarouselButton = styled.button`
   cursor: pointer;
   -webkit-transition: all .15s;
   transition: all .15s;
+
+  ${({ Orientation }) => (Orientation === 'right'
+    ? 'right: -20px'
+    : 'left: -20px'
+  )};
 
   &:focus,
   &:hover {
@@ -132,7 +144,8 @@ const StyledSvg = styled.svg`
   z-index: 2;
   width: 60px;
   height: 60px;
-  top: 90px;
+  ${Media.tablet`top: 35px;`}
+  ${Media.laptop`top: 90px;`}
   right: 0;
   -webkit-transform: scale(-1, -1);
   -o-transform: scale(-1, -1);
@@ -215,10 +228,10 @@ class Testimonials extends Component {
         <StyledCarousel activeIndex={activeIndex} next={this.next} previous={this.previous} interval="1000000">
           <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
             { slides }
-          <CarouselButton onClick={this.previous} style={{ left: '-20px' }}>
+          <CarouselButton onClick={this.previous} Orientation="left">
             <img src={Arrow} style={{ transform: 'scaleX(-1)', width: '20px' }} />
           </CarouselButton>
-          <CarouselButton onClick={this.next} style={{ right: '-20px' }}>
+          <CarouselButton onClick={this.next} Orientation="right">
             <img src={Arrow} style={{ width: '20px' }} />
           </CarouselButton>
         </StyledCarousel>

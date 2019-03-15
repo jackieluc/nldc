@@ -102,6 +102,7 @@ const BgOffset = styled.div`
   top: 35px;
   bottom: 0px;
   z-index: -1;
+  
   ${Media.tablet`
     width: 480px;
     height: 270px;
@@ -128,8 +129,16 @@ const ResponsiveSvg = styled.svg`
   height: 290px;
   margin-top: 2rem;
 
+  ${Media.tablet`
+    left: -60px;
+    top: 120px;
+    width: 390px;
+    height: 390px;
+  `}
+
   ${Media.laptop`
     left: -60px;
+    top: 0;
     width: 470px;
     height: 470px;
     float: left;
@@ -183,7 +192,7 @@ const YouthToBusiness = (props) => (
             </Col>
           </CenteredRow>
           <CenteredRow>
-            <Col xs={12} sm={10}>
+            <Col xs={12} xl={10}>
             <TestimonialBackground />
             <Testimonials />
             </Col>
