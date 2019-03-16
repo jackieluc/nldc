@@ -102,7 +102,7 @@ const BgOffset = styled.div`
   top: 35px;
   bottom: 0px;
   z-index: -1;
-  
+
   ${Media.tablet`
     width: 480px;
     height: 270px;
@@ -192,7 +192,7 @@ const YouthToBusiness = (props) => (
             </Col>
           </CenteredRow>
           <CenteredRow>
-            <Col xs={12} xl={10}>
+            <Col xs={12} xl={10} style={{ position: 'relative' }}>
             <TestimonialBackground />
             <Testimonials />
             </Col>
