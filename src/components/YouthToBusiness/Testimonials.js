@@ -79,8 +79,13 @@ const TestimonialWrapper = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: start;
+  padding: 2rem 15px;
   ${Media.tablet`padding: 20px;`}
   ${Media.laptop`padding: 20px 30px;`}
+  > p {
+    padding-bottom: 2rem;
+    ${Media.tablet`padding-bottom: 0;`}
+  }
 `;
 
 const NameWrapper = styled.div`
