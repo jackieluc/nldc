@@ -117,9 +117,16 @@ const CarouselButton = styled.button`
   transition: all .15s;
 
   ${({ Orientation }) => (Orientation === 'right'
-    ? 'right: -20px'
-    : 'left: -20px'
+    ? 'right: -10px'
+    : 'left: -10px'
   )};
+
+  ${Media.tablet`
+    ${({ Orientation }) => (Orientation === 'right'
+      ? 'right: -20px'
+      : 'left: -20px'
+    )};
+  `}
 
   &:focus,
   &:hover {
