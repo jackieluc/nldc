@@ -65,7 +65,7 @@ const AboutAiesec = () => (
             </Logo>
             <Text>
               { // eslint-disable-next-line
-              } AIESEC is the largest  non-governmental not-for-profit organisation offering platforms for young people to explore and develop their leadership through our global exchange program. Since we were founded, we have engaged and developed over 1,000,000 AIESECers.
+              } AIESEC is the largest non-governmental not-for-profit organisation offering platforms for young people to explore and develop their leadership through our global exchange program. Since we were founded, we have engaged and developed over 1,000,000 AIESECers.
             </Text>
             <Text>
               { // eslint-disable-next-line

@@ -9,7 +9,7 @@ const faq = [
   },
   {
     question: 'Where is the conference venue?',
-    answer: 'SAIT (Southern Alberta Institute of Technology), <a href="https://www.google.com/maps/place/SAIT/@51.0640269,-114.0907061,17z/data=!3m1!4b1!4m5!3m4!1s0x53716f9268a69e81:0xb1db5e68bd61e28!8m2!3d51.065755!4d-114.0897771" target="_blank" rel="noopener noreferrer">1301 16 Ave NW, Calgary, AB T2M 0L4</a>',
+    answer: 'SAIT (Southern Alberta Institute of Technology), <a href="https://www.google.com/maps/place/SAIT/@51.0640269,-114.0907061,17z/data=!3m1!4b1!4m5!3m4!1s0x53716f9268a69e81:0xb1db5e68bd61e28!8m2!3d51.065755!4d-114.0897771" target="_blank" rel="noopener noreferrer">1301 16 Ave NW, Calgary, AB T2M 0L4</a>. Please note that we are hosting our conference at  a campus so you will be staying in residence apartments with roommates. You will get your own rooms!',
   },
   {
     question: 'Is there an airport shuttle to the venue?',

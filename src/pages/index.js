@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Hero from '../components/Hero';
 import EventDetails from '../components/EventDetails';
 import AboutAiesec from '../components/About/AboutAiesec';
+import YouthToBusiness from '../components/YouthToBusiness/YouthToBusiness';
 import SponsorDetails from '../components/SponsorDetails';
 import LearnMoreCTA from '../components/SponsorPackage/LearnMoreCTA';
 import SponsorList from '../components/SponsorPackage/SponsorList';
@@ -41,6 +42,7 @@ const Home = () => (
       <Hero />
       <EventDetails />
       <AboutAiesec />
+      <YouthToBusiness />
       <SponsorDetails />
       <LearnMoreCTA />
       <SponsorList />

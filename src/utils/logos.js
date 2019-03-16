@@ -14,10 +14,7 @@ const sponsorLogos = importAll(require.context('../images/sponsors', false, /\.(
 
 const partnerLogos = importAll(require.context('../images/partners', false, /\.(png|jpe?g|svg)$/));
 
-const y2bLogos = importAll(require.context('../images/y2b', false, /\.(png|jpe?g|svg)$/));
-
 module.exports = {
   sponsorLogos,
   partnerLogos,
-  y2bLogos,
 };

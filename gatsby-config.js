@@ -55,11 +55,6 @@ module.exports = {
         }
       }
     },
-    {
-      resolve: `gatsby-plugin-sitemap`,
-      options: {
-        exclude: [`/youth2business`]
-      }
-    },
+    `gatsby-plugin-sitemap`,
   ],
 }
