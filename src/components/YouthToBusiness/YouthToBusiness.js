@@ -193,12 +193,12 @@ const YouthToBusiness = (props) => (
               </IframeWrapper>
             </Col>
           </CenteredRow>
-          <CenteredRow>
+          {/* <CenteredRow>
             <Col xs={12} xl={10} style={{ position: 'relative' }}>
             <TestimonialBackground />
             <Testimonials />
             </Col>
-          </CenteredRow>
+          </CenteredRow> */}
         </Container>
       </Wrapper>
     )}

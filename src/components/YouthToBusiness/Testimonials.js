@@ -239,7 +239,7 @@ class Testimonials extends Component {
     return (
       <Wrapper>
         <QuotesBackground />
-        <StyledCarousel activeIndex={activeIndex} next={this.next} previous={this.previous} interval="1000000">
+        <StyledCarousel activeIndex={activeIndex} next={this.next} previous={this.previous} interval="10000">
           <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
             { slides }
           <CarouselButton onClick={this.previous} Orientation="left">
