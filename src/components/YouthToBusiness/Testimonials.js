@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {
   Carousel,
   CarouselItem,
-  CarouselControl,
   CarouselIndicators,
 } from 'reactstrap';
 import styled from 'styled-components';
@@ -15,7 +14,8 @@ import Arrow from '../../images/youthtobusiness/arrow.png';
 
 const Wrapper = styled.div`
   margin-top: 2rem;
-  height: 470px;
+  height: 100%;
+  ${Media.tablet`height: 470px;`}
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,6 +23,7 @@ const Wrapper = styled.div`
 `;
 
 const StyledCarousel = styled(Carousel)`
+  width: 100%;
   background: white;
   border-radius: 8px;
   font-size: 14px;
@@ -40,6 +41,8 @@ const StyledCarouselItem = styled(CarouselItem)`
   ${Media.tablet`height: 400px;`}
   ${Media.laptop`height: 300px;`}
   display: flex !important;
+  flex-direction: column;
+  ${Media.tablet`flex-direction: row;`}
   opacity: 0;
 
   &.active {
@@ -56,8 +59,12 @@ const StyledCarouselItem = styled(CarouselItem)`
 `;
 
 const TestimonialImg = styled.img`
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
+  ${Media.medPhone`
+    width: 300px;
+    height: 300px;
+  `}
   float: left;
   margin: 0 auto;
   ${Media.tablet`margin: auto 0 auto 20px;`}
@@ -88,6 +95,7 @@ const CarouselButton = styled.button`
   justify-content: center;
   position: absolute;
   z-index: 10;
+  top: 120px;
   ${Media.tablet`top: 180px;`}
   ${Media.laptop`top: 120px;`}
   background: white;
@@ -141,9 +149,10 @@ const items = [
 
 const StyledSvg = styled.svg`
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   width: 60px;
   height: 60px;
+  top: 15px;
   ${Media.tablet`top: 35px;`}
   ${Media.laptop`top: 90px;`}
   right: 0;
