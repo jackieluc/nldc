@@ -128,8 +128,10 @@ const ResponsiveSvg = styled.svg`
   width: 290px;
   height: 290px;
   margin-top: 2rem;
+  display: none;
 
   ${Media.tablet`
+    display: block;
     left: -60px;
     top: 120px;
     width: 390px;
