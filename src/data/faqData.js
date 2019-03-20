@@ -4,7 +4,7 @@ const faq = [
     answer: `<ol>
               <li>Pre-conference starts on <span>April 30, 2019</span></li>
               <li>Conference dates are <span>May 1-5, 2019</span></li>
-              <li>Check-out for accomodation is on <span>May 6th</span></li>
+              <li>Check-out for accommodation is on <span>May 6, 2019</span></li>
             </ol>`,
   },
   {
