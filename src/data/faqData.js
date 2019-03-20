@@ -2,7 +2,7 @@ const faq = [
   {
     question: 'When is NLDC happening?',
     answer: `<ol>
-              <li>Pre-conference dates are <span>April 29-30, 2019</span></li>
+              <li>Pre-conference starts on <span>April 30, 2019</span></li>
               <li>Conference dates are <span>May 1-5, 2019</span></li>
               <li>Check-out for accomodation is on <span>May 6th</span></li>
             </ol>`,
@@ -47,8 +47,8 @@ const faq = [
   {
     question: 'When should I arrive at the conference venue?',
     answer: `<ul>
-              <li>Pre-conference delegates should book their flights to arrive on the evening of the <span>April 27</span>.</li>
-              <li>All other AIESEC delegates should book their flight to arrive on the evening of <span>April 29</span>.</li>
+              <li>Delegates looking to attend the pre-conference on April 30th should book their flights to arrive on the <span>evening of April 29th or the morning of April 30th</span>.</li>
+              <li>Delegates only attending the conference should book their flight to arrive on the <span>evening of April 30th or before noon on May 1st</span>.</li>
             </ul>`,
   },
   {
@@ -56,7 +56,7 @@ const faq = [
     answer: 'Please bring <span>$40+</span> to be safe. These can cover night event tickets, merchandise, raffles, etc...',
   },
   {
-    question: 'Can non-AIESECers attend NLDC 2019?',
+    question: 'Can non-AIESEC members attend NLDC 2019?',
     answer: 'Yes! You can purchase your tickets at <a href="https://bit.ly/Y2B2019Forum" target="_blank" rel="noopener noreferrer">bit.ly/Y2B2019Forum</a> and attend our Launch and Youth to Business Forum on May 1-2.',
   },
   {
