@@ -55,7 +55,8 @@ const Logo = styled.img`
     width: 210px;
     ${Media.tablet`width: 310px;`}
   }
-  &.husky {
+  &.husky,
+  &.capp {
     width: 180px;
     ${Media.tablet`width: 230px;`}
   }
@@ -100,6 +101,7 @@ const silverLogos = {
 const bronzeLogos = {
   husky: Logos['Husky.png'],
   aeso: Logos['aeso.png'],
+  capp: Logos['capp.png'],
 };
 
 const mealLogos = {
@@ -168,6 +170,9 @@ const SponsorList = ({ paddingTop }) => (
           </SponsorLink>
           <SponsorLink href="https://www.aeso.ca/" target="_blank" rel="noopener noreferrer">
             <Logo src={bronzeLogos.aeso} alt="" className="aeso" />
+          </SponsorLink>
+          <SponsorLink href="https://www.energycitizens.ca/" target="_blank" rel="noopener noreferrer">
+            <Logo src={bronzeLogos.capp} alt="" className="capp" />
           </SponsorLink>
         </LogoCard>
       </Tier>
