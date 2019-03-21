@@ -33,7 +33,7 @@ const Text = styled.p`
   ${Media.tablet`text-align: center;`}
 `;
 
-const CTA = styled.div`
+const CTA = styled.a`
   display: inline-block;
   border-radius: 40px;
   margin: 0;
