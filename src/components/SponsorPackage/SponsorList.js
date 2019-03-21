@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { sponsorLogos as Logos } from '../../utils/logos';
 import Media from '../../utils/media';
 import Styles from '../../utils/styles';
+import CompanyProfile from './CompanyProfiles/CompanyProfile';
 
 const Tier = styled.div`
   width: 100%;
@@ -70,6 +71,111 @@ const Logo = styled.img`
   }
 `;
 
+const tiers = {
+  title: {
+    name: 'Title',
+    sponsors: {
+      nutrien: {
+        name: 'Nutrien',
+        image: Logos['nutrien.png'],
+        description: `Test description.`,
+        website: `https://www.nutrien.com/`,
+      },
+    },
+  },
+  innovation: {
+    name: 'Innovation',
+    sponsors: {
+      hunterhub: {
+        name: 'Hunter Hub for Entrepreneurial Thinking',
+        image: Logos['hunterhub.jpg'],
+        description: ``,
+        website: ``,
+      },
+      avnet: {
+        name: 'Avnet',
+        image: Logos['avnet.png'],
+        description: ``,
+        website: ``,
+      },
+      benevity: {
+        name: 'Benevity',
+        image: Logos['benevity.png'],
+        description: ``,
+        website: ``,
+      },
+    },
+  },
+  gold: {
+    name: 'Gold',
+    sponsors: {
+      ced: {
+        name: 'Calgary Economic Development',
+        image: Logos['ced.png'],
+        description: ``,
+        website: ``,
+      },
+    },
+  },
+  silver: {
+    name: 'Silver',
+    sponsors: {
+      atb: {
+        name: 'ATB Financial',
+        image: Logos['atb.png'],
+        description: ``,
+        website: ``,
+      },
+      ccal: {
+        name: 'Canadian Center for Advanced Learning in Business',
+        image: Logos['ccal.jpg'],
+        description: ``,
+        website: ``,
+      },
+      atb: {
+        name: 'Haskayne School of Business',
+        image: Logos['haskayne.jpg'],
+        description: ``,
+        website: ``,
+      },
+    },
+  },
+  bronze: {
+    name: 'Bronze',
+    sponsors: {
+      husky: {
+        name: 'Husky',
+        image: Logos['Husky.png'],
+        description: ``,
+        website: ``,
+      },
+      aeso: {
+        name: 'Aeso',
+        image: Logos['aeso.png'],
+        description: ``,
+        website: ``,
+      },
+      capp: {
+        name: `Canada's Energy Citizens`,
+        image: Logos['capp.png'],
+        description: ``,
+        website: ``,
+      },
+    },
+  },
+  meal: {
+    name: 'Meal',
+    sponsors: {
+      pwc: {
+        name: 'PWC',
+        image: Logos['pwc.png'],
+        description: ``,
+        website: ``,
+      },
+    },
+  },
+};
+
 const tier = {
   title: 'Title',
   innovation: 'Innovation',
@@ -114,12 +220,12 @@ const SponsorList = ({ paddingTop }) => (
     <Container>
       <Tier>
         <TierTitle>
-          {tier.title}
+          { tiers.title.name }
         </TierTitle>
         <LogoCard>
-          <SponsorLink href="https://www.nutrien.com/" target="_blank" rel="noopener noreferrer">
-            <Logo src={titleLogos.nutrien} alt="" />
-          </SponsorLink>
+          <CompanyProfile profile={tiers.title.sponsors.nutrien} >
+            <Logo src={tiers.title.sponsors.nutrien.image} alt="" />
+          </CompanyProfile>
         </LogoCard>
       </Tier>
       <Tier>
