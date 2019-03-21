@@ -101,10 +101,11 @@ const EventDescription = styled.div`
   div {
     display: inline-block;
     text-align: center;
+    width: 200px;
     
     &:last-of-type {
       margin-top: 10px;
-      ${Media.tablet`margin: 0 0 0 20px;`}
+      ${Media.tablet`margin: 0 0 0 10px;`}
     }
   }
 `;
