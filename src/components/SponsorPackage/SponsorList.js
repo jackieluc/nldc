@@ -77,7 +77,7 @@ const tiers = {
     sponsors: {
       nutrien: {
         name: 'Nutrien',
-        image: Logos['nutrien.png'],
+        logo: Logos['nutrien.png'],
         description: `Test description.`,
         website: `https://www.nutrien.com/`,
       },
@@ -88,19 +88,19 @@ const tiers = {
     sponsors: {
       hunterhub: {
         name: 'Hunter Hub for Entrepreneurial Thinking',
-        image: Logos['hunterhub.jpg'],
+        logo: Logos['hunterhub.jpg'],
         description: ``,
         website: ``,
       },
       avnet: {
         name: 'Avnet',
-        image: Logos['avnet.png'],
+        logo: Logos['avnet.png'],
         description: ``,
         website: ``,
       },
       benevity: {
         name: 'Benevity',
-        image: Logos['benevity.png'],
+        logo: Logos['benevity.png'],
         description: ``,
         website: ``,
       },
@@ -111,9 +111,13 @@ const tiers = {
     sponsors: {
       ced: {
         name: 'Calgary Economic Development',
-        image: Logos['ced.png'],
-        description: ``,
-        website: ``,
+        logo: Logos['ced.png'],
+        description: `
+          <p>Calgary is the city of choice in Canada for the world’s best entrepreneurs. We embrace innovation and create solutions to meet the world’s needs in food, health, energy and transportation.<p>
+
+          <p>Calgary Economic Development is an agency of the municipal government that collaborates with stakeholders to advance economic growth and diversification to create opportunities for all Calgarians. We work with businesses, governments, educators and community partners to position Calgary as a location of choice for business investment, which provides opportunities for our highly skilled workforce. We are conduits, catalysts, connectors and storytellers to facilitate prosperity in an innovative and entrepreneurial city. Guided by the economic strategy for Calgary, <em>Calgary in the New Economy</em>, our focus is on four key pillars: Talent, Innovation, Place, and Business Environment. We are committed to growing our established and emerging industry clusters which include Agribusiness, Energy, Transportation & Logistics, Creative Industries, Financial Services, Life Sciences/Health, and Tourism.</p>
+        `,
+        website: `https://www.calgaryeconomicdevelopment.com/`,
       },
     },
   },
@@ -122,19 +126,19 @@ const tiers = {
     sponsors: {
       atb: {
         name: 'ATB Financial',
-        image: Logos['atb.png'],
+        logo: Logos['atb.png'],
         description: ``,
         website: ``,
       },
       ccal: {
         name: 'Canadian Center for Advanced Learning in Business',
-        image: Logos['ccal.jpg'],
+        logo: Logos['ccal.jpg'],
         description: ``,
         website: ``,
       },
       atb: {
         name: 'Haskayne School of Business',
-        image: Logos['haskayne.jpg'],
+        logo: Logos['haskayne.jpg'],
         description: ``,
         website: ``,
       },
@@ -145,7 +149,7 @@ const tiers = {
     sponsors: {
       husky: {
         name: 'Husky',
-        image: Logos['Husky.png'],
+        logo: Logos['Husky.png'],
         description: `
           <p>Husky Energy is a Canadian-based integrated energy company, with two core businesses. Its <a href="https://huskyenergy.com/operations/#integrated-thermal-corridor" target=_"blank" rel="nopener noreferrer">Integrated Corridor</a> operates in Western Canada and the United States, where thermal production is integrated with the Downstream business and supported by Western Canada operations. <a href="https://huskyenergy.com/operations/#offshore" target=_"blank" rel="nopener noreferrer">Offshore</a> the Company is focused in the Asia Pacific and Atlantic regions.</p>
         
@@ -157,13 +161,13 @@ const tiers = {
       },
       aeso: {
         name: 'Aeso',
-        image: Logos['aeso.png'],
+        logo: Logos['aeso.png'],
         description: ``,
         website: ``,
       },
       capp: {
         name: `Canada's Energy Citizens`,
-        image: Logos['capp.png'],
+        logo: Logos['capp.png'],
         description: ``,
         website: ``,
       },
@@ -174,7 +178,7 @@ const tiers = {
     sponsors: {
       pwc: {
         name: 'PWC',
-        image: Logos['pwc.png'],
+        logo: Logos['pwc.png'],
         description: ``,
         website: ``,
       },
@@ -230,7 +234,7 @@ const SponsorList = ({ paddingTop }) => (
         </TierTitle>
         <LogoCard>
           <SponsorLink href={tiers.title.sponsors.nutrien.website} target="_blank" rel="noopener noreferrer">
-            <Logo src={tiers.title.sponsors.nutrien.image} alt="" />
+            <Logo src={tiers.title.sponsors.nutrien.logo} alt="" />
           </SponsorLink>
         </LogoCard>
       </Tier>
@@ -255,9 +259,9 @@ const SponsorList = ({ paddingTop }) => (
           {tier.gold}
         </TierTitle>
         <LogoCard>
-          <SponsorLink href="https://www.calgaryeconomicdevelopment.com/" target="_blank" rel="noopener noreferrer">
-            <Logo src={goldLogos.ced} alt="" />
-          </SponsorLink>
+          <CompanyProfile profile={tiers.gold.sponsors.ced}>
+            <Logo src={tiers.gold.sponsors.ced.logo} alt="" />
+          </CompanyProfile>
         </LogoCard>
       </Tier>
       <Tier>
@@ -282,7 +286,7 @@ const SponsorList = ({ paddingTop }) => (
         </TierTitle>
         <LogoCard>
           <CompanyProfile profile={tiers.bronze.sponsors.husky} >
-            <Logo src={tiers.bronze.sponsors.husky.image} alt="" />
+            <Logo src={tiers.bronze.sponsors.husky.logo} alt="" />
           </CompanyProfile>
           <SponsorLink href="https://www.aeso.ca/" target="_blank" rel="noopener noreferrer">
             <Logo src={bronzeLogos.aeso} alt="" className="aeso" />

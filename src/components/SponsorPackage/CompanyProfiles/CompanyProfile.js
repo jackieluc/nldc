@@ -40,6 +40,7 @@ const StyledBody = styled(ModalBody)`
   flex-direction: column;
 
   img {
+    margin: 10px 0;
     max-width: 280px;
     ${Media.tablet`
       max-width: 400px;
@@ -76,7 +77,7 @@ export default class CompanyProfile extends React.Component {
   render() {
     const { isOpen } = this.state;
     const { children, profile } = this.props;
-    const { name, image, description, website } = profile;
+    const { name, logo, description, website } = profile;
 
     return (
       <Wrapper>
@@ -88,7 +89,7 @@ export default class CompanyProfile extends React.Component {
             { name }
           </StyledHeader>
           <StyledBody>
-            <img src={image} />
+            <img src={logo} />
             <StyledDescription dangerouslySetInnerHTML={{ __html: description }} />
           </StyledBody>
           <ModalFooter>
