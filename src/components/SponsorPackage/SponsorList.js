@@ -223,9 +223,9 @@ const SponsorList = ({ paddingTop }) => (
           { tiers.title.name }
         </TierTitle>
         <LogoCard>
-          <CompanyProfile profile={tiers.title.sponsors.nutrien} >
+          <SponsorLink href={tiers.title.sponsors.nutrien.website} target="_blank" rel="noopener noreferrer">
             <Logo src={tiers.title.sponsors.nutrien.image} alt="" />
-          </CompanyProfile>
+          </SponsorLink>
         </LogoCard>
       </Tier>
       <Tier>
