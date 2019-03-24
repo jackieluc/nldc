@@ -12,6 +12,21 @@ const sponsors = {
       },
     },
   },
+  gold: {
+    tierTitle: 'Gold',
+    sponsors: {
+      ced: {
+        name: 'Calgary Economic Development',
+        logo: Logos['ced.png'],
+        description: `
+        <p>Calgary is the city of choice in Canada for the world’s best entrepreneurs. We embrace innovation and create solutions to meet the world’s needs in food, health, energy and transportation.<p>
+        
+        <p>Calgary Economic Development is an agency of the municipal government that collaborates with stakeholders to advance economic growth and diversification to create opportunities for all Calgarians. We work with businesses, governments, educators and community partners to position Calgary as a location of choice for business investment, which provides opportunities for our highly skilled workforce. We are conduits, catalysts, connectors and storytellers to facilitate prosperity in an innovative and entrepreneurial city. Guided by the economic strategy for Calgary, <em>Calgary in the New Economy</em>, our focus is on four key pillars: Talent, Innovation, Place, and Business Environment. We are committed to growing our established and emerging industry clusters which include Agribusiness, Energy, Transportation & Logistics, Creative Industries, Financial Services, Life Sciences/Health, and Tourism.</p>
+        `,
+        website: `https://www.calgaryeconomicdevelopment.com/`,
+      },
+    },
+  },
   innovation: {
     tierTitle: 'Innovation',
     sponsors: {
@@ -32,21 +47,6 @@ const sponsors = {
         logo: Logos['benevity.png'],
         description: ``,
         website: `https://www.benevity.com/`,
-      },
-    },
-  },
-  gold: {
-    tierTitle: 'Gold',
-    sponsors: {
-      ced: {
-        name: 'Calgary Economic Development',
-        logo: Logos['ced.png'],
-        description: `
-          <p>Calgary is the city of choice in Canada for the world’s best entrepreneurs. We embrace innovation and create solutions to meet the world’s needs in food, health, energy and transportation.<p>
-
-          <p>Calgary Economic Development is an agency of the municipal government that collaborates with stakeholders to advance economic growth and diversification to create opportunities for all Calgarians. We work with businesses, governments, educators and community partners to position Calgary as a location of choice for business investment, which provides opportunities for our highly skilled workforce. We are conduits, catalysts, connectors and storytellers to facilitate prosperity in an innovative and entrepreneurial city. Guided by the economic strategy for Calgary, <em>Calgary in the New Economy</em>, our focus is on four key pillars: Talent, Innovation, Place, and Business Environment. We are committed to growing our established and emerging industry clusters which include Agribusiness, Energy, Transportation & Logistics, Creative Industries, Financial Services, Life Sciences/Health, and Tourism.</p>
-        `,
-        website: `https://www.calgaryeconomicdevelopment.com/`,
       },
     },
   },
