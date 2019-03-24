@@ -86,6 +86,17 @@ const SponsorList = ({ paddingTop }) => (
       </Tier>
       <Tier>
         <TierTitle>
+          { allProfiles.gold.tierTitle }
+        </TierTitle>
+        <LogoCard>
+          <CompanyProfile profile={allProfiles.gold.sponsors.ced}>
+            <Logo src={allProfiles.gold.sponsors.ced.logo} alt="" />
+          </CompanyProfile>
+        </LogoCard>
+      </Tier>
+      <Tier>
+      <Tier>
+        <TierTitle>
           { allProfiles.innovation.tierTitle }
         </TierTitle>
         <LogoCard>
@@ -100,17 +111,6 @@ const SponsorList = ({ paddingTop }) => (
           </SponsorLink>
         </LogoCard>
       </Tier>
-      <Tier>
-        <TierTitle>
-          { allProfiles.gold.tierTitle }
-        </TierTitle>
-        <LogoCard>
-          <CompanyProfile profile={allProfiles.gold.sponsors.ced}>
-            <Logo src={allProfiles.gold.sponsors.ced.logo} alt="" />
-          </CompanyProfile>
-        </LogoCard>
-      </Tier>
-      <Tier>
         <TierTitle>
           { allProfiles.silver.tierTitle }
         </TierTitle>
@@ -132,7 +132,7 @@ const SponsorList = ({ paddingTop }) => (
         </TierTitle>
         <LogoCard>
           <CompanyProfile profile={allProfiles.bronze.sponsors.husky} >
-            <Logo src={allProfiles.bronze.sponsors.husky.logo} alt="" />
+            <Logo src={allProfiles.bronze.sponsors.husky.logo} alt="" className="husky" />
           </CompanyProfile>
           <SponsorLink href={allProfiles.bronze.sponsors.aeso.website} target="_blank" rel="noopener noreferrer">
             <Logo src={allProfiles.bronze.sponsors.aeso.logo} alt="" className="aeso" />
