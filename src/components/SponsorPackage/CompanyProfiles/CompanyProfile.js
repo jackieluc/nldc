@@ -1,7 +1,9 @@
 /* eslint react/no-multi-comp: 0, react/prop-types: 0 */
 import React from 'react';
-import { Button, Modal, ModalBody } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import styled from 'styled-components';
+import Media from '../../../utils/media';
+import ButtonCTA from '../../Button/Button';
 
 const Wrapper = styled.div`
   display: block;
@@ -17,6 +19,46 @@ const ImageModalButton = styled(Button)`
     box-shadow: none;
   }
 `;
+
+const StyledHeader = styled(ModalHeader)`
+  .modal-title {
+    font-size: 2rem;
+
+    ${Media.tablet`
+      margin-left: 1rem;
+    `}
+  }
+  .close {
+    font-size: 2.5rem;
+  }
+`;
+
+const StyledBody = styled(ModalBody)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  img {
+    max-width: 280px;
+    ${Media.tablet`
+      max-width: 400px;
+    `}
+  }
+`;
+
+const StyledDescription = styled.div`
+  width: 100%;
+  padding: 20px 5px 0 5px;
+  ${Media.tablet`
+    padding: 20px;
+  `}
+
+  p {
+    margin-bottom: 10px;
+  }
+`;
+
 export default class CompanyProfile extends React.Component {
   constructor(props) {
     super(props);
@@ -42,12 +84,16 @@ export default class CompanyProfile extends React.Component {
           { children }
         </ImageModalButton>
         <Modal isOpen={isOpen} toggle={this.toggle} size="lg" centered>
-          <ModalBody>
-            <h2>{ name }</h2>
+          <StyledHeader toggle={this.toggle}>
+            { name }
+          </StyledHeader>
+          <StyledBody>
             <img src={image} />
-            <p>{ description }</p>
-            <a href={website}>Website</a>
-          </ModalBody>
+            <StyledDescription dangerouslySetInnerHTML={{ __html: description }} />
+          </StyledBody>
+          <ModalFooter>
+            <ButtonCTA link={website}>Visit { name }</ButtonCTA>
+          </ModalFooter>
         </Modal>
       </Wrapper>
     );
