@@ -168,8 +168,10 @@ const tiers = {
       capp: {
         name: `Canada's Energy Citizens`,
         logo: Logos['capp.png'],
-        description: ``,
-        website: ``,
+        description: `
+          <p>Canada’s Energy Citizens is the largest Canadian pro-oil and natural gas grassroots organization. Since launching in 2014, it has been successful in creating a network 500,000 industry supporters who are motivated to advocate and vocally defend oil and natural gas developed the Canadian way.</p>
+        `,
+        website: `https://www.energycitizens.ca/`,
       },
     },
   },
@@ -291,9 +293,9 @@ const SponsorList = ({ paddingTop }) => (
           <SponsorLink href="https://www.aeso.ca/" target="_blank" rel="noopener noreferrer">
             <Logo src={bronzeLogos.aeso} alt="" className="aeso" />
           </SponsorLink>
-          <SponsorLink href="https://www.energycitizens.ca/" target="_blank" rel="noopener noreferrer">
-            <Logo src={bronzeLogos.capp} alt="" className="capp" />
-          </SponsorLink>
+          <CompanyProfile profile={tiers.bronze.sponsors.capp}>
+            <Logo src={tiers.bronze.sponsors.capp.logo} alt="" className="capp" />
+          </CompanyProfile>
         </LogoCard>
       </Tier>
       <Tier>
