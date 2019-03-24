@@ -146,11 +146,13 @@ const tiers = {
       husky: {
         name: 'Husky',
         image: Logos['Husky.png'],
-        description: `<p>Husky Energy is a Canadian-based integrated energy company, with two core businesses. Its <a href="https://huskyenergy.com/operations/#integrated-thermal-corridor" target=_"blank" rel="nopener noreferrer">Integrated Corridor</a> operates in Western Canada and the United States, where thermal production is integrated with the Downstream business and supported by Western Canada operations. <a href="https://huskyenergy.com/operations/#offshore" target=_"blank" rel="nopener noreferrer">Offshore</a> the Company is focused in the Asia Pacific and Atlantic regions.</p>
+        description: `
+          <p>Husky Energy is a Canadian-based integrated energy company, with two core businesses. Its <a href="https://huskyenergy.com/operations/#integrated-thermal-corridor" target=_"blank" rel="nopener noreferrer">Integrated Corridor</a> operates in Western Canada and the United States, where thermal production is integrated with the Downstream business and supported by Western Canada operations. <a href="https://huskyenergy.com/operations/#offshore" target=_"blank" rel="nopener noreferrer">Offshore</a> the Company is focused in the Asia Pacific and Atlantic regions.</p>
         
-        <p>Our commitment to <a href="https://huskyenergy.com/responsibility/safety.asp" target="_blank" rel="noopener noreferrer">safety</a> helps to protect the public, our employees and contractors, and the environment. We apply what we learn and work to continually improve. At the centre of everything we do are our people, supported by a diverse and inclusive workplace. We strive to contribute positively to the quality of life for those living in the communities where we operate, reducing impacts and creating benefits.</p>
+          <p>Our commitment to <a href="https://huskyenergy.com/responsibility/safety.asp" target="_blank" rel="noopener noreferrer">safety</a> helps to protect the public, our employees and contractors, and the environment. We apply what we learn and work to continually improve. At the centre of everything we do are our people, supported by a diverse and inclusive workplace. We strive to contribute positively to the quality of life for those living in the communities where we operate, reducing impacts and creating benefits.</p>
         
-        <p>Co-op and Internship positions are offered year-round, with start dates in January, May and September and work terms of 4, 8, 12 or 16 months. Visit Husky’s <a href="https://jobs.huskyenergy.com/" target="_blank" rel="noopener noreferrer">careers website</a> to apply.</p>`,
+          <p>Co-op and Internship positions are offered year-round, with start dates in January, May and September and work terms of 4, 8, 12 or 16 months. Visit Husky’s <a href="https://jobs.huskyenergy.com/" target="_blank" rel="noopener noreferrer">careers website</a> to apply.</p>
+        `,
         website: `http://www.huskyenergy.ca/`,
       },
       aeso: {
