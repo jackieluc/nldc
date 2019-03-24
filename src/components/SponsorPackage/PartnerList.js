@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { Container, Card } from 'reactstrap';
 import styled from 'styled-components';
 import PartnerDetails from './PartnerDetails';
-import { partnerLogos as Logos } from '../../utils/logos';
 import Styles from '../../utils/styles';
+import allProfiles from '../../data/partnerData';
 
 const Tier = styled.div`
   width: 100%;
@@ -66,25 +66,6 @@ const Logo = styled.img`
   }
 `;
 
-const tier = {
-  event: 'Event',
-  kind: 'In-Kind and Donors',
-};
-
-const eventLogos = {
-  knoxville: Logos['Knoxville.png'],
-  commonwealth: Logos['commonwealth.png'],
-  marquee: Logos['marquee.jpeg'],
-};
-
-const kindLogos = {
-  esxossmanway: Logos['Esxossmanway.png'],
-  flyingsquirrel: Logos['flyingsquirrel.png'],
-  rumbleboxing: Logos['rumbleboxing.png'],
-  xerox: Logos['xerox.jpg'],
-  phoneloops: Logos['phoneloops.jpg'],
-};
-
 const PartnerList = ({ paddingTop }) => (
   <React.Fragment>
     <PartnerDetails />
@@ -92,39 +73,39 @@ const PartnerList = ({ paddingTop }) => (
       <Container>
         <Tier>
           <TierTitle>
-            {tier.event}
+            { allProfiles.event.tierTitle }
           </TierTitle>
           <LogoCard>
-            <SponsorLink href="https://www.knoxcalgary.com/" target="_blank" rel="noopener noreferrer">
-              <Logo src={eventLogos.knoxville} alt="" className="partners" />
+            <SponsorLink href={allProfiles.event.partners.knoxville.website} target="_blank" rel="noopener noreferrer">
+              <Logo src={allProfiles.event.partners.knoxville.logo} alt="" className="partners" />
             </SponsorLink>
-            {/* <SponsorLink href="http://commonwealthbar.ca/" target="_blank" rel="noopener noreferrer">
-              <Logo src={eventLogos.commonwealth} alt="" className="partners" />
+            <SponsorLink href={allProfiles.event.partners.commonwealth.website} target="_blank" rel="noopener noreferrer">
+              <Logo src={allProfiles.event.partners.commonwealth.logo} alt="" className="partners" />
             </SponsorLink>
-            <SponsorLink href="http://marqueecalgary.com/" target="_blank" rel="noopener noreferrer">
-              <Logo src={eventLogos.marquee} alt="" className="marquee" />
-            </SponsorLink> */}
+            <SponsorLink href={allProfiles.event.partners.marquee.website} target="_blank" rel="noopener noreferrer">
+              <Logo src={allProfiles.event.partners.marquee.logo} alt="" className="marquee" />
+            </SponsorLink>
           </LogoCard>
         </Tier>
         <Tier>
           <TierTitle>
-            {tier.kind}
+            { allProfiles.inKind.tierTitle }
           </TierTitle>
           <LogoCard>
-            <SponsorLink href="https://www.esxossmanway.ca/" target="_blank" rel="noopener noreferrer">
-              <Logo src={kindLogos.esxossmanway} alt="" />
+            <SponsorLink href={allProfiles.inKind.partners.esxossmanway.website} target="_blank" rel="noopener noreferrer">
+              <Logo src={allProfiles.inKind.partners.esxossmanway.logo} alt="" />
             </SponsorLink>
-            <SponsorLink href="http://rumbleboxing.com/" target="_blank" rel="noopener noreferrer">
-              <Logo src={kindLogos.rumbleboxing} alt="" className="rumble-boxing" />
+            <SponsorLink href={allProfiles.inKind.partners.rumbleboxing.website} target="_blank" rel="noopener noreferrer">
+              <Logo src={allProfiles.inKind.partners.rumbleboxing.logo} alt="" className="rumble-boxing" />
             </SponsorLink>
-            <SponsorLink href="https://flyingsquirrelsports.ca/" target="_blank" rel="noopener noreferrer">
-              <Logo src={kindLogos.flyingsquirrel} alt="" className="flying-squirrel" />
+            <SponsorLink href={allProfiles.inKind.partners.flyingsquirrel.website} target="_blank" rel="noopener noreferrer">
+              <Logo src={allProfiles.inKind.partners.flyingsquirrel.logo} alt="" className="flying-squirrel" />
             </SponsorLink>
-            <SponsorLink href="https://www.xerox.ca/" target="_blank" rel="noopener noreferrer">
-              <Logo src={kindLogos.xerox} alt="" className="xerox" />
+            <SponsorLink href={allProfiles.inKind.partners.xerox.website} target="_blank" rel="noopener noreferrer">
+              <Logo src={allProfiles.inKind.partners.xerox.logo} alt="" className="xerox" />
             </SponsorLink>
-            <SponsorLink href="https://phoneloops.com/" className="last" target="_blank" rel="noopener noreferrer">
-              <Logo src={kindLogos.phoneloops} alt="" className="phoneloops" />
+            <SponsorLink href={allProfiles.inKind.partners.phoneloops.website} className="last" target="_blank" rel="noopener noreferrer">
+              <Logo src={allProfiles.inKind.partners.phoneloops.logo} alt="" className="phoneloops" />
             </SponsorLink>
           </LogoCard>
         </Tier>
