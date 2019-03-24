@@ -41,7 +41,7 @@ const MenuWrapper = styled.nav`
   position: fixed;
   top: 0;
   flex-direction: row;
-  z-index: 3;
+  z-index: 100;
   text-transform: uppercase;
 `;
 

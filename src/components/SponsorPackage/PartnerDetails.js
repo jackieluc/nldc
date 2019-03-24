@@ -40,8 +40,7 @@ const PartnerDetails = () => (
       </PartnerTitle>
       <PartnerDescription>
         <Description>
-          { // eslint-disable-next-line
-          } We would like to thank the following organizations for their in-kind contributions.
+          We would like to thank the following organizations for their in-kind contributions.
         </Description>
       </PartnerDescription>
     </Wrapper>

@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import Media from '../../utils/media';
 import Styles from '../../utils/styles';
 import Testimonials from './Testimonials';
+import ButtonCTA from '../Button/Button';
 
 const Wrapper = styled.section`
   ${Media.laptop`
@@ -41,33 +42,14 @@ const Subtitle = styled.h3`
   `}
 `;
 
-const PrimaryCTA = styled.a`
-  display: inline-block;
-  border-radius: 40px;
-  padding: .7rem 2rem;
-  margin: 0;
-  color: white;
-  border: none;
-  background-color: ${Styles.lightRed};
-  ${Styles.shadow}
+const CTAWrapper = styled.div`
+  a:last-of-type {
+    margin-top: 20px;
 
-  &:hover,
-  &:focus {
-    color: #FFFFFF;
-    background-color: ${Styles.red};
-    cursor: pointer;
-    text-decoration: none;
+    ${Media.tablet`
+      margin-left: 20px;
+    `}
   }
-`;
-
-const SecondaryCTA = styled(PrimaryCTA)`
-  color: ${Styles.lightRed};
-  background-color: white;
-  margin-top: 20px;
-  
-  ${Media.tablet`
-    margin-left: 20px;
-  `}
 `;
 
 const IframeWrapper = styled.div`
@@ -183,8 +165,10 @@ const YouthToBusiness = (props) => (
                 <Img fluid={data.y2blogo.childImageSharp.fluid} alt="Youth to Business Forum Logo" />
               </LogoWrapper>
               <Subtitle>Connecting the leaders of tomorrow with the leaders of today through dialogue on relvant global topics.</Subtitle>
-              <PrimaryCTA href="https://bit.ly/Y2B2019Forum" target="_blank" rel="noopener noreferrer">Get Your Tickets</PrimaryCTA>
-              <SecondaryCTA href="https://www.aiesec.ca/youthtobusiness/" target="_blank" rel="noopener noreferrer">Find out More About Y2B</SecondaryCTA>
+              <CTAWrapper>
+                <ButtonCTA link="https://bit.ly/Y2B2019Forum">Get Your Tickets</ButtonCTA>
+                <ButtonCTA secondary link="https://www.aiesec.ca/youthtobusiness/">Find out More About Y2B</ButtonCTA>
+              </CTAWrapper>
             </Col>
             <Col xs={12} sm={10} lg={6}>
               <IframeWrapper>

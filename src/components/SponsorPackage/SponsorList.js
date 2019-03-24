@@ -2,9 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Card } from 'reactstrap';
 import styled from 'styled-components';
-import { sponsorLogos as Logos } from '../../utils/logos';
 import Media from '../../utils/media';
 import Styles from '../../utils/styles';
+import CompanyProfile from './CompanyProfiles/CompanyProfile';
+import allProfiles from '../../data/sponsorData';
 
 const Tier = styled.div`
   width: 100%;
@@ -44,23 +45,24 @@ const Logo = styled.img`
   height: auto;
 
   &.hunter-hub {
-    width: 270px;
+    width: 280px;
     ${Media.tablet`width: 500px;`}
   }
   &.avnet {
-    width: 100px;
-    ${Media.tablet`width: 160px`}
+    width: 150px;
+    ${Media.tablet`width: 200px`}
   }
   &.ccal {
     width: 210px;
     ${Media.tablet`width: 310px;`}
   }
-  &.husky {
+  &.husky,
+  &.capp {
     width: 180px;
     ${Media.tablet`width: 230px;`}
   }
   &.aeso {
-    width: 150px;
+    width: 160px;
     ${Media.tablet`width: 180px;`}
   }
   &.pwc {
@@ -69,115 +71,84 @@ const Logo = styled.img`
   }
 `;
 
-const tier = {
-  title: 'Title',
-  innovation: 'Innovation',
-  gold: 'Gold',
-  silver: 'Silver',
-  bronze: 'Bronze',
-  meal: 'Meal',
-};
-
-const titleLogos = {
-  nutrien: Logos['nutrien.png'],
-};
-
-const innovationLogos = {
-  hunterhub: Logos['hunterhub.jpg'],
-  avnet: Logos['avnet.png'],
-};
-
-const goldLogos = {
-  ced: Logos['ced.png'],
-};
-
-const silverLogos = {
-  atb: Logos['atb.png'],
-  ccal: Logos['ccal.jpg'],
-  haskayne: Logos['haskayne.jpg'],
-};
-
-const bronzeLogos = {
-  husky: Logos['Husky.png'],
-  aeso: Logos['aeso.png'],
-};
-
-const mealLogos = {
-  pwc: Logos['pwc.png'],
-};
-
 const SponsorList = ({ paddingTop }) => (
   <section style={{ paddingTop }}>
     <Container>
       <Tier>
         <TierTitle>
-          {tier.title}
+          { allProfiles.title.tierTitle }
         </TierTitle>
         <LogoCard>
-          <SponsorLink href="https://www.nutrien.com/" target="_blank" rel="noopener noreferrer">
-            <Logo src={titleLogos.nutrien} alt="" />
+          <SponsorLink href={allProfiles.title.sponsors.nutrien.website} target="_blank" rel="noopener noreferrer">
+            <Logo src={allProfiles.title.sponsors.nutrien.logo} alt="" />
           </SponsorLink>
         </LogoCard>
       </Tier>
       <Tier>
         <TierTitle>
-          {tier.innovation}
+          { allProfiles.gold.tierTitle }
         </TierTitle>
         <LogoCard>
-          <SponsorLink href="https://go.ucalgary.ca/hunter-hub/" target="_blank" rel="noopener noreferrer">
-            <Logo src={innovationLogos.hunterhub} alt="" className="hunter-hub" />
+          <CompanyProfile profile={allProfiles.gold.sponsors.ced}>
+            <Logo src={allProfiles.gold.sponsors.ced.logo} alt="" />
+          </CompanyProfile>
+        </LogoCard>
+      </Tier>
+      <Tier>
+      <Tier>
+        <TierTitle>
+          { allProfiles.innovation.tierTitle }
+        </TierTitle>
+        <LogoCard>
+          <SponsorLink href={allProfiles.innovation.sponsors.hunterhub.website} target="_blank" rel="noopener noreferrer">
+            <Logo src={allProfiles.innovation.sponsors.hunterhub.logo} alt="" className="hunter-hub" />
           </SponsorLink>
-          <SponsorLink href="https://www.avnet.com/" target="_blank" rel="noopener noreferrer">
-            <Logo src={innovationLogos.avnet} alt="" className="avnet" />
+          <SponsorLink href={allProfiles.innovation.sponsors.avnet.website} target="_blank" rel="noopener noreferrer">
+            <Logo src={allProfiles.innovation.sponsors.avnet.logo} alt="" className="avnet" />
           </SponsorLink>
+          <SponsorLink href={allProfiles.innovation.sponsors.benevity.website} target="_blank" rel="noopener noreferrer">
+            <Logo src={allProfiles.innovation.sponsors.benevity.logo} alt="" />
+          </SponsorLink>
+        </LogoCard>
+      </Tier>
+        <TierTitle>
+          { allProfiles.silver.tierTitle }
+        </TierTitle>
+        <LogoCard>
+          <SponsorLink href={allProfiles.silver.sponsors.atb.website} target="_blank" rel="noopener noreferrer">
+            <Logo src={allProfiles.silver.sponsors.atb.logo} alt="" />
+          </SponsorLink>
+          <SponsorLink href={allProfiles.silver.sponsors.ccal.website} target="_blank" rel="noopener noreferrer">
+            <Logo src={allProfiles.silver.sponsors.ccal.logo} alt="" className="ccal" />
+          </SponsorLink>
+          <CompanyProfile profile={allProfiles.silver.sponsors.haskayne}>
+            <Logo src={allProfiles.silver.sponsors.haskayne.logo} alt="" />
+          </CompanyProfile>
         </LogoCard>
       </Tier>
       <Tier>
         <TierTitle>
-          {tier.gold}
+          { allProfiles.bronze.tierTitle }
         </TierTitle>
         <LogoCard>
-          <SponsorLink href="https://www.calgaryeconomicdevelopment.com/" target="_blank" rel="noopener noreferrer">
-            <Logo src={goldLogos.ced} alt="" />
+          <CompanyProfile profile={allProfiles.bronze.sponsors.husky} >
+            <Logo src={allProfiles.bronze.sponsors.husky.logo} alt="" className="husky" />
+          </CompanyProfile>
+          <SponsorLink href={allProfiles.bronze.sponsors.aeso.website} target="_blank" rel="noopener noreferrer">
+            <Logo src={allProfiles.bronze.sponsors.aeso.logo} alt="" className="aeso" />
           </SponsorLink>
+          <CompanyProfile profile={allProfiles.bronze.sponsors.capp}>
+            <Logo src={allProfiles.bronze.sponsors.capp.logo} alt="" className="capp" />
+          </CompanyProfile>
         </LogoCard>
       </Tier>
       <Tier>
         <TierTitle>
-          {tier.silver}
+          { allProfiles.meal.tierTitle }
         </TierTitle>
         <LogoCard>
-          <SponsorLink href="https://www.atb.com/" target="_blank" rel="noopener noreferrer">
-            <Logo src={silverLogos.atb} alt="" />
-          </SponsorLink>
-          <SponsorLink href="https://haskayne.ucalgary.ca/ccal/" target="_blank" rel="noopener noreferrer">
-            <Logo src={silverLogos.ccal} alt="" className="ccal" />
-          </SponsorLink>
-          <SponsorLink href="https://haskayne.ucalgary.ca/" target="_blank" rel="noopener noreferrer">
-            <Logo src={silverLogos.haskayne} alt="" />
-          </SponsorLink>
-        </LogoCard>
-      </Tier>
-      <Tier>
-        <TierTitle>
-          {tier.bronze}
-        </TierTitle>
-        <LogoCard>
-          <SponsorLink href="http://www.huskyenergy.ca/" target="_blank" rel="noopener noreferrer">
-            <Logo src={bronzeLogos.husky} alt="" className="husky" />
-          </SponsorLink>
-          <SponsorLink href="https://www.aeso.ca/" target="_blank" rel="noopener noreferrer">
-            <Logo src={bronzeLogos.aeso} alt="" className="aeso" />
-          </SponsorLink>
-        </LogoCard>
-      </Tier>
-      <Tier>
-        <TierTitle>
-          {tier.meal}
-        </TierTitle>
-        <LogoCard>
-          <SponsorLink href="https://www.pwc.com/ca/en/" target="_blank" rel="noopener noreferrer">
-            <Logo src={mealLogos.pwc} alt="" className="pwc" />
+          <SponsorLink href={allProfiles.meal.sponsors.pwc.website} target="_blank" rel="noopener noreferrer">
+            <Logo src={allProfiles.meal.sponsors.pwc.logo} alt="" className="pwc" />
           </SponsorLink>
         </LogoCard>
       </Tier>

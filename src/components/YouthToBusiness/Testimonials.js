@@ -100,7 +100,7 @@ const CarouselButton = styled.button`
   justify-content: center;
   position: absolute;
   z-index: 10;
-  top: 120px;
+  top: 260px;
   ${Media.tablet`top: 180px;`}
   ${Media.laptop`top: 120px;`}
   background: white;
