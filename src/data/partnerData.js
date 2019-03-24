@@ -59,9 +59,21 @@ const partners = {
       },
       brettwilson: {
         name: 'Brett Wilson',
-        logo: Logos['.png'],
+        logo: Logos['brettwilson.png'],
         description: ``,
-        website: ``,
+        website: `http://www.wbrettwilson.ca/`,
+      },
+      beyondscarf: {
+        name: 'Beyond Scarf',
+        logo: Logos['beyondscarf.png'],
+        description: ``,
+        website: `https://www.beyondscarf.ca/`,
+      },
+      '5s17': {
+        name: '5s17',
+        logo: Logos['5s17.jpeg'],
+        description: ``,
+        website: `https://5s17.com/`,
       },
     },
   },

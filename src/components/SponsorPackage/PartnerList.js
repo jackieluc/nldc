@@ -107,6 +107,15 @@ const PartnerList = ({ paddingTop }) => (
             <SponsorLink href={allProfiles.inKind.partners.phoneloops.website} className="last" target="_blank" rel="noopener noreferrer">
               <Logo src={allProfiles.inKind.partners.phoneloops.logo} alt="" className="phoneloops" />
             </SponsorLink>
+            <SponsorLink href={allProfiles.inKind.partners.brettwilson.website} className="last" target="_blank" rel="noopener noreferrer">
+              <Logo src={allProfiles.inKind.partners.brettwilson.logo} alt="" className="" />
+            </SponsorLink>
+            <SponsorLink href={allProfiles.inKind.partners.beyondscarf.website} className="last" target="_blank" rel="noopener noreferrer">
+              <Logo src={allProfiles.inKind.partners.beyondscarf.logo} alt="" className="" />
+            </SponsorLink>
+            <SponsorLink href={allProfiles.inKind.partners['5s17'].website} className="last" target="_blank" rel="noopener noreferrer">
+              <Logo src={allProfiles.inKind.partners['5s17'].logo} alt="" className="" />
+            </SponsorLink>
           </LogoCard>
         </Tier>
       </Container>
