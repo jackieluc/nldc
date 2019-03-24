@@ -136,11 +136,13 @@ const tiers = {
         description: ``,
         website: ``,
       },
-      atb: {
+      haskayne: {
         name: 'Haskayne School of Business',
         logo: Logos['haskayne.jpg'],
-        description: ``,
-        website: ``,
+        description: `
+          <p>The Haskayne School of Business was founded at the University of Calgary in 1967, and is home to some of Canada’s brightest and most accomplished minds. An important member of the Canadian and international business communities, Haskayne maintains partnerships spanning the globe and an alumni network of over 25,000 in over 89 countries worldwide. The Haskayne School of Business was one of the first business schools in Canada to be accredited by the Association to Advance Collegiate Schools of Business (AACSB) in 1985, a stamp of quality held by less than five per cent of the world’s 16,000 business programs. The Haskayne School of Business offers a full range of degree programs including: Bachelor of Commerce, Master of Management (MMGMT), Master of Business Administration (MBA), Executive MBA, Global Energy Executive MBA, PhD in Management, Doctor of Business Administration (DBA), an interdisciplinary Master of Science degree in Sustainable Energy Development and a full range of open and customized Executive Education programs. For more information visit <a href="https://haskayne.ucalgary.ca" target="_blank" rel="noopener noreferrer">haskayne.ucalgary.ca</a></p>
+        `,
+        website: `https://haskayne.ucalgary.ca`,
       },
     },
   },
@@ -277,9 +279,9 @@ const SponsorList = ({ paddingTop }) => (
           <SponsorLink href="https://haskayne.ucalgary.ca/ccal/" target="_blank" rel="noopener noreferrer">
             <Logo src={silverLogos.ccal} alt="" className="ccal" />
           </SponsorLink>
-          <SponsorLink href="https://haskayne.ucalgary.ca/" target="_blank" rel="noopener noreferrer">
-            <Logo src={silverLogos.haskayne} alt="" />
-          </SponsorLink>
+          <CompanyProfile profile={tiers.silver.sponsors.haskayne}>
+            <Logo src={tiers.silver.sponsors.haskayne.logo} alt="" />
+          </CompanyProfile>
         </LogoCard>
       </Tier>
       <Tier>
