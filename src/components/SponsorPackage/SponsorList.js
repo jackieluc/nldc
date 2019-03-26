@@ -147,9 +147,9 @@ const SponsorList = ({ paddingTop }) => (
           { allProfiles.meal.tierTitle }
         </TierTitle>
         <LogoCard>
-          <SponsorLink href={allProfiles.meal.sponsors.pwc.website} target="_blank" rel="noopener noreferrer">
+          <CompanyProfile profile={allProfiles.meal.sponsors.pwc}>
             <Logo src={allProfiles.meal.sponsors.pwc.logo} alt="" className="pwc" />
-          </SponsorLink>
+          </CompanyProfile>
         </LogoCard>
       </Tier>
     </Container>

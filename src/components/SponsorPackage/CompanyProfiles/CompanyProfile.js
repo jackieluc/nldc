@@ -44,6 +44,7 @@ const StyledBody = styled(ModalBody)`
     max-width: 280px;
     ${Media.tablet`
       max-width: 400px;
+      max-height: 100px;
     `}
   }
 `;

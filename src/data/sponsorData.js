@@ -112,7 +112,13 @@ const sponsors = {
       pwc: {
         name: 'PWC',
         logo: Logos['pwc.png'],
-        description: ``,
+        description: `
+          <p>Our purpose is to build trust in society and solve important problems. Our shared global values help us achieve our purpose and guide our actions. We act with integrity, make a difference, care, work together and reimagine the possible. At PwC, we work together to provide exceptional industry-focused services to clients from 26 offices across Canada. We’re a member of the PwC network of firms, with more than 236,000 people in 158 countries.</p>
+          
+          <p>We pride ourselves on providing equal opportunities for success and development, with leaders focused on ensuring everyone’s success. We work together and create an environment that’s fun and social, where everyone can bring their passions and whole selves to work. Plus, as part of a global network, there’s opportunity to work with international teams and clients while based in Canada or as part of a global secondment.</p>
+          
+          <p>We combine accounting, advisory, and technology skills with business knowledge and experience to help our clients address the challenges of a rapidly changing environment and strengthen their businesses. We’re true business advisors.We're happy to provide some swag for the event.</p>
+        `,
         website: `https://www.pwc.com/ca/en/`,
       },
     },
