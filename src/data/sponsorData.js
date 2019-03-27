@@ -117,7 +117,7 @@ const sponsors = {
           
           <p>We pride ourselves on providing equal opportunities for success and development, with leaders focused on ensuring everyone’s success. We work together and create an environment that’s fun and social, where everyone can bring their passions and whole selves to work. Plus, as part of a global network, there’s opportunity to work with international teams and clients while based in Canada or as part of a global secondment.</p>
           
-          <p>We combine accounting, advisory, and technology skills with business knowledge and experience to help our clients address the challenges of a rapidly changing environment and strengthen their businesses. We’re true business advisors.We're happy to provide some swag for the event.</p>
+          <p>We combine accounting, advisory, and technology skills with business knowledge and experience to help our clients address the challenges of a rapidly changing environment and strengthen their businesses. We’re true business advisors.</p>
         `,
         website: `https://www.pwc.com/ca/en/`,
       },
