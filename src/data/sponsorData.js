@@ -33,13 +33,19 @@ const sponsors = {
       hunterhub: {
         name: 'Hunter Hub for Entrepreneurial Thinking',
         logo: Logos['hunterhub.jpg'],
-        description: ``,
+        description: `
+          <p>The Hunter Hub is the University of Calgary’s new initiative to engage and immerse students, faculty, staff, alumni and the Canadian community in a culture of entrepreneurial thinking, challenging them with a new and bold approach to teaching, learning, discovery and knowledge-sharing.</p>
+
+          <p>The Hunter Hub for Entrepreneurial Thinking was created in 2017 with a $40-million gift from the Hunter Family Foundation as an interdisciplinary nucleus for activities that will support entrepreneurial student experiences, enable faculty to lead in innovation, and expand a growing community of entrepreneurial and innovative thinkers.</p>
+        `,
         website: `https://go.ucalgary.ca/hunter-hub/`,
       },
       avnet: {
         name: 'Avnet',
         logo: Logos['avnet.png'],
-        description: ``,
+        description: `
+          <p>Avnet is a global technology solutions provider with an extensive ecosystem delivering design, product, marketing and supply chain expertise for customers at every stage of the product lifecycle. We transform ideas into intelligent solutions, reducing the time, cost and complexities of bringing products to market. For nearly a century, Avnet has helped its customers and suppliers around the world realize the transformative possibilities of technology.</p>
+        `,
         website: `https://www.avnet.com/`,
       },
       benevity: {
