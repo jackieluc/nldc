@@ -100,12 +100,12 @@ const SponsorList = ({ paddingTop }) => (
           { allProfiles.innovation.tierTitle }
         </TierTitle>
         <LogoCard>
-          <SponsorLink href={allProfiles.innovation.sponsors.hunterhub.website} target="_blank" rel="noopener noreferrer">
+          <CompanyProfile profile={allProfiles.innovation.sponsors.hunterhub}>
             <Logo src={allProfiles.innovation.sponsors.hunterhub.logo} alt="" className="hunter-hub" />
-          </SponsorLink>
-          <SponsorLink href={allProfiles.innovation.sponsors.avnet.website} target="_blank" rel="noopener noreferrer">
+          </CompanyProfile>
+          <CompanyProfile profile={allProfiles.innovation.sponsors.avnet}>
             <Logo src={allProfiles.innovation.sponsors.avnet.logo} alt="" className="avnet" />
-          </SponsorLink>
+          </CompanyProfile>
           <SponsorLink href={allProfiles.innovation.sponsors.benevity.website} target="_blank" rel="noopener noreferrer">
             <Logo src={allProfiles.innovation.sponsors.benevity.logo} alt="" />
           </SponsorLink>
