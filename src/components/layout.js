@@ -36,7 +36,7 @@ const GlobalStyle = createGlobalStyle`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem 0;
+    padding: 5rem 0;
   }
 
   nav {
