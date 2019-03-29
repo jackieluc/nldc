@@ -37,8 +37,7 @@ const Description = styled(Col)`
 const Benefits = styled.section`
   background: linear-gradient( 135deg, #74C7D9 40%, #037EF3 100%);
   width: 100%;
-  padding: 2rem 0 6rem 0;
-  ${Media.laptop`padding: 2rem 0 10rem 0`}
+  ${Media.laptop`padding: 5rem 0 10rem 0;`}
   margin-bottom: 0;
 `;
 
@@ -112,6 +111,9 @@ const Sponsors = () => (
       </Benefits>
       <Wave />
       <SponsorDetails />
+      <div style={{ marginBottom: '2rem' }}>
+        <SponsorCTA />
+      </div>
       <SponsorList />
       <PartnerList />
     </Wrapper>
