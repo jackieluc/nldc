@@ -24,6 +24,17 @@ const Title = styled.h1`
   margin-bottom: 2rem;
 `;
 
+const Subtitle = styled.div`
+  margin: 0 auto 3rem auto;
+  padding: 20px;
+  max-width: 480px;
+`;
+
+const Highlight = styled.span`
+  ${Styles.highlight}
+  font-weight: bold;
+`;
+
 const StretchedContainer = styled(Container)`
   padding-right: 0 !important;
   padding-left: 0 !important;
@@ -59,8 +70,11 @@ const FAQ = () => (
       </Helmet>
       <StretchedContainer>
         <Title>
-          Frequently Asked Questions
+          FAQ
         </Title>
+        <Subtitle>
+          <p>We are <Highlight>#DisruptingTheNow</Highlight>, but we don't want your plans to be disruptive. If you can't find what you are looking for, send an email to <a href="mailto:stephanie.lee@aiesec.net">stephanie.lee@aiesec.net</a></p>
+        </Subtitle>
         <QuestionsAndAnswers />
       </StretchedContainer>
     </Wrapper>

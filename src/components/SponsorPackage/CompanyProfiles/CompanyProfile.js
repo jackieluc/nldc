@@ -12,6 +12,7 @@ const Wrapper = styled.div`
 
 const ImageModalButton = styled(Button)`
   padding: 0;
+  border: 0;
 
   & :hover,
   & :focus {
@@ -22,7 +23,7 @@ const ImageModalButton = styled(Button)`
 
 const StyledHeader = styled(ModalHeader)`
   .modal-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
 
     ${Media.tablet`
       margin-left: 1rem;
@@ -78,7 +79,7 @@ export default class CompanyProfile extends React.Component {
   render() {
     const { isOpen } = this.state;
     const { children, profile } = this.props;
-    const { name, logo, description, website } = profile;
+    const { name, shortName, logo, description, website } = profile;
 
     return (
       <Wrapper>
@@ -94,7 +95,7 @@ export default class CompanyProfile extends React.Component {
             <StyledDescription dangerouslySetInnerHTML={{ __html: description }} />
           </StyledBody>
           <ModalFooter>
-            <ButtonCTA link={website}>Visit { name }</ButtonCTA>
+            <ButtonCTA link={website}>Visit { shortName ? shortName : name }</ButtonCTA>
           </ModalFooter>
         </Modal>
       </Wrapper>
