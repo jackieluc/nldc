@@ -6,6 +6,7 @@ const sponsors = {
     sponsors: {
       nutrien: {
         name: 'Nutrien',
+        shortName: ``,
         logo: Logos['nutrien.png'],
         description: ``,
         website: `https://www.nutrien.com/`,
@@ -17,6 +18,7 @@ const sponsors = {
     sponsors: {
       ced: {
         name: 'Calgary Economic Development',
+        shortName: ``,
         logo: Logos['ced.png'],
         description: `
         <p>Calgary is the city of choice in Canada for the world’s best entrepreneurs. We embrace innovation and create solutions to meet the world’s needs in food, health, energy and transportation.<p>
@@ -32,6 +34,7 @@ const sponsors = {
     sponsors: {
       hunterhub: {
         name: 'Hunter Hub for Entrepreneurial Thinking',
+        shortName: ``,
         logo: Logos['hunterhub.jpg'],
         description: `
           <p>The Hunter Hub is the University of Calgary’s new initiative to engage and immerse students, faculty, staff, alumni and the Canadian community in a culture of entrepreneurial thinking, challenging them with a new and bold approach to teaching, learning, discovery and knowledge-sharing.</p>
@@ -42,6 +45,7 @@ const sponsors = {
       },
       avnet: {
         name: 'Avnet',
+        shortName: ``,
         logo: Logos['avnet.png'],
         description: `
           <p>Avnet is a global technology solutions provider with an extensive ecosystem delivering design, product, marketing and supply chain expertise for customers at every stage of the product lifecycle. We transform ideas into intelligent solutions, reducing the time, cost and complexities of bringing products to market. For nearly a century, Avnet has helped its customers and suppliers around the world realize the transformative possibilities of technology.</p>
@@ -50,6 +54,7 @@ const sponsors = {
       },
       benevity: {
         name: 'Benevity',
+        shortName: ``,
         logo: Logos['benevity.png'],
         description: ``,
         website: `https://www.benevity.com/`,
@@ -61,12 +66,14 @@ const sponsors = {
     sponsors: {
       atb: {
         name: 'ATB Financial',
+        shortName: ``,
         logo: Logos['atb.png'],
         description: ``,
         website: `https://www.atb.com/`,
       },
       ccal: {
         name: 'The Canadian Centre for Advanced Leadership in Business',
+        shortName: `CCAL`,
         logo: Logos['ccal.jpg'],
         description: `
           <p>The Canadian Centre for Advanced Leadership in Business (CCAL) is a leadership centre within the Haskayne School of Business at the University of Calgary. CCAL was launched in 2012 thanks to a generous $9.5 million contribution from founding donors ARC Resources, ARC Financial, Viewpoint Family Foundation and the Brown Family Foundation.</p>
@@ -81,6 +88,7 @@ const sponsors = {
       },
       haskayne: {
         name: 'Haskayne School of Business',
+        shortName: ``,
         logo: Logos['haskayne.jpg'],
         description: `
           <p>The Haskayne School of Business was founded at the University of Calgary in 1967, and is home to some of Canada’s brightest and most accomplished minds. An important member of the Canadian and international business communities, Haskayne maintains partnerships spanning the globe and an alumni network of over 25,000 in over 89 countries worldwide. The Haskayne School of Business was one of the first business schools in Canada to be accredited by the Association to Advance Collegiate Schools of Business (AACSB) in 1985, a stamp of quality held by less than five per cent of the world’s 16,000 business programs. The Haskayne School of Business offers a full range of degree programs including: Bachelor of Commerce, Master of Management (MMGMT), Master of Business Administration (MBA), Executive MBA, Global Energy Executive MBA, PhD in Management, Doctor of Business Administration (DBA), an interdisciplinary Master of Science degree in Sustainable Energy Development and a full range of open and customized Executive Education programs. For more information visit <a href="https://haskayne.ucalgary.ca" target="_blank" rel="noopener noreferrer">haskayne.ucalgary.ca</a></p>
@@ -94,6 +102,7 @@ const sponsors = {
     sponsors: {
       husky: {
         name: 'Husky',
+        shortName: ``,
         logo: Logos['Husky.png'],
         description: `
           <p>Husky Energy is a Canadian-based integrated energy company, with two core businesses. Its <a href="https://huskyenergy.com/operations/#integrated-thermal-corridor" target=_"blank" rel="nopener noreferrer">Integrated Corridor</a> operates in Western Canada and the United States, where thermal production is integrated with the Downstream business and supported by Western Canada operations. <a href="https://huskyenergy.com/operations/#offshore" target=_"blank" rel="nopener noreferrer">Offshore</a> the Company is focused in the Asia Pacific and Atlantic regions.</p>
@@ -106,12 +115,14 @@ const sponsors = {
       },
       aeso: {
         name: 'Aeso',
+        shortName: ``,
         logo: Logos['aeso.png'],
         description: ``,
         website: `https://www.aeso.ca/`,
       },
       capp: {
         name: `Canada's Energy Citizens`,
+        shortName: ``,
         logo: Logos['capp.png'],
         description: `
           <p>Canada’s Energy Citizens is the largest Canadian pro-oil and natural gas grassroots organization. Since launching in 2014, it has been successful in creating a network 500,000 industry supporters who are motivated to advocate and vocally defend oil and natural gas developed the Canadian way.</p>
@@ -125,6 +136,7 @@ const sponsors = {
     sponsors: {
       pwc: {
         name: 'PWC',
+        shortName: ``,
         logo: Logos['pwc.png'],
         description: `
           <p>Our purpose is to build trust in society and solve important problems. Our shared global values help us achieve our purpose and guide our actions. We act with integrity, make a difference, care, work together and reimagine the possible. At PwC, we work together to provide exceptional industry-focused services to clients from 26 offices across Canada. We’re a member of the PwC network of firms, with more than 236,000 people in 158 countries.</p>
