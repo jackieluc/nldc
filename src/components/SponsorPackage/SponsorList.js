@@ -118,9 +118,9 @@ const SponsorList = ({ paddingTop }) => (
           <SponsorLink href={allProfiles.silver.sponsors.atb.website} target="_blank" rel="noopener noreferrer">
             <Logo src={allProfiles.silver.sponsors.atb.logo} alt="" />
           </SponsorLink>
-          <SponsorLink href={allProfiles.silver.sponsors.ccal.website} target="_blank" rel="noopener noreferrer">
+          <CompanyProfile profile={allProfiles.silver.sponsors.ccal}>
             <Logo src={allProfiles.silver.sponsors.ccal.logo} alt="" className="ccal" />
-          </SponsorLink>
+          </CompanyProfile>
           <CompanyProfile profile={allProfiles.silver.sponsors.haskayne}>
             <Logo src={allProfiles.silver.sponsors.haskayne.logo} alt="" />
           </CompanyProfile>

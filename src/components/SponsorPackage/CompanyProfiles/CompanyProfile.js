@@ -12,6 +12,7 @@ const Wrapper = styled.div`
 
 const ImageModalButton = styled(Button)`
   padding: 0;
+  border: 0;
 
   & :hover,
   & :focus {
@@ -22,7 +23,7 @@ const ImageModalButton = styled(Button)`
 
 const StyledHeader = styled(ModalHeader)`
   .modal-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
 
     ${Media.tablet`
       margin-left: 1rem;

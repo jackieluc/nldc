@@ -66,9 +66,17 @@ const sponsors = {
         website: `https://www.atb.com/`,
       },
       ccal: {
-        name: 'Canadian Center for Advanced Learning in Business',
+        name: 'The Canadian Centre for Advanced Leadership in Business',
         logo: Logos['ccal.jpg'],
-        description: ``,
+        description: `
+          <p>The Canadian Centre for Advanced Leadership in Business (CCAL) is a leadership centre within the Haskayne School of Business at the University of Calgary. CCAL was launched in 2012 thanks to a generous $9.5 million contribution from founding donors ARC Resources, ARC Financial, Viewpoint Family Foundation and the Brown Family Foundation.</p>
+
+          <p>Now in its seventh year of operation, CCAL supports evidence-based leadership development programming for students, research that advances the understanding of the causes, processes and consequences of leadership and engagement with business leaders from the community.</p>
+          
+          <p>CCAL’s signature programs include the BMO Mentorship Program at the Haskayne School of Business, the Jarislowsky Fellowship in Business Management, the Haskayne Adventure Leadership Program (e.g. the Leadership Expedition through the Rocky Mountains) and Lunch with Leaders.</p>
+          
+          <p>CCAL focuses on enabling performance, valuing people and ultimately advancing leadership knowledge and practice.</p>
+        `,
         website: `https://haskayne.ucalgary.ca/ccal/`,
       },
       haskayne: {
