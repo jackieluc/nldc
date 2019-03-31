@@ -61,7 +61,16 @@ const faq = [
                   <li>Studio (1 room) for 2 people at $55/night</li>
                   <li>2 Bedroom Suite for 2 people at $65/night (you can add 2 more people for +$10 per person for a total of $85/4 people)</li>
                 </ul>
-            </ol>`,
+            </ol>
+            <br/>
+            <b>Notes</b>
+            <ul>
+              <li>Official pre-conference delegates do not need to book accommodations</li>
+              <li>Credit card information will be taken online to confirm booking, but you pay the full amount when you arrive and check in</li>
+            </ul>
+            <br/>
+            Please send an email to <a href="mailto:stephanie.lee@aiesec.net">stephanie.lee@aiesec.net</a> for any questions or concerns!
+            `,
   },
   {
     question: 'When should I arrive at the conference venue?',
