@@ -24,7 +24,7 @@ const faq = [
             `,
   },
   {
-    question: 'Can non-AIESEC members attend NLDC 2019?',
+    question: `I'm not a member of AIESEC, can I still attend NLDC 2019?`,
     answer: 'Yes! You can purchase your tickets at <a href="https://bit.ly/Y2B2019Forum" target="_blank" rel="noopener noreferrer">bit.ly/Y2B2019Forum</a> and attend our Launch and Youth to Business Forum on May 1-2.',
   },
   {
@@ -32,7 +32,7 @@ const faq = [
     answer: `
             <ul>
               <li>Tickets for <span>AIESEC delegates is $375</span>, which covers all 5 days of food and acommodation.</li>
-              <li>Tickets for <span>Non-AIESEC delegates is $75</span>, which covers 3 meals and 2 day access to the Youth to Business Forum. If accommodation is required for 1 night, the ticket is <span>$110</span>.</li>
+              <li>Tickets for <span>Non-AIESEC delegates is $70</span>, which covers 3 meals and 2 day access to the Youth to Business Forum. If accommodation is required for 1 night, the ticket is <span>$110</span>.</li>
             </ul>
             `,
   },
