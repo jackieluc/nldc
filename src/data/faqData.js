@@ -52,7 +52,16 @@ const faq = [
   },
   {
     question: 'Can I stay before and after the conference?',
-    answer: 'Yes, these additional costs are TBD.',
+    answer: `<ol>
+              <li>Visit <a href="https://bit.ly/nldcresidence" target="_blank" rel="noopener noreferrer">bit.ly/nldcresidence</a></li>
+              <li>Select your dates between April 27 - May 6</li>
+              <li>Enter promo code: <span>NLDC</span></li>
+              <li>You can choose from the following 2 options:</li>
+                <ul>
+                  <li>Studio (1 room) for 2 people at $55/night</li>
+                  <li>2 Bedroom Suite for 2 people at $65/night (you can add 2 more people for +$10 per person for a total of $85/4 people)</li>
+                </ul>
+            </ol>`,
   },
   {
     question: 'When should I arrive at the conference venue?',
