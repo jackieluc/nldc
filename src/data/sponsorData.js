@@ -40,6 +40,8 @@ const sponsors = {
           <p>The Hunter Hub is the University of Calgary’s new initiative to engage and immerse students, faculty, staff, alumni and the Canadian community in a culture of entrepreneurial thinking, challenging them with a new and bold approach to teaching, learning, discovery and knowledge-sharing.</p>
 
           <p>The Hunter Hub for Entrepreneurial Thinking was created in 2017 with a $40-million gift from the Hunter Family Foundation as an interdisciplinary nucleus for activities that will support entrepreneurial student experiences, enable faculty to lead in innovation, and expand a growing community of entrepreneurial and innovative thinkers.</p>
+
+          <p>The Hunter Hub is a safe place to try out your entrepreneurial ideas. Do you want to learn what entrepreneurial thinking is? Do you have an idea for a business? We can connect you with information on all aspects of starting a business or side hustle.</p>
         `,
         website: `https://go.ucalgary.ca/hunter-hub/`,
       },

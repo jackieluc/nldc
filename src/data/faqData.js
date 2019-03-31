@@ -16,48 +16,88 @@ const faq = [
     answer: 'Unfortunately, there are no airport shuttles but we are working on finding a discount code for you to get to the conference venue!',
   },
   {
+    question: 'What is the difference between NLDC and Youth to Business Forum?',
+    answer: `<ul>
+              <li>NLDC is the 5 day conference for AIESEC members across Canada.</li>
+              <li>The Youth to Business Forum is the first 2 days of NLDC, and is open to non-AIESEC members because we believe that professional development and career advancement is relevant to everyone.</li>
+            </ul>
+            `,
+  },
+  {
+    question: `I'm not a member of AIESEC, can I still attend NLDC 2019?`,
+    answer: 'Yes! You can purchase your tickets at <a href="https://bit.ly/Y2B2019Forum" target="_blank" rel="noopener noreferrer">bit.ly/Y2B2019Forum</a> and attend our Launch and Youth to Business Forum on May 1-2.',
+  },
+  {
     question: 'How much are NLDC tickets?',
-    answer: `<p>Both the AIESEC Delegate Fee and External Delegate Fee are TBD. Please subscribe to our conference newsletter or our Facebook group to stay up to date with details.</p>
+    answer: `
             <ul>
-              <li><span>AIESEC delegate</span> tickets will include 5 nights of accommodation, food, and access to the entire agenda</li>
-              <li><span>External (non-AIESEC) delegate</span> tickets will include food and access to the Innovation Series & Y2B Forum only</li>
-            </ul>`,
+              <li>Tickets for <span>AIESEC delegates is $375</span>, which covers all 5 days of food and acommodation.</li>
+              <li>Tickets for <span>Non-AIESEC delegates is $70</span>, which covers 3 meals and 2 day access to the Youth to Business Forum. If accommodation is required for 1 night, the ticket is <span>$110</span>.</li>
+            </ul>
+            `,
   },
   {
     question: 'What is the dress code?',
     answer: `<ul>
               <li><span>AIESEC delegates</span> will require business formal, business casual, and banquet attire.</li>
-              <li><span>External (non-AIESEC) delegates</span> will need business formal and business casual attire.</li>
-            </ul>`,
+              <li><span>Non-AIESEC delegates</span> will require business formal and business casual attire.</li>
+            </ul>
+            `,
   },
   {
     question: 'Do we have any travel discounts?',
-    answer: `Yes! <div style="color: #00467F; display: inline-block; font-weight: bold;">WestJet</div> is happy to offer a <b>5% off Econo* and 10% off Flex and Plus fares for travel within Canada and from Mexico into and out of Calgary.</b> Please visit <a href="https://www.westjet.com/conventions" target="_blank" rel="noopener noreferrer">www.westjet.com/conventions</a> to make a booking online.
-      <br/>
-      <ul style="list-style: none; padding: 1.25rem 0;">
-        <li>Coupon Code: <span>2T8G3KG</span></li>
-        <li>Travel from: <span>April 22, 2019 to May 12, 2019</span></li>
-      </ul>
-      <b>* Travel Agents use only </b> - Please use Promo Code: WBB70`,
+    answer: `<b>WestJet</b> is happy to offer a <b>5% off Econo* and 10% off Flex and Plus fares for travel within Canada and from Mexico into and out of Calgary.</b> Please visit <a href="https://www.westjet.com/conventions" target="_blank" rel="noopener noreferrer">www.westjet.com/conventions</a> to make a booking online.
+            <br/>
+            <ul style="list-style: none; padding: 1.25rem 0;">
+              <li>Coupon Code: <span>2T8G3KG</span></li>
+              <li>Travel from: <span>April 22, 2019 to May 12, 2019</span></li>
+              <b>* Travel Agents use only </b> - Please use Promo Code: WBB70
+            </ul>
+            <br/>
+
+            <b>Air Canada​</b> is pleased to offer <b>10% discounts on flex fares and up.</b> Please visit <a href="https://www.aircanada.com target="_blank" rel="noopener noreferrer">www.aircanada.com</a> to make a booking online.
+            <br/>
+            <ul style="list-style: none; padding: 1.25rem 0;">
+              <li>Coupon Code: <span>GC83HRD1</span></li>
+              <li>Travel from: <span>April 22, 2019 to May 12, 2019</span></li>
+              <li>* For any question reach out to <a href="mailto:meetings.events@aircanada.ca">meetings.events@aircanada.ca</a></li>
+            </ul>
+            `,
   },
   {
     question: 'Can I stay before and after the conference?',
-    answer: 'Yes, these additional costs are TBD.',
+    answer: `<ol>
+              <li>Visit <a href="https://bit.ly/nldcresidence" target="_blank" rel="noopener noreferrer">bit.ly/nldcresidence</a></li>
+              <li>Select your dates between April 27 - May 6</li>
+              <li>Enter promo code: <span>NLDC</span></li>
+              <li>You can choose from the following 2 options:</li>
+                <ul>
+                  <li>Studio (1 room) for 2 people at $55/night</li>
+                  <li>2 Bedroom Suite for 2 people at $65/night (you can add 2 more people for +$10 per person for a total of $85/4 people)</li>
+                </ul>
+            </ol>
+            <br/>
+            <b>Notes</b>
+            <ul>
+              <li>Official pre-conference delegates do not need to book accommodations</li>
+              <li>Credit card information will be taken online to confirm booking, but you pay the full amount when you arrive and check in</li>
+            </ul>
+            <br/>
+            Please send an email to <a href="mailto:stephanie.lee@aiesec.net">stephanie.lee@aiesec.net</a> for any questions or concerns!
+            `,
   },
   {
     question: 'When should I arrive at the conference venue?',
     answer: `<ul>
-              <li>Delegates looking to attend the pre-conference on April 30th should book their flights to arrive on the <span>evening of April 29th or the morning of April 30th</span>.</li>
-              <li>Delegates only attending the conference should book their flight to arrive on the <span>evening of April 30th or before noon on May 1st</span>.</li>
-            </ul>`,
+              <li><span>AIESEC Delegates</span> looking to attend the pre-conference on April 30th should book their flights to arrive on the <span>evening of April 29th or the morning of April 30th</span>.</li>
+              <li><span>AIESEC Delegates</span> only attending the conference should book their flight to arrive on the <span>evening of April 30th or before noon on May 1st</span>.</li>
+              <li><span>Non-AIESEC delegates</span> attending the Youth to Business Forum, please refer to <a href="https://www.aiesec.ca/youthtobusiness" target="_blank" rel="noopener noreferrer">www.aiesec.ca/youthtobusiness</a> for agenda details.</li>
+            </ul>
+            `,
   },
   {
     question: 'How much cash should I bring?',
     answer: 'Please bring <span>$40+</span> to be safe. These can cover night event tickets, merchandise, raffles, etc...',
-  },
-  {
-    question: 'Can non-AIESEC members attend NLDC 2019?',
-    answer: 'Yes! You can purchase your tickets at <a href="https://bit.ly/Y2B2019Forum" target="_blank" rel="noopener noreferrer">bit.ly/Y2B2019Forum</a> and attend our Launch and Youth to Business Forum on May 1-2.',
   },
   {
     question: 'What is the legal drinking age in Calgary, Alberta?',
