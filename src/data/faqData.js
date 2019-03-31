@@ -17,11 +17,12 @@ const faq = [
   },
   {
     question: 'How much are NLDC tickets?',
-    answer: `<p>Both the AIESEC Delegate Fee and Non-AIESEC Delegate Fee are TBD. Please subscribe to our conference newsletter or our Facebook group to stay up to date with details.</p>
+    answer: `
             <ul>
-              <li><span>AIESEC delegate</span> tickets will include 5 nights of accommodation, food, and access to the entire agenda</li>
-              <li><span>Non-AIESEC delegate</span> tickets will include food and access to the Innovation Series & Y2B Forum only</li>
-            </ul>`,
+              <li>Tickets for <span>AIESEC delegates is $375</span>, which covers all 5 days of food and acommodation.</li>
+              <li>Tickets for <span>Non-AIESEC delegates is $75</span>, which covers 3 meals and 2 day access to the Youth to Business Forum. If accommodation is required for 1 night, the ticket is <span>$110</span>.</li>
+            </ul>
+            `,
   },
   {
     question: 'What is the dress code?',
