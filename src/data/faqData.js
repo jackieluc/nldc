@@ -16,6 +16,18 @@ const faq = [
     answer: 'Unfortunately, there are no airport shuttles but we are working on finding a discount code for you to get to the conference venue!',
   },
   {
+    question: 'What is the difference between NLDC and Youth to Business Forum?',
+    answer: `<ul>
+              <li>NLDC is the 5 day conference for AIESEC members across Canada.</li>
+              <li>The Youth to Business Forum is the first 2 days of NLDC, and is open to non-AIESEC members because we believe that professional development and career advancement is relevant to everyone.</li>
+            </ul>
+            `,
+  },
+  {
+    question: 'Can non-AIESEC members attend NLDC 2019?',
+    answer: 'Yes! You can purchase your tickets at <a href="https://bit.ly/Y2B2019Forum" target="_blank" rel="noopener noreferrer">bit.ly/Y2B2019Forum</a> and attend our Launch and Youth to Business Forum on May 1-2.',
+  },
+  {
     question: 'How much are NLDC tickets?',
     answer: `
             <ul>
@@ -29,26 +41,28 @@ const faq = [
     answer: `<ul>
               <li><span>AIESEC delegates</span> will require business formal, business casual, and banquet attire.</li>
               <li><span>Non-AIESEC delegates</span> will require business formal and business casual attire.</li>
-            </ul>`,
+            </ul>
+            `,
   },
   {
     question: 'Do we have any travel discounts?',
     answer: `<b>WestJet</b> is happy to offer a <b>5% off Econo* and 10% off Flex and Plus fares for travel within Canada and from Mexico into and out of Calgary.</b> Please visit <a href="https://www.westjet.com/conventions" target="_blank" rel="noopener noreferrer">www.westjet.com/conventions</a> to make a booking online.
-      <br/>
-      <ul style="list-style: none; padding: 1.25rem 0;">
-        <li>Coupon Code: <span>2T8G3KG</span></li>
-        <li>Travel from: <span>April 22, 2019 to May 12, 2019</span></li>
-        <b>* Travel Agents use only </b> - Please use Promo Code: WBB70
-      </ul>
-      <br/>
+            <br/>
+            <ul style="list-style: none; padding: 1.25rem 0;">
+              <li>Coupon Code: <span>2T8G3KG</span></li>
+              <li>Travel from: <span>April 22, 2019 to May 12, 2019</span></li>
+              <b>* Travel Agents use only </b> - Please use Promo Code: WBB70
+            </ul>
+            <br/>
 
-      <b>Air Canada​</b> is pleased to offer <b>10% discounts on flex fares and up.</b> Please visit <a href="https://www.aircanada.com target="_blank" rel="noopener noreferrer">www.aircanada.com</a> to make a booking online.
-      <br/>
-      <ul style="list-style: none; padding: 1.25rem 0;">
-        <li>Coupon Code: <span>GC83HRD1</span></li>
-        <li>Travel from: <span>April 22, 2019 to May 12, 2019</span></li>
-        <li>* For any question reach out to <a href="mailto:meetings.events@aircanada.ca">meetings.events@aircanada.ca</a></li>
-      </ul>`,
+            <b>Air Canada​</b> is pleased to offer <b>10% discounts on flex fares and up.</b> Please visit <a href="https://www.aircanada.com target="_blank" rel="noopener noreferrer">www.aircanada.com</a> to make a booking online.
+            <br/>
+            <ul style="list-style: none; padding: 1.25rem 0;">
+              <li>Coupon Code: <span>GC83HRD1</span></li>
+              <li>Travel from: <span>April 22, 2019 to May 12, 2019</span></li>
+              <li>* For any question reach out to <a href="mailto:meetings.events@aircanada.ca">meetings.events@aircanada.ca</a></li>
+            </ul>
+            `,
   },
   {
     question: 'Can I stay before and after the conference?',
@@ -78,15 +92,12 @@ const faq = [
               <li><span>AIESEC Delegates</span> looking to attend the pre-conference on April 30th should book their flights to arrive on the <span>evening of April 29th or the morning of April 30th</span>.</li>
               <li><span>AIESEC Delegates</span> only attending the conference should book their flight to arrive on the <span>evening of April 30th or before noon on May 1st</span>.</li>
               <li><span>Non-AIESEC delegates</span> attending the Youth to Business Forum, please refer to <a href="https://www.aiesec.ca/youthtobusiness" target="_blank" rel="noopener noreferrer">www.aiesec.ca/youthtobusiness</a> for agenda details.</li>
-            </ul>`,
+            </ul>
+            `,
   },
   {
     question: 'How much cash should I bring?',
     answer: 'Please bring <span>$40+</span> to be safe. These can cover night event tickets, merchandise, raffles, etc...',
-  },
-  {
-    question: 'Can non-AIESEC members attend NLDC 2019?',
-    answer: 'Yes! You can purchase your tickets at <a href="https://bit.ly/Y2B2019Forum" target="_blank" rel="noopener noreferrer">bit.ly/Y2B2019Forum</a> and attend our Launch and Youth to Business Forum on May 1-2.',
   },
   {
     question: 'What is the legal drinking age in Calgary, Alberta?',
