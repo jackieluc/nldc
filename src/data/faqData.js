@@ -75,8 +75,9 @@ const faq = [
   {
     question: 'When should I arrive at the conference venue?',
     answer: `<ul>
-              <li>Delegates looking to attend the pre-conference on April 30th should book their flights to arrive on the <span>evening of April 29th or the morning of April 30th</span>.</li>
-              <li>Delegates only attending the conference should book their flight to arrive on the <span>evening of April 30th or before noon on May 1st</span>.</li>
+              <li><span>AIESEC Delegates</span> looking to attend the pre-conference on April 30th should book their flights to arrive on the <span>evening of April 29th or the morning of April 30th</span>.</li>
+              <li><span>AIESEC Delegates</span> only attending the conference should book their flight to arrive on the <span>evening of April 30th or before noon on May 1st</span>.</li>
+              <li><span>Non-AIESEC delegates</span> attending the Youth to Business Forum, please refer to <a href="https://www.aiesec.ca/youthtobusiness" target="_blank" rel="noopener noreferrer">www.aiesec.ca/youthtobusiness</a> for agenda details.</li>
             </ul>`,
   },
   {
