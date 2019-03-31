@@ -17,17 +17,17 @@ const faq = [
   },
   {
     question: 'How much are NLDC tickets?',
-    answer: `<p>Both the AIESEC Delegate Fee and External Delegate Fee are TBD. Please subscribe to our conference newsletter or our Facebook group to stay up to date with details.</p>
+    answer: `<p>Both the AIESEC Delegate Fee and Non-AIESEC Delegate Fee are TBD. Please subscribe to our conference newsletter or our Facebook group to stay up to date with details.</p>
             <ul>
               <li><span>AIESEC delegate</span> tickets will include 5 nights of accommodation, food, and access to the entire agenda</li>
-              <li><span>External (non-AIESEC) delegate</span> tickets will include food and access to the Innovation Series & Y2B Forum only</li>
+              <li><span>Non-AIESEC delegate</span> tickets will include food and access to the Innovation Series & Y2B Forum only</li>
             </ul>`,
   },
   {
     question: 'What is the dress code?',
     answer: `<ul>
               <li><span>AIESEC delegates</span> will require business formal, business casual, and banquet attire.</li>
-              <li><span>External (non-AIESEC) delegates</span> will need business formal and business casual attire.</li>
+              <li><span>Non-AIESEC delegates</span> will require business formal and business casual attire.</li>
             </ul>`,
   },
   {
