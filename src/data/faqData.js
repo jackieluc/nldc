@@ -33,13 +33,22 @@ const faq = [
   },
   {
     question: 'Do we have any travel discounts?',
-    answer: `Yes! <div style="color: #00467F; display: inline-block; font-weight: bold;">WestJet</div> is happy to offer a <b>5% off Econo* and 10% off Flex and Plus fares for travel within Canada and from Mexico into and out of Calgary.</b> Please visit <a href="https://www.westjet.com/conventions" target="_blank" rel="noopener noreferrer">www.westjet.com/conventions</a> to make a booking online.
+    answer: `<b>WestJet</b> is happy to offer a <b>5% off Econo* and 10% off Flex and Plus fares for travel within Canada and from Mexico into and out of Calgary.</b> Please visit <a href="https://www.westjet.com/conventions" target="_blank" rel="noopener noreferrer">www.westjet.com/conventions</a> to make a booking online.
       <br/>
       <ul style="list-style: none; padding: 1.25rem 0;">
         <li>Coupon Code: <span>2T8G3KG</span></li>
         <li>Travel from: <span>April 22, 2019 to May 12, 2019</span></li>
+        <b>* Travel Agents use only </b> - Please use Promo Code: WBB70
       </ul>
-      <b>* Travel Agents use only </b> - Please use Promo Code: WBB70`,
+      <br/>
+
+      <b>Air Canada​</b> is pleased to offer <b>10% discounts on flex fares and up.</b> Please visit <a href="https://www.aircanada.com target="_blank" rel="noopener noreferrer">www.aircanada.com</a> to make a booking online.
+      <br/>
+      <ul style="list-style: none; padding: 1.25rem 0;">
+        <li>Coupon Code: <span>GC83HRD1</span></li>
+        <li>Travel from: <span>April 22, 2019 to May 12, 2019</span></li>
+        <li>* For any question reach out to <a href="mailto:meetings.events@aircanada.ca">meetings.events@aircanada.ca</a></li>
+      </ul>`,
   },
   {
     question: 'Can I stay before and after the conference?',
