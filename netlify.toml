@@ -17,3 +17,8 @@
   from    = "/banff"
   to      = "https://bit.ly/nldc2019banff"
   status  = 301
+
+[[redirects]]
+  from    = "/fyrefestival"
+  to      = "https://www.nldcnow.com"
+  status  = 301
