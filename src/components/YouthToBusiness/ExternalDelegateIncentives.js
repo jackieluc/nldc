@@ -7,10 +7,10 @@ import ButtonCTA from '../Button/Button';
 
 const Wrapper = styled(Container)`
   color: white;
-  background-color: ${Styles.themeColour};
-  margin-top: 5rem;
+  background: linear-gradient(${Styles.y2bGreen} 30%, ${Styles.themeColour} 100%);
+  margin-bottom: 5rem;
   padding: 5rem 0;
-  ${Media.laptop`padding: 5rem 20px;`}
+  ${Media.laptop`padding: 5rem 20px 5rem 20px;`}
 `;
 
 const Title = styled.h2`
@@ -80,8 +80,8 @@ const ExternalDelegateIncentives = () => (
   <Wrapper fluid>
     <StyledRow style={{ margin: '0 auto 5rem auto '}}>
       <Col xs={12}>
-        <Title>Not a member of AIESEC? No problem!</Title>
-        <Subtitle>If you are a university student or new-grad, you are invited to our Youth to Business Forum which will take place from May 1-2.</Subtitle>
+        <Title>Not a member of AIESEC? <br/> Join our Youth To Business Forum!</Title>
+        <Subtitle>If you are a university student or new-grad, you are invited to our Youth to Business Forum, which will take place from May 1-2.</Subtitle>
         <ButtonCTA link="https://bit.ly/Y2B2019Forum">Get Your Tickets</ButtonCTA>
       </Col>
     </StyledRow>
