@@ -41,8 +41,8 @@ const Home = () => (
       </Helmet>
       <Hero />
       <EventDetails />
-      <AboutAiesec />
       <YouthToBusiness />
+      <AboutAiesec />
       <SponsorDetails />
       <LearnMoreCTA />
       <SponsorList />

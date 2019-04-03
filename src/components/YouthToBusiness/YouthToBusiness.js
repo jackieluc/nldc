@@ -7,11 +7,9 @@ import Media from '../../utils/media';
 import Styles from '../../utils/styles';
 import Testimonials from './Testimonials';
 import ButtonCTA from '../Button/Button';
+import ExternalDelegateIncentives from './ExternalDelegateIncentives';
 
 const Wrapper = styled.section`
-  ${Media.laptop`
-    margin-top: 3rem;
-  `}
 `;
 
 const CenteredRow = styled(Row)`
@@ -134,8 +132,8 @@ const TestimonialBackground = () => (
     <circle cx="235" cy="235" r="235" fill="url(#paint0_linear)"/>
     <defs>
       <linearGradient id="paint0_linear" x1="68.4361" y1="86.1787" x2="399.753" y2="406.271" gradientUnits="userSpaceOnUse">
-        <stop stopColor="#30C39F"/>
-        <stop offset="1" stopColor="#037EF3"/>
+        <stop stopColor={Styles.y2bGreen}/>
+        <stop offset="1" stopColor={Styles.themeColour}/>
       </linearGradient>
     </defs>
   </ResponsiveSvg>
@@ -158,6 +156,7 @@ const YouthToBusiness = (props) => (
     query={PageQuery}
     render={data => (
       <Wrapper>
+        <ExternalDelegateIncentives />
         <Container>
           <CenteredRow>
             <Col xs={12} sm={10} lg={6}>

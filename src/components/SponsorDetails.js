@@ -4,7 +4,7 @@ import Styles from '../utils/styles';
 import Media, { BreakPoints } from '../utils/media';
 
 const SponsorDetailsSection = styled.section`
-  padding: 2rem 15px 0;
+  padding: 5rem 15px 0;
 `;
 
 const Wrapper = styled.div`
