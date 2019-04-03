@@ -55,7 +55,7 @@ const faq = [
             </ul>
             <br/>
 
-            <b>Air Canada​</b> is pleased to offer <b>10% discounts on flex fares and up.</b> Please visit <a href="https://www.aircanada.com target="_blank" rel="noopener noreferrer">www.aircanada.com</a> to make a booking online.
+            <b>Air Canada​</b> is pleased to offer <b>5% off regular fares and 15% off flex fares or higher.</b> Please visit <a href="https://www.aircanada.com target="_blank" rel="noopener noreferrer">www.aircanada.com</a> to make a booking online.
             <br/>
             <ul style="list-style: none; padding: 1.25rem 0;">
               <li>Coupon Code: <span>GC83HRD1</span></li>
