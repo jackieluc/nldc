@@ -13,7 +13,7 @@ const CTA = styled.a`
   ${Styles.shadow}
   
   ${({ type }) => {
-    if(type === 'secondary') {
+    if (type === 'secondary') {
       return `
               color: ${Styles.lightRed};
               background-color: white;

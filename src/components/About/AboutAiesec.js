@@ -44,7 +44,7 @@ const AboutAiesec = () => (
               { // eslint-disable-next-line
               } We are in consultative status with the United Nations Economic and Social Council (ECOSOC), affiliated with the UN DPI, member of ICMYO, and is recognized by UNESCO.
             </Text>
-            <ButtonCTA type="ghost" href="https://www.aiesec.ca/" target="_blank" rel="noopener noreferrer">
+            <ButtonCTA type="ghost" link="https://www.aiesec.ca/">
               Find out More About AIESEC
             </ButtonCTA>
           </About>
