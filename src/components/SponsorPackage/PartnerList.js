@@ -77,13 +77,13 @@ const PartnerList = ({ paddingTop }) => (
           </TierTitle>
           <LogoCard>
             <SponsorLink href={allProfiles.event.partners.knoxville.website} target="_blank" rel="noopener noreferrer">
-              <Logo src={allProfiles.event.partners.knoxville.logo} alt="" className="partners" />
+              <Logo src={allProfiles.event.partners.knoxville.logo} alt={allProfiles.event.partners.knoxville.name + ' logo'} className="partners" />
             </SponsorLink>
             <SponsorLink href={allProfiles.event.partners.commonwealth.website} target="_blank" rel="noopener noreferrer">
-              <Logo src={allProfiles.event.partners.commonwealth.logo} alt="" className="partners" />
+              <Logo src={allProfiles.event.partners.commonwealth.logo} alt={allProfiles.event.partners.commonwealth.name + ' logo'} className="partners" />
             </SponsorLink>
             <SponsorLink href={allProfiles.event.partners.marquee.website} target="_blank" rel="noopener noreferrer">
-              <Logo src={allProfiles.event.partners.marquee.logo} alt="" className="marquee" />
+              <Logo src={allProfiles.event.partners.marquee.logo} alt={allProfiles.event.partners.marquee.name + ' logo'} className="marquee" />
             </SponsorLink>
           </LogoCard>
         </Tier>
@@ -93,28 +93,28 @@ const PartnerList = ({ paddingTop }) => (
           </TierTitle>
           <LogoCard>
             <SponsorLink href={allProfiles.inKind.partners.esxossmanway.website} target="_blank" rel="noopener noreferrer">
-              <Logo src={allProfiles.inKind.partners.esxossmanway.logo} alt="" />
+              <Logo src={allProfiles.inKind.partners.esxossmanway.logo} alt={allProfiles.inKind.partners.esxossmanway.name + ' logo'} />
             </SponsorLink>
             <SponsorLink href={allProfiles.inKind.partners.rumbleboxing.website} target="_blank" rel="noopener noreferrer">
-              <Logo src={allProfiles.inKind.partners.rumbleboxing.logo} alt="" className="rumble-boxing" />
+              <Logo src={allProfiles.inKind.partners.rumbleboxing.logo} alt={allProfiles.inKind.partners.rumbleboxing.name + ' logo'} className="rumble-boxing" />
             </SponsorLink>
             <SponsorLink href={allProfiles.inKind.partners.flyingsquirrel.website} target="_blank" rel="noopener noreferrer">
-              <Logo src={allProfiles.inKind.partners.flyingsquirrel.logo} alt="" className="flying-squirrel" />
+              <Logo src={allProfiles.inKind.partners.flyingsquirrel.logo} alt={allProfiles.inKind.partners.flyingsquirrel.name + ' logo'} className="flying-squirrel" />
             </SponsorLink>
             <SponsorLink href={allProfiles.inKind.partners.xerox.website} target="_blank" rel="noopener noreferrer">
-              <Logo src={allProfiles.inKind.partners.xerox.logo} alt="" className="xerox" />
+              <Logo src={allProfiles.inKind.partners.xerox.logo} alt={allProfiles.inKind.partners.xerox.name + ' logo'} className="xerox" />
             </SponsorLink>
             <SponsorLink href={allProfiles.inKind.partners.phoneloops.website} className="last" target="_blank" rel="noopener noreferrer">
-              <Logo src={allProfiles.inKind.partners.phoneloops.logo} alt="" className="phoneloops" />
+              <Logo src={allProfiles.inKind.partners.phoneloops.logo} alt={allProfiles.inKind.partners.phoneloops.name + ' logo'} className="phoneloops" />
             </SponsorLink>
             <SponsorLink href={allProfiles.inKind.partners.brettwilson.website} className="last" target="_blank" rel="noopener noreferrer">
-              <Logo src={allProfiles.inKind.partners.brettwilson.logo} alt="" className="" />
+              <Logo src={allProfiles.inKind.partners.brettwilson.logo} alt={allProfiles.inKind.partners.brettwilson.name + ' logo'} className="" />
             </SponsorLink>
             <SponsorLink href={allProfiles.inKind.partners.beyondscarf.website} className="last" target="_blank" rel="noopener noreferrer">
-              <Logo src={allProfiles.inKind.partners.beyondscarf.logo} alt="" className="" />
+              <Logo src={allProfiles.inKind.partners.beyondscarf.logo} alt={allProfiles.inKind.partners.beyondscarf.name + ' logo'} className="" />
             </SponsorLink>
             <SponsorLink href={allProfiles.inKind.partners['5s17'].website} className="last" target="_blank" rel="noopener noreferrer">
-              <Logo src={allProfiles.inKind.partners['5s17'].logo} alt="" className="" />
+              <Logo src={allProfiles.inKind.partners['5s17'].logo} alt={allProfiles.inKind.partners['5s17'].name + ' logo'} className="" />
             </SponsorLink>
           </LogoCard>
         </Tier>

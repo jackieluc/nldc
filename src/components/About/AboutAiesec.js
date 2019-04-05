@@ -2,8 +2,8 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import styled from 'styled-components';
 import Media from '../../utils/media';
-import Styles from '../../utils/styles';
 import AiesecLogo from '../../images/aiesec-logo.png';
+import ButtonCTA from '../Button/Button';
 
 const Wrapper = styled.section`
   background-image: linear-gradient( 135deg, #74C7D9 40%, #037EF3 100%);
@@ -11,12 +11,6 @@ const Wrapper = styled.section`
 
 const About = styled.div`
   color: white;
-`;
-
-const Title = styled.h2`
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-  font-size: 2.5rem;
 `;
 
 const Logo = styled.div`
@@ -31,27 +25,6 @@ const Logo = styled.div`
 const Text = styled.p`
   text-align: left;
   ${Media.tablet`text-align: center;`}
-`;
-
-const CTA = styled.a`
-  display: inline-block;
-  border-radius: 40px;
-  margin: 0;
-  border: 1px solid white;
-  color: white;
-  background-color: transparent;
-  ${Styles.shadow}
-  padding: .7rem 2rem;
-  margin-top: 2rem;
-
-  &:hover,
-  &:focus {
-    color: white;
-    background-color: ${Styles.themeColour};
-    border-color: ${Styles.themeColour};
-    cursor: pointer;
-    text-decoration: none;
-  }
 `;
 
 const AboutAiesec = () => (
@@ -71,9 +44,9 @@ const AboutAiesec = () => (
               { // eslint-disable-next-line
               } We are in consultative status with the United Nations Economic and Social Council (ECOSOC), affiliated with the UN DPI, member of ICMYO, and is recognized by UNESCO.
             </Text>
-            <CTA href="https://www.aiesec.ca/" target="_blank" rel="noopener noreferrer">
+            <ButtonCTA type="ghost" link="https://www.aiesec.ca/">
               Find out More About AIESEC
-            </CTA>
+            </ButtonCTA>
           </About>
         </Col>
       </Row>
