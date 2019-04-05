@@ -10,6 +10,7 @@ import ButtonCTA from '../Button/Button';
 import ExternalDelegateIncentives from './ExternalDelegateIncentives';
 
 const Wrapper = styled.section`
+  padding-top: 0;
 `;
 
 const CenteredRow = styled(Row)`
@@ -166,7 +167,7 @@ const YouthToBusiness = (props) => (
               <Subtitle>Connecting the leaders of tomorrow with the leaders of today through dialogue on relvant global topics.</Subtitle>
               <CTAWrapper>
                 <ButtonCTA link="https://bit.ly/Y2B2019Forum">Get Your Tickets</ButtonCTA>
-                <ButtonCTA secondary link="https://www.aiesec.ca/youthtobusiness/">Find out More About Y2B</ButtonCTA>
+                <ButtonCTA type="secondary" link="https://www.aiesec.ca/youthtobusiness/">Find out More About Y2B</ButtonCTA>
               </CTAWrapper>
             </Col>
             <Col xs={12} sm={10} lg={6}>

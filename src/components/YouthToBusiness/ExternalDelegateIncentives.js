@@ -27,7 +27,8 @@ const Subtitle = styled.p`
 
 const StyledRow = styled(Row)`
   max-width: 1140px;
-  margin: 0 auto;
+  margin: 0 auto 5rem auto;
+
   ${Media.tablet`justify-content: center;`}
 `;
 
@@ -78,7 +79,7 @@ const Highlight = styled.span`
 
 const ExternalDelegateIncentives = () => (
   <Wrapper fluid id="youthtobusiness">
-    <StyledRow style={{ margin: '0 auto 5rem auto '}}>
+    <StyledRow>
       <Col xs={12}>
         <Title>Not a member of AIESEC? <br/> Join our Youth To Business Forum!</Title>
         <Subtitle>If you are a university student or new-grad, you are invited to our Youth to Business Forum, which will take place from May 1-2.</Subtitle>
@@ -104,6 +105,14 @@ const ExternalDelegateIncentives = () => (
           <h3><Highlight>$110 | General Admission & Accommodation</Highlight></h3>
           <p>includes Dinner (May 1st), Overnight Accommodation (May 1st), Breakfast and Lunch (May 2nd)</p>
         </TicketInfo>
+      </Col>
+    </StyledRow>
+    <StyledRow style={{ marginBottom: '0' }}>
+      <Col xs={12} md={10} lg={8}>
+        <Title>Let&apos;s hear your voice</Title>
+        <p style={{ marginBottom: '1rem' }}>Every year AIESEC in Canada releases the Youth to Business survey. This survey aims to better understand the priorities of young people to communicate them with industry professionals. Young people are most affected by this gap, and have a responsibility to shape the future they want to see.</p>
+        <p>We are proud to announce that this year RBC will be sponsoring the Youth To Business Survey in partnership with their ongoing RBC Upskill Initiative. For more information on RBC Skill visit: <a href="https://www.rbcupskill.ca" target="_blank" rel="noopener noreferrer" style={{ color: 'white', fontWeight: 'bold' }}>https://www.rbcupskill.ca</a></p>
+        <ButtonCTA type="ghost" href="https://aiesecincanada1.typeform.com/to/LwjMb8" target="_blank" rel="noopener noreferrer">Take Our Survey</ButtonCTA>
       </Col>
     </StyledRow>
   </Wrapper>

@@ -12,13 +12,21 @@ const CTA = styled.a`
   background-color: ${Styles.lightRed};
   ${Styles.shadow}
   
-  ${({ secondary }) => (secondary === true
-    ? `
-        color: ${Styles.lightRed};
-        background-color: white;
-      `
-    : ``
-  )}
+  ${({ type }) => {
+    if(type === 'secondary') {
+      return `
+              color: ${Styles.lightRed};
+              background-color: white;
+            `;
+    }
+    if (type === 'ghost') {
+      return `
+              background-color: transparent;
+              border: 1px solid white;
+              margin-top: 2rem;
+            `;
+    }
+  }}
 
   &:hover,
   &:focus {
@@ -26,11 +34,20 @@ const CTA = styled.a`
     background-color: ${Styles.red};
     cursor: pointer;
     text-decoration: none;
+
+    ${({ type }) => ( type === 'ghost'
+      ? `
+          color: ${Styles.lightRed} !important;
+          background-color: white;
+          border-color: white;
+        `
+      : ``
+    )}
   }
 `;
 
-const ButtonCTA = ({ secondary, link, children }) => (
-  <CTA secondary={secondary} href={link} target="_blank" rel="noopener noreferrer">
+const ButtonCTA = ({ type, link, children }) => (
+  <CTA type={type} href={link} target="_blank" rel="noopener noreferrer">
     { children }
   </CTA>
 );
