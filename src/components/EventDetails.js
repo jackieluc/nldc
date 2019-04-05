@@ -165,11 +165,11 @@ const EventDetails = () => (
             </EventInfoTitle>
             <EventDescription>
               <div>
-                <h4>AIESEC Delegates</h4>
+                <p>AIESEC Delegates</p>
                 <AddToCalendar category="aiesec" />
               </div>
               <div>
-                <h4>External Delegates</h4>
+                <p>Non-AIESEC Delegates</p>
                 <AddToCalendar category="external" />
               </div>
             </EventDescription>
