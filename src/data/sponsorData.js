@@ -8,7 +8,7 @@ const sponsors = {
         name: 'Nutrien',
         shortName: ``,
         logo: Logos['nutrien.png'],
-        description: ``,
+        description: `<p>Nutrien is the world's largest provider of crop inputs and services, playing a critical role in helping growers increase food production in a sustainable manner. We produce and distribute over 26 million tonnes of potash, nitrogen and phosphate products world-wide. With this capability and our leading agriculture retail network, we are well positioned to supply the needs of our customers. We operate with a long-term view and are committed to working with our stakeholders as we address our economic, environmental and social priorities.</p>`,
         website: `https://www.nutrien.com/`,
       },
     },

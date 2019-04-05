@@ -79,9 +79,9 @@ const SponsorList = ({ paddingTop }) => (
           { allProfiles.title.tierTitle }
         </TierTitle>
         <LogoCard>
-          <SponsorLink href={allProfiles.title.sponsors.nutrien.website} target="_blank" rel="noopener noreferrer">
-            <Logo src={allProfiles.title.sponsors.nutrien.logo} alt="" />
-          </SponsorLink>
+          <CompanyProfile profile={allProfiles.title.sponsors.nutrien}>
+            <Logo src={allProfiles.title.sponsors.nutrien.logo} alt={allProfiles.title.sponsors.nutrien.name + ' logo'} />
+          </CompanyProfile>
         </LogoCard>
       </Tier>
       <Tier>
@@ -90,7 +90,7 @@ const SponsorList = ({ paddingTop }) => (
         </TierTitle>
         <LogoCard>
           <CompanyProfile profile={allProfiles.gold.sponsors.ced}>
-            <Logo src={allProfiles.gold.sponsors.ced.logo} alt="" />
+            <Logo src={allProfiles.gold.sponsors.ced.logo} alt={allProfiles.gold.sponsors.ced.name + ' logo'} />
           </CompanyProfile>
         </LogoCard>
       </Tier>
@@ -101,13 +101,13 @@ const SponsorList = ({ paddingTop }) => (
         </TierTitle>
         <LogoCard>
           <CompanyProfile profile={allProfiles.innovation.sponsors.hunterhub}>
-            <Logo src={allProfiles.innovation.sponsors.hunterhub.logo} alt="" className="hunter-hub" />
+            <Logo src={allProfiles.innovation.sponsors.hunterhub.logo} alt={allProfiles.innovation.sponsors.hunterhub.name + ' logo'} className="hunter-hub" />
           </CompanyProfile>
           <CompanyProfile profile={allProfiles.innovation.sponsors.avnet}>
-            <Logo src={allProfiles.innovation.sponsors.avnet.logo} alt="" className="avnet" />
+            <Logo src={allProfiles.innovation.sponsors.avnet.logo} alt={allProfiles.innovation.sponsors.avnet.name + ' logo'} className="avnet" />
           </CompanyProfile>
           <SponsorLink href={allProfiles.innovation.sponsors.benevity.website} target="_blank" rel="noopener noreferrer">
-            <Logo src={allProfiles.innovation.sponsors.benevity.logo} alt="" />
+            <Logo src={allProfiles.innovation.sponsors.benevity.logo} alt={allProfiles.innovation.sponsors.benevity.name + ' logo'} />
           </SponsorLink>
         </LogoCard>
       </Tier>
@@ -116,13 +116,13 @@ const SponsorList = ({ paddingTop }) => (
         </TierTitle>
         <LogoCard>
           <SponsorLink href={allProfiles.silver.sponsors.atb.website} target="_blank" rel="noopener noreferrer">
-            <Logo src={allProfiles.silver.sponsors.atb.logo} alt="" />
+            <Logo src={allProfiles.silver.sponsors.atb.logo} alt={allProfiles.silver.sponsors.atb.name + ' logo'} />
           </SponsorLink>
           <CompanyProfile profile={allProfiles.silver.sponsors.ccal}>
-            <Logo src={allProfiles.silver.sponsors.ccal.logo} alt="" className="ccal" />
+            <Logo src={allProfiles.silver.sponsors.ccal.logo} alt={allProfiles.silver.sponsors.ccal.name + ' logo'} className="ccal" />
           </CompanyProfile>
           <CompanyProfile profile={allProfiles.silver.sponsors.haskayne}>
-            <Logo src={allProfiles.silver.sponsors.haskayne.logo} alt="" />
+            <Logo src={allProfiles.silver.sponsors.haskayne.logo} alt={allProfiles.silver.sponsors.haskayne.name + ' logo'} />
           </CompanyProfile>
         </LogoCard>
       </Tier>
@@ -132,13 +132,13 @@ const SponsorList = ({ paddingTop }) => (
         </TierTitle>
         <LogoCard>
           <CompanyProfile profile={allProfiles.bronze.sponsors.husky} >
-            <Logo src={allProfiles.bronze.sponsors.husky.logo} alt="" className="husky" />
+            <Logo src={allProfiles.bronze.sponsors.husky.logo} alt={allProfiles.bronze.sponsors.husky.name + ' logo'} className="husky" />
           </CompanyProfile>
           <SponsorLink href={allProfiles.bronze.sponsors.aeso.website} target="_blank" rel="noopener noreferrer">
-            <Logo src={allProfiles.bronze.sponsors.aeso.logo} alt="" className="aeso" />
+            <Logo src={allProfiles.bronze.sponsors.aeso.logo} alt={allProfiles.bronze.sponsors.aeso.name + ' logo'} className="aeso" />
           </SponsorLink>
           <CompanyProfile profile={allProfiles.bronze.sponsors.capp}>
-            <Logo src={allProfiles.bronze.sponsors.capp.logo} alt="" className="capp" />
+            <Logo src={allProfiles.bronze.sponsors.capp.logo} alt={allProfiles.bronze.sponsors.capp.name + ' logo'} className="capp" />
           </CompanyProfile>
         </LogoCard>
       </Tier>
@@ -148,7 +148,7 @@ const SponsorList = ({ paddingTop }) => (
         </TierTitle>
         <LogoCard>
           <CompanyProfile profile={allProfiles.meal.sponsors.pwc}>
-            <Logo src={allProfiles.meal.sponsors.pwc.logo} alt="" className="pwc" />
+            <Logo src={allProfiles.meal.sponsors.pwc.logo} alt={allProfiles.meal.sponsors.pwc.name + ' logo'} className="pwc" />
           </CompanyProfile>
         </LogoCard>
       </Tier>

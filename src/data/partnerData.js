@@ -11,7 +11,7 @@ const partners = {
         website: `https://www.knoxcalgary.com/`,
       },
       commonwealth: {
-        name: 'Commonwealth Bar & Stage ',
+        name: 'Commonwealth Bar & Stage',
         logo: Logos['commonwealth.png'],
         description: ``,
         website: `http://commonwealthbar.ca/`,
