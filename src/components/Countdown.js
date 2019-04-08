@@ -52,46 +52,35 @@ const TimeComponent = styled.p`
   }
 `;
 
-const RenderTimer = ({ days, hours, minutes, seconds }) => (
-  <>
-    <TimeComponent>
-      { days }
-      <br/>
-      <span>days</span>
-    </TimeComponent>
-    <TimeComponent>
-      { hours }
-      <br/>
-      <span>hours</span>
-    </TimeComponent>
-    <TimeComponent>
-      { minutes }
-      <br/>
-      <span>minutes</span>
-    </TimeComponent>
-    <TimeComponent>
-      { seconds }
-      <br />
-      <span>seconds</span>
-    </TimeComponent>
-  </>
+const renderer = ({ days, hours, minutes, seconds, completed }) => (
+  completed === true
+    ? <></>
+    : <>
+        <Wrapper>
+          <TimeComponent>
+            { days }
+            <br/>
+            <span>days</span>
+          </TimeComponent>
+          <TimeComponent>
+            { hours }
+            <br/>
+            <span>hours</span>
+          </TimeComponent>
+          <TimeComponent>
+            { minutes }
+            <br/>
+            <span>minutes</span>
+          </TimeComponent>
+          <TimeComponent>
+            { seconds }
+            <br />
+            <span>seconds</span>
+          </TimeComponent>
+        </Wrapper>
+        <StyledLink href="https://bit.ly/Y2B2019Forum">Get your tickets</StyledLink>
+      </>
 );
-
-const renderer = (props) => {
-  const { completed } = props;
-
-  if (completed) {
-    return <></>;
-  } 
-  else {
-    return <>
-            <Wrapper>
-              <RenderTimer {...props} />
-            </Wrapper>
-            <StyledLink href="https://bit.ly/Y2B2019Forum">Get your tickets</StyledLink>
-          </>;
-  }
-};
 
 export default () => ( 
   <Countdown date={new Date('May 1, 2019 15:00:00')} renderer={renderer} />
