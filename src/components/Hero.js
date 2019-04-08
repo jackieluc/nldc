@@ -3,8 +3,8 @@ import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image';
 import { Container } from 'reactstrap';
 import styled from 'styled-components';
-import Styles from '../utils/styles';
 import Media from '../utils/media';
+import Countdown from './Countdown';
 
 const HeroSection = styled.section`
   min-height: 85vh;
@@ -57,27 +57,6 @@ const Info = styled.h3`
   border: 2px solid white;
 `;
 
-const StyledLink = styled.a`
-  font-size: 12px;
-  padding: 14px 6px;
-  width: 180px;
-  letter-spacing 2px;
-  text-decoration: none;
-  background-image: linear-gradient( 135deg, rgba(232, 93, 94, 1) 40%, rgba(207, 66, 79, 1) 100%);
-  border-radius: 6px;
-  color: white;
-  text-transform: uppercase;
-  margin-top: auto;
-  margin-bottom: 1rem;
-  ${Styles.shadow}
-  
-  &:hover {
-    color: white;
-    background: ${Styles.red};
-    text-decoration: none;
-  }
-`;
-
 const PageQuery = graphql`
   query {
     logo: file(relativePath: { eq: "nldc2019-logo-white.png" }) {
@@ -102,7 +81,7 @@ const Hero = () => (
     query={PageQuery}
     render={data => (
       <HeroSection bgImage={data}>
-        <Container style={{ marginTop: 'auto', padding: '0' }}>
+        <Container style={{ marginTop: 'auto', marginBottom: 'auto', padding: '0' }}>
           <LogoImage fluid={data.logo.childImageSharp.fluid} alt="NLDC 2019 Logo" />
           <Title>
             <span>
@@ -119,7 +98,7 @@ const Hero = () => (
             </span>
           </Info>
         </Container>
-        <StyledLink href="https://bit.ly/Y2B2019Forum">Get your tickets</StyledLink>
+        <Countdown />
       </HeroSection>
     )}
   />
