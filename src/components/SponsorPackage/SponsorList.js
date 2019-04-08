@@ -56,14 +56,21 @@ const Logo = styled.img`
     width: 210px;
     ${Media.tablet`width: 310px;`}
   }
-  &.husky,
-  &.capp {
+  &.husky {
     width: 180px;
     ${Media.tablet`width: 230px;`}
   }
   &.aeso {
     width: 160px;
     ${Media.tablet`width: 180px;`}
+  }
+  &.enbridge {
+    ${Media.tablet`width: 230px;`}
+  }
+  &.capp,
+  &.rockmount,
+  &.pepsico {
+    ${Media.tablet`width: 220px;`}
   }
   &.pwc {
     width: 80px;
@@ -140,6 +147,15 @@ const SponsorList = ({ paddingTop }) => (
           <CompanyProfile profile={allProfiles.bronze.sponsors.capp}>
             <Logo src={allProfiles.bronze.sponsors.capp.logo} alt={allProfiles.bronze.sponsors.capp.name + ' logo'} className="capp" />
           </CompanyProfile>
+          <SponsorLink href={allProfiles.bronze.sponsors.enbridge.website} target="_blank" rel="noopener noreferrer">
+            <Logo src={allProfiles.bronze.sponsors.enbridge.logo} alt={allProfiles.bronze.sponsors.enbridge.name + ' logo'} className="enbridge" />
+          </SponsorLink>
+          <SponsorLink href={allProfiles.bronze.sponsors.rockmount.website} target="_blank" rel="noopener noreferrer">
+            <Logo src={allProfiles.bronze.sponsors.rockmount.logo} alt={allProfiles.bronze.sponsors.rockmount.name + ' logo'} className="rockmount" />
+          </SponsorLink>
+          <SponsorLink href={allProfiles.bronze.sponsors.pepsico.website} target="_blank" rel="noopener noreferrer">
+            <Logo src={allProfiles.bronze.sponsors.pepsico.logo} alt={allProfiles.bronze.sponsors.pepsico.name + ' logo'} className="pepsico" />
+          </SponsorLink>
         </LogoCard>
       </Tier>
       <Tier>

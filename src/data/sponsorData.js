@@ -131,6 +131,27 @@ const sponsors = {
         `,
         website: `https://www.energycitizens.ca/`,
       },
+      enbridge: {
+        name: `Enbridge`,
+        shortName: ``,
+        logo: Logos['enbridge.png'],
+        description: ``,
+        website: `https://www.enbridge.com/`,
+      },
+      rockmount: {
+        name: `Rockmount Financial Corporation`,
+        shortName: ``,
+        logo: Logos['rockmount.png'],
+        description: ``,
+        website: `http://www.rockmountcorp.com/`,
+      },
+      pepsico: {
+        name: `PepsiCo`,
+        shortName: ``,
+        logo: Logos['pepsico.jpg'],
+        description: ``,
+        website: `http://www.pepsico.ca/`,
+      },
     },
   },
   meal: {
