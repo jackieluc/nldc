@@ -57,11 +57,11 @@ const partners = {
         description: ``,
         website: `https://phoneloops.com/`,
       },
-      brettwilson: {
-        name: 'Brett Wilson',
-        logo: Logos['brettwilson.png'],
+      canoefinancial: {
+        name: 'Canoe Financial',
+        logo: Logos['canoefinancial.png'],
         description: ``,
-        website: `http://www.wbrettwilson.ca/`,
+        website: `http://www.canoefinancial.com/`,
       },
       beyondscarf: {
         name: 'Beyond Scarf',
