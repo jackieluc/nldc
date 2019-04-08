@@ -54,15 +54,11 @@ const TimeComponent = styled.p`
 
 const RenderTimer = ({ days, hours, minutes, seconds }) => (
   <>
-    {
-      days > 0
-      ? <TimeComponent>
-          { days }
-          <br/>
-          <span>days</span>
-        </TimeComponent>
-      : <></>
-    }
+    <TimeComponent>
+      { days }
+      <br/>
+      <span>days</span>
+    </TimeComponent>
     <TimeComponent>
       { hours }
       <br/>
@@ -73,15 +69,11 @@ const RenderTimer = ({ days, hours, minutes, seconds }) => (
       <br/>
       <span>minutes</span>
     </TimeComponent>
-    {
-      days > 0 
-      ? <></>
-      : <TimeComponent>
-          { seconds }
-          <br />
-          <span>seconds</span>
-        </TimeComponent>
-    }
+    <TimeComponent>
+      { seconds }
+      <br />
+      <span>seconds</span>
+    </TimeComponent>
   </>
 );
 
