@@ -64,8 +64,12 @@ const MenuWrapper = styled.nav`
     text-transform: none;
   }
   > div {
-    margin: 0 auto 15vh auto;
+    margin: 0 auto 2rem auto;
     text-transform: none;
+  }
+
+  .contact-us {
+    margin: 0 auto 10vh auto;
   }
 `;
 
@@ -99,6 +103,17 @@ const ButtonAnchor = styled.a`
   }
 `;
 
+const ContactLink = styled.a`
+  display: inline-block;
+  margin-top: 1rem;
+  color: black;
+
+  &:hover {
+    color: ${Styles.red};
+    text-decoration: underline;
+  }
+`;
+
 const MobileMenu = ({ routes, action }) => (
   <MenuWrapper>
     { 
@@ -113,6 +128,7 @@ const MobileMenu = ({ routes, action }) => (
     ))}
     <MailChimp />
     <SocialMedia />
+    <ContactLink href="mailto:kkaren.ngo@aiesec.net" className="contact-us">Contact Us</ContactLink>
   </MenuWrapper>
 );
 

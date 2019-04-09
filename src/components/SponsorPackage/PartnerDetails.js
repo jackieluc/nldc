@@ -34,7 +34,7 @@ const Description = styled.p`
 
 const PartnerDetails = () => (
   <PartnerDetailsSection>
-    <Wrapper>
+    <Wrapper id="partners">
       <PartnerTitle>
         Partners
       </PartnerTitle>

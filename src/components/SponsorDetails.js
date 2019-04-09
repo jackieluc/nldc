@@ -39,7 +39,7 @@ const Highlight = styled.b`
 
 const SponsorDetails = () => (
   <SponsorDetailsSection>
-    <Wrapper>
+    <Wrapper id="sponsors">
       <SponsorTitle>
         Sponsors
       </SponsorTitle>

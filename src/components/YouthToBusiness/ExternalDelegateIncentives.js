@@ -78,7 +78,7 @@ const Highlight = styled.span`
 `;
 
 const ExternalDelegateIncentives = () => (
-  <Wrapper fluid id="youthtobusiness">
+  <Wrapper fluid id="youth-to-business">
     <StyledRow>
       <Col xs={12}>
         <Title>Not a member of AIESEC? <br/> Join our Youth To Business Forum!</Title>
@@ -107,9 +107,9 @@ const ExternalDelegateIncentives = () => (
         </TicketInfo>
       </Col>
     </StyledRow>
-    <StyledRow style={{ marginBottom: '0' }}>
+    <StyledRow id="survey" style={{ marginBottom: '0' }}>
       <Col xs={12} md={10} lg={8}>
-        <Title>Let&apos;s hear your voice</Title>
+        <Title>Let us hear your voice</Title>
         <p style={{ marginBottom: '1rem' }}>Every year, AIESEC in Canada releases the Youth to Business survey. This survey aims to better understand the priorities of young people to communicate them with industry professionals. Young people are most affected by this gap, and have a responsibility to shape the future they want to see.</p>
         <p>We are proud to announce that this year RBC will be sponsoring the Youth To Business Survey in partnership with their ongoing RBC Upskill Initiative. For more information on RBC Skill visit: <a href="https://www.rbcupskill.ca" target="_blank" rel="noopener noreferrer" style={{ color: 'white', fontWeight: 'bold' }}>https://www.rbcupskill.ca</a></p>
         <ButtonCTA type="ghost" link="https://aiesecincanada1.typeform.com/to/LwjMb8">Take Our Survey</ButtonCTA>

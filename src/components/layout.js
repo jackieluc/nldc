@@ -99,11 +99,6 @@ const routes = [
     button: false,
   },
   {
-    name: 'Contact',
-    path: 'mailto:kkaren.ngo@aiesec.net',
-    button: false,
-  },
-  {
     name: 'Get your tickets',
     path: 'https://bit.ly/Y2B2019Forum',
     button: true,
