@@ -79,8 +79,13 @@ const GlobalStyle = createGlobalStyle`
 
 const routes = [
   {
-    name: 'Home',
-    path: '/',
+    name: 'About NLDC',
+    path: '/#about-nldc',
+    button: false
+  },
+  {
+    name: 'Youth to Business',
+    path: '/#youth-to-business',
     button: false,
   },
   {
