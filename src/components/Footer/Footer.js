@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image';
 import styled from 'styled-components';
+import Styles from '../../utils/styles';
 import { Container } from 'reactstrap';
 import MailChimp from '../MailChimp/MailChimp';
 import SocialMedia from './SocialMedia';
@@ -23,6 +24,17 @@ const StyledLink = styled(Link)`
   position: absolute;
   top: -135px;
   margin-left: -120px;
+`;
+
+const ContactLink = styled.a`
+  display: inline-block;
+  margin-top: 1rem;
+  color: black;
+
+  &:hover {
+    color: ${Styles.red};
+    text-decoration: underline;
+  }
 `;
 
 const PageQuery = graphql`
@@ -49,6 +61,7 @@ const Footer = (props) => (
           <Container>
             <MailChimp />
             <SocialMedia />
+            <ContactLink href="mailto:kkaren.ngo@aiesec.net">Contact Us</ContactLink>
           </Container>
         </Wrapper>
       </FooterSection>
