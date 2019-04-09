@@ -63,14 +63,13 @@ const ButtonAnchor = styled.a`
 
 const StyledAnchor = styled.a`
   font-size: 1rem;
-  padding: 8px 1.5rem;
+  padding: 8px 1rem;
   letter-spacing: 1px;
   text-decoration: none;
 `;
 
 const Logo = styled.img`
-  width: 120px;
-  height: 54px;
+  height: 70px;
 `;
 
 export default class Menu extends Component {
@@ -123,7 +122,7 @@ export default class Menu extends Component {
     return (
       <MenuWrapper location={location} heights={{ currentWindowHeight, firstSectionHeight }}>
         <Link to="/">
-          <Logo src={BlackNldcLogo} alt="" />
+          <Logo src={BlackNldcLogo} alt="NLDC 2019 Logo" />
         </Link>
         { 
           routes.map(route => (
