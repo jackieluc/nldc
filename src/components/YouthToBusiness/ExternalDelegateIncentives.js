@@ -107,7 +107,7 @@ const ExternalDelegateIncentives = () => (
         </TicketInfo>
       </Col>
     </StyledRow>
-    <StyledRow style={{ marginBottom: '0' }}>
+    <StyledRow id="survey" style={{ marginBottom: '0' }}>
       <Col xs={12} md={10} lg={8}>
         <Title>Let us hear your voice</Title>
         <p style={{ marginBottom: '1rem' }}>Every year, AIESEC in Canada releases the Youth to Business survey. This survey aims to better understand the priorities of young people to communicate them with industry professionals. Young people are most affected by this gap, and have a responsibility to shape the future they want to see.</p>
