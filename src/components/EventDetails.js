@@ -125,7 +125,7 @@ const EventInfoTitle = styled.h2`
 `;
 
 const EventDetails = () => (
-  <section>
+  <section id="what-is-nldc">
     <TallerContainer>
       <ConferenceDescription>
         <StyledRow>

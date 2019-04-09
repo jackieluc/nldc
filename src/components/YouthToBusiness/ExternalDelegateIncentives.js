@@ -78,7 +78,7 @@ const Highlight = styled.span`
 `;
 
 const ExternalDelegateIncentives = () => (
-  <Wrapper fluid id="youthtobusiness">
+  <Wrapper fluid id="youth-to-business">
     <StyledRow>
       <Col xs={12}>
         <Title>Not a member of AIESEC? <br/> Join our Youth To Business Forum!</Title>

@@ -28,7 +28,7 @@ const Text = styled.p`
 `;
 
 const AboutAiesec = () => (
-  <Wrapper>
+  <Wrapper id="about-aiesec">
     <Container fluid>
       <Row>
         <Col xs="12" md="10" lg="8" xl="6" style={{ margin: '0 auto' }}>
