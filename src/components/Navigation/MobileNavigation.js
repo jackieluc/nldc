@@ -125,7 +125,9 @@ const MobileMenu = ({ routes, action }) => (
           : <StyledAnchor href={route.path} key={route.name}>
               { route.name }
             </StyledAnchor>
-    ))}
+        )
+      )
+    }
     <MailChimp />
     <SocialMedia />
     <ContactLink href="mailto:kkaren.ngo@aiesec.net" className="contact-us">Contact Us</ContactLink>
