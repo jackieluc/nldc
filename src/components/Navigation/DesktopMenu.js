@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Styles from '../../utils/styles';
+import Media from '../../utils/media';
 import BlackNldcLogo from '../../images/nldc2019-logo-black.png';
 
 const isHomePage = location => location === '/';
@@ -63,7 +64,8 @@ const ButtonAnchor = styled.a`
 
 const StyledAnchor = styled.a`
   font-size: 1rem;
-  padding: 8px 1rem;
+  ${Media.laptop`padding: 8px;`}
+  ${Media.desktop`padding: 8px 1rem;`}
   letter-spacing: 1px;
   text-decoration: none;
 `;
