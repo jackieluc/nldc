@@ -47,7 +47,7 @@ const MenuWrapper = styled.nav`
 `;
 
 const ButtonAnchor = styled.a`
-  font-size: 1rem;
+  font-size: 14px;
   padding: 10px 1.5rem;
   letter-spacing 1px;
   text-decoration: none;
@@ -63,7 +63,7 @@ const ButtonAnchor = styled.a`
 `;
 
 const StyledAnchor = styled.a`
-  font-size: 1rem;
+  font-size: 14px;
   ${Media.laptop`padding: 8px;`}
   ${Media.desktop`padding: 8px 1rem;`}
   letter-spacing: 1px;
