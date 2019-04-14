@@ -8,6 +8,7 @@ import Styles from '../utils/styles';
 import SeoImage from '../images/seo-image.png';
 import team from '../data/teamData';
 import ProfileCard from '../components/Cards/ProfileCard';
+import { getHeightFromRatio } from '../utils/math';
 
 const Wrapper = styled.section`
   background-image: linear-gradient( 135deg, #74C7D9 40%, #037EF3 100%);
@@ -19,13 +20,14 @@ const TitleWrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+  padding: 0 15px;
+  margin-bottom: 3rem;
 `;
 
 const Title = styled.h1`
   color: ${Styles.textColour};
   font-size: 2rem;
   text-align: left;
-  margin-bottom: 3rem;
 
   span {
     display: block;
@@ -40,6 +42,59 @@ const TeamWrapper = styled.div`
   justify-content: center;
   ${Media.laptop`justify-content: space-evenly;  `}
   flex-wrap: wrap;
+`;
+
+const IframeWrapper = styled.div`
+  display: none;
+  position: relative;
+
+  ${Media.tablet`
+    text-align: center;
+    display: block;
+    margin: 5rem 0;
+  `}
+
+  iframe {
+    z-index: 1;
+    ${Styles.shadow}
+
+    ${Media.tablet`
+      width: 600px;
+      height: ${ getHeightFromRatio({ width: 600, ratio: 1.7777778 }) }px;
+    `}
+    ${Media.laptop`
+      width: 700px;
+      height: ${ getHeightFromRatio({ width: 700, ratio: 1.7777778 }) }px;
+    `}
+    ${Media.desktop`
+      width: 900px;
+      height: ${ getHeightFromRatio({ width: 900, ratio: 1.7777778 }) }px;
+    `}
+  }
+`;
+
+const BgOffset = styled.div`
+  background-color: rgb(207, 66, 79);
+  position: absolute;
+  top: 20px;
+  bottom: 0px;
+  z-index: -1;
+
+  ${Media.tablet`
+    width: 600px;
+    height: ${ getHeightFromRatio({ width: 600, ratio: 1.7777778 }) }px;
+    right: 25px;
+  `}
+  ${Media.laptop`
+    width: 700px;
+    height: ${ getHeightFromRatio({ width: 700, ratio: 1.7777778 }) }px;
+    right: 95px;
+  `}
+  ${Media.desktop`
+    width: 900px;
+    height: ${ getHeightFromRatio({ width: 900, ratio: 1.7777778 }) }px;
+    right: 85px;
+  `}
 `;
 
 const Team = () => (
@@ -65,7 +120,7 @@ const Team = () => (
         <meta name="twitter:description" content="Join us in &#34;Disrupting the Now!&#34; May 1&ndash;5, 2019 at the National Leadership Development Conference in Calgary." />
         <meta name="twitter:image" content={`https://www.nldcnow.com${SeoImage}`} />
       </Helmet>
-      <Container>
+      <Container style={{ zIndex: '0', }}>
         <TitleWrapper>
           <Title>
             Meet the <span>Organizing Committee</span>
@@ -76,6 +131,10 @@ const Team = () => (
           team.map(member => <ProfileCard key={member.name} {...member} />)
         }
         </TeamWrapper>
+        <IframeWrapper>
+            <iframe width="900" height="506" src="https://www.youtube.com/embed/bR19ftaj4Ak" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+            <BgOffset />
+        </IframeWrapper>
       </Container>
     </Wrapper>
   </Layout>
