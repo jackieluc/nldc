@@ -99,6 +99,11 @@ const routes = [
     button: false,
   },
   {
+    name: 'Team',
+    path: '/team',
+    button: false,
+  },
+  {
     name: 'FAQ',
     path: '/faq',
     button: false,
