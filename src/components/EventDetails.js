@@ -130,7 +130,6 @@ const EventDetails = () => (
       <ConferenceDescription>
         <StyledRow>
           <Col xs="12" sm="10" lg="6" xl="7">
-            {/* <MottoWrapper src={Motto} alt="Disrupting the now." /> */}
             <MottoWrapper>
               <Motto />
             </MottoWrapper>

@@ -15,6 +15,7 @@ const Wrapper = styled.section`
 
 const CenteredRow = styled(Row)`
   justify-content: center;
+  margin: 5rem 0;
 `;
 
 const LogoWrapper = styled.div`
