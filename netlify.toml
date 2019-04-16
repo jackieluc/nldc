@@ -20,5 +20,5 @@
 
 [[redirects]]
   from    = "/team"
-  to      = "https://www.nldcnow.com"
-  status  = 301
+  to      = "https://www.nldcnow.com/404"
+  status  = 404
