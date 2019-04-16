@@ -19,6 +19,6 @@
   status  = 301
 
 [[redirects]]
-  from    = "/fyrefestival"
+  from    = "/team"
   to      = "https://www.nldcnow.com"
   status  = 301
