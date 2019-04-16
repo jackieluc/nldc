@@ -6,7 +6,8 @@ const QuestionsAndAnswers = () => (
   <div>
     {
       faqData.map(data => (
-        <FAQCollapse key={data.question} question={data.question} answer={data.answer} />))
+        <FAQCollapse key={data.question} question={data.question} answer={data.answer} />)
+      )
     }
   </div>
 );

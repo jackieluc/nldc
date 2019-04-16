@@ -73,7 +73,7 @@ const FAQ = () => (
           FAQ
         </Title>
         <Subtitle>
-          <p>We are <Highlight>#DisruptingTheNow</Highlight>, but we don't want your plans to be disruptive. If you can't find what you are looking for, send an email to <a href="mailto:stephanie.lee@aiesec.net">stephanie.lee@aiesec.net</a></p>
+          <p>We are <Highlight>#DisruptingTheNow</Highlight>, but we don't want your plans to be disruptive. If you can't find what you are looking for, send an email to <a href="mailto:stephanie.lee2@aiesec.net">stephanie.lee2@aiesec.net</a></p>
         </Subtitle>
         <QuestionsAndAnswers />
       </StretchedContainer>

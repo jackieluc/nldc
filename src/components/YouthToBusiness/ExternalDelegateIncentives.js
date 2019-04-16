@@ -9,8 +9,8 @@ const Wrapper = styled(Container)`
   color: white;
   background: linear-gradient(${Styles.y2bGreen} 30%, ${Styles.themeColour} 100%);
   margin-bottom: 5rem;
-  padding: 5rem 0;
-  ${Media.laptop`padding: 5rem 20px 5rem 20px;`}
+  padding-bottom: 5rem;
+  ${Media.laptop`padding: 0 20px 5rem 0;`}
 `;
 
 const Title = styled.h2`
@@ -27,7 +27,8 @@ const Subtitle = styled.p`
 
 const StyledRow = styled(Row)`
   max-width: 1140px;
-  margin: 0 auto 5rem auto;
+  margin: 0 auto;
+  padding: 5rem 0 0 0;
 
   ${Media.tablet`justify-content: center;`}
 `;

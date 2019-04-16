@@ -83,7 +83,7 @@ const faq = [
               <li>Credit card information will be taken online to confirm booking, but you pay the full amount when you arrive and check in</li>
             </ul>
             <br/>
-            Please send an email to <a href="mailto:stephanie.lee@aiesec.net">stephanie.lee@aiesec.net</a> for any questions or concerns!
+            Please send an email to <a href="mailto:stephanie.lee2@aiesec.net">stephanie.lee2@aiesec.net</a> for any questions or concerns!
             `,
   },
   {

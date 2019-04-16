@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import MailChimp from '../MailChimp/MailChimp';
 import Styles from '../../utils/styles';
 import Media from '../../utils/media';
-import SocialMedia from '../Footer/SocialMedia';
-
 const NavWrapper = styled.button`
   position: fixed;
   right: 1rem;
@@ -19,6 +16,11 @@ const NavWrapper = styled.button`
   background-color: white;
   z-index: 999;
   outline: none;
+
+  &:hover,
+  &:active {
+    outline: none;
+  }
 
   ${Media.laptop`
     width: 4rem;
@@ -58,23 +60,10 @@ const MenuWrapper = styled.nav`
   align-items: flex-end;
   overflow: hidden;
   text-transform: uppercase;
-
-  > form {
-    margin: auto auto 2rem auto;
-    text-transform: none;
-  }
-  > div {
-    margin: 0 auto 2rem auto;
-    text-transform: none;
-  }
-
-  .contact-us {
-    margin: 0 auto 10vh auto;
-  }
 `;
 
 const StyledAnchor = styled.a`
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 8px 10vw;
   ${Media.tablet`margin: 8px 5vw;`}
   text-decoration: none;
@@ -103,18 +92,7 @@ const ButtonAnchor = styled.a`
   }
 `;
 
-const ContactLink = styled.a`
-  display: inline-block;
-  margin-top: 1rem;
-  color: black;
-
-  &:hover {
-    color: ${Styles.red};
-    text-decoration: underline;
-  }
-`;
-
-const MobileMenu = ({ routes, action }) => (
+const MobileMenu = ({ routes }) => (
   <MenuWrapper>
     { 
       routes.map(route => (
@@ -125,10 +103,9 @@ const MobileMenu = ({ routes, action }) => (
           : <StyledAnchor href={route.path} key={route.name}>
               { route.name }
             </StyledAnchor>
-    ))}
-    <MailChimp />
-    <SocialMedia />
-    <ContactLink href="mailto:kkaren.ngo@aiesec.net" className="contact-us">Contact Us</ContactLink>
+        )
+      )
+    }
   </MenuWrapper>
 );
 
@@ -138,11 +115,11 @@ MobileMenu.propTypes = {
 };
 
 const NavButton = ({ menu }) => (
-  <React.Fragment>
+  <>
     <Line reverse styles={{ topPosition: '35%' }} className={menu ? 'open' : ''} />
     <Line styles={{ topPosition: '50%' }} className={menu ? 'open' : ''} />
     <Line styles={{ topPosition: '65%' }} className={menu ? 'open' : ''} />
-  </React.Fragment>
+  </>
 );
 
 NavButton.propTypes = {
