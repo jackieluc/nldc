@@ -99,12 +99,23 @@ const ExternalDelegateIncentives = () => (
       </Col>
       <Col xs={12} md={8} lg={6} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
         <TicketInfo>
-          <h3><Highlight>$70 | General Admission</Highlight></h3>
+          <h3>
+            <Highlight>
+              $70 | General Admission
+            </Highlight>
+          </h3>
           <p>includes Dinner (May 1st), Breakfast and Lunch (May 2nd)</p>
         </TicketInfo>
         <TicketInfo>
-          <h3><Highlight>$110 | General Admission & Accommodation</Highlight></h3>
-          <p>includes Dinner (May 1st), Overnight Accommodation (May 1st), Breakfast and Lunch (May 2nd)</p>
+          <h3>
+            <span style={{ color: Styles.lightRed, marginRight: '5px' }}>Sold out!</span>
+            <span style={{ textDecoration: 'line-through', color: 'rgb(51, 51, 51, 0.5)' }}>
+              $110 | General Admission & Accommodation
+            </span>
+          </h3>
+          <p style={{ textDecoration: 'line-through', color: 'rgb(51, 51, 51, 0.5)' }}>
+            includes Dinner (May 1st), Overnight Accommodation (May 1st), Breakfast and Lunch (May 2nd)
+          </p>
         </TicketInfo>
       </Col>
     </StyledRow>
