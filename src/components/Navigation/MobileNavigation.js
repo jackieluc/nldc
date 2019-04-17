@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Styles from '../../utils/styles';
 import Media from '../../utils/media';
+
 const NavWrapper = styled.button`
   position: fixed;
   right: 1rem;
@@ -93,7 +94,7 @@ const ButtonAnchor = styled.a`
   }
 `;
 
-const MobileMenu = ({ routes }) => (
+const MobileMenu = ({ routes, toggleMenu }) => (
   <MenuWrapper>
     { 
       routes.map(route => (
@@ -101,7 +102,7 @@ const MobileMenu = ({ routes }) => (
           ? <ButtonAnchor href={route.path} key={route.name}>
               { route.name }
             </ButtonAnchor>
-          : <StyledAnchor href={route.path} key={route.name}>
+          : <StyledAnchor href={route.path} key={route.name} onClick={toggleMenu}>
               { route.name }
             </StyledAnchor>
         )
@@ -146,12 +147,15 @@ export default class MobileNavigation extends Component {
   render() {
     const { isOpen } = this.state;
     const { routes } = this.props;
+
     return (
       <ResponsiveWrapper>
         <NavWrapper onClick={this.toggleMenu}>
           <NavButton menu={isOpen} />
         </NavWrapper>
-        {isOpen && <MobileMenu action={this.toggleMenu} routes={routes} />}
+        {
+          isOpen && <MobileMenu action={this.toggleMenu} routes={routes} toggleMenu={this.toggleMenu} />
+        }
       </ResponsiveWrapper>
     );
   }
