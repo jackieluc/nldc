@@ -64,8 +64,8 @@ const MenuWrapper = styled.nav`
 
 const StyledAnchor = styled.a`
   font-size: 1rem;
-  margin: 8px 10vw;
-  ${Media.tablet`margin: 8px 5vw;`}
+  margin: 12px 10vw;
+  ${Media.tablet`margin: 12px 5vw;`}
   text-decoration: none;
 
   &:first-child {
@@ -76,6 +76,7 @@ const StyledAnchor = styled.a`
 
 const ButtonAnchor = styled.a`
   font-size: 1rem;
+  margin: 12px 0;
   padding: 10px 1.5rem;
   letter-spacing 1px;
   text-decoration: none;
