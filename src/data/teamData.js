@@ -28,16 +28,9 @@ const team = [
     email: 'jacoby.holder@aiesec.net', 
   },
   {
-    name: 'Krista Chung',
-    title: 'Organizing Committee Director',
-    position: 'Corporate Relations',
-    image: require('../images/team/kristachung.jpg'),
-    email: '', 
-  },
-  {
     name: 'Ellie Teng',
     title: 'Organizing Committee Director',
-    position: 'Logistics',
+    position: 'Logistics & Operations',
     image: require('../images/team/ellieteng.jpg'),
     email: '', 
   },
@@ -49,10 +42,17 @@ const team = [
     email: '', 
   },
   {
+    name: 'Krista Chung',
+    title: 'Organizing Committee Director',
+    position: 'Corporate Relations',
+    image: require('../images/team/kristachung.jpg'),
+    email: '', 
+  },
+  {
     name: 'Patrick Fung',
     title: 'Organizing Committee Director',
     position: 'Marketing',
-    image: '',
+    image: require('../images/team/patrickfung.jpg'),
     email: '', 
   },
   {
