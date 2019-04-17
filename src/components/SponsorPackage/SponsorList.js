@@ -90,7 +90,7 @@ export const fluidImage = graphql`
   }
 `;
 
-export const pageQuery = graphql`
+export const sponsorLogosQuery = graphql`
   query {
     nutrien: file(relativePath: { eq: "sponsors/nutrien.png" }) {
       ...fluidImage
@@ -142,7 +142,7 @@ export const pageQuery = graphql`
 
 const SponsorList = ({paddingTop}) => (
   <StaticQuery
-    query={pageQuery}
+    query={sponsorLogosQuery}
     render={data => (
       <section style={{ paddingTop }}>
         <Container>
