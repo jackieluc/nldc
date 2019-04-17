@@ -51,7 +51,7 @@ const IframeWrapper = styled.div`
   ${Media.tablet`
     text-align: center;
     display: block;
-    margin: 5rem 0;
+    margin: 6rem 0;
   `}
 
   iframe {
@@ -126,15 +126,15 @@ const Team = () => (
             Meet the <span>Organizing Committee</span>
           </Title>
         </TitleWrapper>
+        <IframeWrapper>
+            <iframe width="900" height="506" src="https://www.youtube.com/embed/bR19ftaj4Ak" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+            <BgOffset />
+        </IframeWrapper>
         <TeamWrapper>
         {
           team.map(member => <ProfileCard key={member.name} {...member} />)
         }
         </TeamWrapper>
-        <IframeWrapper>
-            <iframe width="900" height="506" src="https://www.youtube.com/embed/bR19ftaj4Ak" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
-            <BgOffset />
-        </IframeWrapper>
       </Container>
     </Wrapper>
   </Layout>
