@@ -98,11 +98,11 @@ const routes = [
     path: '/banff',
     button: false,
   },
-  // {
-  //   name: 'Team',
-  //   path: '/team',
-  //   button: false,
-  // },
+  {
+    name: 'Team',
+    path: '/team',
+    button: false,
+  },
   {
     name: 'FAQ',
     path: '/faq',
