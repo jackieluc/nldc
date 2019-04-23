@@ -68,7 +68,7 @@ const Logo = styled(Img)`
   }
 `;
 
-export const partnerLogosQuery = graphql`
+const partnerLogosQuery = graphql`
   query {
     knoxville: file(relativePath: { eq: "partners/Knoxville.png" }) {
       ...fluidImage

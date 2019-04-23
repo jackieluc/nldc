@@ -90,7 +90,7 @@ export const fluidImage = graphql`
   }
 `;
 
-export const sponsorLogosQuery = graphql`
+const sponsorLogosQuery = graphql`
   query {
     nutrien: file(relativePath: { eq: "sponsors/nutrien.png" }) {
       ...fluidImage
