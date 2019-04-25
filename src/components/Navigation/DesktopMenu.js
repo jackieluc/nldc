@@ -1,18 +1,19 @@
-import React, { Component } from 'react';
-import { Link } from 'gatsby';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import Styles from '../../utils/styles';
-import Media from '../../utils/media';
-import BlackNldcLogo from '../../images/nldc2019-logo-black.png';
+import React, { Component } from 'react'
+import { Link } from 'gatsby'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import Styles from '../../utils/styles'
+import Media from '../../utils/media'
+import BlackNldcLogo from '../../images/nldc2019-logo-black.png'
 
-const isHomePage = location => location === '/';
+const isHomePage = location => location === '/'
 
-const isNearTop = heights => (heights.currentWindowHeight < heights.firstSectionHeight / 2);
+const isNearTop = heights => heights.currentWindowHeight < heights.firstSectionHeight / 2
 
 const MenuWrapper = styled.nav`
-  ${({ location, heights }) => (isHomePage(location) && isNearTop(heights)
-    ? `background-color: transparent;
+	${({ location, heights }) =>
+		isHomePage(location) && isNearTop(heights)
+			? `background-color: transparent;
       a {
         color: white;
         &:hover {
@@ -24,27 +25,24 @@ const MenuWrapper = styled.nav`
         display: none;
       };
     `
-    : `background-color: white;
+			: `background-color: white;
       justify-content: none;
       > a:first-of-type {
         padding: 0;
         margin-right: auto;
       };
-    `
-  )}
-  ${({ heights }) => (isNearTop(heights)
-    ? 'box-shadow: none;'
-    : 'box-shadow: 0 3px 6px rgba(75, 97, 141, 0.3);'
-  )}
+    `}
+	${({ heights }) =>
+		isNearTop(heights) ? 'box-shadow: none;' : 'box-shadow: 0 3px 6px rgba(75, 97, 141, 0.3);'}
   display: flex;
-  height: 60px;
-  padding: 8px 16px;
-  position: fixed;
-  top: 0;
-  flex-direction: row;
-  z-index: 100;
-  text-transform: uppercase;
-`;
+	height: 60px;
+	padding: 8px 16px;
+	position: fixed;
+	top: 0;
+	flex-direction: row;
+	z-index: 100;
+	text-transform: uppercase;
+`
 
 const ButtonAnchor = styled.a`
   font-size: 14px;
@@ -60,88 +58,88 @@ const ButtonAnchor = styled.a`
     background-color: ${Styles.red};
     text-decoration: none;
   }
-`;
+`
 
 const StyledAnchor = styled.a`
-  font-size: 14px;
-  ${Media.laptop`padding: 8px;`}
-  ${Media.desktop`padding: 8px 1rem;`}
+	font-size: 14px;
+	${Media.laptop`padding: 8px;`}
+	${Media.desktop`padding: 8px 1rem;`}
   letter-spacing: 1px;
-  text-decoration: none;
-`;
+	text-decoration: none;
+`
 
 const Logo = styled.img`
-  height: 70px;
-`;
+	height: 70px;
+`
 
 export default class Menu extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      location: '',
-      currentWindowHeight: 0,
-      firstSectionHeight: 0,
-    };
-  }
+	constructor(props) {
+		super(props)
+		this.state = {
+			location: '',
+			currentWindowHeight: 0,
+			firstSectionHeight: 0,
+		}
+	}
 
-  componentDidMount() {
-    this.updatePathLocation();
-    this.updateWindowDimensions();
-    window.addEventListener('scroll', this.updateWindowDimensions);
-  }
+	componentDidMount() {
+		this.updatePathLocation()
+		this.updateWindowDimensions()
+		window.addEventListener('scroll', this.updateWindowDimensions)
+	}
 
-  componentDidUpdate() {
-    const { location } = this.state;
-    const currentLocation = document.location.pathname;
-    if (location !== currentLocation) {
-      this.updatePathLocation();
-    }
-  }
+	componentDidUpdate() {
+		const { location } = this.state
+		const currentLocation = document.location.pathname
+		if (location !== currentLocation) {
+			this.updatePathLocation()
+		}
+	}
 
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.updateWindowDimensions);
-  }
+	componentWillUnmount() {
+		window.removeEventListener('scroll', this.updateWindowDimensions)
+	}
 
-  updatePathLocation = () => {
-    const location = document.location.pathname;
-    this.setState({ location });
-  }
+	updatePathLocation = () => {
+		const location = document.location.pathname
+		this.setState({ location })
+	}
 
-  updateWindowDimensions = () => {
-    if (document.getElementsByTagName('section')[0]) {
-      const currentWindowHeight = document.documentElement.scrollTop;
-      const firstSectionHeight = document.getElementsByTagName('section')[0].clientHeight;
-      this.setState({
-        currentWindowHeight,
-        firstSectionHeight,
-      });
-    }
-  }
+	updateWindowDimensions = () => {
+		if (document.getElementsByTagName('section')[0]) {
+			const currentWindowHeight = document.documentElement.scrollTop
+			const firstSectionHeight = document.getElementsByTagName('section')[0].clientHeight
+			this.setState({
+				currentWindowHeight,
+				firstSectionHeight,
+			})
+		}
+	}
 
-  render() {
-    const { location, currentWindowHeight, firstSectionHeight } = this.state;
-    const { routes } = this.props;
-    return (
-      <MenuWrapper location={location} heights={{ currentWindowHeight, firstSectionHeight }}>
-        <Link to="/">
-          <Logo src={BlackNldcLogo} alt="NLDC 2019 Logo" />
-        </Link>
-        { 
-          routes.map(route => (
-            route.button
-              ? <ButtonAnchor href={route.path} key={route.name}>
-                  { route.name }
-                </ButtonAnchor>
-              : <StyledAnchor href={route.path} key={route.name}>
-                  { route.name }
-                </StyledAnchor>
-          ))
-        }
-      </MenuWrapper>
-    );
-  }
+	render() {
+		const { location, currentWindowHeight, firstSectionHeight } = this.state
+		const { routes } = this.props
+		return (
+			<MenuWrapper location={location} heights={{ currentWindowHeight, firstSectionHeight }}>
+				<Link to='/'>
+					<Logo src={BlackNldcLogo} alt='NLDC 2019 Logo' />
+				</Link>
+				{routes.map(route =>
+					route.button ? (
+						<ButtonAnchor href={route.path} key={route.name}>
+							{route.name}
+						</ButtonAnchor>
+					) : (
+						<StyledAnchor href={route.path} key={route.name}>
+							{route.name}
+						</StyledAnchor>
+					)
+				)}
+			</MenuWrapper>
+		)
+	}
 }
 
 Menu.propTypes = {
-  routes: PropTypes.arrayOf(Object).isRequired,
-};
+	routes: PropTypes.arrayOf(Object).isRequired,
+}

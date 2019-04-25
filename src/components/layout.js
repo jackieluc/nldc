@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import { StaticQuery, graphql } from 'gatsby';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { createGlobalStyle } from 'styled-components';
-import Media from '../utils/media';
-import Styles from '../utils/styles';
-import Navigation from './Navigation/Navigation';
-import Footer from './Footer/Footer';
-import BillyOhio from '../fonts/billy-ohio.otf';
+import { StaticQuery, graphql } from 'gatsby'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { createGlobalStyle } from 'styled-components'
+import Media from '../utils/media'
+import Styles from '../utils/styles'
+import Navigation from './Navigation/Navigation'
+import Footer from './Footer/Footer'
+import BillyOhio from '../fonts/billy-ohio.otf'
 
 // eslint-disable-next-line
 const GlobalStyle = createGlobalStyle`
@@ -75,90 +75,83 @@ const GlobalStyle = createGlobalStyle`
       text-decoration: underline;
     }
   }
-`;
+`
 
 const routes = [
-  {
-    name: 'About NLDC',
-    path: '/#about-nldc',
-    button: false
-  },
-  {
-    name: 'Youth to Business',
-    path: '/#youth-to-business',
-    button: false,
-  },
-  {
-    name: 'Sponsors',
-    path: '/sponsors',
-    button: false,
-  },
-  {
-    name: 'Banff',
-    path: '/banff',
-    button: false,
-  },
-  {
-    name: 'Team',
-    path: '/team',
-    button: false,
-  },
-  {
-    name: 'FAQ',
-    path: '/faq',
-    button: false,
-  },
-  {
-    name: 'Get your tickets',
-    path: 'https://bit.ly/Y2B2019Forum',
-    button: true,
-  },
-];
+	{
+		name: 'About NLDC',
+		path: '/#about-nldc',
+		button: false,
+	},
+	{
+		name: 'Youth to Business',
+		path: '/#youth-to-business',
+		button: false,
+	},
+	{
+		name: 'Sponsors',
+		path: '/sponsors',
+		button: false,
+	},
+	{
+		name: 'Team',
+		path: '/team',
+		button: false,
+	},
+	{
+		name: 'FAQ',
+		path: '/faq',
+		button: false,
+	},
+	{
+		name: 'Get your tickets',
+		path: 'https://bit.ly/Y2B2019Forum',
+		button: true,
+	},
+]
 
 export default class Layout extends Component {
-  constructor(props) {
-    super(props);
-  }
+	constructor(props) {
+		super(props)
+	}
 
-  componentDidMount() {
-    // Remove any service worker: sw.js or service-worker.js from old deploys
-    self.addEventListener('install', () => {
-      self.skipWaiting();
-    });
-    
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.getRegistrations().then(function(registrations) {
-        for (let registration of registrations) {
-          registration.unregister();
-        }
-      });
-    }
-  }
+	componentDidMount() {
+		// Remove any service worker: sw.js or service-worker.js from old deploys
+		self.addEventListener('install', () => {
+			self.skipWaiting()
+		})
 
-  render() {
-    const { children, noFooter } = this.props;
-    return (
-      <StaticQuery
-        query={graphql`
-          query SiteTitleQuery {
-            site {
-              siteMetadata {
-                title
-              }
-            }
-          }
-        `}
-        render={data => (
-          <>
-            <GlobalStyle />
-            <Navigation routes={routes} />
-            <main>
-              { children }
-            </main>
-            { noFooter ? '' : <Footer /> }
-          </>
-        )}
-      />
-    )
-  }
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.getRegistrations().then(function(registrations) {
+				for (let registration of registrations) {
+					registration.unregister()
+				}
+			})
+		}
+	}
+
+	render() {
+		const { children, noFooter } = this.props
+		return (
+			<StaticQuery
+				query={graphql`
+					query SiteTitleQuery {
+						site {
+							siteMetadata {
+								title
+							}
+						}
+					}
+				`}
+				render={data => (
+					<>
+						<GlobalStyle />
+						<Navigation routes={routes} />
+						<main>{children}</main>
+						{noFooter ? '' : <Footer />}
+					</>
+				)}
+			/>
+		)
+	}
 }

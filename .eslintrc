@@ -9,11 +9,13 @@
   "extends": [
     "airbnb",
     "react-app",
-    "plugin:jsx-a11y/recommended"
+    "plugin:jsx-a11y/recommended",
+    "prettier"
   ],
   "plugins": [
     "react",
-    "jsx-a11y"
+    "jsx-a11y",
+    "prettier"
   ],
   "parser": "babel-eslint",
   "parserOptions": {
@@ -30,6 +32,7 @@
     }],
     "no-unused-expressions": ["error", {
       "allowTernary": true
-    }]
+    }],
+    "prettier/prettier": ["error"]
   }
 }
