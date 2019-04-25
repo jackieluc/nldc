@@ -94,11 +94,6 @@ const routes = [
 		button: false,
 	},
 	{
-		name: 'Banff',
-		path: '/banff',
-		button: false,
-	},
-	{
 		name: 'Team',
 		path: '/team',
 		button: false,

@@ -126,9 +126,24 @@ const ExternalDelegateIncentives = () => (
 			>
 				<TicketInfo>
 					<h3>
-						<Highlight>$70 | General Admission</Highlight>
+						<span style={{ color: Styles.lightRed, marginRight: '5px' }}>Sold out!</span>
+						<span
+							style={{
+								textDecoration: 'line-through',
+								color: 'rgb(51, 51, 51, 0.5)',
+							}}
+						>
+							$70 | General Admission
+						</span>
 					</h3>
-					<p>includes Dinner (May 1st), Breakfast and Lunch (May 2nd)</p>
+					<p
+						style={{
+							textDecoration: 'line-through',
+							color: 'rgb(51, 51, 51, 0.5)',
+						}}
+					>
+						includes Dinner (May 1st), Breakfast and Lunch (May 2nd)
+					</p>
 				</TicketInfo>
 				<TicketInfo>
 					<h3>
@@ -139,7 +154,7 @@ const ExternalDelegateIncentives = () => (
 								color: 'rgb(51, 51, 51, 0.5)',
 							}}
 						>
-							$110 | General Admission & Accommodation
+							$110 | General Admission &amp; Accommodation
 						</span>
 					</h3>
 					<p
