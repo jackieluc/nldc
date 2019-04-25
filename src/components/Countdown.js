@@ -1,8 +1,8 @@
-import React from 'react';
-import Countdown from 'react-countdown-now';
-import styled from 'styled-components';
-import Styles from '../utils/styles';
-import Media from '../utils/media';
+import React from 'react'
+import Countdown from 'react-countdown-now'
+import styled from 'styled-components'
+import Styles from '../utils/styles'
+import Media from '../utils/media'
 
 const StyledLink = styled.a`
   font-size: 12px;
@@ -23,17 +23,17 @@ const StyledLink = styled.a`
     background: ${Styles.red};
     text-decoration: none;
   }
-`;
+`
 
 const Wrapper = styled.div`
-  display: block;
-  margin: 2rem 0 1rem 0;
-  padding: 8px;
-  background-color: white;
-  border: 2px solid white;
-  border-radius: 8px;
-  ${Styles.shadow}
-`;
+	display: block;
+	margin: 2rem 0 1rem 0;
+	padding: 8px;
+	background-color: white;
+	border: 2px solid white;
+	border-radius: 8px;
+	${Styles.shadow}
+`
 
 const TimeComponent = styled.p`
   display: inline-block;
@@ -50,38 +50,37 @@ const TimeComponent = styled.p`
   span {
     font-size: 0.7rem;
   }
-`;
+`
 
-const renderer = ({ days, hours, minutes, seconds, completed }) => (
-  completed === true
-    ? <></>
-    : <>
-        <Wrapper>
-          <TimeComponent>
-            { days }
-            <br/>
-            <span>days</span>
-          </TimeComponent>
-          <TimeComponent>
-            { hours }
-            <br/>
-            <span>hours</span>
-          </TimeComponent>
-          <TimeComponent>
-            { minutes }
-            <br/>
-            <span>minutes</span>
-          </TimeComponent>
-          <TimeComponent>
-            { seconds }
-            <br />
-            <span>seconds</span>
-          </TimeComponent>
-        </Wrapper>
-        <StyledLink href="https://bit.ly/Y2B2019Forum">Get your tickets</StyledLink>
-      </>
-);
+const renderer = ({ days, hours, minutes, seconds, completed }) =>
+	completed === true ? (
+		<></>
+	) : (
+		<>
+			<Wrapper>
+				<TimeComponent>
+					{days}
+					<br />
+					<span>days</span>
+				</TimeComponent>
+				<TimeComponent>
+					{hours}
+					<br />
+					<span>hours</span>
+				</TimeComponent>
+				<TimeComponent>
+					{minutes}
+					<br />
+					<span>minutes</span>
+				</TimeComponent>
+				<TimeComponent>
+					{seconds}
+					<br />
+					<span>seconds</span>
+				</TimeComponent>
+			</Wrapper>
+			<StyledLink href='https://bit.ly/Y2B2019Forum'>Get your tickets</StyledLink>
+		</>
+	)
 
-export default () => ( 
-  <Countdown date={new Date('May 1, 2019 15:00:00')} renderer={renderer} />
-);
+export default () => <Countdown date={new Date('May 1, 2019 15:00:00')} renderer={renderer} />

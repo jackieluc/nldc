@@ -1,56 +1,57 @@
-import React from 'react';
-import styled from 'styled-components';
-import Styles from '../utils/styles';
-import Media, { BreakPoints } from '../utils/media';
+import React from 'react'
+import styled from 'styled-components'
+import Styles from '../utils/styles'
+import Media, { BreakPoints } from '../utils/media'
 
 const SponsorDetailsSection = styled.section`
-  padding: 5rem 15px 0;
-`;
+	padding: 5rem 15px 0;
+`
 
 const Wrapper = styled.div`
-  margin: 0 auto;
-  z-index: 2;
-  max-width: ${BreakPoints.desktop}px;
-  ${Media.tablet`width: 75%;`}
-  ${Media.laptop`width: 620px;`}
-`;
+	margin: 0 auto;
+	z-index: 2;
+	max-width: ${BreakPoints.desktop}px;
+	${Media.tablet`width: 75%;`}
+	${Media.laptop`width: 620px;`}
+`
 
 const SponsorTitle = styled.h2`
-  color: ${Styles.themeColour};
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-`;
+	color: ${Styles.themeColour};
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	margin-bottom: 2rem;
+`
 
 const SponsorDescription = styled.div`
-  width: 100%;
-  ${Media.tablet`width: 400px;`}
-  text-align: center;
-  margin: 0 auto;
-`;
+	width: 100%;
+	${Media.tablet`width: 400px;`}
+	text-align: center;
+	margin: 0 auto;
+`
 
 const Description = styled.p`
-  margin-bottom: 2rem;
-`;
+	margin-bottom: 2rem;
+`
 
 const Highlight = styled.b`
-  ${Styles.highlight};
-`;
+	${Styles.highlight};
+`
 
 const SponsorDetails = () => (
-  <SponsorDetailsSection>
-    <Wrapper id="sponsors">
-      <SponsorTitle>
-        Sponsors
-      </SponsorTitle>
-      <SponsorDescription>
-        <Description>
-          { // eslint-disable-next-line
-          } We would like to thank our corporate partners for supporting youth leadership and our 2019 mission in <Highlight>#DisruptingTheNow</Highlight>.
-        </Description>
-      </SponsorDescription>
-    </Wrapper>
-  </SponsorDetailsSection>
-);
+	<SponsorDetailsSection>
+		<Wrapper id='sponsors'>
+			<SponsorTitle>Sponsors</SponsorTitle>
+			<SponsorDescription>
+				<Description>
+					{
+						// eslint-disable-next-line
+					}{' '}
+					We would like to thank our corporate partners for supporting youth leadership and our 2019 mission in{' '}
+					<Highlight>#DisruptingTheNow</Highlight>.
+				</Description>
+			</SponsorDescription>
+		</Wrapper>
+	</SponsorDetailsSection>
+)
 
-export default SponsorDetails;
+export default SponsorDetails
