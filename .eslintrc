@@ -10,7 +10,7 @@
     "airbnb",
     "react-app",
     "plugin:jsx-a11y/recommended",
-    "prettier",
+    "prettier"
   ],
   "plugins": [
     "react",
