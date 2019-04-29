@@ -8,6 +8,7 @@ import Styles from '../utils/styles'
 import SeoImage from '../images/seo-image.png'
 import leaders from '../data/leaderData'
 import LeaderCard from '../components/Cards/LeaderCard'
+import CCAL from '../images/dinner-with-leaders/ccal.png'
 
 const Wrapper = styled.section`
 	background-image: linear-gradient(135deg, #74c7d9 40%, #037ef3 100%);
@@ -16,11 +17,19 @@ const Wrapper = styled.section`
 `
 
 const TitleWrapper = styled.div`
-	width: 100%;
+	max-width: 360px;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	padding: 0 15px;
-	margin-bottom: 1rem;
+	margin: 0 auto 1rem auto;
+
+	img {
+		width: 260px;
+		${Media.tablet`
+			width: 360px;
+		`}
+	}
 `
 
 const Title = styled.h1`
@@ -87,6 +96,7 @@ const DinnerWithLeaders = () => (
 			</Helmet>
 			<Container fluid style={{ zIndex: '0' }}>
 				<TitleWrapper>
+					<img src={CCAL} alt='CCAL Logo' />
 					<Title>
 						Dinner with <span>Leaders</span>
 					</Title>
