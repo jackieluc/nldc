@@ -26,6 +26,9 @@ const TitleWrapper = styled.div`
 
 	img {
 		width: 260px;
+		${Media.medPhone`
+			width: 300px;
+		`}
 		${Media.tablet`
 			width: 360px;
 		`}
