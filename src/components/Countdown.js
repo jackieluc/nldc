@@ -79,7 +79,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) =>
 					<span>seconds</span>
 				</TimeComponent>
 			</Wrapper>
-			<StyledLink href='https://bit.ly/Y2B2019Forum'>Get your tickets</StyledLink>
+			{/* <StyledLink href='https://bit.ly/Y2B2019Forum'>Get your tickets</StyledLink> */}
 		</>
 	)
 
