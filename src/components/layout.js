@@ -99,15 +99,20 @@ const routes = [
 		button: false,
 	},
 	{
+		name: 'Dinner with Leaders',
+		path: '/dinner-with-leaders',
+		button: false,
+	},
+	{
 		name: 'FAQ',
 		path: '/faq',
 		button: false,
 	},
-	{
-		name: 'Get your tickets',
-		path: 'https://bit.ly/Y2B2019Forum',
-		button: true,
-	},
+	// {
+	// 	name: 'Get your tickets',
+	// 	path: 'https://bit.ly/Y2B2019Forum',
+	// 	button: true,
+	// },
 ]
 
 export default class Layout extends Component {
