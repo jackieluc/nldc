@@ -99,6 +99,11 @@ const routes = [
 		button: false,
 	},
 	{
+		name: 'Dinner with Leaders',
+		path: '/dinner-with-leaders',
+		button: false,
+	},
+	{
 		name: 'FAQ',
 		path: '/faq',
 		button: false,
