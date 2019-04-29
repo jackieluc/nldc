@@ -20,6 +20,7 @@ const TitleWrapper = styled.div`
 	display: flex;
 	justify-content: center;
 	padding: 0 15px;
+	margin-bottom: 1rem;
 `
 
 const Title = styled.h1`
@@ -31,6 +32,16 @@ const Title = styled.h1`
 		font-family: BillyOhio, lato, sans-serif;
 		font-size: 80px;
 	}
+`
+
+const Subtitle = styled.p`
+	color: ${Styles.textColour};
+	text-align: center;
+	max-width: 560px;
+	margin: 0 auto 2rem auto;
+	${Media.tablet`
+    margin: 0 auto;
+  `}
 `
 
 const LeadersWrapper = styled.div`
@@ -80,6 +91,10 @@ const DinnerWithLeaders = () => (
 						Dinner with <span>Leaders</span>
 					</Title>
 				</TitleWrapper>
+				<Subtitle>
+					Please meet our esteemed Calgary business leaders who will be joining us in the CCAL Dinner with Leaders event
+					as part of the Youth to Business Launch 2019!
+				</Subtitle>
 				<LeadersWrapper>
 					{leaders.map(leader => (
 						<LeaderCard key={leader.organization} {...leader} />

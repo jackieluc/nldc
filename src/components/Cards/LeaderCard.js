@@ -12,6 +12,12 @@ const StyledCard = styled(Card)`
 	${Media.medPhone`padding: 30px 15px;`}
 	border-radius: 8px;
 	border: 0;
+
+	&:last-of-type {
+		${Media.laptop`
+      width: 850px;
+    `}
+	}
 `
 
 const StyledImage = styled(CardImg)`
@@ -23,6 +29,19 @@ const StyledImage = styled(CardImg)`
 
 const Leaders = styled.div`
 	text-align: center;
+
+	&:last-of-type {
+		${Media.laptop`
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+    `}
+
+		.leader {
+			margin: 1rem;
+		}
+	}
 
 	.leader {
 		margin-bottom: 1rem;

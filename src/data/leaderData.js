@@ -1,7 +1,7 @@
 const leaders = [
 	{
 		organization: 'Ammolite Strategies Inc.',
-		logo: require('../images/dinner-with-leaders/ammolite-strategies.jpeg'),
+		logo: require('../images/dinner-with-leaders/ammolite-strategies.png'),
 		leaders: [
 			{
 				firstName: 'Cara',
@@ -322,6 +322,39 @@ const leaders = [
 		],
 	},
 	{
+		organization: 'Vertex Downhole',
+		logo: require('../images/dinner-with-leaders/vertex-downhole.png'),
+		leaders: [
+			{
+				firstName: 'Rick',
+				lastName: 'Filipovic',
+				position: 'CEO',
+			},
+		],
+	},
+	{
+		organization: 'WestJet',
+		logo: require('../images/dinner-with-leaders/westjet.png'),
+		leaders: [
+			{
+				firstName: 'Charles',
+				lastName: 'Duncan',
+				position: 'Executive VP and Chief Strategy Officer',
+			},
+		],
+	},
+	{
+		organization: 'Work Nicer',
+		logo: require('../images/dinner-with-leaders/work-nicer.png'),
+		leaders: [
+			{
+				firstName: 'Alex',
+				lastName: 'Putici',
+				position: 'CEO',
+			},
+		],
+	},
+	{
 		organization: 'University of Calgary',
 		logo: require('../images/dinner-with-leaders/ucalgary.png'),
 		leaders: [
@@ -354,39 +387,6 @@ const leaders = [
 				firstName: 'Joelle',
 				lastName: 'Foster',
 				position: 'Executive Director of Hunter Hub',
-			},
-		],
-	},
-	{
-		organization: 'Vertex Downhole',
-		logo: require('../images/dinner-with-leaders/vertex-downhole.png'),
-		leaders: [
-			{
-				firstName: 'Rick',
-				lastName: 'Filipovic',
-				position: 'CEO',
-			},
-		],
-	},
-	{
-		organization: 'WestJet',
-		logo: require('../images/dinner-with-leaders/westjet.png'),
-		leaders: [
-			{
-				firstName: 'Charles',
-				lastName: 'Duncan',
-				position: 'Executive VP and Chief Strategy Officer',
-			},
-		],
-	},
-	{
-		organization: 'Work Nicer',
-		logo: require('../images/dinner-with-leaders/work-nicer.png'),
-		leaders: [
-			{
-				firstName: 'Alex',
-				lastName: 'Putici',
-				position: 'CEO',
 			},
 		],
 	},
